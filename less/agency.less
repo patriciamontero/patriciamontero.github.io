@@ -176,8 +176,7 @@ header {
 		padding-top: 100px;
 		padding-bottom: 50px;
 		.intro-lead-in {
-			.serif-font;
-			font-style: italic;
+			.body-font;
 			font-size: 22px;
 			line-height: 22px;
 			margin-bottom: 25px;
@@ -185,8 +184,8 @@ header {
 		.intro-heading {
 			.heading-font;
 			font-weight: 700;
-			font-size: 50px;
-			line-height: 50px;
+			font-size: 45px;
+			line-height: 45px;
 			margin-bottom: 25px;
 		}
 	}
@@ -198,14 +197,11 @@ header {
 			padding-top: 300px;
 			padding-bottom: 200px;
 			.intro-lead-in {
-				.serif-font;
-				font-style: italic;
 				font-size: 40px;
 				line-height: 40px;
 				margin-bottom: 25px;
 			}
 			.intro-heading {
-				.heading-font;
 				font-weight: 700;
 				font-size: 75px;
 				line-height: 75px;
@@ -226,9 +222,7 @@ section {
     }
     h3.section-subheading {
 		font-size: 16px;
-		.serif-font;
 		text-transform: none;
-		font-style: italic;
 		font-weight: 400;
 		margin-bottom: 75px;
     }
@@ -301,7 +295,6 @@ section {
         	}
         	p {
         		.serif-font;
-        		font-style: italic;
         		font-size: 16px;
         		margin: 0;
         	}
@@ -319,6 +312,15 @@ section {
             margin: 0 0 30px;
         }
     }
+}
+blockquote {
+    .script-font;
+}
+cite {
+    margin-bottom: 25px;
+    display: block;
+    font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
 }
 
 // Timeline
@@ -534,12 +536,12 @@ aside.clients {
 // Contact Section
 
 section#contact {
-	background-color: #f7f7f7;
+	background-color: #333;
 	//background-image: url('../img/map-image.png');
 	//background-position: center;
 	//background-repeat: no-repeat;
 	.section-heading {
-		//color: white;
+		color: white;
 	}
 	.form-group {
 		margin-bottom: 25px;
@@ -658,7 +660,6 @@ ul.social-buttons {
 		p.item-intro {
 			margin: 20px 0 30px;
 			.serif-font;
-			font-style: italic;
 			font-size: 16px;
 		}
 		ul.list-inline {

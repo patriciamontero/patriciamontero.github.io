@@ -257,6 +257,17 @@ body {
     fill: #6a6867;    /* medium grey */
 }
 
+.disabled {
+    color: #c9c8c7;    /* light grey */
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
 .sidenav ul {
     text-align: center;
 }
@@ -795,7 +806,7 @@ blockquote.panel {
 #progress-bar > div {
     display: block;
     background-color: #fa7057;
-    width: 10%;
+    width: 5%;
     height: 100%;
     border-radius: 1em;
 }

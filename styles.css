@@ -257,7 +257,7 @@ body {
     fill: #6a6867;    /* medium grey */
 }
 
-.disabled {
+.disabledlink {
     color: #c9c8c7;    /* light grey */
     font-family: 'Raleway', sans-serif;
     font-size: 1em;

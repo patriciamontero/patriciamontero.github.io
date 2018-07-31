@@ -274,6 +274,17 @@ body {
 
 .sidenav li {
     list-style-type: none;
+    line-height: 1;
+}
+@media (min-width: 600px) {      /* tablet */
+    .sidenav li {
+        line-height: 1.2;
+    }
+}
+@media (min-width: 900px) {      /* desktop */
+    .sidenav li {
+        line-height: 1.4;
+    }
 }
 
 .menu-languages a:link{
@@ -517,15 +528,10 @@ h4 {
 
 .legend {
     color: #454241;
-    font-size: 0.707em;
+    font-size: 0.9em;
     font-style: italic;
     margin: 0.25em 0 1.5em 0;
 }
-    @media (min-width: 600px) {      /* tablet */
-        .legend {
-            font-size: 0.9em;
-        }  
-    }
     @media (min-width: 900px) {      /* desktop */
         .legend {
             font-size: 1em;

@@ -779,11 +779,11 @@ blockquote.panel {
     box-shadow: 0 0 3px rgba(0,0,0,.3);
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
-    font-size: 0.707em;
+    font-size: 0.6em;
     font-weight: bold;
     left: -3.5em;
     letter-spacing: 0.05em;
-    line-height: 3em;
+    line-height: 2.25em;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
@@ -792,6 +792,12 @@ blockquote.panel {
     -webkit-transform: rotate(-45deg);
     width: 16em;
 }
+    @media (min-width: 600px) {      /* tablet */
+        .ribbon {
+            font-size: 0.707em;
+            line-height: 3em;
+        }  
+    }
 
 .project {
     max-width: 100%;

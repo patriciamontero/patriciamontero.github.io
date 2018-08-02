@@ -797,7 +797,7 @@ blockquote.panel {
     margin-top: 1rem;
 }
 
-#progress-bar {
+#progress-bar-ceci {
     background-color: #ffffff;
     border-radius: 1.2em;
     color: #ffffff;
@@ -815,10 +815,36 @@ blockquote.panel {
         }
     }
 
-#progress-bar > div {
+#progress-bar-ceci > div {
     display: block;
     background-color: #fa7057;
     width: 5%;
+    height: 100%;
+    border-radius: 1em;
+}
+
+#progress-bar-pati {
+    background-color: #ffffff;
+    border-radius: 1.2em;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.707em;
+    height: 1.5em;
+    margin: 1em 0;
+    padding: 0;
+    text-align: center;
+}
+    @media (min-width: 900px) {      /* desktop */
+        #progress-bar {
+            font-size: 0.9em;
+            height: 1.75em;
+        }
+    }
+
+#progress-bar-pati > div {
+    display: block;
+    background-color: #fa7057;
+    width: 75%;
     height: 100%;
     border-radius: 1em;
 }

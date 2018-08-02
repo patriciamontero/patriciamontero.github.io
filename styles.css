@@ -66,6 +66,7 @@ body {
     margin: -0.4em 0 0 -0.15em;
     position: fixed;
     transition: all .3s ease-in-out;
+    z-index: 4;
 }
     @media (min-width: 600px) {      /* tablet */
         .btn-menu {
@@ -798,7 +799,7 @@ blockquote.panel {
 }
 
 #progress-bar-ceci {
-    background-color: #ffffff;
+    background-color: #fcb7ab;      /* light accent */
     border-radius: 1.2em;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -809,7 +810,7 @@ blockquote.panel {
     text-align: center;
 }
     @media (min-width: 900px) {      /* desktop */
-        #progress-bar {
+        #progress-bar-ceci {
             font-size: 0.9em;
             height: 1.75em;
         }
@@ -824,7 +825,7 @@ blockquote.panel {
 }
 
 #progress-bar-pati {
-    background-color: #ffffff;
+    background-color: #fcb7ab;      /* light accent */
     border-radius: 1.2em;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -835,7 +836,7 @@ blockquote.panel {
     text-align: center;
 }
     @media (min-width: 900px) {      /* desktop */
-        #progress-bar {
+        #progress-bar-pati {
             font-size: 0.9em;
             height: 1.75em;
         }

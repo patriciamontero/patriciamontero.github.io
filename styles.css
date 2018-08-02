@@ -56,14 +56,14 @@ body {
 .btn-menu{
     background: #faf3f2;      /* light accent bg */
     border: none;
+    border-radius: 0.1em;
     color: #fa6f57;
     cursor: pointer;
     font-family: monospace;
     font-size: 3em;
     font-weight: bold;
     line-height: 1;
-    margin: -0.4em;
-    padding: 0.125em 0.25em;
+    margin: -0.4em 0 0 -0.15em;
     position: fixed;
     transition: all .3s ease-in-out;
 }
@@ -78,6 +78,10 @@ body {
             display: none;
         }
     }
+
+.btn-menu a:hover {
+    color: #fb9b89;    /* medium accent */
+}
 
 .btn-close-menu{
     background: transparent;
@@ -717,15 +721,15 @@ blockquote.panel {
 .logomobile{
     display: inline-block;
     fill: #fa7057;   /* accent */
-    margin: -1.75em 0 -1.5em 2.75em;
-    max-width: 46%;
+    margin: -2em 0 -1.5em 2.75em;
+    max-width: 50%;
     transition: all .3s ease-in-out;
     vertical-align: baseline;
 }
     @media (min-width: 600px) {      /* tablet */
         .logomobile {
-            margin: 2.25em 0 -0.8em 3.5em;
-            max-width: 46%;
+            margin: 2em 0 -0.8em 3.5em;
+            max-width: 40%;
         }  
     }
     @media (min-width: 900px) {      /* desktop */

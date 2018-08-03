@@ -63,15 +63,16 @@ body {
     font-size: 3em;
     font-weight: bold;
     line-height: 1;
-    margin: -0.4em 0 0 -0.15em;
+    margin: -0.4em 1em 0 0;
     position: fixed;
+    right: 0;
     transition: all .3s ease-in-out;
     z-index: 4;
 }
     @media (min-width: 600px) {      /* tablet */
         .btn-menu {
             font-size: 4em;
-            margin-top: 0.8em;
+            margin: 0.8em 1em 0 0;
         }
     }
     @media (min-width: 900px) {      /* desktop */
@@ -419,6 +420,7 @@ li span {
 
 h1 {
     font-size: 1.383em;      /* phone — scale 15:16 */
+    margin-top: 0.25em;
 }
     @media (min-width: 600px) {      /* tablet — scale 8:9 */
         h1 {
@@ -697,13 +699,13 @@ blockquote.panel {
 .logo {
     display: inline-block;
     fill: #fa7057;
-    margin: 0.5em 0 -2em 0;
+    margin: -2em 0 0 0;
     max-width: 70%;
     transition: all .3s ease-in-out;
 }
     @media (min-width: 600px) {      /* tablet */
         .logo {
-            margin-top: 7em;
+            margin-top: 2em;
             max-width: 50%;
         }  
     }
@@ -722,15 +724,15 @@ blockquote.panel {
 .logomobile{
     display: inline-block;
     fill: #fa7057;   /* accent */
-    margin: -2em 0 -1.5em 2.75em;
-    max-width: 50%;
+    margin: -2em 0 0 0;
+    max-width: 70%;
     transition: all .3s ease-in-out;
     vertical-align: baseline;
 }
     @media (min-width: 600px) {      /* tablet */
         .logomobile {
-            margin: 2em 0 -0.8em 3.5em;
-            max-width: 40%;
+            margin-top: 2em;
+            max-width: 50%;
         }  
     }
     @media (min-width: 900px) {      /* desktop */

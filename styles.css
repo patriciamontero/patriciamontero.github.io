@@ -783,7 +783,7 @@ blockquote.panel {
     font-weight: bold;
     left: -3.5em;
     letter-spacing: 0.05em;
-    line-height: 2.25em;
+    line-height: 2.45em;
     position: absolute;
     text-align: center;
     text-transform: uppercase;
@@ -793,6 +793,12 @@ blockquote.panel {
     width: 16em;
 }
     @media (min-width: 600px) {      /* tablet */
+        .ribbon {
+            font-size: 0.67em;
+            line-height: 2.6em;
+        }  
+    }
+    @media (min-width: 900px) {      /* desktop */
         .ribbon {
             font-size: 0.707em;
             line-height: 3em;

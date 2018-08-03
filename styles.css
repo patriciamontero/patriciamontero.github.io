@@ -92,14 +92,16 @@ body {
     cursor: pointer;
     font-size: 3em;
     line-height: 1;
-    margin: -0.75em -0.5em;
+    margin: -1.1em 0.15em;
     padding: 0.5em;
+    position: fixed;
+    right: 0;
     transition: all .3s ease-in-out;
 }
     @media (min-width: 600px) {      /* tablet */
         .btn-close-menu {
             font-size: 4em;
-            margin: -1em 0 -1em -0.5em;
+            margin: -1.1em 0.5em -1em -0.5em;
         }
     }
     @media (min-width: 900px) {      /* desktop */
@@ -115,14 +117,14 @@ body {
 
 .sidenav {
     background-color: #ffffff;
-    bottom: 16px;
-    left: 16px;
+    bottom: 1em;
+    left: 1em;
     opacity: 0;
     overflow: hidden;
-    padding: 1em;
+    padding: 2em;
     position: absolute;
-    right: 16px;
-    top: 16px;
+    right: 1em;
+    top: 1em;
     transition: all ease-in-out .3s;
     visibility: hidden;
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);

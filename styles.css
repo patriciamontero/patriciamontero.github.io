@@ -56,14 +56,11 @@ body {
 .btn-menu{
     background: #faf3f2;      /* light accent bg */
     border: none;
-    border-radius: 0.1em;
-    color: #fa6f57;
+    border-radius: 0.5em;
+    fill: #fa6f57;
     cursor: pointer;
-    font-family: monospace;
-    font-size: 3em;
-    font-weight: bold;
-    line-height: 1;
-    margin: -0.4em 1em 0 0;
+    margin: -0.4em 2.3em 0 0;
+    padding: 0.6em 0.6em 0.3em 0.6em;
     position: fixed;
     right: 0;
     transition: all .3s ease-in-out;
@@ -71,8 +68,7 @@ body {
 }
     @media (min-width: 600px) {      /* tablet */
         .btn-menu {
-            font-size: 4em;
-            margin: 0.8em 1em 0 0;
+            margin: 5em 0 0 0;
         }
     }
     @media (min-width: 900px) {      /* desktop */
@@ -81,18 +77,16 @@ body {
         }
     }
 
-.btn-menu a:hover {
-    color: #fb9b89;    /* medium accent */
+.btn-menu:hover {
+    fill: #fcb7ab;      /* light accent */
 }
 
 .btn-close-menu{
     background: transparent;
     border: none;
-    color: #fa6f57;
+    fill: #fa6f57;
     cursor: pointer;
-    font-size: 3em;
-    line-height: 1;
-    margin: -1.1em 0.15em;
+    margin: -1.1em 3em;
     padding: 0.5em;
     position: fixed;
     right: 0;
@@ -100,8 +94,7 @@ body {
 }
     @media (min-width: 600px) {      /* tablet */
         .btn-close-menu {
-            font-size: 4em;
-            margin: -1.1em 0.5em -1em -0.5em;
+            margin: -3em 5em -1em -0.5em;
         }
     }
     @media (min-width: 900px) {      /* desktop */
@@ -109,10 +102,9 @@ body {
             display: none;
         }
     }
-    @media (min-width: 1200px) {      /* big screen */
-        .btn-close-menu {
-            font-size: 1.188em;
-        }
+
+    .btn-close:hover {
+        fill: #fcb7ab;      /* light accent */
     }
 
 .sidenav {
@@ -701,7 +693,7 @@ blockquote.panel {
 .logo {
     display: inline-block;
     fill: #fa7057;
-    margin: -2em 0 0 0;
+    margin: -1.25em 0 0 0;
     max-width: 70%;
     transition: all .3s ease-in-out;
 }
@@ -726,7 +718,7 @@ blockquote.panel {
 .logomobile{
     display: inline-block;
     fill: #fa7057;   /* accent */
-    margin: -2em 0 0 0;
+    margin: -1.25em 0 0 0;
     max-width: 70%;
     transition: all .3s ease-in-out;
     vertical-align: baseline;

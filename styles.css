@@ -247,6 +247,17 @@ body {
         }
     }
 
+    .sidenav a#oncase {
+        color: #fa6f57;
+        font-weight: 700;
+        text-transform: initial;
+    }
+
+    .sidenav a#offcase {
+        color: #fa6f57;
+        text-transform: initial;
+    }
+
 .sidenav a:visited {
     color: #6a6867;    /* medium grey */
     fill: #6a6867;    /* medium grey */

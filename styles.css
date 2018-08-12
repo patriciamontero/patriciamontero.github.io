@@ -822,7 +822,7 @@ blockquote.panel {
     margin-top: 1rem;
 }
 
-#progress-bar-ceci {
+#progress-bar-lopo {
     background-color: #fcb7ab;      /* light accent */
     border-radius: 1.2em;
     color: #ffffff;
@@ -835,13 +835,13 @@ blockquote.panel {
     text-align: center;
 }
     @media (min-width: 900px) {      /* desktop */
-        #progress-bar-ceci {
+        #progress-bar-lopo {
             font-size: 0.9em;
             height: 1.75em;
         }
     }
 
-#progress-bar-ceci > div {
+#progress-bar-lopo > div {
     display: block;
     background-color: #fa7057;
     width: 5%;

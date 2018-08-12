@@ -534,7 +534,7 @@ ul.breadcrumb li+li::before {
     background-color: #faf3f2;      /* light accent bg */
     border: none;
     border-radius: 0.25em;
-    bottom: 2em;
+    bottom: 1em;
     color: #fa7057;   /* accent */
     cursor: pointer;
     display: none;

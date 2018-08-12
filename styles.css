@@ -531,18 +531,18 @@ ul.breadcrumb li+li::before {
 }
 
 #top {
-    background-color: #ffffff;
+    background-color: #faf3f2;      /* light accent bg */
     border: none;
-    border-radius: 0.5em;
-    bottom: 1em;
-    color: #fa6f57;
+    border-radius: 0.25em;
+    bottom: 2em;
     cursor: pointer;
     display: none;
+    fill: #fa6f57;
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
     font-weight: 700;
     outline: none;
-    padding: 0.2em 0.55em;
+    padding: 0.2em;
     position: fixed;
     right: 1em;
     z-index: 99;

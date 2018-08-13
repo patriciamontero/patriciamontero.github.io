@@ -522,6 +522,7 @@ ul.breadcrumb li {
     display: inline;
     font-family: 'Raleway', sans-serif;
     font-size: 0.9em;
+    font-weight: 700;
 }
 
 ul.breadcrumb li+li::before {

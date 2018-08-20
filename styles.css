@@ -738,10 +738,15 @@ cite {
 }
 
 .persona {
-    background-color: #ffffff;
     color: #6a6867;    /* medium accent */
     margin-top: -0.5em;
     padding-top: 1.5em;
+}
+
+.mine {
+    background-color: #fcf9f8;
+    color: #fb9b89;
+    text-indent: 0;
 }
 
 blockquote.panel {

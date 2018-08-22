@@ -500,6 +500,7 @@ h4 {
     }
 
 ul.breadcrumb {
+    line-height: 1.2;
     margin: -0.75em 0 1.25em 0;
     padding: 0;
     list-style: none;

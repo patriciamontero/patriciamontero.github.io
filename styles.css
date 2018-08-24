@@ -417,7 +417,7 @@ li span {
 
 h1 {
     font-size: 1.383em;      /* phone — scale 15:16 */
-    margin-top: 0.25em;
+    margin-top: 0.75em;
 }
     @media (min-width: 600px) {      /* tablet — scale 8:9 */
         h1 {
@@ -500,21 +500,22 @@ h4 {
     }
 
 ul.breadcrumb {
+    font-size: 1em;
     line-height: 1.2;
-    margin: -0.75em 0 1.25em 0;
+    margin: -0.25em 0 1.75em 0;
     padding: 0;
     list-style: none;
 }
     @media (min-width: 600px) {      /* tablet */
         ul.breadcrumb {
             font-size: 1.125em;
-            margin: 0 0 2em 0;
+            margin: 0.25em 0 1.5em 0;
         }  
     }
     @media (min-width: 900px) {      /* desktop */
         ul.breadcrumb {
             font-size: 1em;
-            margin: 2em 0 -4em 0;
+            margin: 2em 0 -3em 0;
         }  
     }
 

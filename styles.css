@@ -346,14 +346,17 @@ body {
     }
 
     .share li:visited{
-        fill: #fb9b89;    /* medium accent */
+        color: #fa7057;   /* accent */
+        fill: #fa7057;   /* accent */
     }
 
     .share li:hover{
+        color: #fcb7ab;      /* light accent */
         fill: #fcb7ab;      /* light accent */
     }
 
     .share li:active{
+        color: #fa7057;   /* accent */
         fill: #fa7057;   /* accent */
     }
 

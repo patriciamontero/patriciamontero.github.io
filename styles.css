@@ -384,6 +384,14 @@ body {
         fill: #fcb7ab;      /* light accent */
     }
 
+    .share li:visited{
+        fill: #fb9b89;    /* medium accent */
+    }
+
+    .share li:active{
+        fill: #fa7057;   /* accent */
+    }
+
 
 /* -- MAIN CONTENT --> TEXT  */
 

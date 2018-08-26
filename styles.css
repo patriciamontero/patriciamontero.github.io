@@ -308,29 +308,6 @@ body {
     text-decoration: underline;
 }
 
-.divider {
-    color: #6a6867;    /* medium grey */
-    font-size: 2.5em;
-    margin: -0.25em 0;
-    padding: 0;
-    text-align: center;
-}
-    @media (min-width: 600px) {      /* tablet */
-        .divider {
-            font-size: 3em;
-        }  
-    }
-    @media (min-width: 900px) {      /* desktop */
-        .divider {
-            font-size: 3.2em;
-        }  
-    }
-    @media (min-width: 1200px) {      /* big screen */
-        .divider {
-            font-size: 4em;
-        }  
-    }
-
 .menu-social li{
     display: inline-block;
     height: 1.25em;
@@ -623,6 +600,7 @@ ul.breadcrumb li+li::before {
             font-size: 1em;
         }  
     }
+
 .main {
     margin: 0;
     padding: 2em;
@@ -835,7 +813,6 @@ blockquote.panel {
 .logomobile:active {
     fill: #fa7057;   /* accent */
 }
-
 
 .portfolio {
     background-color: #fcf9f8;        /* lightest accent bg */

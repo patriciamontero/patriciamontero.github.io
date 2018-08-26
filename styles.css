@@ -358,6 +358,32 @@ body {
         }  
     }
 
+    .share li{
+        cursor: pointer;
+        display: inline-block;
+        fill: #fa7057;   /* accent */
+        height: 2em;
+        margin: 1em 2em 1em 0;
+        padding: 0;
+        width: 2em;
+    }
+        @media (min-width: 600px) {      /* tablet */
+            .share li {
+            }  
+        }
+        @media (min-width: 900px) {      /* desktop */
+            .share li {
+            }  
+        }
+        @media (min-width: 1200px) {      /* big screen */
+            .share li {
+            }  
+        }
+
+    .share li:hover{
+        fill: #fcb7ab;      /* light accent */
+    }
+
 
 /* -- MAIN CONTENT --> TEXT  */
 

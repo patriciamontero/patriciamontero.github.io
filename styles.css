@@ -367,18 +367,6 @@ body {
         padding: 0;
         width: 2em;
     }
-        @media (min-width: 600px) {      /* tablet */
-            .share li {
-            }  
-        }
-        @media (min-width: 900px) {      /* desktop */
-            .share li {
-            }  
-        }
-        @media (min-width: 1200px) {      /* big screen */
-            .share li {
-            }  
-        }
 
     .share li:visited{
         fill: #fb9b89;    /* medium accent */

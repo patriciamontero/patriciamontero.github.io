@@ -559,6 +559,11 @@ ul.breadcrumb li+li::before {
     fill: #fcb7ab;      /* light accent */
 }
 
+.update {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+
 .intro {
     font-size: 1.067em;      /* phone — scale 15:16 */
     font-style: italic;

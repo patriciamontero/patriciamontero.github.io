@@ -357,6 +357,10 @@ body {
         fill: #fa7057;   /* accent */
     }
 
+    .share li:disabled{
+        fill: #fcb7ab;      /* light accent */
+    }
+
 
 /* -- MAIN CONTENT --> TEXT  */
 

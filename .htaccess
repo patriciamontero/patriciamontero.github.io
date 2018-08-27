@@ -1,4 +1,5 @@
-Options +FollowSymlinks
+Options +FollowSymLinks
 RewriteEngine on
-rewritecond %{http_host} ^http://www.patriciamontero.github.io/ [nc]
-rewriterule ^(.*)$ http://patriciamontero.github.io/$1 [r=301,nc]
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} !^http://www.patriciamontero.github.io/
+RewriteRule (.*) http://patriciamontero.github.io/$1 [R=301,L]

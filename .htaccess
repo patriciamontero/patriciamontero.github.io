@@ -1,3 +1,3 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.patriciamontero.github.io [NC]
-RewriteRule ^(.*)$ http://patriciamontero.github.io/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^patriciamontero\.github.io [NC]
+RewriteRule ^(.*)$ http://www.patriciamontero.github.io/$1 [L,R=301]

@@ -1,5 +1,0 @@
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^patimontero.ca$
-RewriteRule (.*) https://www.patimontero.ca/$1 [R=301,L]
-</IfModule>

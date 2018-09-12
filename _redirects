@@ -1,2 +1,5 @@
 http://patimontero.ca/* https://www.patimontero.ca/:splat 301!
 https://patimontero.ca/* https://www.patimontero.ca/:splat 301!
+
+/es/* /es/404.html 404
+/fr/* /fr/404.html 404

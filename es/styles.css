@@ -26,7 +26,7 @@
       }
   
   body {
-      background-color: #fafaf5;      /* light accent bg */
+      background-color: #f9f3cf;      /* light accent bg */
   }
   
   .wrapper {
@@ -54,7 +54,7 @@
   /* -- NAV BAR -- */
   
   .btn-menu{
-      background: #fafaf5;      /* light accent bg */
+      background: #f9f3cf;      /* light accent bg */
       border: none;
       border-radius: 0.5em;
       fill: #ffef87;
@@ -80,7 +80,7 @@
       }
   
   .btn-menu:hover {
-      fill: #fff8cb;      /* light accent */
+      fill: #f7d624;      /* light accent */
   }
   
   .btn-close-menu{
@@ -106,7 +106,7 @@
       }
   
       .btn-close:hover {
-          fill: #fff8cb;      /* light accent */
+          fill: #f7d624;      /* light accent */
       }
   
   .sidenav {
@@ -253,8 +253,8 @@
   }
   
   .sidenav a:hover {
-      color: #ffe32c;   /* accent */
-      fill: #ffe32c;   /* accent */
+      color: #fbc702;   /* accent */
+      fill: #fbc702;   /* accent */
   }
   
   .sidenav a:active {
@@ -338,7 +338,7 @@
       .share li{
           cursor: pointer;
           display: inline-block;
-          fill: #ffe32c;   /* accent */
+          fill: #fbc702;   /* accent */
           height: 2em;
           margin: 1em 1em 1em 0;
           padding: 0;
@@ -346,19 +346,19 @@
       }
   
       .share li:visited{
-          fill: #ffe32c;   /* accent */
+          fill: #fbc702;   /* accent */
       }
   
       .share li:hover{
-          fill: #fff8cb;      /* light accent */
+          fill: #f7d624;      /* light accent */
       }
   
       .share li:active{
-          fill: #ffe32c;   /* accent */
+          fill: #fbc702;   /* accent */
       }
   
       .share li:disabled{
-          fill: #fff8cb;      /* light accent */
+          fill: #f7d624;      /* light accent */
       }
   
   
@@ -404,7 +404,7 @@
   }
   
   li {
-      color: #fff8cb;      /* lighter medium accent */
+      color: #f7d624;      /* lighter medium accent */
       list-style-type: disc;
       margin: 1em 0;
   }
@@ -537,14 +537,14 @@
   }
   
   #top {
-      background-color: #fafaf5;      /* light accent bg */
+      background-color: #f9f3cf;      /* light accent bg */
       border: none;
       border-radius: 0.25em;
       bottom: 1em;
-      color: #ffe32c;   /* accent */
+      color: #fbc702;   /* accent */
       cursor: pointer;
       display: none;
-      fill: #ffe32c;   /* accent */
+      fill: #fbc702;   /* accent */
       font-family: 'Raleway', sans-serif;
       font-size: 1.5em;
       font-weight: 700;
@@ -556,7 +556,7 @@
   }
   
   #top:hover {
-      fill: #fff8cb;      /* light accent */
+      fill: #f7d624;      /* light accent */
   }
   
   .update {
@@ -635,7 +635,7 @@
       }
   
   a:link {
-      color: #ffe32c;   /* accent */
+      color: #fbc702;   /* accent */
       text-decoration: none;
   }
   
@@ -649,12 +649,12 @@
   }
   
   a:active {
-      color: #ffe32c;   /* accent */
+      color: #fbc702;   /* accent */
   }
   
   .button:link {
       color: #ffffff;
-      background-color: #ffe32c;   /* accent */
+      background-color: #fbc702;   /* accent */
       border: none;
       border-radius: 2.25em;
       display: inline-block;
@@ -699,13 +699,13 @@
   
   .button:hover {
       color: #ffffff;
-      background-color: #fff8cb;      /* light accent */
+      background-color: #f7d624;      /* light accent */
       text-decoration: none;
   }
   
   .button:active {
       color: #ffffff;
-      background-color: #ffe32c;   /* accent */
+      background-color: #fbc702;   /* accent */
       text-decoration: none;
   }
   
@@ -769,7 +769,7 @@
   
   .logo {
       display: inline-block;
-      fill: #ffe32c;
+      fill: #fbc702;
       margin: -1.25em 0 0 0;
       max-width: 70%;
       transition: all .3s ease-in-out;
@@ -794,7 +794,7 @@
   
   .logomobile{
       display: inline-block;
-      fill: #ffe32c;   /* accent */
+      fill: #fbc702;   /* accent */
       margin: -1.25em 0 0 0;
       max-width: 70%;
       transition: all .3s ease-in-out;
@@ -813,15 +813,15 @@
       }
   
   .logomobile:visited {
-      fill: #ffe32c;   /* accent */
+      fill: #fbc702;   /* accent */
   }
   
   .logomobile:hover {
-      fill: #fff8cb;      /* light accent */
+      fill: #f7d624;      /* light accent */
   }
   
   .logomobile:active {
-      fill: #ffe32c;   /* accent */
+      fill: #fbc702;   /* accent */
   }
   
   .portfolio {
@@ -883,7 +883,7 @@
   }
   
   #progress-bar-lopo {
-      background-color: #fff8cb;      /* light accent */
+      background-color: #f7d624;      /* light accent */
       border-radius: 1.2em;
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
@@ -903,14 +903,14 @@
   
   #progress-bar-lopo > div {
       display: block;
-      background-color: #ffe32c;
+      background-color: #fbc702;
       width: 5%;
       height: 100%;
       border-radius: 1em;
   }
   
   #progress-bar-pati {
-      background-color: #fff8cb;      /* light accent */
+      background-color: #f7d624;      /* light accent */
       border-radius: 1.2em;
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
@@ -930,7 +930,7 @@
   
   #progress-bar-pati > div {
       display: block;
-      background-color: #ffe32c;
+      background-color: #fbc702;
       width: 80%;
       height: 100%;
       border-radius: 1em;
@@ -975,7 +975,7 @@
   }
   
   button.accordion {
-      background-color: #ffe32c;   /* accent */ 
+      background-color: #fbc702;   /* accent */ 
       border: none;
       border-radius: 0.75em;
       color: #ffffff;
@@ -1015,7 +1015,7 @@
   }
   
   button.accordion.disable {
-      background-color: #fff8cb;      /* light accent */
+      background-color: #f7d624;      /* light accent */
       cursor: not-allowed;
   }
   
@@ -1084,12 +1084,12 @@
       }
   
   #color1 {
-      background-color: #ffe32c;
+      background-color: #fbc702;
       color: #ffffff;
       padding: 1em 2em;
   }
   #color2 {
-      background-color: #fff8cb;
+      background-color: #f7d624;
       color: #ffffff;
       padding: 1em 2em;
   }
@@ -1099,7 +1099,7 @@
       padding: 1em 2em;
   }
   #color4 {
-      background-color: #fafaf5;
+      background-color: #f9f3cf;
       color: #454241;     /* dark grey */
       padding: 1em 2em;
   }

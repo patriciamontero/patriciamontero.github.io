@@ -26,7 +26,7 @@
       }
   
   body {
-      background-color: #faf3f2;      /* light accent bg */
+      background-color: #fafaf5;      /* light accent bg */
   }
   
   .wrapper {
@@ -54,10 +54,10 @@
   /* -- NAV BAR -- */
   
   .btn-menu{
-      background: #faf3f2;      /* light accent bg */
+      background: #fafaf5;      /* light accent bg */
       border: none;
       border-radius: 0.5em;
-      fill: #fa6f57;
+      fill: #ffef87;
       cursor: pointer;
       margin: -0.4em 2.3em 0 0;
       padding: 0.6em 0.6em 0.3em 0.6em;
@@ -80,13 +80,13 @@
       }
   
   .btn-menu:hover {
-      fill: #fcb7ab;      /* light accent */
+      fill: #fff8cb;      /* light accent */
   }
   
   .btn-close-menu{
       background: transparent;
       border: none;
-      fill: #fa6f57;
+      fill: #ffef87;
       cursor: pointer;
       margin: -1.1em 3em;
       padding: 0.5em;
@@ -106,7 +106,7 @@
       }
   
       .btn-close:hover {
-          fill: #fcb7ab;      /* light accent */
+          fill: #fff8cb;      /* light accent */
       }
   
   .sidenav {
@@ -253,8 +253,8 @@
   }
   
   .sidenav a:hover {
-      color: #fa7057;   /* accent */
-      fill: #fa7057;   /* accent */
+      color: #ffe32c;   /* accent */
+      fill: #ffe32c;   /* accent */
   }
   
   .sidenav a:active {
@@ -338,7 +338,7 @@
       .share li{
           cursor: pointer;
           display: inline-block;
-          fill: #fa7057;   /* accent */
+          fill: #ffe32c;   /* accent */
           height: 2em;
           margin: 1em 1em 1em 0;
           padding: 0;
@@ -346,19 +346,19 @@
       }
   
       .share li:visited{
-          fill: #fa7057;   /* accent */
+          fill: #ffe32c;   /* accent */
       }
   
       .share li:hover{
-          fill: #fcb7ab;      /* light accent */
+          fill: #fff8cb;      /* light accent */
       }
   
       .share li:active{
-          fill: #fa7057;   /* accent */
+          fill: #ffe32c;   /* accent */
       }
   
       .share li:disabled{
-          fill: #fcb7ab;      /* light accent */
+          fill: #fff8cb;      /* light accent */
       }
   
   
@@ -404,7 +404,7 @@
   }
   
   li {
-      color: #fcb7ab;      /* lighter medium accent */
+      color: #fff8cb;      /* lighter medium accent */
       list-style-type: disc;
       margin: 1em 0;
   }
@@ -532,19 +532,19 @@
   
   ul.breadcrumb li+li::before {
       padding: 0.5em;
-      color: #fa6f57;
+      color: #ffef87;
       content: "/\00a0"
   }
   
   #top {
-      background-color: #faf3f2;      /* light accent bg */
+      background-color: #fafaf5;      /* light accent bg */
       border: none;
       border-radius: 0.25em;
       bottom: 1em;
-      color: #fa7057;   /* accent */
+      color: #ffe32c;   /* accent */
       cursor: pointer;
       display: none;
-      fill: #fa7057;   /* accent */
+      fill: #ffe32c;   /* accent */
       font-family: 'Raleway', sans-serif;
       font-size: 1.5em;
       font-weight: 700;
@@ -556,7 +556,7 @@
   }
   
   #top:hover {
-      fill: #fcb7ab;      /* light accent */
+      fill: #fff8cb;      /* light accent */
   }
   
   .update {
@@ -588,7 +588,7 @@
       }
   
   .note {
-      color: #fa6f57;
+      color: #ffef87;
       font-size: 0.95em;
       font-style: italic;
   }
@@ -635,26 +635,26 @@
       }
   
   a:link {
-      color: #fa7057;   /* accent */
+      color: #ffe32c;   /* accent */
       text-decoration: none;
   }
   
   a:visited {
-      color: #fb9b89;    /* medium accent */
+      color: #fff197;    /* medium accent */
   }
   
   a:hover {
-      color: #fa6f57;   /* accent */
+      color: #ffef87;   /* accent */
       text-decoration: underline;
   }
   
   a:active {
-      color: #fa7057;   /* accent */
+      color: #ffe32c;   /* accent */
   }
   
   .button:link {
       color: #ffffff;
-      background-color: #fa7057;   /* accent */
+      background-color: #ffe32c;   /* accent */
       border: none;
       border-radius: 2.25em;
       display: inline-block;
@@ -693,19 +693,19 @@
   
   .button:visited {
       color: #ffffff;
-      background-color: #fb9b89;   /* medium accent */
+      background-color: #fff197;   /* medium accent */
       text-decoration: none;
   }
   
   .button:hover {
       color: #ffffff;
-      background-color: #fcb7ab;      /* light accent */
+      background-color: #fff8cb;      /* light accent */
       text-decoration: none;
   }
   
   .button:active {
       color: #ffffff;
-      background-color: #fa7057;   /* accent */
+      background-color: #ffe32c;   /* accent */
       text-decoration: none;
   }
   
@@ -757,7 +757,7 @@
   
   .mine {
       background-color: #fcf9f8;
-      color: #fb9b89;
+      color: #fff197;
       text-indent: 0;
   }
   
@@ -769,7 +769,7 @@
   
   .logo {
       display: inline-block;
-      fill: #fa7057;
+      fill: #ffe32c;
       margin: -1.25em 0 0 0;
       max-width: 70%;
       transition: all .3s ease-in-out;
@@ -794,7 +794,7 @@
   
   .logomobile{
       display: inline-block;
-      fill: #fa7057;   /* accent */
+      fill: #ffe32c;   /* accent */
       margin: -1.25em 0 0 0;
       max-width: 70%;
       transition: all .3s ease-in-out;
@@ -813,15 +813,15 @@
       }
   
   .logomobile:visited {
-      fill: #fa7057;   /* accent */
+      fill: #ffe32c;   /* accent */
   }
   
   .logomobile:hover {
-      fill: #fcb7ab;      /* light accent */
+      fill: #fff8cb;      /* light accent */
   }
   
   .logomobile:active {
-      fill: #fa7057;   /* accent */
+      fill: #ffe32c;   /* accent */
   }
   
   .portfolio {
@@ -883,7 +883,7 @@
   }
   
   #progress-bar-lopo {
-      background-color: #fcb7ab;      /* light accent */
+      background-color: #fff8cb;      /* light accent */
       border-radius: 1.2em;
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
@@ -903,14 +903,14 @@
   
   #progress-bar-lopo > div {
       display: block;
-      background-color: #fa7057;
+      background-color: #ffe32c;
       width: 5%;
       height: 100%;
       border-radius: 1em;
   }
   
   #progress-bar-pati {
-      background-color: #fcb7ab;      /* light accent */
+      background-color: #fff8cb;      /* light accent */
       border-radius: 1.2em;
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
@@ -930,7 +930,7 @@
   
   #progress-bar-pati > div {
       display: block;
-      background-color: #fa7057;
+      background-color: #ffe32c;
       width: 80%;
       height: 100%;
       border-radius: 1em;
@@ -975,7 +975,7 @@
   }
   
   button.accordion {
-      background-color: #fa7057;   /* accent */ 
+      background-color: #ffe32c;   /* accent */ 
       border: none;
       border-radius: 0.75em;
       color: #ffffff;
@@ -1011,11 +1011,11 @@
       }
   
   button.accordion.active, button.accordion:hover {
-      background-color: #fb9b89;   /* medium accent */
+      background-color: #fff197;   /* medium accent */
   }
   
   button.accordion.disable {
-      background-color: #fcb7ab;      /* light accent */
+      background-color: #fff8cb;      /* light accent */
       cursor: not-allowed;
   }
   
@@ -1084,12 +1084,12 @@
       }
   
   #color1 {
-      background-color: #fa7057;
+      background-color: #ffe32c;
       color: #ffffff;
       padding: 1em 2em;
   }
   #color2 {
-      background-color: #fcb7ab;
+      background-color: #fff8cb;
       color: #ffffff;
       padding: 1em 2em;
   }
@@ -1099,7 +1099,7 @@
       padding: 1em 2em;
   }
   #color4 {
-      background-color: #faf3f2;
+      background-color: #fafaf5;
       color: #454241;     /* dark grey */
       padding: 1em 2em;
   }

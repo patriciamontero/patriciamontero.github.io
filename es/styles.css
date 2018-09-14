@@ -26,7 +26,7 @@
       }
   
   body {
-      background-color: #faf3f2;      /* light accent bg */
+      background-color: #f1f7f3;      /* light accent bg */
   }
   
   .wrapper {
@@ -54,10 +54,10 @@
   /* -- NAV BAR -- */
   
   .btn-menu{
-      background: #faf3f2;      /* light accent bg */
+      background: #f1f7f3;      /* light accent bg */
       border: none;
       border-radius: 0.5em;
-      fill: #fa7057;
+      fill: #40b768;
       cursor: pointer;
       margin: -0.4em 2.3em 0 0;
       padding: 0.6em 0.6em 0.3em 0.6em;
@@ -80,13 +80,13 @@
       }
   
   .btn-menu:hover {
-      fill: #fb9b89;      /* light accent */
+      fill: #66c586;      /* light accent */
   }
   
   .btn-close-menu{
       background: transparent;
       border: none;
-      fill: #fa7057;
+      fill: #40b768;
       cursor: pointer;
       margin: -1.1em 3em;
       padding: 0.5em;
@@ -106,7 +106,7 @@
       }
   
       .btn-close:hover {
-          fill: #fb9b89;      /* light accent */
+          fill: #66c586;      /* light accent */
       }
   
   .sidenav {
@@ -210,9 +210,9 @@
       font-weight: normal;
   }
   .sidenav a:link {
-      color: #454241;     /* dark grey */
+      color: #404341;     /* dark grey */
       display: block;
-      fill: #454241;     /* dark grey */
+      fill: #404341;     /* dark grey */
       font-family: 'Raleway', sans-serif;
       font-size: 1.125em;
       letter-spacing: 0.1em;
@@ -248,22 +248,22 @@
       }
   
   .sidenav a:visited {
-      color: #6a6867;    /* medium grey */
-      fill: #6a6867;    /* medium grey */
+      color: #666967;    /* medium grey */
+      fill: #666967;    /* medium grey */
   }
   
   .sidenav a:hover {
-      color: #fa7057;   /* accent */
-      fill: #fa7057;   /* accent */
+      color: #40b768;   /* accent */
+      fill: #40b768;   /* accent */
   }
   
   .sidenav a:active {
-      color: #6a6867;    /* medium grey */
-      fill: #6a6867;    /* medium grey */
+      color: #666967;    /* medium grey */
+      fill: #666967;    /* medium grey */
   }
   
   .disabledlink {
-      color: #c9c8c7;    /* light grey */
+      color: #c5c6c6;    /* light grey */
       font-family: 'Raleway', sans-serif;
       font-size: 1em;
       letter-spacing: 0.1em;
@@ -338,7 +338,7 @@
       .share li{
           cursor: pointer;
           display: inline-block;
-          fill: #fa7057;   /* accent */
+          fill: #40b768;   /* accent */
           height: 2em;
           margin: 1em 1em 1em 0;
           padding: 0;
@@ -346,19 +346,19 @@
       }
   
       .share li:visited{
-          fill: #fa7057;   /* accent */
+          fill: #40b768;   /* accent */
       }
   
       .share li:hover{
-          fill: #fb9b89;      /* light accent */
+          fill: #66c586;      /* light accent */
       }
   
       .share li:active{
-          fill: #fa7057;   /* accent */
+          fill: #40b768;   /* accent */
       }
   
       .share li:disabled{
-          fill: #fb9b89;      /* light accent */
+          fill: #66c586;      /* light accent */
       }
   
   
@@ -387,7 +387,7 @@
       }
   
   h1, h2, h3, h4 {
-      color: #454241;     /* dark grey */
+      color: #404341;     /* dark grey */
       font-family: 'Raleway', sans-serif;
       line-height: 1.1;
       margin: 2rem 0 1rem 0;
@@ -395,7 +395,7 @@
   }
   
   p {
-      color: #454241;     /* dark grey */
+      color: #404341;     /* dark grey */
   }
   
   ul, ol {
@@ -404,13 +404,13 @@
   }
   
   li {
-      color: #fb9b89;      /* lighter medium accent */
+      color: #66c586;      /* lighter medium accent */
       list-style-type: disc;
       margin: 1em 0;
   }
   
   li span {
-      color: #454241;     /* dark grey */
+      color: #404341;     /* dark grey */
   }
   
   .list-2 {
@@ -523,7 +523,7 @@
       }
   
   ul.breadcrumb li {
-      color: #454241;
+      color: #404341;
       display: inline;
       font-family: 'Raleway', sans-serif;
       font-size: 0.9em;
@@ -532,19 +532,19 @@
   
   ul.breadcrumb li+li::before {
       padding: 0.5em;
-      color: #fa7057;
+      color: #40b768;
       content: "/\00a0"
   }
   
   #top {
-      background-color: #faf3f2;      /* light accent bg */
+      background-color: #f1f7f3;      /* light accent bg */
       border: none;
       border-radius: 0.25em;
       bottom: 1em;
-      color: #fa7057;   /* accent */
+      color: #40b768;   /* accent */
       cursor: pointer;
       display: none;
-      fill: #fa7057;   /* accent */
+      fill: #40b768;   /* accent */
       font-family: 'Raleway', sans-serif;
       font-size: 1.5em;
       font-weight: 700;
@@ -556,7 +556,7 @@
   }
   
   #top:hover {
-      fill: #fb9b89;      /* light accent */
+      fill: #66c586;      /* light accent */
   }
   
   .update {
@@ -588,7 +588,7 @@
       }
   
   .note {
-      color: #fa7057;
+      color: #40b768;
       font-size: 0.95em;
       font-style: italic;
   }
@@ -599,7 +599,7 @@
       }
   
   .legend {
-      color: #454241;
+      color: #404341;
       font-size: 0.9em;
       font-style: italic;
       line-height: 1.4;
@@ -635,26 +635,26 @@
       }
   
   a:link {
-      color: #fa7057;   /* accent */
+      color: #40b768;   /* accent */
       text-decoration: none;
   }
   
   a:visited {
-      color: #fb9b89;    /* medium accent */
+      color: #66c586;    /* medium accent */
   }
   
   a:hover {
-      color: #fa7057;   /* accent */
+      color: #40b768;   /* accent */
       text-decoration: underline;
   }
   
   a:active {
-      color: #fa7057;   /* accent */
+      color: #40b768;   /* accent */
   }
   
   .button:link {
       color: #ffffff;
-      background-color: #fa7057;   /* accent */
+      background-color: #40b768;   /* accent */
       border: none;
       border-radius: 2.25em;
       display: inline-block;
@@ -693,25 +693,25 @@
   
   .button:visited {
       color: #ffffff;
-      background-color: #fb9b89;   /* medium accent */
+      background-color: #66c586;   /* medium accent */
       text-decoration: none;
   }
   
   .button:hover {
       color: #ffffff;
-      background-color: #fb9b89;      /* light accent */
+      background-color: #66c586;      /* light accent */
       text-decoration: none;
   }
   
   .button:active {
       color: #ffffff;
-      background-color: #fa7057;   /* accent */
+      background-color: #40b768;   /* accent */
       text-decoration: none;
   }
   
   blockquote {
-      background-color: #fcf9f8;      /* lightest accent bg */
-      color: #6a6867;
+      background-color: #f7faf8;      /* lightest accent bg */
+      color: #666967;
       font-size: 1.125em;
       font-style: italic;
       line-height: 1.3;
@@ -750,26 +750,26 @@
   }
   
   .persona {
-      color: #6a6867;    /* medium accent */
+      color: #666967;    /* medium accent */
       margin-top: -0.5em;
       padding-top: 1.5em;
   }
   
   .mine {
-      background-color: #fcf9f8;
-      color: #fb9b89;
+      background-color: #f7faf8;
+      color: #66c586;
       text-indent: 0;
   }
   
   blockquote.panel {
-      background-color: #faf3f2;      /* medium light accent bg */
+      background-color: #f1f7f3;      /* medium light accent bg */
   }
   
   /* -- MAIN CONTENT --> IMAGES AND PORTFOLIO  */
   
   .logo {
       display: inline-block;
-      fill: #fa7057;
+      fill: #40b768;
       margin: -1.25em 0 0 0;
       max-width: 70%;
       transition: all .3s ease-in-out;
@@ -794,7 +794,7 @@
   
   .logomobile{
       display: inline-block;
-      fill: #fa7057;   /* accent */
+      fill: #40b768;   /* accent */
       margin: -1.25em 0 0 0;
       max-width: 70%;
       transition: all .3s ease-in-out;
@@ -813,19 +813,19 @@
       }
   
   .logomobile:visited {
-      fill: #fa7057;   /* accent */
+      fill: #40b768;   /* accent */
   }
   
   .logomobile:hover {
-      fill: #fb9b89;      /* light accent */
+      fill: #66c586;      /* light accent */
   }
   
   .logomobile:active {
-      fill: #fa7057;   /* accent */
+      fill: #40b768;   /* accent */
   }
   
   .portfolio {
-      background-color: #fcf9f8;        /* lightest accent bg */
+      background-color: #f7faf8;        /* lightest accent bg */
       padding: 3rem 3rem 2rem 3rem;
       margin: 0 -2.75rem;
   }
@@ -847,7 +847,7 @@
   }
   
   .ribbon {
-      background: #454241;
+      background: #404341;
       box-shadow: 0 0 3px rgba(0,0,0,.3);
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
@@ -883,7 +883,7 @@
   }
   
   #progress-bar-lopo {
-      background-color: #fb9b89;      /* light accent */
+      background-color: #66c586;      /* light accent */
       border-radius: 1.2em;
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
@@ -903,14 +903,14 @@
   
   #progress-bar-lopo > div {
       display: block;
-      background-color: #fa7057;
+      background-color: #40b768;
       width: 5%;
       height: 100%;
       border-radius: 1em;
   }
   
   #progress-bar-pati {
-      background-color: #fb9b89;      /* light accent */
+      background-color: #66c586;      /* light accent */
       border-radius: 1.2em;
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
@@ -930,7 +930,7 @@
   
   #progress-bar-pati > div {
       display: block;
-      background-color: #fa7057;
+      background-color: #40b768;
       width: 80%;
       height: 100%;
       border-radius: 1em;
@@ -944,7 +944,7 @@
   }
   
   .footnote {
-      background-color: #fcf9f8;        /* lightest accent bg */
+      background-color: #f7faf8;        /* lightest accent bg */
       font-size: 0.8em;
       margin: 3em -2.5em -2.5em -2.5em;
       padding: 2em 1em;
@@ -959,7 +959,7 @@
       }
       @media (min-width: 900px) {      /* desktop */
           .footnote {
-              background-color: #fcf9f8;        /* lightest accent bg */
+              background-color: #f7faf8;        /* lightest accent bg */
               border-radius: 0.6em;
               margin: 3rem 0;
               padding: 1em;
@@ -968,14 +968,14 @@
       }
   
   ::selection {
-    background: #fdd4cd; /* WebKit/Blink Browsers */
+    background: #9fdbb3; /* WebKit/Blink Browsers */
   }
   ::-moz-selection {
-    background: #fdd4cd; /* Gecko Browsers */
+    background: #9fdbb3; /* Gecko Browsers */
   }
   
   button.accordion {
-      background-color: #fa7057;   /* accent */ 
+      background-color: #40b768;   /* accent */ 
       border: none;
       border-radius: 0.75em;
       color: #ffffff;
@@ -1011,17 +1011,17 @@
       }
   
   button.accordion.active, button.accordion:hover {
-      background-color: #fb9b89;   /* medium accent */
+      background-color: #66c586;   /* medium accent */
   }
   
   button.accordion.disable {
-      background-color: #fb9b89;      /* light accent */
+      background-color: #66c586;      /* light accent */
       cursor: not-allowed;
   }
   
   
   div.panel {
-      background-color: #fcf9f8;        /* lightest accent bg */ 
+      background-color: #f7faf8;        /* lightest accent bg */ 
       display: none;
       margin: -2em -2em 2em -2em;
       padding: 2em;
@@ -1084,28 +1084,28 @@
       }
   
   #color1 {
-      background-color: #fa7057;
+      background-color: #40b768;
       color: #ffffff;
       padding: 1em 2em;
   }
   #color2 {
-      background-color: #fb9b89;
+      background-color: #66c586;
       color: #ffffff;
       padding: 1em 2em;
   }
   #color3 {
-      background-color: #454241;
+      background-color: #404341;
       color: #ffffff;
       padding: 1em 2em;
   }
   #color4 {
-      background-color: #faf3f2;
-      color: #454241;     /* dark grey */
+      background-color: #f1f7f3;
+      color: #404341;     /* dark grey */
       padding: 1em 2em;
   }
   #color5 {
       background-color: #ffffff;
-      color: #454241;     /* dark grey */
+      color: #404341;     /* dark grey */
       padding: 1em 2em;
   }
   
@@ -1127,7 +1127,7 @@
           font: 10pt 'Georgia', serif;
           line-height: 1.3;
           background: #ffffff;
-          color: #454241;
+          color: #404341;
       }
       
       h1 {
@@ -1179,7 +1179,7 @@
           
       a:link, a:visited, a {
           background: #ffffff;
-          color: #6a6867;
+          color: #666967;
           font-weight: bold;
           text-decoration: underline;
           text-align: left;
@@ -1207,13 +1207,13 @@
           
       .entry:after {
           content: "\ Pati Montero (c) 2018";
-          color: #6a6867;
+          color: #666967;
           font-size: 1em;
           padding-top: 30px;
       }
       #header:before {
           content: "\ Pati Montero | UX designer | Montreal";
-          color: #6a6867;
+          color: #666967;
           font-size: 10px;
           padding-top: 30px;
           text-align: center;    

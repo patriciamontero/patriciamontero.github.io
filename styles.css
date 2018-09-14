@@ -57,7 +57,7 @@ body {
     background: #faf3f2;      /* light accent bg */
     border: none;
     border-radius: 0.5em;
-    fill: #fa6f57;
+    fill: #fa7057;
     cursor: pointer;
     margin: -0.4em 2.3em 0 0;
     padding: 0.6em 0.6em 0.3em 0.6em;
@@ -80,13 +80,13 @@ body {
     }
 
 .btn-menu:hover {
-    fill: #fcb7ab;      /* light accent */
+    fill: #fb9b89;      /* light accent */
 }
 
 .btn-close-menu{
     background: transparent;
     border: none;
-    fill: #fa6f57;
+    fill: #fa7057;
     cursor: pointer;
     margin: -1.1em 3em;
     padding: 0.5em;
@@ -106,7 +106,7 @@ body {
     }
 
     .btn-close:hover {
-        fill: #fcb7ab;      /* light accent */
+        fill: #fb9b89;      /* light accent */
     }
 
 .sidenav {
@@ -350,7 +350,7 @@ body {
     }
 
     .share li:hover{
-        fill: #fcb7ab;      /* light accent */
+        fill: #fb9b89;      /* light accent */
     }
 
     .share li:active{
@@ -358,7 +358,7 @@ body {
     }
 
     .share li:disabled{
-        fill: #fcb7ab;      /* light accent */
+        fill: #fb9b89;      /* light accent */
     }
 
 
@@ -404,7 +404,7 @@ ul, ol {
 }
 
 li {
-    color: #fcb7ab;      /* lighter medium accent */
+    color: #fb9b89;      /* lighter medium accent */
     list-style-type: disc;
     margin: 1em 0;
 }
@@ -532,7 +532,7 @@ ul.breadcrumb li {
 
 ul.breadcrumb li+li::before {
     padding: 0.5em;
-    color: #fa6f57;
+    color: #fa7057;
     content: "/\00a0"
 }
 
@@ -556,7 +556,7 @@ ul.breadcrumb li+li::before {
 }
 
 #top:hover {
-    fill: #fcb7ab;      /* light accent */
+    fill: #fb9b89;      /* light accent */
 }
 
 .update {
@@ -588,7 +588,7 @@ ul.breadcrumb li+li::before {
     }
 
 .note {
-    color: #fa6f57;
+    color: #fa7057;
     font-size: 0.95em;
     font-style: italic;
 }
@@ -644,7 +644,7 @@ a:visited {
 }
 
 a:hover {
-    color: #fa6f57;   /* accent */
+    color: #fa7057;   /* accent */
     text-decoration: underline;
 }
 
@@ -699,7 +699,7 @@ a:active {
 
 .button:hover {
     color: #ffffff;
-    background-color: #fcb7ab;      /* light accent */
+    background-color: #fb9b89;      /* light accent */
     text-decoration: none;
 }
 
@@ -762,7 +762,7 @@ cite {
 }
 
 blockquote.panel {
-    background-color: #faf5f5;      /* medium light accent bg */
+    background-color: #faf3f2;      /* medium light accent bg */
 }
 
 /* -- MAIN CONTENT --> IMAGES AND PORTFOLIO  */
@@ -817,7 +817,7 @@ blockquote.panel {
 }
 
 .logomobile:hover {
-    fill: #fcb7ab;      /* light accent */
+    fill: #fb9b89;      /* light accent */
 }
 
 .logomobile:active {
@@ -883,7 +883,7 @@ blockquote.panel {
 }
 
 #progress-bar-lopo {
-    background-color: #fcb7ab;      /* light accent */
+    background-color: #fb9b89;      /* light accent */
     border-radius: 1.2em;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -910,7 +910,7 @@ blockquote.panel {
 }
 
 #progress-bar-pati {
-    background-color: #fcb7ab;      /* light accent */
+    background-color: #fb9b89;      /* light accent */
     border-radius: 1.2em;
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
@@ -1015,7 +1015,7 @@ button.accordion.active, button.accordion:hover {
 }
 
 button.accordion.disable {
-    background-color: #fcb7ab;      /* light accent */
+    background-color: #fb9b89;      /* light accent */
     cursor: not-allowed;
 }
 
@@ -1089,7 +1089,7 @@ button.accordion.disable:after {
     padding: 1em 2em;
 }
 #color2 {
-    background-color: #fcb7ab;
+    background-color: #fb9b89;
     color: #ffffff;
     padding: 1em 2em;
 }
@@ -1127,7 +1127,7 @@ button.accordion.disable:after {
         font: 10pt 'Georgia', serif;
         line-height: 1.3;
         background: #ffffff;
-        color: #333333;
+        color: #454241;
     }
     
     h1 {
@@ -1179,7 +1179,7 @@ button.accordion.disable:after {
         
     a:link, a:visited, a {
         background: #ffffff;
-        color: #666666;
+        color: #6a6867;
         font-weight: bold;
         text-decoration: underline;
         text-align: left;
@@ -1207,13 +1207,13 @@ button.accordion.disable:after {
         
     .entry:after {
         content: "\ Pati Montero (c) 2018";
-        color: #666666;
+        color: #6a6867;
         font-size: 1em;
         padding-top: 30px;
     }
     #header:before {
         content: "\ Pati Montero | UX designer | Montreal";
-        color: #666666;
+        color: #6a6867;
         font-size: 10px;
         padding-top: 30px;
         text-align: center;    

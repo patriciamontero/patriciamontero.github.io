@@ -746,7 +746,7 @@
       font-size: 0.707em;
       font-style: normal;
       margin-top: 1em;
-      text-indent: 0;
+      text-indent: -1em;
   }
   
   .persona {

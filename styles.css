@@ -502,6 +502,10 @@ h4 {
         }
     }
 
+em.highlight {
+    color: #fa7057;
+}
+
 ul.breadcrumb {
     font-size: 1em;
     line-height: 1.2;

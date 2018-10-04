@@ -882,33 +882,6 @@
       margin-top: 1rem;
   }
   
-  #progress-bar-lopo {
-      background-color: #508ad5;      /* light accent */
-      border-radius: 1.2em;
-      color: #ffffff;
-      font-family: 'Raleway', sans-serif;
-      font-size: 0.707em;
-      font-weight: 700;
-      height: 1.5em;
-      margin: 1em 0;
-      padding: 0;
-      text-align: center;
-  }
-      @media (min-width: 900px) {      /* desktop */
-          #progress-bar-lopo {
-              font-size: 0.9em;
-              height: 1.75em;
-          }
-      }
-  
-  #progress-bar-lopo > div {
-      display: block;
-      background-color: #2d72cc;
-      width: 5%;
-      height: 100%;
-      border-radius: 1em;
-  }
-  
   #progress-bar-pati {
       background-color: #508ad5;      /* light accent */
       border-radius: 1.2em;

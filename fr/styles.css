@@ -535,6 +535,10 @@
       color: #2d72cc;
       content: "/\00a0"
   }
+
+  em.highlight {
+    color: #2d72cc;
+}
   
   #top {
       background-color: #eef2f7;      /* light accent bg */
@@ -904,7 +908,7 @@
   #progress-bar-pati > div {
       display: block;
       background-color: #2d72cc;
-      width: 90%;
+      width: 100%;
       height: 100%;
       border-radius: 1em;
   }

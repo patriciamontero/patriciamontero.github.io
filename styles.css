@@ -908,7 +908,7 @@ blockquote.panel {
 #progress-bar-pati > div {
     display: block;
     background-color: #fa7057;
-    width: 98%;
+    width: 100%;
     height: 100%;
     border-radius: 1em;
 }

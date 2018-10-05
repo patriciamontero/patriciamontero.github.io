@@ -757,7 +757,7 @@
   
   .mine {
       background-color: #fdfcf8;
-      color: #f1c935;
+      color: #edbc02;
       text-indent: 0;
   }
   
@@ -904,7 +904,7 @@
   #progress-bar-pati > div {
       display: block;
       background-color: #edbc02;
-      width: 5%;
+      width: 50%;
       height: 100%;
       border-radius: 1em;
   }

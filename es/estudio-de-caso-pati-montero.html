@@ -93,9 +93,9 @@
                 <p class="intro">¿Sabes de esos sitios web que nadie visita? ¿Ni siquiera con un portafolio decente? Y bueno, <a href="https://www.patimontero.ca/design/index-es.html">tuve uno así</a>. Pensé que el diseño orientado al usuario podría ayudarme a arreglarlo. ¡Y así fue!</p>
                 <p>Para ello seguí un proceso de cuatro etapas: <a href="#investigacion">investigación</a>, <a href="#estrategia">estrategia</a>, <a href="#diseno">diseño</a> y <a href="#evaluacion">evaluación.</a> Ven para que veas.</p>
                 <div id="progress-bar-pati">
-                    <div>50%</div>
+                    <div>75%</div>
                 </div>
-                <p class="update">Última actualización: 5 de octobre de 2018  | Tiempo de lectura: ~5 minutos.</p>
+                <p class="update">Última actualización: 7 de octobre de 2018  | Tiempo de lectura: ~5 minutos.</p>
                 <div class="share">
                     <ul>
                         <li><a href="https://facebook.com/sharer/sharer.php?u=https://bit.ly/2PbI2sQ"><svg data-name="Facebook icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 360 360"><path d="M180.5-.5C82.4-.5.5 81.4.5 179.5s81.9 180 180 180 180-81.9 180-180-81.9-180-180-180c-99.4 0 99.4 0 0 0zm59.7 95c-42.6 0-46.1 10.3-46.1 50.6h44.5l-5.8 45h-38.7v115.4h-46.4V190.1h-38.8v-45h38.8c0-65.7 19-100.6 92.5-90.8v40.2z"/></svg></a></li>
@@ -153,6 +153,62 @@
                 <p>Pero mi proceso dio un gran salto adelante cuando transformé los traspiés que observé en preguntas. Comencé a dedicar una sesión de ideación completa a un problema en particular. Es más fácil abordar un tropiezo a la vez. Me siento más creativa y enfocada.</p>
                 <img class="project" src="../images/pm-workspace.jpg" alt="Mi espacio de trabajo">
                 <p class="legend">En vista de que no planeo administrar un blog y que estoy aprendiendo a integrar para la web, mi sitio es bastante simple.</p>
+                <h3><a id="diseno"></a>Etapa: diseño</h3>
+                <p>Para la nueva estructura y composición gráfica de mi sitio decidí regresar a lo básico. Su arquitectura consiste en cuatro páginas tradcionales: inicio, acerca, portafolio y contacto. Sus etiquetas en el menú de navegación son estándar.</p>
+                <blockquote class="mine">No quiero confundir más a la gente. Por el contrario, deseo que no tengan que pensar para poder recorrer las páginas.</blockquote>
+                <p>Para mantener el sitio ligero, escogí <a href="https://www.typewolf.com/site-of-the-day/fonts/georgia">Georgia</a>, una fuente disponible en todo ordenador. Es hermosa y fácil de leer en pantalla. La combiné con <a href="https://fonts.google.com/specimen/Raleway">Raleway</a>, una fuente de Google. Juntas ofrecen un balance y contraste adecuados para mí contenido.</p>
+                <img class="project" src="../images/pati-montero-processus-01.png" alt="Raleway para los títulos y Georgia para los párrafos">
+                <p class="legend">Raleway para los títulos y Georgia para los párrafos.</p>
+                <p>Entonces, definí una escala modular para mí sitio adaptativo. Me gusta la propuesta de <a href="https://zellwk.com/blog/responsive-modular-scale/">Zell Liew</a>: un ratio diferente para cada tamaño referencial de pantalla. Mientras más pequeña sea la pantalla, más cerrado será el ratio.</p>
+                <ul>
+                    <li><span>Téléfono &mdash; 15:16</span></li>
+                    <li><span>Tableta &mdash; 8:9</span></li>
+                    <li><span>Escritorio &mdash; 5:6</span></li>
+                    <li><span>Gran pantalla &mdash; 4:6</span></li>
+                </ul>
+                <img class="project" src="../images/pati-montero-processus-02.png" alt="Ratio a gran escala">
+                <p class="legend">Un ratio a gran escala para una computadora de escritorio. El conjunto lucía desproporcionado.</p>
+                <img class="project" src="../images/pati-montero-processus-03.png" alt="Ratio a escala pequeña">
+                <p class="legend">Un ratio a menor escala funciona mejor para las pantallas pequeñas.</p>
+                <p>Una vez que la tipografía me satisfizo, comencé a trabajar en una paleta de colores. Siguiendo <a href="https://www.smashingmagazine.com/2016/04/web-developer-guide-color/">este tutorial de Laura Elizabeth</a>, escogí:</p>
+                <div class="palette">
+                        <div id="color1">#edbc02 &mdash; Acento principal</div>
+                        <div id="color2">#f1c935 &mdash; Acento secundario</div>
+                        <div id="color3">#45443f &mdash; Gris oscuro</div>
+                        <div id="color4">#f9f7ed &mdash; Gris claro</div>
+                        <div id="color5">Blanc</div>
+                </div>
+                <p>El tono más oscuro es reservado para los textos. Los acentos, para los enlaces y botones. Los más claros, para el fondo.</p>
+                <img class="project" src="../images/pati-montero-processus-04.png" alt="La página de inicio con la paleta de colores ya aplicada.">
+                <p class="legend">La página de inicio con la paleta de colores ya aplicada.</p>
+                <p>Mi deseo es crear una <a href="http://www.uxdesignedge.com/">interface de usuario intuitiva</a>. Por ello estoy siguiendo técnicas de diseño ligadas a la navegación, accesibilidad y creación de contenido. A continuación las esenciales.</p>
+                <h4>Navegación</h4>
+                <ul>
+                    <li><span><strong>Indicación de la página actual</strong>. En el menú principal, la etiqueta correspondiente a la página activa está en negritas.</span></li>
+                    <li><span><strong>Cambio de apariencia</strong>. Durante las visitas hechas desde una computadora,  los enlaces de texto y botones cambian cuando el puntero se posa sobre ellos.</span></li>
+                    <li><span><strong>Enlaces visitados evidentes</strong>. Los botones y hipertextos cambian de estado para recordarle a los usuarios dónde han estado previamente.</span></li>
+                    <li><span><strong>Página de inicio accesible</strong>. El logo en la cabecera de las páginas lleva a los usuarios de vuelta al inicio.</span></li>
+                </ul>
+                <blockquote>&ldquo;La mayoría de la gente pasa el tiempo en otros sitios. Por esta razón, ellos prefieren que tu sitio funcione de la misma manera que los otros que les son familiares.&rdquo;
+                    <cite><a href="https://lawsofux.com/jakobs-law.html">&mdash;Jakob Nielsen</a></cite>
+                </blockquote>
+                <h4>Accessibilidad</h4>
+                <ul>
+                    <li><span><strong>Adaptativo</strong>. Concebido inicialmente para los dispostivos móbiles, el sitio se adapta a cuatro formatos: teléfono, tableta, escritorio et gran pantalla.</span></li>
+                    <li><span><strong>Referenciamiento deliberado</strong>. El uso de los títulos, los encabezados y las descripciones meta de cada página han sido concebidos para orientar a los visitantes.</span></li>
+                    <li><span><strong>Zonas activas evidentes</strong>. Los botones son aparentes. Los hipertextos son lo suficientemente largos como para ser activados con los dedos.</span></li>
+                    <li><span><strong>Contraste óptimo</strong>. Los textos son oscuros sobre fondos claros. El contraste fonctiona hasta para visitantes con limitaciones en la percepción del color.</span></li>
+                </ul>
+                <img class="project" src="../images/pm-colorblind-fr.png" alt="Simulation de sensibilité à la lumière bleue.">
+                <p class="legend">Simulación de la sensibilidad a la luz azul.</p>
+                <h4>Contenido</h4>
+                <ul>
+                    <li><span><strong>Lectura fácil</strong>. El nivel de lectura del contenido es similar al de los alumnos de 5<sup>to</sup> grado en los Estados Unidos.</span></li>
+                    <li><span><strong>Fácil a sobrevolar</strong>. Frases y párrafos cortos. Una idea a la vez y la primera suele ser un resumen. Los títulos ofrecen un adelanto del contenido.</span></li>
+                    <li><span><strong>Ligereza</strong>. Optimisé las imágenes para reducir el tiempo de descarga. Además, como no estoy usando un sistema de gestión de contenido, el código se ha mantienido limpio.</span></li>
+                </ul>
+                <img class="project" src="../images/pati-montero-evaluation.png" alt="Mapas térmicos de Hotjar">
+                <p class="legend">Mapas térmicos de <a href="https://www.hotjar.com/">Hotjar's</a> (escritorio y teléfono). Los dos primeros muestran los lugares donde los usuarios hacen clic. La última ilustra con colores el porcentaje de zonas observadas. La zona roja muestra lo que ha sido visto por el 100% de los visitantes.</p>
                 <p class="footnote">&copy; 2018 Pati Montero <span class="footnote-divider">&#10087;</span> <a href="privacidad.html">Política de privacidad</a></p>
             </div>
         </div>

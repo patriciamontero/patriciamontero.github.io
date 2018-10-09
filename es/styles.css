@@ -535,6 +535,10 @@
       color: #edbc02;
       content: "/\00a0"
   }
+
+  em.highlight {
+    color: #edbc02; 
+}
   
   #top {
       background-color: #f9f7ed;      /* light accent bg */

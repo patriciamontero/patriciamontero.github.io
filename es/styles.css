@@ -908,7 +908,7 @@
   #progress-bar-pati > div {
       display: block;
       background-color: #edbc02;
-      width: 90%;
+      width: 100%;
       height: 100%;
       border-radius: 1em;
   }

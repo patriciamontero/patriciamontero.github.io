@@ -506,6 +506,11 @@ em.highlight {
     color: #fa7057;
 }
 
+em.temp {
+    font-style: normal;
+    color: #fa7057;
+}
+
 ul.breadcrumb {
     font-size: 1em;
     line-height: 1.2;

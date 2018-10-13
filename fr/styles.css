@@ -538,7 +538,12 @@
 
   em.highlight {
     color: #2d72cc;
-}
+  }
+
+  em.temp {
+    font-style: normal;
+    color: #2d72cc;
+  }
   
   #top {
       background-color: #eef2f7;      /* light accent bg */

@@ -1,20 +1,30 @@
-@charset "utf-8";
-/* CSS Document */
-
 body {
-	background: #fff url(http://www.cabanadigital.com/img/fondo_madera.jpg) repeat-x;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F8F8F6;
 }
-#main-wrap {
-	background-color: #ffffff url(http://www.cabanadigital.com/img/banners-bg.jpg) repeat-x top center;
-	width: 800px;	
-	margin: 0px auto 0px auto;
-	padding: 0px;
-	height: auto;
+
+img, embed {
+    margin: 20px;
 }
-#main-wrap h1 {
-	font-family: Trebuchet, Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-weight: bold;
-	color: #999999;
-	text-align: left;
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    background-color: #454241;
+    color: #ffffff;
+    padding: 40px;
+    left: 0;
+    margin: 0 -20px;
+    top: 0;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #454241;
+    margin: 40px 20px 10px 20px
 }

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #fff url(http://www.cabanadigital.com/img/fondo_madera.jpg) repeat-x;
+}
+#main-wrap {
+	background-color: #ffffff url(http://www.cabanadigital.com/img/banners-bg.jpg) repeat-x top center;
+	width: 800px;	
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	height: auto;
+}
+#main-wrap h1 {
+	font-family: Trebuchet, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #999999;
+	text-align: left;
+}

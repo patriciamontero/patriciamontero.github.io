@@ -1,0 +1,313 @@
+/* Color palette 
+    #2f2f2f black
+    #f8f8f8 white
+    #ffee55 yellow
+    #fedb00 dark yellow
+    #0055ff blue
+    #cc00aa pink
+*/
+
+
+/* Global styles ------------------------------ */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+    @media (min-width: 600px) {
+        html {
+            font-size: 105%;
+        }
+    }
+    @media (min-width: 900px) {
+        html {
+            font-size: 110%;
+        }
+    }
+    @media (min-width: 1200px) {
+        html {
+            font-size: 120%;
+        }
+    }
+
+body {
+    background-color: #f8f8f8;
+    color: #2f2f2f;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #ffee55;
+    background-image: url(../images/moms-hug.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    padding: 8rem 0 3rem 0;
+    position: relative;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 0.1rem solid #ffee55;
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 0;
+    width: 60%;
+}
+    @media (min-width: 600px) {
+        nav {
+            background: #f8f8f8;
+            height: 4rem;
+            padding: 0;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+main {
+    padding: 0.5rem 0;
+}
+
+.wrapper {
+    padding: 0;
+    width: 100%;
+}
+
+.content-wrap {
+    margin: 0 auto;
+    max-width: 25rem;
+    transition: all 0.4s ease-in;
+    width: 80%;
+}
+    @media (min-width: 600px) {
+        .content-wrap {
+            max-width: 30rem;
+        }
+    }
+    @media (min-width: 900px) {
+        .content-wrap {
+            max-width: 35rem;
+        }
+    }
+    @media (min-width: 1200px) {
+        .content-wrap {
+            max-width: 36rem;
+        }
+    }
+
+footer {
+    border-top: 0.1rem solid #ffee55;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Images ------------------------------ */
+
+.logo {
+    margin: 0 0 -2rem 0;
+    max-width: 70%;
+}
+
+img {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+
+/* Text styles ------------------------------ */
+
+p, li {
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+li {
+    list-style-type: square;
+}
+
+h1, h2, h3, h4  {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 2.5rem 0 1.25rem 0;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+.intro {
+    font-size: 1.125rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+code {
+    background-color: #ffee55;
+    font-size: 1.125rem;
+    padding: 0.1rem 0.3rem;
+}
+
+.accent {
+    font-weight: bold;
+}
+
+.subtle {
+    font-style: italic;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 90%;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Links and buttons ------------------------------ */
+
+a:link {
+    background-color: #ffee55;
+    border-bottom: 0.025rem solid #2f2f2f;
+    box-shadow: inset 0 -1px 0 #2f2f2f;
+    color: #2f2f2f;
+    display: inline-block;
+    padding: 0 0.2rem;
+    text-decoration: none;
+    transition: all 0.4s ease-in;
+}
+
+a:hover {
+    background-color: #0055ff;
+    color: #f8f8f8;
+}
+a:visited {
+    background-color: #ffffff;
+    color: #2f2f2f;
+}
+a:visited:hover {
+    background-color: #cc00aa;
+}
+
+.button:link {
+    background-color: #ffee55;
+    border: 0.1rem solid #2f2f2f;
+    box-shadow: none;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin: 1rem 0;
+    padding: 1rem 1.5rem;
+    text-decoration: none;    
+}
+.button:hover {
+    background-color: #0055ff;
+    color: #f8f8f8;
+}
+.button:visited {
+    background-color: #ffffff;
+    border: 0.1rem solid #2f2f2f;
+    color: #2f2f2f;
+}
+.button:visited:hover {
+    background-color: #cc00aa;
+    color: #f8f8f8;
+}
+
+nav a:link {
+    background-color: #f8f8f8;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+nav a:hover {
+    background-color: #0055ff;
+    color: #f8f8f8;
+}
+nav a:visited {
+    background-color: #f8f8f8;
+    color: #2f2f2f;
+}
+nav a:visited:hover {
+    background-color: #cc00aa;
+    color: #f8f8f8;
+}
+
+nav li {
+    display: block;
+    padding: 1rem 0 0 2rem;
+}
+    @media (min-width: 600px) {
+        nav li {
+            display: inline-block;
+            padding: 0 1rem;
+        }
+    }
+
+.xtarget:target {
+    margin-top: -3rem;
+    padding-top: 7rem;
+}
+
+.skip {
+    left: 1000px;
+    overflow: hidden;
+    position: absolute;
+    top: -1000px;
+}
+
+
+/* Reveal and hide styles ------------------------------ */
+
+.toggle-btn {
+    display: none;
+}
+@media (max-width: 600px) {
+    .toggle-btn-visible {
+        background-color: #0055ff;
+        color: #f8f8f8;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        padding: 1rem 1.5rem;
+        position: absolute;
+        right: 0;
+        top: 1rem;
+    }
+    .toggle-target-hidden {
+        display: none;
+    }
+    .toggle-target-expanded {
+        display: block;
+    }
+}

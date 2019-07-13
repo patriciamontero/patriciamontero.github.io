@@ -47,17 +47,10 @@ header {
     background-image: url(../images/moms-hug.png);
     background-position: top center;
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
     background-attachment: fixed;
     padding: 8rem 0 3rem 0;
     position: relative;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-    }
-    @media (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        header {
-            opacity: 0.2;
-        }
-    }
+}
 
 nav {
     background: rgba(255, 255, 255, 0.9);

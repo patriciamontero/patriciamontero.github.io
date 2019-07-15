@@ -17,7 +17,6 @@
 }
 
 html {
-    box-sizing: border-box;
     font-size: 100%;
 }
     @media (min-width: 600px) {
@@ -48,6 +47,7 @@ header {
     background-position: top center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-sizing: border-box;
     padding: 8rem 0 3rem 0;
     position: relative;
 }
@@ -222,7 +222,7 @@ a:visited:hover {
     box-shadow: none;
     color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     margin: 1rem 0;
     padding: 1rem 1.5rem;
     text-decoration: none;    
@@ -245,7 +245,7 @@ nav a:link {
     background-color: #f8f8f8;
     color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 nav a:hover {
@@ -297,7 +297,7 @@ nav li {
         cursor: pointer;
         display: inline-block;
         font-family: 'Raleway', sans-serif;
-        font-weight: 400;
+        font-weight: 700;
         padding: 1rem 1.5rem;
         position: absolute;
         right: 0;

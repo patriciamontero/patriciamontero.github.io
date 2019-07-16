@@ -272,18 +272,6 @@ nav li {
         }
     }
 
-.xtarget:target {
-    margin-top: -3rem;
-    padding-top: 7rem;
-}
-
-.skip {
-    left: 1000px;
-    overflow: hidden;
-    position: absolute;
-    top: -1000px;
-}
-
 
 /* Reveal and hide styles ------------------------------ */
 
@@ -309,4 +297,27 @@ nav li {
     .toggle-target-expanded {
         display: block;
     }
+}
+
+.xtarget:target {
+    margin-top: -3rem;
+    padding-top: 7rem;
+}
+
+a.skip {
+    left: -999px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: -999;
+}
+a.skip:focus, a.skip:active {
+    background-color: #cc00aa;
+    color: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    left: 0;
+    overflow: auto;
+    padding: 1rem 1.5rem;
+    z-index: 999;
 }

@@ -312,8 +312,9 @@ a.skip {
     z-index: -999;
 }
 a.skip:focus, a.skip:active {
-    background-color: #cc00aa;
-    color: #f8f8f8;
+    background-color: #2f2f2f;
+    border: 0;
+    color: #ffee55;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     left: 0;

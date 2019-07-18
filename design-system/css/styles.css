@@ -190,6 +190,17 @@ figcaption {
     margin-bottom: 1.5rem;
 }
 
+.quote {
+    background-color: #ffffff;
+    margin: 2.5rem 0 1.25rem 0;
+    padding: 2rem 3rem;
+    width: fit-content;
+}
+
+.quote p {
+    text-indent: -0.5rem;
+}
+
 
 /* Links and buttons ------------------------------ */
 
@@ -214,6 +225,7 @@ a:visited {
 }
 a:visited:hover {
     background-color: #cc00aa;
+    color: #f8f8f8;
 }
 
 .button:link {

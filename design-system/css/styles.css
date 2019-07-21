@@ -42,34 +42,29 @@ body {
 }
 
 header {
+    background-attachment: fixed;
     background-color: #ffee55;
     background-image: url(../images/moms-hug.png);
     background-position: top center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     box-sizing: border-box;
-    padding: 8rem 0 3rem 0;
     position: relative;
 }
+    @media (min-width: 600px) {
+        header {
+            padding-top: 5rem;
+        }
+    }
 
 nav {
-    background: rgba(255, 255, 255, 0.9);
-    border-bottom: 0.1rem solid #ffee55;
     height: 100%;
-    padding: 1rem;
-    position: absolute;
-    right: 0;
-    text-align: left;
-    top: 0;
-    width: 60%;
 }
     @media (min-width: 600px) {
         nav {
-            background: #f8f8f8;
-            height: 4rem;
-            padding: 0;
             position: fixed;
+            right: 0;
             text-align: center;
+            top: 0;
             width: 100%;
         }
     }
@@ -112,16 +107,13 @@ footer {
     text-align: center;
 }
 
-.hidden {
-    display: none;
-}
-
 
 /* Images ------------------------------ */
 
 .logo {
     margin: 0 0 -2rem 0;
     max-width: 70%;
+    padding: 3rem 0 0.5rem 0;
 }
 
 img {
@@ -275,7 +267,7 @@ nav a:visited:hover {
 
 nav li {
     display: block;
-    padding: 1rem 0 0 2rem;
+    padding: 0;
 }
     @media (min-width: 600px) {
         nav li {
@@ -284,32 +276,114 @@ nav li {
         }
     }
 
-
-/* Reveal and hide styles ------------------------------ */
-
-.toggle-btn {
-    display: none;
+header p {
+    padding-bottom: 3rem;
 }
-@media (max-width: 600px) {
-    .toggle-btn-visible {
-        background-color: #0055ff;
-        color: #f8f8f8;
-        cursor: pointer;
-        display: inline-block;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
-        padding: 1rem 1.5rem;
-        position: absolute;
-        right: 0;
-        top: 1rem;
-    }
-    .toggle-target-hidden {
-        display: none;
-    }
-    .toggle-target-expanded {
-        display: block;
-    }
+
+/* Collapsible nav with burger menu styles ------------------------------ */
+
+.menu-toggle {
+    display: block;
+    right: -84%;
+    position: relative;
+    top: 2.25rem;
+    z-index: 1;
+    user-select: none;
 }
+    @media (min-width: 600px) {
+        .menu-toggle {
+            left: -15.95%;
+            top: 0;
+        }
+    }
+
+.menu-toggle input {
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    left: -5px;
+    opacity: 0;
+    position: absolute;
+    top: -7px;
+    width: 40px;
+    z-index: 2;
+}
+
+.menu-toggle span {
+    background: #2f2f2f;
+    border-radius: 3px;
+    display: block;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    width: 33px;
+    z-index: 1;
+}
+
+.menu-toggle span:first-child {
+    transform-origin: 0% 0%;
+}
+.menu-toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+.menu-toggle input:checked ~ span {
+    background: #2f2f2f;
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2)
+}
+.menu-toggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu {
+    background-attachment: fixed;
+    background-color: #f8f8f8;
+    background-image: url(../images/mom-walks.png);
+    background-repeat: no-repeat;
+    border-bottom: 0.5rem solid #2f2f2f;
+    margin: -100px 0 0 -84%;
+    padding: 5rem 3rem 3rem 3rem;
+    position: absolute;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    width: 100%;
+}
+    @media (min-width: 600px) {
+        .menu {
+            background-image: none;
+            border-bottom: 0.1rem solid #ffee55;
+            margin: -1.75rem 16%;
+            padding: 0.5rem 0;
+            position: static;
+            transform: none;
+        }
+    }
+
+.menu-toggle input:checked ~ ul {
+    transform: none;
+}
+
+.menu-toggle h2 {
+    display: block;
+    font-size: 1rem;
+    left: -60px;
+    margin: 0;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+
+/* Skip styles ------------------------------ */
 
 .xtarget:target {
     margin-top: -3rem;
@@ -318,7 +392,7 @@ nav li {
 
 a.skip {
     left: -999px;
-    overflow: hidden;
+    overflow: logo;
     position: absolute;
     top: 0;
     z-index: -999;

@@ -6,31 +6,28 @@
         <meta name="description" content="This is my design system.">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="css/styles.css">
+        <!-- <script src="js/jquery.js"></script> -->
+        <script src="js/script.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Raleway:,700&display=swap" rel="stylesheet">
     </head>
     <body>
         <a href="#brand" class="skip">Skip to content</a>
         <header>
-            <nav aria-label="Main navigation">
-                <div class="menu-toggle">
-                    <h2>Menu</h2>
-                    <input type="checkbox">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul class="menu">
-                        <li><a title="Go back to Pati Montero's homepage" href="../index.html">Home</a></li>
-                        <li><a title="Principles and logo" href="#brand" >Brand principles</a></li>
-                        <li><a title="Design foundations" href="#guidelines">Style guide</a></li>
-                        <li><a title="Code snipets and guidelines" href="#system">Design system</a></li>
-                    </ul>
-                </div>
+            <nav role="navigation">
+                <h2 class="hidden">Navigation</h2>
+                <button class="toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#brand" >Brand</a></li>
+                    <li><a href="#guidelines">Style guide</a></li>
+                    <li><a href="#system">Design system</a></li>
+                </ul>
             </nav>
             <div class="content-wrap">
                 <img class="logo" src="images/patimontero-responsive-logo.svg" alt="Pati Montero's logo. It reads 'Pati Montero' in black letters over a transparent background">
                 <h1>Pati Montero&rsquo;s design system</h1>
-                <p class="subtle">Last update <time datetime="2019-07-21">July 21, 2019</time></p>
+                <p class="subtle">Last update <time datetime="2019-07-23">July 23, 2019</time></p>
             </div>
         </header>
         <main>
@@ -46,7 +43,7 @@
                         <li><span class="accent">Typography</span>. Pellentesque dui elit, euismod sed turpis feugiat, varius lacinia nibh. </li>
                     </ul>
                     <p>Duis ac nulla sem. In at posuere dolor. Integer et tincidunt magna, quis vulputate magna. Sed sagittis mi ut velit pretium fermentum. Donec scelerisque sagittis dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin nec pharetra ipsum. Nulla in ultricies mauris. Nam ultricies est quis diam pretium, quis ornare neque aliquet. Vestibulum pulvinar leo felis, quis malesuada arcu condimentum id. Morbi facilisis scelerisque risus, quis fermentum tortor fermentum in. Duis eu eleifend arcu.</p>
-                    <a class="button" href="https://www.patimontero.ca/">Visit my website</a>
+                    <button aria-label="Visit my website">Visit my website</button>
                     <figure class="quote">
                         <blockquote>
                             <p>&ldquo;Duis ac nulla sem. In at posuere dolor. Integer et tincidunt magna, quis vulputate magna. Sed sagittis mi ut velit pretium fermentum. Donec scelerisque sagittis dictum.&rdquo;</p>
@@ -70,7 +67,7 @@
                     <p class="intro">Nam ultricies est quis diam pretium, quis ornare neque aliquet. Vestibulum pulvinar leo felis, quis malesuada arcu condimentum id.</p>
                     <p>Maecenas ut dolor et ligula auctor blandit tempor ac ligula. Phasellus ornare scelerisque metus in congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pretium metus vel augue tempor ullamcorper. Suspendisse potenti. Nunc eu lobortis felis. Maecenas vel bibendum ex, interdum fermentum est. Nunc ipsum ante, semper id libero non, sollicitudin tristique ligula.</p>
                     <p>Donec sed lorem vulputate, laoreet ligula non, finibus elit. Sed pharetra elit sed rutrum accumsan. Nulla porta condimentum elit, id dignissim mauris gravida convallis. Donec auctor, diam et feugiat convallis, ipsum metus vehicula risus, vel efficitur tortor massa at enim. Phasellus sem dolor, pharetra a neque vitae, tincidunt egestas nulla. Praesent consequat nisl id nibh varius, nec maximus arcu hendrerit.</p>
-                    <a class="button" href="mailto:pati.c.montero@gmail.com">Send me an email</a>
+                    <button aria-label="Send me an email">Send me an email</button>
                 </article>
             </div>
         </main>

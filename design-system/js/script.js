@@ -1,6 +1,7 @@
-var toggle = document.querySelector('.toggle');
-var menu = document.querySelector('.menu');
-var menuItems = document.querySelectorAll('.menu li a');
+// Menu
+var toggle = document.querySelector('#toggle');
+var menu = document.querySelector('#menu');
+var menuItems = document.querySelectorAll('#menu li a');
 
 toggle.addEventListener('click', function(){
   if (menu.classList.contains('is-active')) {

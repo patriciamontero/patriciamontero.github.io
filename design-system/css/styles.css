@@ -111,6 +111,7 @@ footer {
 
 .logo {
     display: block;
+    fill: #2f2f2f;
     margin: 0.5rem auto 0 auto;
     max-width: 40%;
 }

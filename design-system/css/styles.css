@@ -211,12 +211,11 @@ figcaption {
 
 /* Buttons and links ------------------------------ */
 
-.button {
+.button:link {
     background: #ffffff;
     border: 0.1rem solid #2f2f2f;
     color: #2f2f2f;
     cursor: pointer;
-    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 700;

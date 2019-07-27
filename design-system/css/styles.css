@@ -41,6 +41,18 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+nav {
+    background-color: #ffffff;
+    border-bottom: 0.1rem solid #ffee55;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    transition: all 0.4s ease-in;
+    width: 100%;
+}
+
 header {
     background-color: #ffee55;
     background-image: url(../images/moms-hug.png);
@@ -182,11 +194,12 @@ figcaption {
 
 /* Buttons and links ------------------------------ */
 
-button {
+.button {
     background: #ffffff;
     border: 0.1rem solid #2f2f2f;
     color: #2f2f2f;
     cursor: pointer;
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 700;
@@ -195,7 +208,7 @@ button {
     transition: all 0.4s ease-in;
 }
 
-button:hover, button:focus {
+.button:hover, .button:focus {
     background: #0055ff;
     border: 0.1rem solid #0055ff;
     color: #f8f8f8;
@@ -245,81 +258,13 @@ nav a:visited:hover {
     color: #f8f8f8;
 }
 
+nav li {
+    display: inline-block;
+    padding: 0 1rem;
+}
+
 
 /* Reveal and hide styles ------------------------------ */
-
-nav button {
-    background-color: #2f2f2f;
-    color: #ffee55;
-    display: none;
-    letter-spacing: 0.05rem;
-    margin: 0;
-    position: absolute;
-    right: 0;
-    text-transform: uppercase;
-    top: 0;
-}
-    @media (min-width: 600px) {
-        nav button {
-            display: block;
-        }
-    }
-
-nav {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 3rem 1.5rem 0;
-    position: fixed;
-    right: 0;
-    text-align: right;
-    transition: all 0.4s ease-in;
-    top: 0;
-}
-    @media (min-width: 600px) {
-        nav {
-            background: #f8f8f8;
-            border-bottom: 0.1rem solid #ffee55;
-            height: 4rem;
-            padding: 0;
-            text-align: center;
-            width: 100%;
-        }
-    }
-
-nav li {
-    display: block;
-    padding: 1rem 0 0 2rem;
-}
-    @media (min-width: 600px) {
-        nav li {
-            display: inline-block;
-            padding: 0 1rem;
-        }
-    }
-
-nav a {
-    display: block;
-}
-
-.js ul {
-    display: none;
-}
-.js nav button {
-    display: block;
-}
-ul.is-active {
-    display: block;
-}
-    @media (min-width: 600px) {
-        .js ul {
-            display: block;
-        }
-        .js nav button {
-            display: none;
-        }
-        nav button {
-            display: none;
-        }
-    }
 
 .xtarget:target {
     margin-top: -3rem;

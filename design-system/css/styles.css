@@ -65,7 +65,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     box-sizing: border-box;
-    padding: 8rem 0 3rem 0;
+    padding: 10rem 0 4rem 0;
     position: relative;
 }
 
@@ -101,9 +101,11 @@ main {
     }
 
 footer {
-    border-top: 0.1rem solid #ffee55;
-    margin-top: 2rem;
-    padding: 1rem 0;
+    background-image: url(../images/mom-walks.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    /* margin-top: 2rem; */
+    padding: 3rem 0;
     text-align: center;
 }
 

@@ -45,13 +45,18 @@ nav {
     background-color: #ffffff;
     border-bottom: 0.1rem solid #ffee55;
     margin: 0 auto;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
     position: fixed;
     text-align: center;
     top: 0;
     transition: all 0.4s ease-in;
     width: 100%;
 }
+    @media (min-width: 600px) {
+        nav {
+            padding: 0.5rem 0;
+        }
+    }
 
 header {
     background-color: #ffee55;
@@ -113,7 +118,7 @@ footer {
     display: block;
     fill: #2f2f2f;
     margin: 0.5rem auto 0 auto;
-    max-width: 40%;
+    max-width: 30%;
 }
     @media (min-width: 600px) {
         .logo {
@@ -270,9 +275,14 @@ nav a:visited:hover {
 
 nav li {
     display: inline-block;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0;
 }
+    @media (min-width: 600px) {
+        nav li {
+            padding: 1rem;
+        }
+    }
 
 nav ul {
     display: inline;

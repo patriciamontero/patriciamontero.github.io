@@ -110,8 +110,9 @@ footer {
 /* Images ------------------------------ */
 
 .logo {
-    margin: 0 0 -2rem 0;
-    max-width: 70%;
+    display: inline-block;
+    margin: 0;
+    max-width: 20%;
 }
 
 img {
@@ -139,19 +140,19 @@ h1, h2, h3, h4  {
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 2.625rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2.0625rem;
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.625rem;
 }
 
 h4{
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .intro {
@@ -261,6 +262,11 @@ nav a:visited:hover {
 nav li {
     display: inline-block;
     padding: 0 1rem;
+    margin: 0;
+}
+
+nav ul {
+    display: inline;
 }
 
 

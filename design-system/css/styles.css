@@ -104,7 +104,6 @@ footer {
     background-image: url(../images/mom-walks.png);
     background-position: top right;
     background-repeat: no-repeat;
-    /* margin-top: 2rem; */
     padding: 3rem 0;
     text-align: center;
 }
@@ -211,22 +210,27 @@ figcaption {
 
 /* Buttons and links ------------------------------ */
 
-.button:link {
-    background: #ffffff;
-    border: 0.1rem solid #2f2f2f;
-    color: #2f2f2f;
+.button:link, .button:visited {
+    background: #2f2f2f;
+    border: none;
+    border-radius: 5rem;
+    color: #f8f8f8;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: 700;
+    letter-spacing: 0.05rem;
     margin: 1.5rem 0 1rem 0;
-    padding: 1rem 1.5rem;
+    padding: 1.25rem 1.75rem;
     transition: all 0.4s ease-in;
 }
 
 .button:hover, .button:focus {
     background: #0055ff;
-    border: 0.1rem solid #0055ff;
+}
+
+.button:visited:hover {
+    background: #cc00aa;
     color: #f8f8f8;
 }
 
@@ -301,17 +305,18 @@ a.skip {
     left: -999px;
     overflow: hidden;
     position: absolute;
-    top: 0;
+    top: 0.5rem;
     z-index: -999;
 }
 a.skip:focus, a.skip:active {
     background-color: #2f2f2f;
     border: 0;
-    color: #ffee55;
+    border-radius: 0 5rem 5rem 0;
+    color: #f8f8f8;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     left: 0;
     overflow: auto;
-    padding: 1rem 1.5rem;
+    padding: 1.25rem 1.75rem;
     z-index: 999;
 }

@@ -115,14 +115,6 @@ footer {
 
 /* Images ------------------------------ */
 
-.logo {
-    display: inline-block;
-    fill: #2f2f2f;
-    margin: 0.5rem 1rem 0.5rem 0;
-    vertical-align: middle;
-    width: 3rem;
-}
-
 img {
     width: 100%;
     margin: 1rem 0;
@@ -183,7 +175,7 @@ code {
     font-style: italic;
 }
 
-figcaption {
+figcaption, .note {
     font-style: italic;
     font-size: 90%;
     margin-bottom: 1.5rem;
@@ -217,11 +209,9 @@ figcaption {
     padding: 1.25rem 1.75rem;
     transition: all 0.4s ease-in;
 }
-
 .button:hover, .button:focus {
     background: #0055ff;
 }
-
 .button:visited:hover {
     background: #cc00aa;
     color: #f8f8f8;
@@ -237,7 +227,6 @@ a:link {
     text-decoration: none;
     transition: all 0.4s ease-in;
 }
-
 a:hover, a:focus {
     background-color: #0055ff;
     color: #f8f8f8;
@@ -251,21 +240,17 @@ a:visited:hover {
     color: #f8f8f8;
 }
 
-nav a:link {
+nav a:link, nav a:visited {
     background-color: #f8f8f8;
     color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
-
 nav a:hover, nav a:focus {
     background-color: #0055ff;
     color: #f8f8f8;
 }
-nav a:visited {
-    background-color: #f8f8f8;
-    color: #2f2f2f;
-}
+
 nav a:visited:hover {
     background-color: #cc00aa;
     color: #f8f8f8;
@@ -276,16 +261,25 @@ nav li {
     padding: 0.5rem;
     margin: 0;
 }
-    @media (min-width: 600px) {
-        nav li {
-            padding: 1rem;
-        }
-    }
 
 nav ul {
     display: inline;
 }
 
+.logo:link, .logo:visited {
+    background: none;
+    border-bottom: none;
+    display: inline-block;
+    fill: #2f2f2f;
+    margin: 0.5rem 1rem 0.5rem 0;
+    vertical-align: middle;
+    width: 3rem;
+}
+.logo:hover, .logo:focus, .logo:visited:hover {
+    background: none;
+    border-bottom: none;
+    fill: #0055ff;
+}
 
 /* Reveal and hide styles ------------------------------ */
 

@@ -269,6 +269,7 @@ nav ul {
 .logo:link, .logo:visited {
     background: none;
     border-bottom: none;
+    box-shadow: none;
     display: inline-block;
     fill: #2f2f2f;
     margin: 0.5rem 1rem 0.5rem 0;
@@ -276,8 +277,6 @@ nav ul {
     width: 3rem;
 }
 .logo:hover, .logo:focus, .logo:visited:hover {
-    background: none;
-    border-bottom: none;
     fill: #0055ff;
 }
 

@@ -199,6 +199,7 @@ figcaption, .note {
     background: #2f2f2f;
     border: none;
     border-radius: 5rem;
+    box-shadow: none;
     color: #f8f8f8;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;

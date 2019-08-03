@@ -4,7 +4,9 @@
     #ffee55 yellow
     #fedb00 dark yellow
     #0055ff blue
+    #1166ff light blue
     #cc00aa pink
+    #dd33bb light pink
 */
 
 
@@ -43,7 +45,7 @@ body {
 
 nav {
     background-color: #ffffff;
-    border-bottom: 0.1rem solid #ffee55;
+    border-bottom: 0.25rem solid #ffee55;
     margin: 0 auto;
     padding: 0.25rem 0;
     position: fixed;
@@ -67,6 +69,18 @@ header {
     box-sizing: border-box;
     padding: 10rem 0 4rem 0;
     position: relative;
+}
+
+#styles {
+    background-color: #1166ff;
+    background-image: url(../images/moms-profile.png);
+    color: #f8f8f8;
+}
+
+#code {
+    background-color: #dd33bb;
+    background-image: url(../images/moms-hair.png);
+    color: #f8f8f8;
 }
 
 main {
@@ -111,6 +125,13 @@ footer {
 .hidden {
     display: none;
 }
+
+::selection {
+    background: #ffee55; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #ffee55; /* Gecko Browsers */
+  }
 
 
 /* Images ------------------------------ */

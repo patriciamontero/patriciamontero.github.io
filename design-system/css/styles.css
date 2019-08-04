@@ -288,6 +288,10 @@ nav ul {
     display: inline;
 }
 
+nav a.current {
+    border-bottom: 0.25rem solid #2f2f2f;
+}
+
 .logo:link, .logo:visited {
     background: none;
     border-bottom: none;

@@ -60,6 +60,15 @@ nav {
         }
     }
 
+.secondary {
+    background-color: transparent;
+    border-bottom: none;
+    margin: 0;
+    padding: 1rem 1rem 1rem 0; 
+    position: initial;
+    text-align: left;
+}
+
 header {
     background-color: #ffee55;
     background-image: url(../images/moms-hug.png);
@@ -197,6 +206,10 @@ code {
     font-weight: bold;
 }
 
+.anchor {
+    color: #cc00aa;
+}
+
 .subtle {
     font-style: italic;
 }
@@ -309,6 +322,10 @@ nav a.current {
 }
 .logo:hover, .logo:focus, .logo:visited:hover {
     fill: #0055ff;
+}
+
+.secondary li {
+    display: block;
 }
 
 /* Reveal and hide styles ------------------------------ */

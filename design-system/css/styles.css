@@ -96,16 +96,6 @@ main {
     padding: 0.5rem 0;
 }
 
-/* aside {
-    display: block;
-}
-    @media (min-width: 600px) {
-        aside {
-            display: inline;
-            max-width: 20%;
-        }
-    } */
-
 .wrapper {
     padding: 0;
     width: 100%;
@@ -146,10 +136,7 @@ footer {
 }
 
 ::selection {
-    background: #ffee55; /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
-    background: #ffee55; /* Gecko Browsers */
+    background: #ffee55;
   }
 
 
@@ -161,17 +148,10 @@ img {
 }
 
 .persona {
-    display: block;
-    margin: 1rem auto 2rem auto;
-    width: 70%;
+    display: inline;
+    margin: 1rem auto;
+    max-width: 15rem;
 }
-    @media (min-width: 600px) {
-        .persona {
-            display: inline;
-            margin: 1rem 0;
-            width: 60%;
-        }
-    }
 
 
 /* Text styles ------------------------------ */

@@ -67,7 +67,6 @@ nav {
     padding: 1rem 1rem 1rem 0; 
     position: relative;
     text-align: left;
-    z-index: -1;
 }
 
 header {
@@ -250,14 +249,14 @@ figcaption, .note {
 .quote {
     background-color: #ffffff;
     font-size: 1.25rem;
-    margin: 2.5rem -3rem 1.25rem -3rem;
+    margin: 3rem -3rem;
     padding: 2rem 3rem;
     text-align: center;
     width: fit-content;
 }
     @media (min-width: 600px) {
         .quote {
-            margin: 2.5rem 0 1.25rem 0;
+            margin: 2.5rem 0;
             padding: 2rem 3rem;
         }
     }

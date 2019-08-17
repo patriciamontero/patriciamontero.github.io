@@ -65,8 +65,9 @@ nav {
     border-bottom: none;
     margin: 0;
     padding: 1rem 1rem 1rem 0; 
-    position: initial;
+    position: relative;
     text-align: left;
+    z-index: -1;
 }
 
 header {
@@ -95,6 +96,16 @@ header {
 main {
     padding: 0.5rem 0;
 }
+
+/* aside {
+    display: block;
+}
+    @media (min-width: 600px) {
+        aside {
+            display: inline;
+            max-width: 20%;
+        }
+    } */
 
 .wrapper {
     padding: 0;
@@ -151,9 +162,15 @@ img {
 }
 
 .persona {
-    margin: 1rem auto;
-    width: 50%;
+    margin: 1rem 0 2rem 0;
+    width: 70%;
 }
+    @media (min-width: 600px) {
+        .persona {
+            margin: 1rem 0;
+            width: 60%;
+        }
+    }
 
 
 /* Text styles ------------------------------ */
@@ -168,10 +185,14 @@ li {
     list-style-type: square;
 }
 
+.last {
+    margin-bottom: 2rem;
+}
+
 h1, h2, h3, h4  {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    margin: 2.5rem 0 1.25rem 0;
+    margin: 2em 0 1em 0;
 }
 
 h1 {
@@ -184,6 +205,10 @@ h2 {
 
 h3 {
     font-size: 1.625rem;
+}
+
+.quote h3 {
+    margin-top: 1.25rem;
 }
 
 h4{
@@ -216,16 +241,22 @@ code {
 
 figcaption, .note {
     font-style: italic;
-    font-size: 90%;
     margin-bottom: 1.5rem;
 }
 
 .quote {
     background-color: #ffffff;
-    margin: 2.5rem 0 1.25rem 0;
+    font-size: 1.125rem;
+    margin: 2.5rem -3rem 1.25rem -3rem;
     padding: 2rem 3rem;
     width: fit-content;
 }
+    @media (min-width: 600px) {
+        .quote {
+            margin: 2.5rem 0 1.25rem 0;
+            padding: 2rem 3rem;
+        }
+    }
 
 .quote p {
     text-indent: -0.5rem;

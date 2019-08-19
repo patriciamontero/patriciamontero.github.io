@@ -53,6 +53,7 @@ nav {
     top: 0;
     transition: all 0.4s ease-in;
     width: 100%;
+    z-index: 1;
 }
     @media (min-width: 600px) {
         nav {
@@ -64,9 +65,11 @@ nav {
     background-color: transparent;
     border-bottom: none;
     margin: 0;
-    padding: 1rem 1rem 1rem 0; 
+    padding: 1rem 1rem 2rem 0; 
     position: relative;
     text-align: left;
+    top: 2rem;
+    z-index: 0;
 }
 
 header {
@@ -173,7 +176,7 @@ li {
 h1, h2, h3, h4  {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    margin: 2em 0 1em 0;
+    margin: 2.625rem 0 1.625rem 0;
 }
 
 h1 {

@@ -126,6 +126,61 @@ main {
         }
     }
 
+.main-content-wrap {
+    margin: 0 auto;
+    max-width: 25rem;
+    transition: all 0.4s ease-in;
+    width: 80%;
+}
+    @media (min-width: 600px) {
+        .main-content-wrap {
+            max-width: 30rem;
+        }
+    }
+    @media (min-width: 900px) {
+        .main-content-wrap {
+            max-width: 35rem;
+        }
+    }
+    @media (min-width: 1200px) {
+        .main-content-wrap {
+            display: flex;
+            max-width: 40rem;
+        }
+    } 
+
+aside {
+    display: block;
+}
+    @media (min-width: 600px) {
+        aside {
+            display: inline-block;
+            vertical-align: top;
+            width: 25%;
+        }
+    }
+    /* @media (min-width: 900px) {
+        aside {
+            width: 25%;
+        }
+    } */
+
+article {
+    display: block;
+}
+    @media (min-width: 600px) {
+        article {
+            display: inline-block;
+            vertical-align: top;
+            width: 73%;
+        }
+    }
+    /* @media (min-width: 900px) {
+        article {
+            width: 75%;
+        }
+    } */
+
 footer {
     background-image: url(../images/mom-walks.png);
     background-position: top right;

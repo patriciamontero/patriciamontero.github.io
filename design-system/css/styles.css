@@ -65,7 +65,7 @@ nav {
     background-color: transparent;
     border-bottom: none;
     margin: 0;
-    padding: 1rem 1rem 2rem 0; 
+    padding: 0 0 2rem 0; 
     position: relative;
     text-align: left;
     top: 2rem;
@@ -81,6 +81,7 @@ header {
     box-sizing: border-box;
     padding: 10rem 0 4rem 0;
     position: relative;
+    text-align: center;
 }
 
 #styles {
@@ -159,11 +160,6 @@ aside {
             width: 25%;
         }
     }
-    /* @media (min-width: 900px) {
-        aside {
-            width: 25%;
-        }
-    } */
 
 article {
     display: block;
@@ -172,14 +168,9 @@ article {
         article {
             display: inline-block;
             vertical-align: top;
-            width: 73%;
+            width: 74%;
         }
     }
-    /* @media (min-width: 900px) {
-        article {
-            width: 75%;
-        }
-    } */
 
 footer {
     background-image: url(../images/mom-walks.png);
@@ -397,6 +388,7 @@ nav a.current {
 
 .secondary li {
     display: block;
+    padding: 0.5rem 0;
 }
 
 /* Reveal and hide styles ------------------------------ */

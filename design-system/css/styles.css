@@ -202,6 +202,14 @@ img {
     max-width: 15rem;
 }
 
+.container {
+    display: inline-block;
+    height: 0;
+    padding-top: 10%;
+    position: relative;
+    width: 100%
+}
+
 
 /* Text styles ------------------------------ */
 

@@ -135,18 +135,18 @@ main {
 }
     @media (min-width: 600px) {
         .main-content-wrap {
-            max-width: 30rem;
+            max-width: 40rem;
         }
     }
     @media (min-width: 900px) {
         .main-content-wrap {
-            max-width: 35rem;
+            max-width: 40rem;
         }
     }
     @media (min-width: 1200px) {
         .main-content-wrap {
             display: flex;
-            max-width: 40rem;
+            max-width: 45rem;
         }
     } 
 
@@ -157,7 +157,7 @@ aside {
         aside {
             display: inline-block;
             vertical-align: top;
-            width: 25%;
+            width: 30%;
         }
     }
 
@@ -168,7 +168,7 @@ article {
         article {
             display: inline-block;
             vertical-align: top;
-            width: 74%;
+            width: 69%;
         }
     }
 

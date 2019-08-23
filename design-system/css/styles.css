@@ -152,6 +152,7 @@ main {
 
 aside {
     display: block;
+    width: 100%;
 }
     @media (min-width: 600px) {
         aside {
@@ -163,6 +164,7 @@ aside {
 
 article {
     display: block;
+    width: 100%;
 }
     @media (min-width: 600px) {
         article {

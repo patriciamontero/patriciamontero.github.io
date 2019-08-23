@@ -204,7 +204,7 @@ img {
 
 .container {
     display: inline-block;
-    height: 0;
+    height: 3rem;
     padding-top: 20%;
     position: relative;
     width: 100%

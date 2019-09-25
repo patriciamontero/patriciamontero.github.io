@@ -201,6 +201,11 @@ img {
     margin: 1rem 0;
 }
 
+/* Required to make image fluid in IE */
+img:not(.png) {
+    width: 100%;
+  }	
+
 .persona {
     display: inline;
     margin: 0.5rem auto 1rem auto;

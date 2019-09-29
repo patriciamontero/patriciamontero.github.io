@@ -1,15 +1,3 @@
-/* Color palette 
-    #2f2f2f black
-    #f8f8f8 white
-    #ffee55 yellow
-    #fedb00 dark yellow
-    #0055ff blue
-    #1166ff light blue
-    #cc00aa pink
-    #dd33bb light pink
-*/
-
-
 /* Global styles ------------------------------ */
 
 *, *:before, *:after {
@@ -224,6 +212,19 @@ img:not(.png) {
     padding: 1rem 0;
 }
 
+/* Colour ------------------------------ */
+
+/* Color palette 
+    #2f2f2f black
+    #f8f8f8 white
+    #ffee55 yellow
+    #fedb00 dark yellow
+    #0055ff blue
+    #1166ff light blue
+    #cc00aa pink
+    #dd33bb light pink
+*/
+
 .square {
     background-color: #2f2f2f;
     color: #f8f8f8;
@@ -246,28 +247,12 @@ img:not(.png) {
     color: #2f2f2f;
 }
 
-#dark-yellow {
-    background-color: #fedb00;
-    border: solid 1px #2f2f2f;
-    color: #2f2f2f;
-}
-
 #blue {
-    background-color: #1166ff;
-    color: #f8f8f8;
-}
-
-#dark-blue {
     background-color: #0055ff;
     color: #f8f8f8;
 }
 
 #pink {
-    background-color: #dd33bb;
-    color: #f8f8f8;
-}
-
-#dark-pink {
     background-color: #cc00aa;
     color: #f8f8f8;
 }

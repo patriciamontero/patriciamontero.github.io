@@ -212,6 +212,12 @@ img:not(.png) {
     padding: 1rem 0;
 }
 
+.logo-colour {
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 0;
+}
+
 /* Colour ------------------------------ */
 
 /* Color palette 

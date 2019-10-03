@@ -322,10 +322,6 @@ code {
     font-weight: bold;
 }
 
-.anchor {
-    color: #cc00aa;
-}
-
 .subtle {
     font-style: italic;
 }
@@ -401,6 +397,25 @@ a:visited {
 a:visited:hover {
     background-color: #cc00aa;
     color: #f8f8f8;
+}
+
+h2 a:link, h3 a:link {
+    background-color: #f8f8f8;
+    border-bottom: none;
+    box-shadow: none;
+    color: #cc00aa;
+    cursor: pointer;
+}
+h2 a:visited, h3 a:visited {
+    background-color: #f8f8f8;
+    color: #cc00aa;
+    cursor: pointer;
+}
+h2 a:hover, h2 a:visited:hover,
+h3 a:hover, h3 a:visited:hover {
+    background-color: #f8f8f8;
+    color: #0055ff;
+    cursor: pointer;
 }
 
 nav a:link, nav a:visited {

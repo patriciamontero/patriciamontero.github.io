@@ -218,6 +218,16 @@ img:not(.png) {
     padding: 0;
 }
 
+.min-long {
+    height: auto;
+    max-width: 180px;
+}
+
+.min-short {
+    height: auto;
+    max-width: 120px;
+}
+
 /* Colour ------------------------------ */
 
 /* Color palette 

@@ -78,7 +78,7 @@ header {
     color: #f8f8f8;
 }
 
-#code {
+#patterns {
     background-color: #dd33bb;
     background-image: url(../images/moms-hair.png);
     color: #f8f8f8;
@@ -179,6 +179,12 @@ footer {
 
 ::selection {
     background: #ffee55;
+  }
+
+  code {
+      background-color: #1166ff;
+      color: #2f2f2f;
+      display: block;
   }
 
 
@@ -325,12 +331,6 @@ h5  {
     font-size: 1.125rem;
     font-style: italic;
     line-height: 1.6;
-}
-
-code {
-    background-color: #ffee55;
-    font-size: 1.125rem;
-    padding: 0.1rem 0.3rem;
 }
 
 .accent {

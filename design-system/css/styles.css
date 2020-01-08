@@ -232,8 +232,8 @@ img {
     #f8f8f8 white
     #fba798 light accent
     #f96c53 accent
-    #dd2808 accent aa
-    #a71e06 accent aaa
+    #dd2808 dark accent
+    #a71e06 darkest accent
 */
 
 .square {
@@ -264,7 +264,7 @@ img {
 }
 
 #pink {
-    background-color: #F85235;
+    background-color: #dd2808;
     color: #f8f8f8;
 }
 
@@ -428,7 +428,7 @@ a:visited {
     color: #2f2f2f;
 }
 a:visited:hover {
-    background-color: #F85235;
+    background-color: #dd2808;
     color: #f8f8f8;
 }
 
@@ -436,12 +436,12 @@ h2 a:link, h3 a:link {
     background-color: #f8f8f8;
     border-bottom: none;
     box-shadow: none;
-    color: #F85235;
+    color: #dd2808;
     cursor: pointer;
 }
 h2 a:visited, h3 a:visited {
     background-color: #f8f8f8;
-    color: #F85235;
+    color: #dd2808;
     cursor: pointer;
 }
 h2 a:hover, h2 a:visited:hover,
@@ -464,7 +464,7 @@ nav a:hover, nav a:focus {
 }
 
 nav a:visited:hover {
-    background-color: #F85235;
+    background-color: #dd2808;
     color: #f8f8f8;
 }
 

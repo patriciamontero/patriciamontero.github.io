@@ -178,7 +178,7 @@ footer {
   }
 
   code {
-      background-color: #F96C53;
+      background-color: #f96c53;
       color: #2f2f2f;
       display: block;
   }
@@ -252,19 +252,25 @@ img {
     color: #2f2f2f;
 }
 
-#accent {
-    background-color: #F96C53;
+#light-accent {
+    background-color: #fba798;
     border: solid 1px #2f2f2f;
     color: #2f2f2f;
 }
 
-#blue {
-    background-color: #A71E06;
+#accent {
+    background-color: #f96c53;
+    border: solid 1px #2f2f2f;
+    color: #2f2f2f;
+}
+
+#dark-accent {
+    background-color: #dd2808;
     color: #f8f8f8;
 }
 
-#pink {
-    background-color: #dd2808;
+#darkest-accent {
+    background-color: #a71e06;
     color: #f8f8f8;
 }
 
@@ -359,7 +365,7 @@ figcaption, .note {
 }
 
 .type-scale {
-    border-bottom: 2px solid #F96C53;
+    border-bottom: 2px solid #f96c53;
 }
 
 .heading {
@@ -441,8 +447,8 @@ nav a:link, nav a:visited {
     text-decoration: none;
 }
 nav a:hover, nav a:focus, nav a:visited:hover  {
-    background-color: #fba798;
-    color: #2f2f2f;
+    background-color: #dd2808;
+    color: #f8f8f8;
 }
 
 nav li {

@@ -14,7 +14,7 @@
         <header id="patterns">
             <div class="content-wrap">
                 <h1>Pattern library</h1>
-                <p class="subtle">Last update <time datetime="2020-01-12">January 12, 2020 &nbsp; &#10087; &nbsp; Reading time: 0:18 minutes.</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-01-14">January 14, 2020 &nbsp; &#10087; &nbsp; In progress</time></p>
             </div>
             <nav>
                 <h2 class="hidden">Navigation</h2>
@@ -64,10 +64,32 @@
                         <figcaption>Button</figcaption>
                         <pre>
                           <code>
-                            <a href="#">This is a button</a>
+<a href="#" class="button">This is a button</a>
+
+.button:link, .button:visited {
+    background: #2f2f2f;
+    border: none;
+    border-radius: 5rem;
+    color: #f8f8f8;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    margin: 1.5rem 0 1rem 0;
+    padding: 1.25rem 1.75rem;
+    transition: all 0.4s ease-in;
+    text-decoration: none;
+}
+.button:hover, .button:focus {
+    background-color: #f8f8f8;
+    background: #dd2808;
+}
                           </code>
                         </pre>
                     </figure>
+                    <h4>Preview</h4>
+
                     <p>This design system is a work in progress. To me, it's a learning tool as well as a way to define my brand. It covers three sections:</p>
                     <h3 id="cards" class="xtarget">Cards<a href="https://www.patimontero.ca/design-system/patterns.html#cards">#</a> </h3>
                     <p class="intro">Cards are a compound of image (thumbnail), text (title and intro) and a button. Their main goal is to highlight key content and take the user to it.</p>
@@ -82,7 +104,7 @@
         <footer>
             <div class="content-wrap" role="contentinfo">
                 <p>&copy; 2019-2020 Pati Montero &nbsp; &#10087; &nbsp; <a href="privacy.html">Privacy policy</a></p>
-                <p class="note">This site is hosted on <a href="https://www.netlify.com/">Netlify</a> and <a href="https://github.com/">Github</a>.</p>
+                <p class="note"><a href="https://github.com/">Github</a> and <a href="https://www.netlify.com/">Netlify</a> host this website ♥</p>
             </div>
         </footer>
     </body>

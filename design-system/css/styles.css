@@ -178,9 +178,10 @@ footer {
   }
 
   code {
-      background-color: #f96c53;
+      background-color: #f0f0f0;
       color: #2f2f2f;
       display: block;
+      padding: 2rem 4rem;
   }
 
 
@@ -230,6 +231,7 @@ img {
 /* Color palette 
     #2f2f2f black
     #f8f8f8 white
+    #f0f0f0 light grey
     #fba798 light accent
     #f96c53 accent
     #dd2808 dark accent

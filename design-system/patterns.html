@@ -14,7 +14,7 @@
         <header id="patterns">
             <div class="content-wrap">
                 <h1>Pattern library</h1>
-                <p class="subtle">Last updated on <time datetime="2020-01-14">January 14, 2020 &nbsp; &#10087; &nbsp; In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-01-15">January 15, 2020 &nbsp; &#10087; &nbsp; In progress</time></p>
             </div>
             <nav>
                 <h2 class="hidden">Navigation</h2>
@@ -59,13 +59,16 @@
                     <h2 id="main-content" class="xtarget">Components <a href="https://www.patimontero.ca/design-system/patterns.html#main-content">#</a> </h2>
                     <p class="intro">Here is where to find the building blocks of my interfaces, and the way to combine them.</p>
                     <h3 id="buttons" class="xtarget">Buttons <a href="https://www.patimontero.ca/design-system/patterns.html#buttons">#</a> </h3>
-                    <p class="intro">In most cases, buttons are a call-to-action. They show within four states: active, hover, visited and disable.</p>
+                    <p class="intro">Technically, buttons are a box area where users can click or tap. In most cases, they are call-to-action. They manifest within three states: active, hover and disable.</p>
                     <figure>
                         <figcaption>Button</figcaption>
                         <pre>
                           <code>
-<a href="#" class="button">This is a button</a>
-
+<h4>Preview and code snippets</h4>
+<a href="styles.html" class="button">This is a button</a>
+<h5>HTML</h5>
+&lt;a href="#" class="button"&gt;This is a button&lt;a&gt;
+<h5>CSS</h5>
 .button:link, .button:visited {
     background: #2f2f2f;
     border: none;
@@ -81,6 +84,7 @@
     transition: all 0.4s ease-in;
     text-decoration: none;
 }
+
 .button:hover, .button:focus {
     background-color: #f8f8f8;
     background: #dd2808;

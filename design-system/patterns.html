@@ -40,62 +40,50 @@
                     <nav class="secondary">
                         <h2 class="hidden">Items</h2>
                         <ul>
-                            <li><a href="#buttons">Buttons</a></li>
-                            <li><a href="#cards">Cards</a></li>
-                            <li><a href="#forms">Forms</a></li>
-                            <li><a href="#headings">Headings</a></li>
-                            <li><a href="#icons">Icons</a></li>
-                            <li><a href="#illustrations">Illustrations</a></li>
-                            <li><a href="#legends">Legends</a></li>
                             <li><a href="#links">Links</a></li>
-                            <li><a href="#lists">Lists</a></li>
-                            <li><a href="#photographs">Photographs</a></li>
-                            <li><a href="#progress">Progress bar</a></li>
-                            <li><a href="#quotes">Quotes</a></li>
-                            <li><a href="#ribbons">Ribbons</a></li>
                         </ul>
                     </nav>
                 </aside>
                 <article class="content">
                     <h2 id="main-content" class="xtarget">Components <a href="https://www.patimontero.ca/design-system/patterns.html#main-content">#</a> </h2>
                     <p class="intro">Here is where to find the building blocks of my interfaces, and the way to combine them.</p>
-                    <h3 id="buttons" class="xtarget">Buttons <a href="https://www.patimontero.ca/design-system/patterns.html#buttons">#</a> </h3>
-                    <p class="intro">Technically, buttons are a box area where users can click or tap. In most cases, they are call-to-action. They manifest within three states: active, hover and disable.</p>
-                    <figure>
-                        <figcaption>Button</figcaption>
-                        <pre>
-                          <code>
-<h4>Preview and code snippets</h4>
-<a href="styles.html" class="button">This is a button</a>
+                    <h3 id="buttons" class="xtarget">Links <a href="https://www.patimontero.ca/design-system/patterns.html#links">#</a> </h3>
+                    <p class="intro">A link is a navigational text element. It should be brief and descriptive of the intended destination.</p>
+                    <h4>On paragraphs</h4>
+                    <p><a href="#">This link</a> doesn't work.</p>
+                    <pre>
+                        <code>
 <h5>HTML</h5>
-&lt;a href="#" class="button"&gt;This is a button&lt;a&gt;
+&lt;p&gt;&lt;a href="#"&gt;This link&lt;/a&gt; doesn't work.&lt;/p&gt;
 <h5>CSS</h5>
-.button:link, .button:visited {
-    background: #2f2f2f;
-    border: none;
-    border-radius: 5rem;
-    color: #f8f8f8;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.05rem;
-    margin: 1.5rem 0 1rem 0;
-    padding: 1.25rem 1.75rem;
+a:link, a:visited {
+    background-color: #fcdad4;
+    color: #2f2f2f;
+    display: inline-block;
+    padding: 0 0.25rem;
     transition: all 0.4s ease-in;
+}
+a:hover, a:visited:hover, a:focus {
+    background-color: #fba798;
     text-decoration: none;
 }
-
-.button:hover, .button:focus {
-    background-color: #f8f8f8;
-    background: #dd2808;
+                        </code>
+                    </pre>
+                    <h4>As a call-to-action</h4>
+                    <p><a class="cta" href="#">This link</a> doesn't work.</p>
+                    <pre>
+                        <code>
+<h5>HTML</h5>
+&lt;p&gt;&lt;a class="cta" href="#"&gt;This link&lt;/a&gt; doesn't work.&lt;/p&gt;
+<h5>CSS</h5>
+.cta:link, .cta:visited {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.266rem;
+    margin: 2.281rem 0 1.125rem 0;
+    padding: 0.5rem;
 }
-                          </code>
-                        </pre>
-                    </figure>
-                    <h4>Preview</h4>
-
-                    <p>This design system is a work in progress. To me, it's a learning tool as well as a way to define my brand. It covers three sections:</p>
+                        </code>
+                    </pre>
                     <h3 id="cards" class="xtarget">Cards<a href="https://www.patimontero.ca/design-system/patterns.html#cards">#</a> </h3>
                     <p class="intro">Cards are a compound of image (thumbnail), text (title and intro) and a button. Their main goal is to highlight key content and take the user to it.</p>
                     <h3 id="forms" class="xtarget">Forms<a href="https://www.patimontero.ca/design-system/patterns.html#forms">#</a> </h3>

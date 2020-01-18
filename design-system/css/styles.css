@@ -381,7 +381,7 @@ figcaption, .note {
 .heading {
     display: block;
 }
-@media (min-width: 600px) {
+@media (min-width: 900px) {
     .heading {
         display: inline-block;
         padding-right: 3rem;
@@ -392,7 +392,7 @@ figcaption, .note {
 .heading-info {
     display: block;
 }
-@media (min-width: 600px) {
+@media (min-width: 900px) {
     .heading-info {
         display: inline-block;
         text-align: right;

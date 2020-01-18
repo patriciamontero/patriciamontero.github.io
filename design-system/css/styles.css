@@ -256,6 +256,12 @@ img {
     color: #2f2f2f;
 }
 
+#lightest-accent {
+    background-color: #fcdad4;
+    border: solid 1px #2f2f2f;
+    color: #2f2f2f;
+}
+
 #light-accent {
     background-color: #fba798;
     border: solid 1px #2f2f2f;

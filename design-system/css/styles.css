@@ -233,6 +233,7 @@ img {
     #2f2f2f black
     #f8f8f8 white
     #f0f0f0 light grey
+    #fcdad4 lightest accent
     #fba798 light accent
     #f96c53 accent
     #dd2808 dark accent
@@ -313,10 +314,6 @@ h3 {
     font-size: 1.602rem;
 }
 
-.quote h3 {
-    margin-top: 1rem;
-}
-
 h4 {
     font-size: 1.266rem;
 }
@@ -363,6 +360,10 @@ figcaption, .note {
     text-indent: -0.5rem;
 }
 
+.quote h3 {
+    margin-top: 1rem;
+}
+
 .table {
     margin-bottom: 3.653rem;
 }
@@ -395,63 +396,39 @@ figcaption, .note {
 
 /* Buttons and links ------------------------------ */
 
-.button:link, .button:visited {
-    background: #2f2f2f;
-    border: none;
-    border-radius: 5rem;
-    color: #f8f8f8;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.05rem;
-    margin: 1.5rem 0 1rem 0;
-    padding: 1.25rem 1.75rem;
-    transition: all 0.4s ease-in;
-    text-decoration: none;
-}
-.button:hover, .button:focus {
-    background-color: #f8f8f8;
-    background: #dd2808;
-}
-
 a:link, a:visited {
-    background-color: #fba798;
+    background-color: #fcdad4;
     color: #2f2f2f;
     display: inline-block;
     padding: 0 0.25rem;
     transition: all 0.4s ease-in;
 }
 a:hover, a:visited:hover, a:focus {
-    background-color: #dd2808;
-    color: #f8f8f8;
+    background-color: #fba798;
     text-decoration: none;
+}
+
+.cta:link, .cta:visited {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.266rem;
+    margin: 2.281rem 0 1.125rem 0;
+    padding: 0.5rem;
 }
 
 h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     background-color: transparent;
-    border-bottom: none;
-    box-shadow: none;
     color: #dd2808;
-    cursor: pointer;
     text-decoration: none;
-}
-h2 a:hover, h2 a:visited:hover,
-h3 a:hover, h3 a:visited:hover {
-    color: #a71e06;
 }
 
 nav a:link, nav a:visited {
     background-color: transparent;
-    color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    text-decoration: none;
 }
 nav a:hover, nav a:focus, nav a:visited:hover  {
-    background-color: #dd2808;
-    color: #f8f8f8;
+    text-decoration: none;
 }
 
 nav li {
@@ -466,6 +443,8 @@ nav ul {
 
 nav a.current {
     border-bottom: 0.25rem solid #2f2f2f;
+    cursor: default;
+    text-decoration: none;
 }
 
 .logo:link, .logo:visited {

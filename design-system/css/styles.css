@@ -177,13 +177,19 @@ footer {
     background: #fba798;
   }
 
-  code {
-      background-color: #f0f0f0;
-      color: #2f2f2f;
-      display: block;
-      overflow: scroll;
-      padding: 0 2rem 1rem 2rem;
-  }
+code {
+    background-color: #f0f0f0;
+    color: #2f2f2f;
+    display: block;
+    overflow: scroll;
+    padding: 0 2rem 1rem 2rem;
+}
+
+.code-example {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+}
 
 
 /* Images ------------------------------ */

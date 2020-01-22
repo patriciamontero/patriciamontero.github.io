@@ -41,26 +41,27 @@
                         <h2 class="hidden">Items</h2>
                         <ul>
                             <li><a href="#links">Links</a></li>
+                            <li><a href="#texts">Texts</a></li>
                         </ul>
                     </nav>
                 </aside>
                 <article class="content">
                     <h2 id="main-content" class="xtarget">Components <a href="https://www.patimontero.ca/design-system/patterns.html#main-content">#</a> </h2>
                     <p class="intro">Here is where to find the building blocks of my interfaces, and the way to combine them.</p>
-                    <h3 id="buttons" class="xtarget">Links <a href="https://www.patimontero.ca/design-system/patterns.html#links">#</a> </h3>
-                    <p>A link is a navigational text element. It should be brief and descriptive of the intended destination.</p>
+                    <h3 id="links" class="xtarget">Links <a href="https://www.patimontero.ca/design-system/patterns.html#links">#</a> </h3>
+                    <p>A link is a navigational element. It should be brief and descriptive of the intended destination.</p>
                     <h4>Guidelines</h4>
                     <ul>
-                        <li>Provide text rather than images, so content reminds readable. The only exception is the use of logos.</li>
+                        <li>Provide text rather than images, so the content reminds readable. The only exception is the use of logos.</li>
                         <li>Use text links in favour of buttons for navigation purposes. If it takes you to a new page or section of a page, it should be an anchor element <code class="code-in-text">&lt;a&gt;</code>. The only exception is the use of logos, as in the case of social media.</li>
                         <li>Keep the content below three words to prevent text wrapping.</li>
                         <li>Use meaningful text that gives users an idea of where it's taking them. Avoid the use of vague sentences like <em>Click here</em>.</li>
                         <li><a href="https://webaim.org/resources/linkcontrastchecker/">Set a contrast</a> between body text and background colour that complies with standards. Anyone should be able to read it.</li>
                         <li>Always underline active links. Reinforce them in the hover state with a cursor pointer and hiding the underlining.</li>
-                        <li>Define text size in the rem unit to keep it proportional to the reading device.</li>
+                        <li>Set the font size in relative units to keep it proportional to the reading device.</li>
                     </ul>
                     <h4>Code snippets for links inside a paragraph</h4>
-                    <p>These are inline elements, and their code is the foundation for all the later ones.</p>
+                    <p>These are inline-block elements, and their code is the foundation for all the later ones.</p>
                     <p class="code-example"><a href="#">This link</a> is an example.</p>
                     <pre>
                         <code>
@@ -81,6 +82,7 @@ a:hover, a:visited:hover, a:focus {
                         </code>
                     </pre>
                     <h4>Code snippets for links outside a paragraph</h4>
+                    <p>These are a call-to-action that usually appears at the end of a section.</p>
                     <p class="code-example"><a class="cta" href="#">This link</a> is an example.</p>
                     <pre>
                         <code>
@@ -95,6 +97,9 @@ a:hover, a:visited:hover, a:focus {
 }
                         </code>
                     </pre>
+                    <h3 id="texts" class="xtarget">Texts <a href="https://www.patimontero.ca/design-system/patterns.html#texts">#</a> </h3>
+                    <p>Along with my illustration and design pieces, this is the core of everything I publish on the web. It must be legible at all times.</p>
+                    <h4>Guidelines</h4>
 
                     <a href="index.html" class="cta">Next: Brand foundations</a>
                 </article>

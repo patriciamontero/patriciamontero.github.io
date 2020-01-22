@@ -52,15 +52,15 @@
                     <h4>Guidelines</h4>
                     <ul>
                         <li>Provide text rather than images, so content reminds readable. The only exception is the use of logos.</li>
-                        <li>Use links in favour of buttons for navigation purposes. When it takes you to a new page or section of a page, it should be an anchor element <code class="code-in-text">&lt;a&gt;</code>.</li>
-                        <li>Keep the content below four words to prevent text wrapping.</li>
+                        <li>Use text links in favour of buttons for navigation purposes. If it takes you to a new page or section of a page, it should be an anchor element <code class="code-in-text">&lt;a&gt;</code>. The only exception is the use of logos, as in the case of social media.</li>
+                        <li>Keep the content below three words to prevent text wrapping.</li>
                         <li>Use meaningful text that gives users an idea of where it's taking them. Avoid the use of vague sentences like <em>Click here</em>.</li>
-                        <li><a href="https://webaim.org/resources/contrastchecker/">Verify that the contrast</a> between text and background complies with standards. Anyone should be able to read it.</li>
-                        <li>Underline active links.</li>
-                        <li>Show that the link is active with a cursor pointer.</li>
-                        <li>Define text size in the rem unit, so it reminds responsive.</li>
+                        <li><a href="https://webaim.org/resources/linkcontrastchecker/">Set a contrast</a> between body text and background colour that complies with standards. Anyone should be able to read it.</li>
+                        <li>Always underline active links. Reinforce them in the hover state with a cursor pointer and hiding the underlining.</li>
+                        <li>Define text size in the rem unit to keep it proportional to the reading device.</li>
                     </ul>
-                    <h4>On paragraphs</h4>
+                    <h4>Code snippets for links inside a paragraph</h4>
+                    <p>These are inline elements, and their code is the foundation for all the later ones.</p>
                     <p class="code-example"><a href="#">This link</a> is an example.</p>
                     <pre>
                         <code>
@@ -80,7 +80,7 @@ a:hover, a:visited:hover, a:focus {
 }
                         </code>
                     </pre>
-                    <h4>As a call-to-action</h4>
+                    <h4>Code snippets for links outside a paragraph</h4>
                     <p class="code-example"><a class="cta" href="#">This link</a> is an example.</p>
                     <pre>
                         <code>

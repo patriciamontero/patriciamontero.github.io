@@ -179,7 +179,7 @@ footer {
 
 code {
     background-color: #f0f0f0;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     color: #2f2f2f;
     display: block;
     overflow: scroll;
@@ -255,7 +255,7 @@ img {
 
 .square {
     background-color: #2f2f2f;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     color: #f8f8f8;
     display: inline-block;
     height: 8rem;
@@ -364,7 +364,7 @@ figcaption, .note {
 
 .quote {
     background-color: #ffffff;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     font-size: 1.125rem;
     margin: 4rem -3rem 3rem -3rem;
     padding: 2rem 3rem;
@@ -419,7 +419,7 @@ figcaption, .note {
 
 a:link, a:visited {
     background-color: #fcdad4;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
     color: #2f2f2f;
     display: inline-block;
     padding: 0 0.25rem;

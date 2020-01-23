@@ -14,7 +14,7 @@
         <header id="patterns">
             <div class="content-wrap">
                 <h1>Pattern library</h1>
-                <p class="subtle">Last updated on <time datetime="2020-01-22">January 22, 2020 &nbsp; &#10087; &nbsp; In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-01-23">January 23, 2020 &nbsp; &#10087; &nbsp; In progress</time></p>
             </div>
             <nav>
                 <h2 class="hidden">Main navigation</h2>
@@ -54,7 +54,7 @@
                     <ul>
                         <li>Provide text rather than images, so the content reminds readable. The only exception is the use of logos.</li>
                         <li>Use text links in favour of buttons for navigation purposes. If it takes you to a new page or section of a page, it should be an anchor element <code class="code-in-text">&lt;a&gt;</code>. The only exception is the use of logos, as in the case of social media.</li>
-                        <li>Keep the content below three words to prevent text wrapping.</li>
+                        <li>Keep the content below four words to prevent text wrapping.</li>
                         <li>Use meaningful text that gives users an idea of where it's taking them. Avoid the use of vague sentences like <em>Click here</em>.</li>
                         <li><a href="https://webaim.org/resources/linkcontrastchecker/">Set a contrast</a> between body text and background colour that complies with standards. Anyone should be able to read it.</li>
                         <li>Always underline active links. Reinforce them in the hover state with a cursor pointer and hiding the underlining.</li>
@@ -66,7 +66,7 @@
                     <pre>
                         <code>
 <h5>HTML</h5>
-&lt;p&gt;&lt;a href="#"&gt;This link&lt;/a&gt; is an example.&lt;/p&gt;
+&lt;p&gt;&lt;a href="#"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example</span>.&lt;/p&gt;
 <h5>CSS</h5>
 a:link, a:visited {
     background-color: #fcdad4;
@@ -83,11 +83,11 @@ a:hover, a:visited:hover, a:focus {
                     </pre>
                     <h4>Code snippets for links outside a paragraph</h4>
                     <p>These are a call-to-action that usually appears at the end of a section.</p>
-                    <p class="code-example"><a class="cta" href="#">This link</a> is an example.</p>
+                    <p class="code-example"><a class="cta" href="#">Another link as example</a></p>
                     <pre>
                         <code>
 <h5>HTML</h5>
-&lt;p&gt;&lt;a class="cta" href="#"&gt;This link&lt;/a&gt; is an example.&lt;/p&gt;
+&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;
 <h5>CSS</h5>
 .cta:link, .cta:visited {
     font-family: 'Raleway', sans-serif;

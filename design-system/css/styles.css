@@ -202,6 +202,10 @@ code {
     color: #dd2808;
 }
 
+.code a {
+    
+}
+
 
 /* Images ------------------------------ */
 
@@ -469,6 +473,7 @@ nav ul {
 
 nav a.current {
     border-bottom: 0.25rem solid #2f2f2f;
+    border-radius: 0;
     cursor: default;
     text-decoration: none;
 }

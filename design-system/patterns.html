@@ -14,7 +14,8 @@
         <header id="patterns">
             <div class="content-wrap">
                 <h1>Pattern library</h1>
-                <p class="subtle">Last updated on <time datetime="2020-01-24">January 24, 2020 &nbsp; &#10087; &nbsp; In progress</time></p>
+                <p class="intro-header">Components, documentation and code</p>
+                <p class="subtle">Last updated on <time datetime="2020-01-25">January 25, 2020 <br> In progress</time></p>
             </div>
             <nav>
                 <h2 class="hidden">Main navigation</h2>
@@ -40,17 +41,22 @@
                     <nav class="secondary">
                         <h2 class="hidden">Items</h2>
                         <ul>
+                            <li><a href="#main-content">Buttons</a></li>
                             <li><a href="#links">Links</a></li>
                             <li><a href="#texts">Texts</a></li>
                         </ul>
                     </nav>
                 </aside>
                 <article class="content">
-                    <h2 id="main-content" class="xtarget">Components <a href="https://www.patimontero.ca/design-system/patterns.html#main-content">#</a> </h2>
-                    <p class="intro">Here is where to find the building blocks of my interfaces, and the way to combine them.</p>
-                    <h3 id="links" class="xtarget">Links <a href="https://www.patimontero.ca/design-system/patterns.html#links">#</a> </h3>
-                    <p>A link is a navigational element. It should be brief and descriptive of the intended destination.</p>
-                    <h4>Guidelines</h4>
+                    <h2 id="main-content" class="xtarget">Buttons <a href="https://www.patimontero.ca/design-system/patterns.html#main-content">#</a> </h2>
+                    <p class="intro">Technically, buttons are a box area where users can click or tap. In most cases, they are call-to-action. They manifest within three states: active, hover and disable.</p>
+                    <h3>Guidelines</h3>
+                    <ul>
+                        <li class="subtle">This section is in progress.</li>
+                    </ul>
+                    <h2 id="links" class="xtarget">Links <a href="https://www.patimontero.ca/design-system/patterns.html#links">#</a> </h2>
+                    <p class="intro">A link is a navigational element. It should be brief and descriptive of the intended destination.</p>
+                    <h3>Guidelines</h3>
                     <ul>
                         <li>Provide text rather than images, so the content reminds readable. The only exception is the use of logos.</li>
                         <li>Use text links in favour of buttons for navigation purposes. If it takes you to a new page or section of a page, it should be an anchor element <code class="code-in-text">&lt;a&gt;</code>. The only exception is the use of logos, as in the case of social media.</li>
@@ -60,7 +66,8 @@
                         <li>Always underline active links. Reinforce them in the hover state with a cursor pointer and hiding the underlining.</li>
                         <li>Set the font size in relative units to keep it proportional to the reading device.</li>
                     </ul>
-                    <h4>Code snippets for links inside a paragraph</h4>
+                    <h3>Code snippets</h3>
+                    <h4>Links inside a paragraph</h4>
                     <p>These are inline-block elements, and their code is the foundation for all the later ones.</p>
                     <p class="code-example"><a href="#">This link</a> is an example.</p>
                     <pre>
@@ -81,7 +88,7 @@ a:hover, a:visited:hover, a:focus {
 }
                         </code>
                     </pre>
-                    <h4>Code snippets for links outside a paragraph</h4>
+                    <h4>Links outside a paragraph</h4>
                     <p>These are a call-to-action that usually appears at the end of a section.</p>
                     <p class="code-example"><a class="cta" href="#">Another link as example</a></p>
                     <pre>
@@ -97,46 +104,21 @@ a:hover, a:visited:hover, a:focus {
 }
                         </code>
                     </pre>
-                    <h4>Code snippets for links in the main navigation bar</h4>
-                    <p>Whenever possible, keep under four the total of items in the main navigation bar. It may be viable, given the simplicity of my interfaces. It also reduces the need for a <a href="https://www.nngroup.com/articles/hamburger-menu-vs-pizza/">hamburger menu</a>.</p>
-                    <p>The logo should take the visitor to the <a href="https://www.patimontero.ca/"> main website's homepage</a>. A thicker underline identifies the current page.</p>
+                    <h4>Links in the main navigation bar</h4>
+                    <p>Except for the background colour, these links are like the ones outside a paragraph. A thicker underline identifies the current page.</p>
+                    <p>Whenever possible, keep under four the total items in the main navigation bar. It may be viable, given the simplicity of my interfaces. It also reduces the need for a <a href="https://www.nngroup.com/articles/hamburger-menu-vs-pizza/">hamburger menu</a>.</p>
                     <p class="code-example"> <img src="images/cmpnt-lnk-navbar.png" alt="Close up. Links in the navigation bar."> </p>
                     <pre>
                         <code>
 <h5>HTML</h5>
 &lt;nav&gt;
-&lt;h2 class="hidden"&gt;Main navigation&lt;/h2&gt;
-&lt;a aria-label="Go back to Pati Montero's website" class="logo" href="../index.html"&gt;
-    &lt;div class="container"&gt;
-        &lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 50 50"&gt;
-            <span class="code-accent">&lt;path d="M22.6 27.6c0 3.1 2.6 1.7 2.6 1.7V25c0-.1-2.6-.3-2.6 2.6zM11.2 20.9c-1 0-2 .6-2 .6v6.3c0 1 .7 2.8 2.3 2.8 1.5 0 2.4-2 2.4-5.4s-1.8-4.3-2.7-4.3z"/&gt;</span>
-            <span class="code-accent">&lt;path d="M25 0C11.2 0 0 11.2 0 25s11.2 25 25 25 25-11.2 25-25S38.8 0 25 0zM12.1 31.6c-1.6 0-2.4-.3-2.4-.3h-.5v6h-4V21.9c0-1-.4-1.8-1-1.8l-.1-.3 5.2-1.6h-.1v2h.4s1.6-2.1 4.1-2.1 4.6 2.8 4.6 6.1c.1 3.4-1.2 7.4-6.2 7.4zm29.7-.2c-1.5 0-2.3-.7-2.8-1.8-.5.5-2.2 1.8-4.2 1.8-1.3 0-2.2-.6-2.7-1.4-.4.4-1.8 1.4-3.3 1.4-2.2 0-2.7-1.6-2.7-1.6s-1.2 1.6-3.7 1.6c-2 0-3.6-1.5-3.6-3.3 0-4.5 6.5-3.9 6.5-3.9V21c0-1.2-.3-1.8-1.4-1.8-1.1 0-1.4.8-1.4.8s.7.4.7 1.4c0 1.5-1.2 1.9-1.8 1.9-.8 0-1.9-.3-1.9-1.9 0-3.2 5-2.9 5-2.9 5.1 0 4.8 3.3 4.8 4v5.9c0 2.1 1.8 1.4 2.2 1.1-.2-.6-.2-1.2-.2-1.9V17.3h-1v-.5c1 0 3.7-3.5 3.7-4.5h1.3v4c1-.8 2.4-3.6 5-3.6 1.3 0 2.6 1.1 2.6 2.4 0 1.3-1 2.4-2.3 2.4-1.2 0-2.6-1-2.6-2.1-.8 0-1.6 1.7-2.6 2.2v10c0 2 2.2 2.3 3.1 1.5-.1-.4-.1-.9-.1-1.4V22c0-.6 0-1.5-1-1.5v-.4l4.6-1.5.4.1v8.9c0 2.1 2.3 2.4 3.1 1.5l.3.3c-.1-.1-1.7 2-4 2z"/&gt;</span>
-        &lt;/svg&gt;
-    &lt;/div&gt;
-&lt;/a&gt;
-&lt;ul&gt;
-    &lt;li&gt;&lt;a href="index.html" &gt;<span class="code-accent">Brand</span>&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="styles.html"&gt;<span class="code-accent">Styles</span>&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class="current" href="patterns.html"&gt;<span class="code-accent">Patterns</span>&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="index.html" &gt;<span class="code-accent">Brand</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="styles.html"&gt;<span class="code-accent">Styles</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="current" href="patterns.html"&gt;<span class="code-accent">Patterns</span>&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
 &lt;/nav&gt;
 <h5>CSS</h5>
-<p><span class="code-accent">For the logo as SVG</span></p>
-.logo:link, .logo:visited {
-    background: none;
-    border-bottom: none;
-    box-shadow: none;
-    display: inline-block;
-    fill: #2f2f2f;
-    margin: 0.5rem 1rem 0.5rem 0;
-    vertical-align: middle;
-    width: 3rem;
-}
-.logo:hover, .logo:focus, .logo:visited:hover {
-    fill: #dd2808;
-}
-
-<p><span class="code-accent">For the links</span></p>
 nav a:link, nav a:visited {
     background-color: transparent;
     font-family: 'Raleway', sans-serif;
@@ -165,9 +147,39 @@ nav a.current {
 }
                         </code>
                     </pre>
-                    <h3 id="texts" class="xtarget">Texts <a href="https://www.patimontero.ca/design-system/patterns.html#texts">#</a> </h3>
-                    <p>Along with my illustration and design pieces, this is the core of everything I publish on the web. It must be legible at all times.</p>
-                    <h4>Guidelines</h4>
+                    <h4>Image links in the main navigation bar</h4>
+                    <p>The logo should take the visitor to the <a href="https://www.patimontero.ca/"> main website's homepage</a>. It appears in two shades: black and dark accent. The latter is for the hover and focus states.</p>
+                    <p class="code-example"> <img src="images/cmpnt-lnk-img-navbar.png" alt="Close up. Links in the navigation bar."> </p>
+                    <pre>
+                        <code>
+<h5>HTML</h5>
+&lt;nav&gt;
+    &lt;a aria-label="Go back to Pati Montero's website" class="logo" href="../index.html"&gt;
+        &lt;div class="container"&gt;
+            &lt;svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 50 50"&gt;
+                <span class="code-accent">&lt;path d="M22.6 27.6c0 3.1 2.6 1.7 2.6 1.7V25c0-.1-2.6-.3-2.6 2.6zM11.2 20.9c-1 0-2 .6-2 .6v6.3c0 1 .7 2.8 2.3 2.8 1.5 0 2.4-2 2.4-5.4s-1.8-4.3-2.7-4.3z"/&gt;</span>
+                <span class="code-accent">&lt;path d="M25 0C11.2 0 0 11.2 0 25s11.2 25 25 25 25-11.2 25-25S38.8 0 25 0zM12.1 31.6c-1.6 0-2.4-.3-2.4-.3h-.5v6h-4V21.9c0-1-.4-1.8-1-1.8l-.1-.3 5.2-1.6h-.1v2h.4s1.6-2.1 4.1-2.1 4.6 2.8 4.6 6.1c.1 3.4-1.2 7.4-6.2 7.4zm29.7-.2c-1.5 0-2.3-.7-2.8-1.8-.5.5-2.2 1.8-4.2 1.8-1.3 0-2.2-.6-2.7-1.4-.4.4-1.8 1.4-3.3 1.4-2.2 0-2.7-1.6-2.7-1.6s-1.2 1.6-3.7 1.6c-2 0-3.6-1.5-3.6-3.3 0-4.5 6.5-3.9 6.5-3.9V21c0-1.2-.3-1.8-1.4-1.8-1.1 0-1.4.8-1.4.8s.7.4.7 1.4c0 1.5-1.2 1.9-1.8 1.9-.8 0-1.9-.3-1.9-1.9 0-3.2 5-2.9 5-2.9 5.1 0 4.8 3.3 4.8 4v5.9c0 2.1 1.8 1.4 2.2 1.1-.2-.6-.2-1.2-.2-1.9V17.3h-1v-.5c1 0 3.7-3.5 3.7-4.5h1.3v4c1-.8 2.4-3.6 5-3.6 1.3 0 2.6 1.1 2.6 2.4 0 1.3-1 2.4-2.3 2.4-1.2 0-2.6-1-2.6-2.1-.8 0-1.6 1.7-2.6 2.2v10c0 2 2.2 2.3 3.1 1.5-.1-.4-.1-.9-.1-1.4V22c0-.6 0-1.5-1-1.5v-.4l4.6-1.5.4.1v8.9c0 2.1 2.3 2.4 3.1 1.5l.3.3c-.1-.1-1.7 2-4 2z"/&gt;</span>
+            &lt;/svg&gt;
+        &lt;/div&gt;
+    &lt;/a&gt;
+&lt;/nav&gt;
+<h5>CSS</h5>
+.logo:link, .logo:visited {
+    background: none;
+    display: inline-block;
+    fill: #2f2f2f;
+    margin: 0.5rem 1rem 0.5rem 0;
+    vertical-align: middle;
+    width: 3rem;
+}
+.logo:hover, .logo:focus, .logo:visited:hover {
+    fill: #dd2808;
+}
+                        </code>
+                    </pre>
+                    <h2 id="texts" class="xtarget">Texts <a href="https://www.patimontero.ca/design-system/patterns.html#texts">#</a> </h2>
+                    <p class="intro">Along with my illustration and design pieces, this is the core of everything I publish on the web. It must be legible at all times.</p>
+                    <h3>Guidelines</h3>
 
                     <a href="index.html" class="cta">Next: Brand foundations</a>
                 </article>

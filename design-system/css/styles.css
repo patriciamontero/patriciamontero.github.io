@@ -202,14 +202,11 @@ code {
     color: #dd2808;
 }
 
-.code a {
-    
-}
-
 
 /* Images ------------------------------ */
 
 img {
+    border-radius: 0.1875rem;
     width: 100%;
     margin: 1.5rem 0;
 }
@@ -342,7 +339,7 @@ h3 {
     font-size: 1.602rem;
 }
 
-h4 {
+h4, .intro-header {
     font-size: 1.266rem;
 }
 
@@ -480,8 +477,6 @@ nav a.current {
 
 .logo:link, .logo:visited {
     background: none;
-    border-bottom: none;
-    box-shadow: none;
     display: inline-block;
     fill: #2f2f2f;
     margin: 0.5rem 1rem 0.5rem 0;

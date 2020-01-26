@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Pattern library</h1>
                 <p class="tagline">A wee design system's components</p>
-                <p class="subtle">Last updated on <time datetime="2020-01-25">January 25, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-01-26">January 26, 2020 <br> In progress</time></p>
             </div>
             <nav>
                 <h2 class="hidden">Main navigation</h2>
@@ -178,18 +178,33 @@ nav a.current {
                         </code>
                     </pre>
                     <h4>Skip to content link</h4>
-                    <p class="subtle">This section is in progress.</p>
-                    <p class="code-example"><a class="cta" href="#">Another link as example</a></p>
+                    <p>This link allows screen reader users to go straight to the main content. It's a hidden element by default, but it appears by pressing the tab key right after entering the page.</p>
+                    <p class="code-example"><img src="images/cmpnt-lnk-skip.png" alt="Skip to content button. Close up."></p>
                     <pre>
                         <code>
 <h5>HTML</h5>
-&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;
+&lt;a href="#main-content" class="skip"&gt;<span class="code-accent">Skip to content</span>&lt;/a&gt;
 <h5>CSS</h5>
-.cta:link, .cta:visited {
+a.skip {
+    left: -999px;
+    overflow: hidden;
+    position: absolute;
+    top: 0.5rem;
+    z-index: -999;
+}
+a.skip:focus, a.skip:active {
+    background-color: #fba798;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.266rem;
-    margin: 2.281rem 0 1.125rem 0;
+    font-weight: 700;
+    left: 1rem;
+    overflow: auto;
     padding: 0.5rem;
+    text-decoration: underline;
+    top: 1rem;
+    z-index: 999;
 }
                         </code>
                     </pre>

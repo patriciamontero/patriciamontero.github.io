@@ -48,13 +48,13 @@
                     </nav>
                 </aside>
                 <article class="content">
-                    <h2 id="main-content" class="xtarget">Buttons <a href="https://www.patimontero.ca/design-system/patterns.html#main-content">#</a> </h2>
+                    <h2 id="main-content" class="xtarget">Buttons <a href="#main-content">#</a> </h2>
                     <p class="intro">Technically, buttons are a box area where users can click or tap. In most cases, they are call-to-action. They manifest within three states: active, hover and disable.</p>
                     <h3>Guidelines</h3>
                     <ul>
                         <li class="subtle">This section is in progress.</li>
                     </ul>
-                    <h2 id="links" class="xtarget">Links <a href="https://www.patimontero.ca/design-system/patterns.html#links">#</a> </h2>
+                    <h2 id="links" class="xtarget">Links <a href="#links">#</a> </h2>
                     <p class="intro">A link is a navigational element. It should be brief and descriptive of the intended destination.</p>
                     <h3>Guidelines</h3>
                     <ul>
@@ -68,14 +68,23 @@
                         <li>As <a href="https://heydonworks.com/article/shrinking-button-outlines/">Heydon Pickering</a> hints, the focus state is explicit and yet playful. It's a thick and coloured dotted line.</li>
                     </ul>
                     <h3>Code snippets</h3>
-                    <h4 id="links-content" class="xtarget">Links as part of the content <a href="#links-content">#</a></h4>
-                    <p>Its styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction. Their code is the foundation for all the later ones.</p>
-                    <p class="code-example"><a href="#">This link</a> is an example.</p>
-                    <pre>
-                        <code>
-<h5>HTML</h5>
+                    <h4 id="links-content" class="xtarget">
+                        <button aria-expanded="false" aria-controls="Links as part of the content" >
+                            Links as part of the content <a href="#links-content">#</a>
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
+                                <rect class="vert" height="8" width="2" y="1" x="4"/>
+                                <rect height="2" width="8" y="4" x="1"/>
+                            </svg>
+                        </button>
+                    </h4>
+                    <div hidden id="Links as part of the content">
+                        <p>Its styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction. Their code is the foundation for all the later ones.</p>
+                        <p class="code-example"><a href="#">This link</a> is an example.</p>
+                        <pre>
+                            <code>
+                                <h5>HTML</h5>
 &lt;p&gt;&lt;a href="#"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;
-<h5>CSS</h5>
+                                <h5>CSS</h5>
 a:link, a:visited {
     background-color: #fcdad4;
     border-radius: 0.1875rem;
@@ -89,8 +98,9 @@ a:hover, a:visited:hover, a:focus {
     outline: 0.25rem dotted #dd2808;
     text-decoration: none;
 }
-                        </code>
-                    </pre>
+                            </code>
+                        </pre>
+                    </div>
                     <h4 id="links-cta" class="xtarget"> Links as a call-to-action <a href="#links-cta">#</a></h4>
                     <p>These statements need an instant response from the user, and they usually appear at the end of a section. Their sentences end without a period.</p>
                     <p class="code-example"><a class="cta" href="#">Another link as example</a></p>
@@ -254,7 +264,7 @@ a.skip:focus, a.skip:active {
 }
                         </code>
                     </pre>
-                    <h2 id="texts" class="xtarget">Texts <a href="https://www.patimontero.ca/design-system/patterns.html#texts">#</a> </h2>
+                    <h2 id="texts" class="xtarget">Texts <a href="#texts">#</a> </h2>
                     <p class="intro">Along with my illustration and design pieces, this is the core of everything I publish on the web. It must be legible at all times.</p>
                     <h3>Guidelines</h3>
                     <ul>
@@ -271,5 +281,6 @@ a.skip:focus, a.skip:active {
                 <p class="note"><a href="https://github.com/">Github</a> and <a href="https://www.netlify.com/">Netlify</a> host this website ♥</p>
             </div>
         </footer>
+        <script src="/js/script.js"></script>
     </body>
 </html>

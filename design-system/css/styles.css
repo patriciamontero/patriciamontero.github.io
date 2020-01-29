@@ -449,7 +449,7 @@ a:hover, a:visited:hover, a:focus {
     padding: 0.5rem;
 }
 
-h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
+h2 a:link, h3 a:link, h4 a:link, h2 a:visited, h3 a:visited, h4 a:visited {
     background-color: transparent;
     color: #dd2808;
     text-decoration: none;

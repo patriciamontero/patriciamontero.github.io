@@ -397,34 +397,34 @@ figcaption, .note {
 }
 
 .table {
-    margin-bottom: 3.653rem;
+    margin: 3.653rem 0;
 }
 
 .type-scale {
     border-bottom: 2px solid #f96c53;
-}
-
-.heading {
     display: block;
 }
-@media (min-width: 900px) {
-    .heading {
-        display: inline-block;
-        padding-right: 3rem;
-        width: 60%;
+    @media (min-width: 900px) {
+        .type-scale {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
     }
-}  
 
-.heading-info {
-    display: block;
+.type-scale p, .type-scale h1, 
+.type-scale h2, .type-scale h3, 
+.type-scale h4, .type-scale body {
+    line-height: 0.6;
+    margin: 2rem 0;
 }
-@media (min-width: 900px) {
-    .heading-info {
-        display: inline-block;
-        text-align: right;
+    @media (min-width: 900px) {
+        .type-scale p, .type-scale h1, 
+        .type-scale h2, .type-scale h3, 
+        .type-scale h4, .type-scale body {
+            line-height: 2rem;
+        }
     }
-}
-
 
 /* Buttons and links ------------------------------ */
 
@@ -449,7 +449,7 @@ a:hover, a:visited:hover, a:focus {
     padding: 0.5rem;
 }
 
-h2 a:link, h3 a:link, h4 a:link, h2 a:visited, h3 a:visited, h4 a:visited {
+h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     background-color: transparent;
     color: #dd2808;
     text-decoration: none;
@@ -538,25 +538,38 @@ a.skip:focus, a.skip:active {
     z-index: 999;
 }
 
+.accordion {
+    border-width: 2px 0; 
+    border-style: solid #f96c53;
+}
+
+.accordion h4 {
+    margin: 0;
+}
+
+.accordion > div + h4 {
+    border-top: 2px solid #f96c53;
+}
+
 h4 button {
     all: inherit;
     border: 0;
     display: flex;
     justify-content: space-between;
+    padding: 2rem 0;
     width: 100%;
-    padding: 0.5em 0;
   }
   
   h4 button:focus svg {
-    outline: 2px solid;
+    outline: 0.25rem dotted #dd2808;
   }
   
   button svg {
     height: 1em;
-    margin-left: 0.5em;
+    margin-left: 0.5rem;
   }
   
-  [aria-expanded="true"] .vert {
+  [aria-expanded="true"] .open {
     display: none;
   }
   

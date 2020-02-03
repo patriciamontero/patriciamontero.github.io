@@ -1,5 +1,5 @@
-console.log('it works');
 // Accordion
+
 (function() {
   const headings = document.querySelectorAll('h4');
   

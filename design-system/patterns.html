@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
         <a href="#main-content" class="skip">Skip to content</a>
         <header id="patterns">
             <div class="content-wrap">
@@ -17,7 +17,7 @@
                 <p class="tagline">A wee design system's components</p>
                 <p class="subtle">Last updated on <time datetime="2020-02-03">February 3, 2020 <br> In progress</time></p>
             </div>
-            <nav>
+            <nav aria-label="page">
                 <h2 class="hidden">Main navigation</h2>
                 <a aria-label="Go back to Pati Montero's website" class="logo" href="../index.html">
                     <div class="container">
@@ -32,7 +32,7 @@
                     <li><a href="styles.html">Styles</a></li>
                     <li><a class="current" href="patterns.html">Patterns</a></li>
                 </ul>
-            </nav>
+            </nav aria-label="page">
         </header>
         <main>
             <div class="main-content-wrap">
@@ -67,8 +67,11 @@
                         <li>Set the font size in relative units to keep it proportional to the reading device.</li>
                         <li>As <a href="https://heydonworks.com/article/shrinking-button-outlines/">Heydon Pickering</a> hints, the focus state is explicit and yet playful. It's a thick and coloured dotted line.</li>
                     </ul>
-                    <h3>Code snippets</h3>
-                    <div class="accordion">
+                    <h3 id="principles" class="with-button" tabindex="-1">
+                        <span>Code snippets</span>
+                        <button data-expand="">Expand all</button>
+                    </h3>
+                    <div class="principle-container">
                         <h4>
                             <button aria-expanded="false" aria-controls="links-as-a-part-of-the-content">
                                 Links as a part of the content

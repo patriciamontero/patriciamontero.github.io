@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Pattern library</h1>
                 <p class="tagline">A wee design system's components</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-03">February 3, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-07">February 7, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden">Main navigation</h2>
@@ -67,21 +67,21 @@
                         <li>Set the font size in relative units to keep it proportional to the reading device.</li>
                         <li>As <a href="https://heydonworks.com/article/shrinking-button-outlines/">Heydon Pickering</a> hints, the focus state is explicit and yet playful. It's a thick and coloured dotted line.</li>
                     </ul>
-                    <h3 id="principles" class="with-button" tabindex="-1">
+                    <h3 id="components" class="with-button" tabindex="-1">
                         <span>Code snippets</span>
                         <button data-expand="">Expand all</button>
                     </h3>
-                    <div class="principle-container">
-                        <h4>
-                            <button aria-expanded="false" aria-controls="links-as-a-part-of-the-content">
-                                Links as a part of the content
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="links-as-a-part-of-the-content">Links as a part of the content</h4>
+                            <button data-expands="links-as-a-part-of-the-content" aria-label="open section" aria-describedby="links-as-a-part-of-the-content" aria-expanded="false">
                                 <svg aria-hidden="true" focusable="false" viewBox="0 0 10 10">
                                     <rect class="open" ry="0.5" height="8" width="2" y="1" x="4" style="fill: #dd2808;"></rect>
                                     <rect height="2" ry="0.5" width="8" y="4" x="1" style="fill: #dd2808;"></rect>
                                 </svg>
                             </button>
-                        </h4>
-                        <div hidden id="links-as-a-part-of-the-content">
+                        </div>
+                        <div id="links-as-a-part-of-the-content" class="component-content" hidden="">
                             <p>Its styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction. Their code is the foundation for all the later ones.</p>
                             <p class="code-example"><a href="#">This link</a> is an example.</p>
                             <pre>

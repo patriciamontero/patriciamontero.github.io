@@ -538,7 +538,57 @@ a.skip:focus, a.skip:active {
     z-index: 999;
 }
 
-.accordion {
+[hidden] {
+    display: none;
+  }
+
+.component-container + .component-container {
+margin-top: 1.4rem;
+padding-top: 1.4rem;
+border-top: 1px dashed;
+}
+
+.component-intro, .with-button {
+display: flex;
+align-items: center;
+justify-content: space-between;
+line-height: 1;
+}
+
+.with-button {
+    align-items: center;
+  }
+  
+.component-intro button, .with-button button {
+margin: 0;
+border: 0;
+background: 0;
+color: #1b75bc;
+border-bottom: 2px solid #fefefe;
+}
+
+.component-intro button, .component-intro button:hover {
+border: 0;
+}
+
+button i::before {
+color: #1b75bc;
+}
+
+[data-expands] svg {
+height: 2rem;
+width: 2rem;
+}
+
+[data-expands][aria-expanded="true"] .up-strut {
+display: none;
+}
+
+[data-expands]:hover svg g {
+color: #fcb316;
+}
+
+/* .accordion {
     border-width: 2px 0; 
     border-style: solid #f96c53;
 }
@@ -575,4 +625,4 @@ h4 button {
   
   [aria-expanded] rect {
     fill: currentColor;
-  }
+  } */

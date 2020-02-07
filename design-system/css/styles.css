@@ -540,7 +540,33 @@ a.skip:focus, a.skip:active {
 
 [hidden] {
     display: none;
-  }
+    margin-top: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+button:hover [aria-current] {
+    text-decoration: none;
+    border-bottom: 2px solid #dd2808;
+    margin-bottom: -2px;
+}
+
+:focus:not([tabindex="-1"]) {
+    outline: 0.25rem dotted #dd2808;
+    outline-offset: 0.125rem;
+    border: 0;
+}
+
+/* fix for IE */
+div[tabindex]:focus {
+    outline: none;
+}
 
 .component-container + .component-container {
 margin-top: 1.4rem;
@@ -555,24 +581,45 @@ justify-content: space-between;
 line-height: 1;
 }
 
-.with-button {
-    align-items: center;
-  }
-  
 .component-intro button, .with-button button {
 margin: 0;
 border: 0;
 background: 0;
-color: #1b75bc;
-border-bottom: 2px solid #fefefe;
+color: #dd2808;
+border-bottom: 2px solid #f8f8f8;
 }
 
 .component-intro button, .component-intro button:hover {
 border: 0;
 }
 
+.component-intro h4 {
+    cursor: pointer;
+}
+
+.with-button button {
+font-size: 0.85rem;
+text-decoration: underline;
+text-transform: uppercase;
+}
+
+.with-button button:hover {
+text-decoration: none;
+border-color: #dd2808;
+}
+
+.component-intro a {
+margin-top: 0;
+font-size: 1.5rem;
+}
+
+.component-intro ~ .component-intro {
+border-top: 1px dashed;
+padding-top: 1.4rem;
+}
+
 button i::before {
-color: #1b75bc;
+color: #dd2808;
 }
 
 [data-expands] svg {
@@ -585,44 +632,14 @@ display: none;
 }
 
 [data-expands]:hover svg g {
-color: #fcb316;
+color: #dd2808;
 }
 
-/* .accordion {
-    border-width: 2px 0; 
-    border-style: solid #f96c53;
+@media print {
+    [hidden] {
+        display: block !important;
+    }
+    [data-expandall], [data-expands], .examples + p {
+        display: none !important;
+    }
 }
-
-.accordion h4 {
-    margin: 0;
-}
-
-.accordion > div + h4 {
-    border-top: 2px solid #f96c53;
-}
-
-h4 button {
-    all: inherit;
-    border: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
-    width: 100%;
-  }
-  
-  h4 button:focus svg {
-    outline: 0.25rem dotted #dd2808;
-  }
-  
-  button svg {
-    height: 1em;
-    margin-left: 0.5rem;
-  }
-  
-  [aria-expanded="true"] .open {
-    display: none;
-  }
-  
-  [aria-expanded] rect {
-    fill: currentColor;
-  } */

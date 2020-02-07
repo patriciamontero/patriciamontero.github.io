@@ -1,5 +1,4 @@
 // Accordion
-
 (function() {
 
   var translations = {
@@ -83,7 +82,7 @@
   window.onload = openSection;
   window.onhashchange = openSection;
 
-  var sectionHeadings = document.querySelectorAll('.intro h3');
+  var sectionHeadings = document.querySelectorAll('.component-intro h4');
 
   Array.prototype.forEach.call(sectionHeadings, function (heading) {
     heading.addEventListener('click', function () {

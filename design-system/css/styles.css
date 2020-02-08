@@ -169,7 +169,7 @@ footer {
     text-align: center;
 }
 
-.hidden {
+.hidden-content {
     display: none;
 }
 
@@ -199,13 +199,13 @@ code {
 }
 
 .code-in-text {
-    color: #dd2808;
+    color: #a71e06;
     display: inline;
     padding: 0.25rem;
 }
 
 .code-accent {
-    color: #dd2808;
+    color: #a71e06;
 }
 
 
@@ -551,7 +551,7 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-button:hover [aria-current] {
+button:hover {
     text-decoration: none;
     border-bottom: 2px solid #dd2808;
     margin-bottom: -2px;
@@ -569,70 +569,69 @@ div[tabindex]:focus {
 }
 
 .component-container + .component-container {
-margin-top: 1.4rem;
-padding-top: 1.4rem;
-border-top: 1px dashed;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #f96c53;
 }
 
 .component-intro, .with-button {
-display: flex;
-align-items: center;
-justify-content: space-between;
-line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1;
 }
 
+.with-button {
+    align-items: center;
+  }
+
 .component-intro button, .with-button button {
-margin: 0;
-border: 0;
-background: 0;
-color: #dd2808;
-border-bottom: 2px solid #f8f8f8;
+    margin: 0;
+    border: 0;
+    background: 0;
+    color: #dd2808;
+    border-bottom: 2px solid #f8f8f8;
 }
 
 .component-intro button, .component-intro button:hover {
-border: 0;
+    border: 0;
 }
 
 .component-intro h4 {
     cursor: pointer;
+    margin: 1rem 0;
 }
 
 .with-button button {
-font-size: 0.85rem;
-text-decoration: underline;
-text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-decoration: underline;
 }
 
 .with-button button:hover {
-text-decoration: none;
-border-color: #dd2808;
-}
-
-.component-intro a {
-margin-top: 0;
-font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .component-intro ~ .component-intro {
-border-top: 1px dashed;
-padding-top: 1.4rem;
+    border-top: 1px dashed;
+    padding-top: 1rem;
 }
 
 button i::before {
-color: #dd2808;
+    color: #dd2808;
 }
 
 [data-expands] svg {
-height: 2rem;
-width: 2rem;
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 [data-expands][aria-expanded="true"] .up-strut {
-display: none;
+    display: none;
 }
 
 [data-expands]:hover svg g {
-color: #dd2808;
+    color: #dd2808;
 }
 
 @media print {

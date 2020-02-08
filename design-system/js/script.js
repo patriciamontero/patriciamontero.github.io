@@ -3,8 +3,8 @@
 
   var translations = {
     en: {
-      EXPAND: "expand all",
-      COLLAPSE: "collapse all"
+      EXPAND: "Expand all",
+      COLLAPSE: "Collapse all"
     },
     es: {
       EXPAND: "muestra todo",
@@ -83,6 +83,8 @@
   window.onhashchange = openSection;
 
   var sectionHeadings = document.querySelectorAll('.component-intro h4');
+
+
 
   Array.prototype.forEach.call(sectionHeadings, function (heading) {
     heading.addEventListener('click', function () {

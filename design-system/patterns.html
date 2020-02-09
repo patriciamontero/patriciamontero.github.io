@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Pattern library</h1>
                 <p class="tagline">A wee design system's components</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-08">February 8, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-09">February 9, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -67,7 +67,7 @@
                         <li>Set the font size in relative units to keep it proportional to the reading device.</li>
                         <li>As <a href="https://heydonworks.com/article/shrinking-button-outlines/">Heydon Pickering</a> hints, the focus state is explicit and yet playful. It's a thick and coloured dotted line.</li>
                     </ul>
-                    <h3 id="components" class="with-button" tabindex="-1">
+                    <h3 id="components" class="code-button" tabindex="-1">
                         <span>Code snippets</span>
                         <button data-expandall="">Expand all</button>
                     </h3>
@@ -88,9 +88,16 @@
                             <p class="code-example"><a href="#">This link</a> is an example.</p>
                             <pre>
                                 <code>
-                                    <h5>HTML</h5>
-&lt;p&gt;&lt;a href="#"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;
-                                    <h5>CSS</h5>
+                                    <h5 class="code-button">
+                                        <span>HTML</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#html-links-as-a-part-of-the-content">Copy HTML</button>
+                                    </h5>
+<span id="html-links-as-a-part-of-the-content">&lt;p&gt;&lt;a href="#"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
+                                    <h5 class="code-button">
+                                        <span>CSS</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#css-links-as-a-part-of-the-content">Copy CSS</button>
+                                    </h5>
+<span id="css-links-as-a-part-of-the-content">
 a:link, a:visited {
     background-color: #fcdad4;
     border-radius: 0.1875rem;
@@ -104,6 +111,7 @@ a:hover, a:visited:hover, a:focus {
     outline: 0.25rem dotted #dd2808;
     text-decoration: none;
 }
+</span>
                                 </code>
                             </pre>
                         </div>
@@ -125,15 +133,23 @@ a:hover, a:visited:hover, a:focus {
                             <p class="code-example"><a class="cta" href="#">Another link as example</a></p>
                             <pre>
                                 <code>
-                                    <h5>HTML</h5>
-&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;
-                                    <h5>CSS</h5>
+                                    <h5 class="code-button">
+                                        <span>HTML</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#html-links-as-a-call-to-action">Copy HTML</button>
+                                    </h5>
+<span id="html-links-as-a-call-to-action">&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
+                                    <h5 class="code-button">
+                                        <span>CSS</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#css-links-as-a-call-to-action">Copy CSS</button>
+                                    </h5>
+<span id="css-links-as-a-call-to-action">
 .cta:link, .cta:visited {
     font-family: 'Raleway', sans-serif;
     font-size: 1.266rem;
     margin: 2.281rem 0 1.125rem 0;
     padding: 0.5rem;
 }
+</span>
                                 </code>
                             </pre>
                         </div>
@@ -156,7 +172,11 @@ a:hover, a:visited:hover, a:focus {
                             <p class="code-example"> <img src="images/cmpnt-lnk-navmenu1.png" alt="Close up. Links in the main navigation menu."> </p>
                             <pre>
                                 <code>
-                                    <h5>HTML</h5>
+                                    <h5 class="code-button">
+                                        <span>HTML</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#html-links-in-the-main-menu">Copy HTML</button>
+                                    </h5>
+<span id="html-links-in-the-main-menu">
 &lt;nav&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="index.html" &gt;<span class="code-accent">Brand</span>&lt;/a&gt;&lt;/li&gt;
@@ -164,7 +184,12 @@ a:hover, a:visited:hover, a:focus {
         &lt;li&gt;&lt;a class="current" href="patterns.html"&gt;<span class="code-accent">Patterns</span>&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
-                                    <h5>CSS</h5>
+</span>
+                                    <h5 class="code-button">
+                                        <span>CSS</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#css-links-in-the-main-menu">Copy CSS</button>
+                                    </h5>
+<span id="css-links-in-the-main-menu">
 nav a:link, nav a:visited {
     background-color: transparent;
     font-family: 'Raleway', sans-serif;
@@ -191,6 +216,7 @@ nav a.current {
     cursor: default;
     text-decoration: none;
 }
+</span>
                                 </code>
                             </pre>
                         </div>
@@ -212,7 +238,11 @@ nav a.current {
                             <p class="code-example"> <img src="images/cmpnt-lnk-img-navmenu.png" alt="Close up. Pati Montero's logo in the navigation menu."> </p>
                             <pre>
                                 <code>
-                            <h5>HTML</h5>
+                                    <h5 class="code-button">
+                                        <span>HTML</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#html-image-links-in-the-main-menu">Copy HTML</button>
+                                    </h5>
+<span id="html-image-links-in-the-main-menu">
 &lt;nav&gt;
     &lt;a aria-label="Go back to Pati Montero's website" class="logo" href="../index.html"&gt;
         &lt;div class="container"&gt;
@@ -223,18 +253,24 @@ nav a.current {
         &lt;/div&gt;
     &lt;/a&gt;
 &lt;/nav&gt;
-                            <h5>CSS</h5>
-.logo:link, .logo:visited {
-    background: none;
-    display: inline-block;
-    fill: #2f2f2f;
-    margin: 0.5rem 1rem 0.5rem 0;
-    vertical-align: middle;
-    width: 3rem;
-}
-.logo:hover, .logo:focus, .logo:visited:hover {
-    fill: #dd2808;
-}
+</span>
+                                    <h5 class="code-button">
+                                        <span>CSS</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#css-image-links-in-the-main-menu">Copy CSS</button>
+                                    </h5>
+<span id="css-image-links-in-the-main-menu">
+    .logo:link, .logo:visited {
+        background: none;
+        display: inline-block;
+        fill: #2f2f2f;
+        margin: 0.5rem 1rem 0.5rem 0;
+        vertical-align: middle;
+        width: 3rem;
+    }
+    .logo:hover, .logo:focus, .logo:visited:hover {
+        fill: #dd2808;
+    }
+</span>
                                 </code>
                             </pre>
                         </div>
@@ -256,15 +292,23 @@ nav a.current {
                             <p class="code-example"> <img src="images/cmpnt-lnk-navmenu2.png" alt="Close up. Links in the secondary navigation menu."> </p>
                             <pre>
                                 <code>
-                                    <h5>HTML</h5>
-&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;
-                                    <h5>CSS</h5>
+                                    <h5 class="code-button">
+                                        <span>HTML</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#html-links-in-the-secondary-menu">Copy HTML</button>
+                                    </h5>
+<span id="html-links-in-the-secondary-menu">&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
+                                    <h5 class="code-button">
+                                        <span>CSS</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#css-links-in-the-secondary-menu">Copy CSS</button>
+                                    </h5>
+<span id="css-links-in-the-secondary-menu">
 .cta:link, .cta:visited {
     font-family: 'Raleway', sans-serif;
     font-size: 1.266rem;
     margin: 2.281rem 0 1.125rem 0;
     padding: 0.5rem;
 }
+</span>
                                 </code>
                             </pre>
                         </div>
@@ -286,30 +330,38 @@ nav a.current {
                             <p class="code-example"><img src="images/cmpnt-lnk-skip.png" alt="Skip to content button. Close up."></p>
                             <pre>
                                 <code>
-                                    <h5>HTML</h5>
-&lt;a href="#main-content" class="skip"&gt;<span class="code-accent">Skip to content</span>&lt;/a&gt;
-                                    <h5>CSS</h5>
-a.skip {
-    left: -999px;
-    overflow: hidden;
-    position: absolute;
-    top: 0.5rem;
-    z-index: -999;
-}
-a.skip:focus, a.skip:active {
-    background-color: #fba798;
-    border: 0;
-    border-radius: 0.1875rem;
-    color: #2f2f2f;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    left: 1rem;
-    overflow: auto;
-    padding: 0.5rem;
-    text-decoration: underline;
-    top: 1rem;
-    z-index: 999;
-}
+                                    <h5 class="code-button">
+                                        <span>HTML</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#html-skip-to-content-link">Copy HTML</button>
+                                    </h5>
+<span id="html-skip-to-content-link">&lt;a href="#main-content" class="skip"&gt;<span class="code-accent">Skip to content</span>&lt;/a&gt;</span>
+                                    <h5 class="code-button">
+                                        <span>CSS</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#css-skip-to-content-link">Copy CSS</button>
+                                    </h5>
+<span id="css-skip-to-content-link">
+    a.skip {
+        left: -999px;
+        overflow: hidden;
+        position: absolute;
+        top: 0.5rem;
+        z-index: -999;
+    }
+    a.skip:focus, a.skip:active {
+        background-color: #fba798;
+        border: 0;
+        border-radius: 0.1875rem;
+        color: #2f2f2f;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        left: 1rem;
+        overflow: auto;
+        padding: 0.5rem;
+        text-decoration: underline;
+        top: 1rem;
+        z-index: 999;
+    }
+</span>
                                 </code>
                             </pre>
                         </div>
@@ -331,6 +383,7 @@ a.skip:focus, a.skip:active {
                 <p class="note"><a href="https://github.com/">Github</a> and <a href="https://www.netlify.com/">Netlify</a> host this website ♥</p>
             </div>
         </footer>
+        <script src="js/clipboard.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

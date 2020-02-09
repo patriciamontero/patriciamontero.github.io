@@ -1,4 +1,4 @@
-// Accordion
+// Accordion by https://inclusivedesignprinciples.org/
 (function() {
 
   var translations = {
@@ -84,8 +84,6 @@
 
   var sectionHeadings = document.querySelectorAll('.component-intro h4');
 
-
-
   Array.prototype.forEach.call(sectionHeadings, function (heading) {
     heading.addEventListener('click', function () {
       this.nextElementSibling.click();
@@ -93,3 +91,8 @@
   });
 
 })();
+
+// Copy to clipboard
+
+new ClipboardJS('.copy-to-clipboard');
+

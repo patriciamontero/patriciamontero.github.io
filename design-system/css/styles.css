@@ -426,7 +426,7 @@ figcaption, .note {
         }
     }
 
-/* Buttons and links ------------------------------ */
+/* Links ------------------------------ */
 
 a:link, a:visited {
     background-color: #fcdad4;
@@ -538,6 +538,8 @@ a.skip:focus, a.skip:active {
     z-index: 999;
 }
 
+/* Accordion by https://inclusivedesignprinciples.org/ */
+
 [hidden] {
     display: none;
     margin-top: 0;
@@ -553,8 +555,6 @@ button::-moz-focus-inner {
 
 button:hover {
     text-decoration: none;
-    border-bottom: 2px solid #dd2808;
-    margin-bottom: -2px;
 }
 
 :focus:not([tabindex="-1"]) {
@@ -574,18 +574,14 @@ div[tabindex]:focus {
     border-top: 2px solid #f96c53;
 }
 
-.component-intro, .with-button {
+.component-intro, .code-button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     line-height: 1;
 }
 
-.with-button {
-    align-items: center;
-  }
-
-.component-intro button, .with-button button {
+.component-intro button, .code-button button {
     margin: 0;
     border: 0;
     background: 0;
@@ -602,14 +598,18 @@ div[tabindex]:focus {
     margin: 1rem 0;
 }
 
-.with-button button {
+.code-button button {
+    background-color: #dd2808;
+    border-radius: 0.1875rem;
+    color: #f8f8f8;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    text-decoration: underline;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
 }
 
-.with-button button:hover {
-    text-decoration: none;
+.code-button button:hover {
+    background-color: #a71e06;
 }
 
 .component-intro ~ .component-intro {

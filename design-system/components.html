@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Components: buttons | Pati Montero's design system </title>
+        <meta name="description" content="I'm Pati Montero and this is my design system. It's a work in progress. To me, it's an educational tool as well as a resource to define my brand.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+    </head>
+    <body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+        <a href="#main-content" class="skip">Skip to content</a>
+        <header id="patterns">
+            <div class="content-wrap">
+                <h1>Components: buttons</h1>
+                <p class="tagline">A wee design system's library</p>
+                <p class="subtle">Last updated on <time datetime="2020-02-010">February 10, 2020 <br> In progress</time></p>
+            </div>
+            <nav aria-label="page">
+                <h2 class="hidden-content">Main navigation</h2>
+                <a aria-label="Go back to Pati Montero's website" class="logo" href="../index.html">
+                    <div class="container">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 50 50">
+                            <path d="M22.6 27.6c0 3.1 2.6 1.7 2.6 1.7V25c0-.1-2.6-.3-2.6 2.6zM11.2 20.9c-1 0-2 .6-2 .6v6.3c0 1 .7 2.8 2.3 2.8 1.5 0 2.4-2 2.4-5.4s-1.8-4.3-2.7-4.3z"/>
+                            <path d="M25 0C11.2 0 0 11.2 0 25s11.2 25 25 25 25-11.2 25-25S38.8 0 25 0zM12.1 31.6c-1.6 0-2.4-.3-2.4-.3h-.5v6h-4V21.9c0-1-.4-1.8-1-1.8l-.1-.3 5.2-1.6h-.1v2h.4s1.6-2.1 4.1-2.1 4.6 2.8 4.6 6.1c.1 3.4-1.2 7.4-6.2 7.4zm29.7-.2c-1.5 0-2.3-.7-2.8-1.8-.5.5-2.2 1.8-4.2 1.8-1.3 0-2.2-.6-2.7-1.4-.4.4-1.8 1.4-3.3 1.4-2.2 0-2.7-1.6-2.7-1.6s-1.2 1.6-3.7 1.6c-2 0-3.6-1.5-3.6-3.3 0-4.5 6.5-3.9 6.5-3.9V21c0-1.2-.3-1.8-1.4-1.8-1.1 0-1.4.8-1.4.8s.7.4.7 1.4c0 1.5-1.2 1.9-1.8 1.9-.8 0-1.9-.3-1.9-1.9 0-3.2 5-2.9 5-2.9 5.1 0 4.8 3.3 4.8 4v5.9c0 2.1 1.8 1.4 2.2 1.1-.2-.6-.2-1.2-.2-1.9V17.3h-1v-.5c1 0 3.7-3.5 3.7-4.5h1.3v4c1-.8 2.4-3.6 5-3.6 1.3 0 2.6 1.1 2.6 2.4 0 1.3-1 2.4-2.3 2.4-1.2 0-2.6-1-2.6-2.1-.8 0-1.6 1.7-2.6 2.2v10c0 2 2.2 2.3 3.1 1.5-.1-.4-.1-.9-.1-1.4V22c0-.6 0-1.5-1-1.5v-.4l4.6-1.5.4.1v8.9c0 2.1 2.3 2.4 3.1 1.5l.3.3c-.1-.1-1.7 2-4 2z"/>
+                        </svg>
+                    </div>
+                </a>
+                <ul>
+                    <li><a href="index.html" >Brand</a></li>
+                    <li><a href="style.html">Style</a></li>
+                    <li><a class="current" href="components.html">Components</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="main-content-wrap">
+                <aside>
+                    <h2 class="hidden-content">Secondary navigation</h2>
+                    <nav class="secondary">
+                        <h2 class="hidden-content">Items</h2>
+                        <ul>
+                            <li><a class="current" href="components.html">Buttons</a></li>
+                            <li><a href="components-links.html">Links</a></li>
+                            <li><a href="components-texts.html">Texts</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <article class="content">
+                    <h2 id="main-content" class="xtarget">Buttons <a href="#main-content">#</a></h2>
+                    <p class="intro">Technically, buttons are a box area where users can click or tap. In most cases, they are call-to-action. They manifest within three states: active, hover and disable.</p>
+                    <h3>Guidelines</h3>
+                    <ul>
+                        <li>Provide text rather than images, so the content reminds readable. The only exception is the use of logos.</li>
+                        <li>Use text links in favour of buttons for navigation purposes. If it takes you to a new page or section of a page, it should be an anchor element <code class="code-in-text">&lt;a&gt;</code>. The only exception is the use of logos, as in the case of social media.</li>
+                        <li>Keep the content below four words to prevent text wrapping.</li>
+                    </ul>
+                    <h3 id="components" class="code-button" tabindex="-1">
+                        <span>Code snippets</span>
+                        <button data-expandall="">Expand all</button>
+                    </h3>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-regular">Regular button</h4>
+                            <button data-expands="buttons-regular-content" aria-label="open section" aria-describedby="buttons-regular" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-regular-content" class="component-content" hidden="">
+                            <p>Its styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction. Their code is the foundation for all the later ones.</p>
+                            <p class="code-example"><a href="#">This link</a> is an example.</p>
+                            <pre>
+                                <code>
+                                    <h5 class="code-button">
+                                        <span>HTML</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#html-buttons-regular">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-regular">&lt;p&gt;&lt;a href="#"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
+                                    <h5 class="code-button">
+                                        <span>CSS</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#css-buttons-regular">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-regular">
+a:link, a:visited {
+    background-color: #fcdad4;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    display: inline-block;
+    padding: 0 0.25rem;
+    transition: all 0.4s ease-in;
+}
+a:hover, a:visited:hover, a:focus {
+    background-color: #fba798;
+    outline: 0.25rem dotted #dd2808;
+    text-decoration: none;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-secondary">Secondary button</h4>
+                            <button data-expands="buttons-secondary-content" aria-label="open section" aria-describedby="buttons-secondary" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-secondary-content" class="component-content" hidden="">
+                            <p>These statements need an instant response from the user, and they usually appear at the end of a section. Their sentences end without a period.</p>
+                            <p class="code-example"><a class="cta" href="#">Another link as example</a></p>
+                            <pre>
+                                <code>
+                                    <h5 class="code-button">
+                                        <span>HTML</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#html-buttons-secondary">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-secondary">&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
+                                    <h5 class="code-button">
+                                        <span>CSS</span>
+                                        <button class="copy-to-clipboard" data-clipboard-target="#css-buttons-secondary">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-secondary">
+.cta:link, .cta:visited {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.266rem;
+    margin: 2.281rem 0 1.125rem 0;
+    padding: 0.5rem;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+
+                    <a href="components-links.html" class="cta">Next component: links</a>
+                </article>
+            </div>
+        </main>
+        <footer>
+            <div class="content-wrap" role="contentinfo">
+                <p>&copy; 2019-2020 Pati Montero &nbsp; &#10087; &nbsp; <a href="privacy.html">Privacy policy</a></p>
+                <p class="note"><a href="https://github.com/">Github</a> and <a href="https://www.netlify.com/">Netlify</a> host this website ♥</p>
+            </div>
+        </footer>
+        <script src="js/clipboard.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

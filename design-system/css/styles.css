@@ -426,7 +426,22 @@ figcaption, .note {
         }
     }
 
-/* Links ------------------------------ */
+/* Buttons and links ------------------------------ */
+
+button {
+    background-color: #dd2808;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #a71e06;
+}
 
 a:link, a:visited {
     background-color: #fcdad4;
@@ -581,7 +596,7 @@ div[tabindex]:focus {
     line-height: 1;
 }
 
-.component-intro button, .heading-button button {
+.component-intro button {
     background: 0;
     border: 0;
     border-bottom: 2px solid #f8f8f8;
@@ -596,20 +611,6 @@ div[tabindex]:focus {
 .component-intro h4 {
     cursor: pointer;
     margin: 1rem 0;
-}
-
-.heading-button button {
-    background-color: #dd2808;
-    border-radius: 0.1875rem;
-    color: #f8f8f8;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-    text-decoration: none;
-}
-
-.heading-button button:hover {
-    background-color: #a71e06;
 }
 
 .component-intro ~ .component-intro {

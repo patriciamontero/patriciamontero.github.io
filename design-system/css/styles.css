@@ -574,14 +574,14 @@ div[tabindex]:focus {
     padding-top: 1rem;
 }
 
-.component-intro, .code-button {
+.component-intro, .heading-button {
     align-items: center;
     display: flex;
     justify-content: space-between;
     line-height: 1;
 }
 
-.component-intro button, .code-button button {
+.component-intro button, .heading-button button {
     background: 0;
     border: 0;
     border-bottom: 2px solid #f8f8f8;
@@ -598,7 +598,7 @@ div[tabindex]:focus {
     margin: 1rem 0;
 }
 
-.code-button button {
+.heading-button button {
     background-color: #dd2808;
     border-radius: 0.1875rem;
     color: #f8f8f8;
@@ -608,7 +608,7 @@ div[tabindex]:focus {
     text-decoration: none;
 }
 
-.code-button button:hover {
+.heading-button button:hover {
     background-color: #a71e06;
 }
 

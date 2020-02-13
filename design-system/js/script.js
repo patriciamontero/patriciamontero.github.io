@@ -94,5 +94,5 @@
 
 // Copy to clipboard
 
-new ClipboardJS('.copy-to-clipboard');
+new ClipboardJS('.secondary');
 

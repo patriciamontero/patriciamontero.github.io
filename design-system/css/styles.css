@@ -49,7 +49,7 @@ nav {
         }
     }
 
-.secondary {
+.secondary-nav {
     background-color: transparent;
     border-bottom: none;
     margin: 0;
@@ -443,6 +443,22 @@ button:hover {
     background-color: #a71e06;
 }
 
+.secondary, .secondary:active {
+    background-color: #f8f8f8;
+    border: 2px solid #dd2808;
+    border-radius: 0.1875rem;
+    color: #dd2808;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+
+.secondary:hover, .secondary:focus:hover {
+    background-color: #fcdad4;
+    border: 2px solid #dd2808;
+}
+
 a:link, a:visited {
     background-color: #fcdad4;
     border-radius: 0.1875rem;
@@ -509,17 +525,17 @@ nav a.current {
     fill: #dd2808;
 }
 
-.secondary li {
+.secondary-nav li {
     display: block;
     padding: 0.5rem 0;
 }
     @media (min-width: 600px) {
-        .secondary li {
+        .secondary-nav li {
             padding: 0.5rem 2rem;
         }
     }
     @media (min-width: 900px) {
-        .secondary li {
+        .secondary-nav li {
             padding: 0.5rem 3rem;
         }
     }

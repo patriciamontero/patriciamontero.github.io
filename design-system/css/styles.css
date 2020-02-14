@@ -438,7 +438,6 @@ button {
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
-
 button:hover {
     background-color: #a71e06;
 }
@@ -453,7 +452,6 @@ button:hover {
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
-
 .secondary:hover, .secondary:focus:hover {
     background-color: #fcdad4;
     border: 2px solid #dd2808;

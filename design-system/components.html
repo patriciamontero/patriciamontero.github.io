@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: buttons</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-13">February 13, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-14">February 14, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -74,31 +74,31 @@
                         </div>
                         <div id="buttons-primary-content" class="component-content" hidden="">
                             <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
-                            <p class="code-example"><button>This is a button</button></p>
+                            <p class="code-example"><button aria-label="Example of primary button">This is a button</button></p>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary">Copy HTML</button>
                                     </h5>
-<span id="html-buttons-primary">&lt;p&gt;&lt;a href="#"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
+<span id="html-buttons-primary">&lt;button aria-label="example of a primary button"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;&lt;/p&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary">Copy CSS</button>
                                     </h5>
 <span id="css-buttons-primary">
-a:link, a:visited {
-    background-color: #fcdad4;
+button {
+    background-color: #dd2808;
+    border: 0;
     border-radius: 0.1875rem;
-    color: #2f2f2f;
-    display: inline-block;
-    padding: 0 0.25rem;
-    transition: all 0.4s ease-in;
-}
-a:hover, a:visited:hover, a:focus {
-    background-color: #fba798;
-    outline: 0.25rem dotted #dd2808;
+    color: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
     text-decoration: none;
+}
+button:hover {
+    background-color: #a71e06;
 }
 </span>
                                 </code>

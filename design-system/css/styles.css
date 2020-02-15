@@ -188,7 +188,36 @@ code {
 
 .code-example {
     background-color: #f0f0f0;
-    margin: 0;
+    border-radius: 0.1875rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+.code-example-black {
+    background-color: #2f2f2f;
+    border-radius: 0.1875rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+.code-example-darkest-accent {
+    background-color: #a71e06;
+    border-radius: 0.1875rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+.code-example-dark-accent {
+    background-color: #dd2808;
+    border-radius: 0.1875rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+.code-example-accent {
+    background-color: #f96c53;
+    border-radius: 0.1875rem;
+    margin: 0.5 0;
     padding: 1rem;
 }
 
@@ -196,6 +225,10 @@ code {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+.code-example-dark {
+    color: #f8f8f8;
 }
 
 .code-in-text {
@@ -426,7 +459,7 @@ figcaption, .note {
         }
     }
 
-/* Buttons and links ------------------------------ */
+/* Buttons ------------------------------ */
 
 button {
     background-color: #dd2808;
@@ -442,7 +475,49 @@ button:hover {
     background-color: #a71e06;
 }
 
-.secondary, .secondary:active {
+.blackbg {
+    background-color: #f96c53;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.blackbg:hover {
+    background-color: #fba798;
+}
+
+.darkbg {
+    background-color: #f8f8f8;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.darkbg:hover {
+    background-color: #fcdad4;
+}
+
+.accentbg {
+    background-color: #2f2f2f;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.accentbg:hover {
+    background-color: #a71e06;
+}
+
+.secondary {
     background-color: #f8f8f8;
     border: 2px solid #dd2808;
     border-radius: 0.1875rem;
@@ -456,6 +531,8 @@ button:hover {
     background-color: #fcdad4;
     border: 2px solid #dd2808;
 }
+
+/* Links ------------------------------ */
 
 a:link, a:visited {
     background-color: #fcdad4;

@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: buttons</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-14">February 14, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-15">February 15, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -54,7 +54,9 @@
                     <ul>
                         <li>Use a <code class="code-in-text">&lt;button&gt;</code> for actions, such as <em>copy</em>, <em>expand</em>, <em>collapse</em> or <em>send</em>. If the need is a change of location, use <a href="components-links.html">a link</a> <code class="code-in-text">&lt;a&gt;</code>. The proper use of their meaning as HTML elements results in a more inclusive experience. It also eases the maintenance and scaling of this design system.</li>
                         <li>Deliver every button with a precise text that states its purpose. In most cases, it should be a verb that incites action. It works when the user can predict the outcome before triggering the button.</li>
+                        <li>Keep the content below four words to prevent text wrapping.</li>
                         <li>Use sentence case for the texts, which means that only the first word starts with a capital letter. Don't use a period at the end of the phrase.</li>
+                        <li>A button's colour can change depending on its background. As <a href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23">Ethan Curtis</a> recommends, the choice always relays on a proper contrast. See the examples below.</li>
                     </ul>
                     <h3 id="components" class="heading-button" tabindex="-1">
                         <span>Code snippets</span>
@@ -62,7 +64,7 @@
                     </h3>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary">Primary button</h4>
+                            <h4 id="buttons-primary">Primary button on light background</h4>
                             <button data-expands="buttons-primary-content" aria-label="open section" aria-describedby="buttons-primary" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
@@ -74,14 +76,14 @@
                         </div>
                         <div id="buttons-primary-content" class="component-content" hidden="">
                             <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
-                            <p class="code-example"><button aria-label="Example of primary button">This is a button</button></p>
+                            <p class="code-example"><button>This is a button</button></p>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary">Copy HTML</button>
                                     </h5>
-<span id="html-buttons-primary">&lt;button aria-label="example of a primary button"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;&lt;/p&gt;</span>
+<span id="html-buttons-primary">&lt;button&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary">Copy CSS</button>
@@ -98,6 +100,142 @@ button {
     text-decoration: none;
 }
 button:hover {
+    background-color: #a71e06;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-primary-blackbg">Primary button on black background</h4>
+                            <button data-expands="buttons-primary-blackbg-content" aria-label="open section" aria-describedby="buttons-primary-blackbg" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-primary-blackbg-content" class="component-content" hidden="">
+                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
+                            <p class="code-example-black"><button class="blackbg">This is a button</button></p>
+                            <pre>
+                                <code>
+                                    <h5 class="heading-button">
+                                        <span>HTML</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-blackbg">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-primary-blackbg">&lt;button class="blackbg"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-blackbg">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-primary-blackbg">
+.blackbg {
+    background-color: #f96c53;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.blackbg:hover {
+    background-color: #fba798;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-primary-darkbg">Primary button on dark background</h4>
+                            <button data-expands="buttons-primary-darkbg-content" aria-label="open section" aria-describedby="buttons-primary-darkbg" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-primary-darkbg-content" class="component-content" hidden="">
+                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
+                            <p class="code-example-darkest-accent"><button class="darkbg">This is a button</button></p>
+                            <p class="code-example-dark-accent"><button class="darkbg">This is a button</button></p>
+                            <pre>
+                                <code>
+                                    <h5 class="heading-button">
+                                        <span>HTML</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-darkbg">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-primary-darkbg">&lt;button class="darkbg"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-darkbg">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-primary-darkbg">
+.darkbg {
+    background-color: #f8f8f8;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.darkbg:hover {
+    background-color: #fcdad4;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-primary-accentbg">Primary button on accent background</h4>
+                            <button data-expands="buttons-primary-accentbg-content" aria-label="open section" aria-describedby="buttons-primary-accentbg" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-primary-accentbg-content" class="component-content" hidden="">
+                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
+                            <p class="code-example-accent"><button class="accentbg">This is a button</button></p>
+                            <pre>
+                                <code>
+                                    <h5 class="heading-button">
+                                        <span>HTML</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-accentbg">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-primary-accentbg">&lt;button class="accentbg"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-accentbg">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-primary-accentbg">
+.accentbg {
+    background-color: #2f2f2f;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.accentbg:hover {
     background-color: #a71e06;
 }
 </span>

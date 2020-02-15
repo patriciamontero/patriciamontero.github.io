@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: links</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-14">February 14, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-15">February 15, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -67,8 +67,8 @@
                     </h3>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="links-as-a-part-of-the-content">Links as a part of the content</h4>
-                            <button data-expands="links-as-a-part-of-the-content-content" aria-label="open section" aria-describedby="links-as-a-part-of-the-content" aria-expanded="false">
+                            <h4 id="links-part-content">Links as a part of the content</h4>
+                            <button data-expands="links-part-content-content" aria-label="open section" aria-describedby="links-part-content" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
                                         <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -77,7 +77,7 @@
                                 </svg>
                             </button>
                         </div>
-                        <div id="links-as-a-part-of-the-content-content" class="component-content" hidden="">
+                        <div id="links-part-content-content" class="component-content" hidden="">
                             <p>Their styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction.</p>
                             <p>The focus state is a thick and coloured dotted line.</p>
                             <p class="code-example"><a href="#">This link</a> is an example.</p>
@@ -85,14 +85,14 @@
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#html-links-as-a-part-of-the-content">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-part-content">Copy HTML</button>
                                     </h5>
-<span id="html-links-as-a-part-of-the-content">&lt;p&gt;&lt;a href="#"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
+<span id="html-links-part-content">&lt;p&gt;&lt;a href="#"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#css-links-as-a-part-of-the-content">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-part-content">Copy CSS</button>
                                     </h5>
-<span id="css-links-as-a-part-of-the-content">
+<span id="css-links-part-content">
 a:link, a:visited {
     background-color: #fcdad4;
     border-radius: 0.1875rem;
@@ -130,12 +130,12 @@ a:hover, a:visited:hover, a:focus {
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#html-links-as-a-call-to-action">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-as-a-call-to-action">Copy HTML</button>
                                     </h5>
 <span id="html-links-as-a-call-to-action">&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#css-links-as-a-call-to-action">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-as-a-call-to-action">Copy CSS</button>
                                     </h5>
 <span id="css-links-as-a-call-to-action">
 .cta:link, .cta:visited {
@@ -169,7 +169,7 @@ a:hover, a:visited:hover, a:focus {
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-main-menu">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-main-menu">Copy HTML</button>
                                     </h5>
 <span id="html-links-in-the-main-menu">
 &lt;nav&gt;
@@ -182,7 +182,7 @@ a:hover, a:visited:hover, a:focus {
 </span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-main-menu">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-main-menu">Copy CSS</button>
                                     </h5>
 <span id="css-links-in-the-main-menu">
 nav a:link, nav a:visited {
@@ -235,7 +235,7 @@ nav a.current {
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#html-image-links-in-the-main-menu">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-image-links-in-the-main-menu">Copy HTML</button>
                                     </h5>
 <span id="html-image-links-in-the-main-menu">
 &lt;nav&gt;
@@ -251,7 +251,7 @@ nav a.current {
 </span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#css-image-links-in-the-main-menu">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-image-links-in-the-main-menu">Copy CSS</button>
                                     </h5>
 <span id="css-image-links-in-the-main-menu">
 .logo:link, .logo:visited {
@@ -289,12 +289,12 @@ nav a.current {
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-secondary-menu">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-secondary-menu">Copy HTML</button>
                                     </h5>
 <span id="html-links-in-the-secondary-menu">&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-secondary-menu">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-secondary-menu">Copy CSS</button>
                                     </h5>
 <span id="css-links-in-the-secondary-menu">
 .cta:link, .cta:visited {
@@ -327,12 +327,12 @@ nav a.current {
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#html-skip-to-content-link">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-skip-to-content-link">Copy HTML</button>
                                     </h5>
 <span id="html-skip-to-content-link">&lt;a href="#main-content" class="skip"&gt;<span class="code-accent">Skip to content</span>&lt;/a&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="copy-to-clipboard" aria-label="copy to clipboard" data-clipboard-target="#css-skip-to-content-link">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-skip-to-content-link">Copy CSS</button>
                                     </h5>
 <span id="css-skip-to-content-link">
 a.skip {

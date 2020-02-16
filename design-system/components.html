@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: buttons</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-15">February 15, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-16">February 16, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -225,6 +225,58 @@ button:hover {
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-accentbg">Copy CSS</button>
                                     </h5>
 <span id="css-buttons-primary-accentbg">
+.accentbg {
+    background-color: #2f2f2f;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.accentbg:hover {
+    background-color: #a71e06;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-primary-photobg">Primary button on photo background</h4>
+                            <button data-expands="buttons-primary-photobg-content" aria-label="open section" aria-describedby="buttons-primary-photobg" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-primary-photobg-content" class="component-content" hidden="">
+                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
+                            <div class="code-example-photobg1">
+                                <button class="darkbg">This is a button</button>
+                                <button class="accentbg">This is a button</button>
+                            </div>
+                            <div class="code-example-photobg2">
+                                <button>This is a button</button>
+                                <button class="darkbg">This is a button</button>
+                            </div>
+                            <pre>
+                                <code>
+                                    <h5 class="heading-button">
+                                        <span>HTML</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-photobg">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-primary-photobg">&lt;button class="accentbg"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-photobg">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-primary-photobg">
 .accentbg {
     background-color: #2f2f2f;
     border: 0;

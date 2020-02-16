@@ -241,6 +241,29 @@ code {
     color: #a71e06;
 }
 
+.code-example-photobg1 {
+    background-image: url(../images/photo-flowers.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 0.1875rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.code-example-photobg2 {
+    background-image: url(../images/photo-montreal.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 0.1875rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
 
 /* Images ------------------------------ */
 
@@ -341,7 +364,6 @@ img {
     background-color: #a71e06;
     color: #f8f8f8;
 }
-
 
 /* Text styles ------------------------------ */
 
@@ -473,6 +495,10 @@ button {
 }
 button:hover {
     background-color: #a71e06;
+}
+
+button ~ button {
+    margin: 0.5rem;
 }
 
 .blackbg {

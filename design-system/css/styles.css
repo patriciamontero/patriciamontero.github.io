@@ -241,29 +241,33 @@ code {
     color: #a71e06;
 }
 
-.code-example-photobg1 {
-    background-image: url(../images/photo-flowers.jpg);
-    background-position: top center;
+.code-example-photobg1, .code-example-photobg2, .code-example-photobg3, .code-example-photobg4 {
+    background-position: right center;
     background-repeat: no-repeat;
     border-radius: 0.1875rem;
     box-sizing: border-box;
     margin: 1rem 0;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
-    text-align: center;
+    text-align: left;
+}
+
+.code-example-photobg1 {
+    background-image: url(../images/photo-montreal.jpg);
 }
 
 .code-example-photobg2 {
-    background-image: url(../images/photo-montreal.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    border-radius: 0.1875rem;
-    box-sizing: border-box;
-    margin: 1rem 0;
-    padding: 2rem;
-    position: relative;
-    text-align: center;
+    background-image: url(../images/photo-train.jpg);
 }
+
+.code-example-photobg3 {
+    background-image: url(../images/photo-bridge.jpg);
+}
+
+.code-example-photobg4 {
+    background-image: url(../images/photo-flowers.jpg);
+}
+
 
 /* Images ------------------------------ */
 
@@ -483,33 +487,30 @@ figcaption, .note {
 
 /* Buttons ------------------------------ */
 
-button {
-    background-color: #dd2808;
+button, .blackbg, .darkbg, .accentbg {
     border: 0;
     border-radius: 0.1875rem;
-    color: #f8f8f8;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
-}
-button:hover {
-    background-color: #a71e06;
 }
 
 button ~ button {
     margin: 0.5rem;
 }
 
+button {
+    background-color: #dd2808;
+    color: #f8f8f8;
+}
+button:hover {
+    background-color: #a71e06;
+}
+
 .blackbg {
     background-color: #f96c53;
-    border: 0;
-    border-radius: 0.1875rem;
     color: #2f2f2f;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-    text-decoration: none;
 }
 .blackbg:hover {
     background-color: #fba798;
@@ -517,13 +518,7 @@ button ~ button {
 
 .darkbg {
     background-color: #f8f8f8;
-    border: 0;
-    border-radius: 0.1875rem;
     color: #2f2f2f;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-    text-decoration: none;
 }
 .darkbg:hover {
     background-color: #fcdad4;
@@ -531,13 +526,7 @@ button ~ button {
 
 .accentbg {
     background-color: #2f2f2f;
-    border: 0;
-    border-radius: 0.1875rem;
     color: #f8f8f8;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-    text-decoration: none;
 }
 .accentbg:hover {
     background-color: #a71e06;

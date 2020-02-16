@@ -49,14 +49,15 @@
                 </aside>
                 <article class="content">
                     <h2 id="main-content" class="xtarget">Buttons <a href="#main-content">#</a></h2>
-                    <p class="intro">A button is a box area or text where users can click or tap to trigger an action. They appear within three states: active, hover and disable.</p>
+                    <p class="intro">A button is a box area or text where users can click or tap to trigger an action. It appears within three states: active, hover and disable.</p>
                     <h3>Guidelines</h3>
                     <ul>
                         <li>Use a <code class="code-in-text">&lt;button&gt;</code> for actions, such as <em>copy</em>, <em>expand</em>, <em>collapse</em> or <em>send</em>. If the need is a change of location, use <a href="components-links.html">a link</a> <code class="code-in-text">&lt;a&gt;</code>. The proper use of their meaning as HTML elements results in a more inclusive experience. It also eases the maintenance and scaling of this design system.</li>
                         <li>Deliver every button with a precise text that states its purpose. In most cases, it should be a verb that incites action. It works when the user can predict the outcome before triggering the button.</li>
                         <li>Keep the content below four words to prevent text wrapping.</li>
                         <li>Use sentence case for the texts, which means that only the first word starts with a capital letter. Don't use a period at the end of the phrase.</li>
-                        <li>A button's colour can change depending on its background. As <a href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23">Ethan Curtis</a> recommends, the choice always relays on a proper contrast. See the examples below.</li>
+                        <li>A primary button conveys the most prominent choice that the user can take in a section. For this reason, there should be only one per page. For supporting actions, pick a secondary button instead.</li>
+                        <li>A button's colour changes depending on its background. It may be any of the four shades picked from the <a href="style.html#colour">colour palette</a>, as long as it yields an <a href="style.html#colour-combinations">accessible contrast</a>. The shades are dark, accent, white and black. You can see them in the context below.</li>
                     </ul>
                     <h3 id="components" class="heading-button" tabindex="-1">
                         <span>Code snippets</span>
@@ -64,7 +65,7 @@
                     </h3>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary">Primary button on light background</h4>
+                            <h4 id="buttons-primary">Primary button on a light background</h4>
                             <button data-expands="buttons-primary-content" aria-label="open section" aria-describedby="buttons-primary" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
@@ -75,7 +76,6 @@
                             </button>
                         </div>
                         <div id="buttons-primary-content" class="component-content" hidden="">
-                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
                             <p class="code-example"><button>This is a button</button></p>
                             <pre>
                                 <code>
@@ -109,7 +109,7 @@ button:hover {
                     </div>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary-blackbg">Primary button on black background</h4>
+                            <h4 id="buttons-primary-blackbg">Primary button on a black background</h4>
                             <button data-expands="buttons-primary-blackbg-content" aria-label="open section" aria-describedby="buttons-primary-blackbg" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
@@ -120,7 +120,6 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-blackbg-content" class="component-content" hidden="">
-                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
                             <p class="code-example-black"><button class="blackbg">This is a button</button></p>
                             <pre>
                                 <code>
@@ -154,7 +153,7 @@ button:hover {
                     </div>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary-darkbg">Primary button on dark background</h4>
+                            <h4 id="buttons-primary-darkbg">Primary button on a dark background</h4>
                             <button data-expands="buttons-primary-darkbg-content" aria-label="open section" aria-describedby="buttons-primary-darkbg" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
@@ -165,9 +164,7 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-darkbg-content" class="component-content" hidden="">
-                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
                             <p class="code-example-darkest-accent"><button class="darkbg">This is a button</button></p>
-                            <p class="code-example-dark-accent"><button class="darkbg">This is a button</button></p>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
@@ -200,7 +197,7 @@ button:hover {
                     </div>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary-accentbg">Primary button on accent background</h4>
+                            <h4 id="buttons-primary-accentbg">Primary button on an accent background</h4>
                             <button data-expands="buttons-primary-accentbg-content" aria-label="open section" aria-describedby="buttons-primary-accentbg" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
@@ -211,7 +208,6 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-accentbg-content" class="component-content" hidden="">
-                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
                             <p class="code-example-accent"><button class="accentbg">This is a button</button></p>
                             <pre>
                                 <code>
@@ -245,7 +241,7 @@ button:hover {
                     </div>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary-photobg">Primary button on photo background</h4>
+                            <h4 id="buttons-primary-photobg">Primary button on a photographic background</h4>
                             <button data-expands="buttons-primary-photobg-content" aria-label="open section" aria-describedby="buttons-primary-photobg" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
@@ -256,43 +252,18 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-photobg-content" class="component-content" hidden="">
-                            <p>It conveys the most prominent action that the user can perform on a section. For this reason, there should be only one per page.</p>
                             <div class="code-example-photobg1">
-                                <button class="darkbg">This is a button</button>
-                                <button class="accentbg">This is a button</button>
+                                <button>This is a button</button>
                             </div>
                             <div class="code-example-photobg2">
-                                <button>This is a button</button>
+                                <button class="blackbg">This is a button</button>
+                            </div>
+                            <div class="code-example-photobg3">
                                 <button class="darkbg">This is a button</button>
                             </div>
-                            <pre>
-                                <code>
-                                    <h5 class="heading-button">
-                                        <span>HTML</span>
-                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-photobg">Copy HTML</button>
-                                    </h5>
-<span id="html-buttons-primary-photobg">&lt;button class="accentbg"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
-                                    <h5 class="heading-button">
-                                        <span>CSS</span>
-                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-photobg">Copy CSS</button>
-                                    </h5>
-<span id="css-buttons-primary-photobg">
-.accentbg {
-    background-color: #2f2f2f;
-    border: 0;
-    border-radius: 0.1875rem;
-    color: #f8f8f8;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    padding: 0.5rem 0.75rem;
-    text-decoration: none;
-}
-.accentbg:hover {
-    background-color: #a71e06;
-}
-</span>
-                                </code>
-                            </pre>
+                            <div class="code-example-photobg4">
+                                <button class="accentbg">This is a button</button>
+                            </div>
                         </div>
                     </div>
                     <div class="component-container">

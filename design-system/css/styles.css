@@ -186,39 +186,32 @@ code {
     padding: 0 2rem 1rem 2rem;
 }
 
-.code-example {
-    background-color: #f0f0f0;
+.code-example, .code-example-black, 
+.code-example-darkest-accent, 
+.code-example-dark-accent, .code-example-accent {
     border-radius: 0.1875rem;
     margin: 0.5rem 0;
     padding: 1rem;
+}
+
+.code-example {
+    background-color: #f0f0f0;
 }
 
 .code-example-black {
     background-color: #2f2f2f;
-    border-radius: 0.1875rem;
-    margin: 0.5rem 0;
-    padding: 1rem;
 }
 
 .code-example-darkest-accent {
     background-color: #a71e06;
-    border-radius: 0.1875rem;
-    margin: 0.5rem 0;
-    padding: 1rem;
 }
 
 .code-example-dark-accent {
     background-color: #dd2808;
-    border-radius: 0.1875rem;
-    margin: 0.5rem 0;
-    padding: 1rem;
 }
 
 .code-example-accent {
     background-color: #f96c53;
-    border-radius: 0.1875rem;
-    margin: 0.5 0;
-    padding: 1rem;
 }
 
 .code-example img, .code-example p {
@@ -241,7 +234,8 @@ code {
     color: #a71e06;
 }
 
-.code-example-photobg1, .code-example-photobg2, .code-example-photobg3, .code-example-photobg4 {
+.code-example-photobg1, .code-example-photobg2, 
+.code-example-photobg3, .code-example-photobg4 {
     background-position: right center;
     background-repeat: no-repeat;
     border-radius: 0.1875rem;
@@ -335,38 +329,38 @@ img {
     width: 8rem;
 }
 
-#white {
-    background-color: #f8f8f8;
+#white, #lightest-accent, 
+#light-accent, #accent {
     border: solid 1px #2f2f2f;
     color: #2f2f2f;
+}
+
+#dark-accent, #darkest-accent {
+    color: #f8f8f8;
+}
+
+#white {
+    background-color: #f8f8f8;
 }
 
 #lightest-accent {
     background-color: #fcdad4;
-    border: solid 1px #2f2f2f;
-    color: #2f2f2f;
 }
 
 #light-accent {
     background-color: #fba798;
-    border: solid 1px #2f2f2f;
-    color: #2f2f2f;
 }
 
 #accent {
     background-color: #f96c53;
-    border: solid 1px #2f2f2f;
-    color: #2f2f2f;
 }
 
 #dark-accent {
     background-color: #dd2808;
-    color: #f8f8f8;
 }
 
 #darkest-accent {
     background-color: #a71e06;
-    color: #f8f8f8;
 }
 
 /* Text styles ------------------------------ */

@@ -57,7 +57,13 @@
                         <li>Keep the content below four words to prevent text wrapping.</li>
                         <li>Use sentence case for the texts, which means that only the first word starts with a capital letter. Don't use a period at the end of the phrase.</li>
                         <li>A primary button conveys the most prominent choice that the user can take in a section. For this reason, there should be only one per page. For supporting actions, pick a secondary button instead.</li>
-                        <li>A button's colour changes depending on its background. It may be any of the four shades picked from the <a href="style.html#colour">colour palette</a>, as long as it yields an <a href="style.html#colour-combinations">accessible contrast</a>. The shades are dark, accent, white and black. You can see them in the context below.</li>
+                        <li>A button's colour changes depending on its background. It may be any of the four shades picked from the <a href="style.html#colour">colour palette</a>, as long as it yields an <a href="style.html#colour-combinations">accessible contrast</a>. The shades are dark, accent, white and black:</li>
+                    </ul>
+                    <ul>
+                        <li id="dark-accent" class="square">#dd2808</li>
+                        <li id="accent" class="square">#f96c53</li>
+                        <li id="white" class="square">#f8f8f8</li>
+                        <li class="square">#2f2f2f</li>
                     </ul>
                     <h3 id="components" class="heading-button" tabindex="-1">
                         <span>Code snippets</span>
@@ -76,7 +82,7 @@
                             </button>
                         </div>
                         <div id="buttons-primary-content" class="component-content" hidden="">
-                            <p>For a safe contrast, the recommended values are dark accent (#dd2808) and black (#2f2f2f). Here's the code for the former one.</p>
+                            <p>For a safe contrast, the fittest values are dark accent (#dd2808) or black (#2f2f2f). The code for the first one is below. For the latter, it's available under the section <em>Primary button on a medium background</em>.</p>
                             <p class="code-example"><button>This is a button</button></p>
                             <pre>
                                 <code>
@@ -121,6 +127,7 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-blackbg-content" class="component-content" hidden="">
+                            <p>For a safe contrast, the fittest values are accent (#f96c53) or white (#f8f8f8). The code for the first one is below. For the latter, it's available under the section <em>Primary button on a dark background</em>.</p>
                             <p class="code-example-black"><button class="blackbg">This is a button</button></p>
                             <pre>
                                 <code>
@@ -165,6 +172,7 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-darkbg-content" class="component-content" hidden="">
+                            <p>For a safe contrast, the only acceptable value is white (#f8f8f8). The code goes as follows:</p>
                             <p class="code-example-darkest-accent"><button class="darkbg">This is a button</button></p>
                             <pre>
                                 <code>
@@ -209,6 +217,7 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-accentbg-content" class="component-content" hidden="">
+                            <p>For a safe contrast, the only acceptable value is black (#2f2f2f). The code goes as follows:</p>
                             <p class="code-example-accent"><button class="accentbg">This is a button</button></p>
                             <pre>
                                 <code>
@@ -253,6 +262,7 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-photobg-content" class="component-content" hidden="">
+                            <p>Any of the specified tones can appear over an image, as long as the contrast is accessible. The code is available under the preceding sections.</p>
                             <div class="code-example-photobg1">
                                 <button>This is a button</button>
                             </div>

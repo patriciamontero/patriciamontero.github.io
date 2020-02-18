@@ -187,8 +187,8 @@ code {
 }
 
 .code-example, .code-example-black, 
-.code-example-darkest-accent, 
-.code-example-dark-accent, .code-example-accent {
+.code-example-darkest, 
+.code-example-dark, .code-example-accent {
     border-radius: 0.1875rem;
     margin: 0.5rem 0;
     padding: 1rem;
@@ -202,11 +202,11 @@ code {
     background-color: #2f2f2f;
 }
 
-.code-example-darkest-accent {
+.code-example-darkest {
     background-color: #a71e06;
 }
 
-.code-example-dark-accent {
+.code-example-dark {
     background-color: #dd2808;
 }
 
@@ -329,13 +329,13 @@ img {
     width: 8rem;
 }
 
-#white, #lightest-accent, 
-#light-accent, #accent {
+#white, #lightest, 
+#light, #accent {
     border: solid 1px #2f2f2f;
     color: #2f2f2f;
 }
 
-#dark-accent, #darkest-accent {
+#dark, #darkest {
     color: #f8f8f8;
 }
 
@@ -343,11 +343,11 @@ img {
     background-color: #f8f8f8;
 }
 
-#lightest-accent {
+#lightest {
     background-color: #fcdad4;
 }
 
-#light-accent {
+#light {
     background-color: #fba798;
 }
 
@@ -355,11 +355,11 @@ img {
     background-color: #f96c53;
 }
 
-#dark-accent {
+#dark {
     background-color: #dd2808;
 }
 
-#darkest-accent {
+#darkest {
     background-color: #a71e06;
 }
 

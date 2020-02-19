@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: buttons</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-18">February 18, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-19">February 19, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -119,8 +119,8 @@ button:hover {
                     </div>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary-blackbg">Primary accent button</h4>
-                            <button data-expands="buttons-primary-blackbg-content" aria-label="open section" aria-describedby="buttons-primary-blackbg" aria-expanded="false">
+                            <h4 id="buttons-primary-accent">Primary accent button</h4>
+                            <button data-expands="buttons-primary-accent-content" aria-label="open section" aria-describedby="buttons-primary-accent" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
                                         <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -129,25 +129,25 @@ button:hover {
                                 </svg>
                             </button>
                         </div>
-                        <div id="buttons-primary-blackbg-content" class="component-content" hidden="">
+                        <div id="buttons-primary-accent-content" class="component-content" hidden="">
                             <p>For a safe contrast, the fittest values are accent (#f96c53) or white (#f8f8f8). The code for the first one is below. For the latter, it's available under the section <em>Primary button over a dark background</em>.</p>
-                            <p class="code-example-black"><button class="blackbg">This is a button</button></p>
+                            <p class="code-example-black"><button class="accentbtn">This is a button</button></p>
                             <div class="code-example-photobg2">
-                                <button class="blackbg">This is a button</button>
+                                <button class="accentbtn">This is a button</button>
                             </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-blackbg">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-accent">Copy HTML</button>
                                     </h5>
-<span id="html-buttons-primary-blackbg">&lt;button class="blackbg"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-buttons-primary-accent">&lt;button class="accentbtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-blackbg">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-accent">Copy CSS</button>
                                     </h5>
-<span id="css-buttons-primary-blackbg">
-.blackbg {
+<span id="css-buttons-primary-accent">
+.accentbtn {
     background-color: #f96c53;
     border: 0;
     border-radius: 0.1875rem;
@@ -157,7 +157,7 @@ button:hover {
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
-.blackbg:hover {
+.accentbtn:hover {
     background-color: #fba798;
 }
 </span>
@@ -167,8 +167,8 @@ button:hover {
                     </div>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary-darkbg">Primary white button</h4>
-                            <button data-expands="buttons-primary-darkbg-content" aria-label="open section" aria-describedby="buttons-primary-darkbg" aria-expanded="false">
+                            <h4 id="buttons-primary-white">Primary white button</h4>
+                            <button data-expands="buttons-primary-white-content" aria-label="open section" aria-describedby="buttons-primary-white" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
                                         <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -177,26 +177,26 @@ button:hover {
                                 </svg>
                             </button>
                         </div>
-                        <div id="buttons-primary-darkbg-content" class="component-content" hidden="">
+                        <div id="buttons-primary-white-content" class="component-content" hidden="">
                             <p>For a safe contrast, the only acceptable value is white (#f8f8f8). The code goes as follows:</p>
-                            <p class="code-example-darkest"><button class="darkbg">This is a button</button></p>
-                            <p class="code-example-black"><button class="darkbg">This is a button</button></p>
+                            <p class="code-example-darkest"><button class="whitebtn">This is a button</button></p>
+                            <p class="code-example-black"><button class="whitebtn">This is a button</button></p>
                             <div class="code-example-photobg3">
-                                <button class="darkbg">This is a button</button>
+                                <button class="whitebtn">This is a button</button>
                             </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-darkbg">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-white">Copy HTML</button>
                                     </h5>
-<span id="html-buttons-primary-darkbg">&lt;button class="darkbg"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-buttons-primary-white">&lt;button class="whitebtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-darkbg">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-white">Copy CSS</button>
                                     </h5>
-<span id="css-buttons-primary-darkbg">
-.darkbg {
+<span id="css-buttons-primary-white">
+.whitebtn {
     background-color: #f8f8f8;
     border: 0;
     border-radius: 0.1875rem;
@@ -206,7 +206,7 @@ button:hover {
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
-.darkbg:hover {
+.whitebtn:hover {
     background-color: #fcdad4;
 }
 </span>
@@ -216,8 +216,8 @@ button:hover {
                     </div>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-primary-accentbg">Primary black button</h4>
-                            <button data-expands="buttons-primary-accentbg-content" aria-label="open section" aria-describedby="buttons-primary-accentbg" aria-expanded="false">
+                            <h4 id="buttons-primary-black">Primary black button</h4>
+                            <button data-expands="buttons-primary-black-content" aria-label="open section" aria-describedby="buttons-primary-black" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
                                         <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -226,26 +226,26 @@ button:hover {
                                 </svg>
                             </button>
                         </div>
-                        <div id="buttons-primary-accentbg-content" class="component-content" hidden="">
+                        <div id="buttons-primary-black-content" class="component-content" hidden="">
                             <p>For a safe contrast, the only acceptable value is black (#2f2f2f). The code goes as follows:</p>
-                            <p class="code-example"><button class="accentbg">This is a button</button></p>
-                            <p class="code-example-accent"><button class="accentbg">This is a button</button></p>
+                            <p class="code-example"><button class="blackbtn">This is a button</button></p>
+                            <p class="code-example-accent"><button class="blackbtn">This is a button</button></p>
                             <div class="code-example-photobg4">
-                                <button class="accentbg">This is a button</button>
+                                <button class="blackbtn">This is a button</button>
                             </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
                                         <span>HTML</span>
-                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-accentbg">Copy HTML</button>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary-black">Copy HTML</button>
                                     </h5>
-<span id="html-buttons-primary-accentbg">&lt;button class="accentbg"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-buttons-primary-black">&lt;button class="blackbtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
-                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-accentbg">Copy CSS</button>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary-black">Copy CSS</button>
                                     </h5>
-<span id="css-buttons-primary-accentbg">
-.accentbg {
+<span id="css-buttons-primary-black">
+.blackbtn {
     background-color: #2f2f2f;
     border: 0;
     border-radius: 0.1875rem;
@@ -255,7 +255,7 @@ button:hover {
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
-.accentbg:hover {
+.blackbtn:hover {
     background-color: #a71e06;
 }
 </span>
@@ -265,7 +265,7 @@ button:hover {
                     </div>
                     <div class="component-container">
                         <div class="component-intro">
-                            <h4 id="buttons-secondary">Secondary dark accent button</h4>
+                            <h4 id="buttons-secondary">Secondary dark button</h4>
                             <button data-expands="buttons-secondary-content" aria-label="open section" aria-describedby="buttons-secondary" aria-expanded="false">
                                 <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                     <g transform="translate(0 -981.5)">
@@ -284,25 +284,181 @@ button:hover {
                                         <span>HTML</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-secondary">Copy HTML</button>
                                     </h5>
-<span id="html-buttons-secondary">&lt;button&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-buttons-secondary">&lt;button class="secondary"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-secondary">Copy CSS</button>
                                     </h5>
 <span id="css-buttons-secondary">
-.cta:link, .cta:visited {
+.secondary {
+    background-color: #f8f8f8;
+    border: 2px solid #dd2808;
+    border-radius: 0.1875rem;
+    color: #dd2808;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.266rem;
-    margin: 2.281rem 0 1.125rem 0;
-    padding: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.secondary:hover, .secondary:focus:hover {
+    background-color: #fcdad4;
 }
 </span>
                                 </code>
                             </pre>
                         </div>
                     </div>
-
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-secondary-accent">Secondary accent button</h4>
+                            <button data-expands="buttons-secondary-accent-content" aria-label="open section" aria-describedby="buttons-secondary-accent" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-secondary-accent-content" class="component-content" hidden="">
+                            <p>For a safe contrast, the fittest values are accent (#f96c53) or white (#f8f8f8). The code for the first one is below. For the latter, it's available under the section <em>Primary button over a dark background</em>.</p>
+                            <p class="code-example-black"><button class="secaccentbtn">This is a button</button></p>
+                            <div class="code-example-photobg2">
+                                <button class="secaccentbtn">This is a button</button>
+                            </div>
+                            <pre>
+                                <code>
+                                    <h5 class="heading-button">
+                                        <span>HTML</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-secondary-accent">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-secondary-accent">&lt;button class="secaccentbtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-secondary-accent">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-secondary-accent">
+.secaccentbtn {
+    background-color: #f96c53;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.secaccentbtn:hover {
+    background-color: #fba798;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-secondary-white">Secondary white button</h4>
+                            <button data-expands="buttons-secondary-white-content" aria-label="open section" aria-describedby="buttons-secondary-white" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-secondary-white-content" class="component-content" hidden="">
+                            <p>For a safe contrast, the only acceptable value is white (#f8f8f8). The code goes as follows:</p>
+                            <p class="code-example-darkest"><button class="whitebtn">This is a button</button></p>
+                            <p class="code-example-black"><button class="whitebtn">This is a button</button></p>
+                            <div class="code-example-photobg3">
+                                <button class="whitebtn">This is a button</button>
+                            </div>
+                            <pre>
+                                <code>
+                                    <h5 class="heading-button">
+                                        <span>HTML</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-secondary-white">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-secondary-white">&lt;button class="whitebtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-secondary-white">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-secondary-white">
+.whitebtn {
+    background-color: #f8f8f8;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.whitebtn:hover {
+    background-color: #fcdad4;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="buttons-ary-black">Secondary black button</h4>
+                            <button data-expands="buttons-ary-black-content" aria-label="open section" aria-describedby="buttons-ary-black" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="buttons-ary-black-content" class="component-content" hidden="">
+                            <p>For a safe contrast, the only acceptable value is black (#2f2f2f). The code goes as follows:</p>
+                            <p class="code-example"><button class="blackbtn">This is a button</button></p>
+                            <p class="code-example-accent"><button class="blackbtn">This is a button</button></p>
+                            <div class="code-example-photobg4">
+                                <button class="blackbtn">This is a button</button>
+                            </div>
+                            <pre>
+                                <code>
+                                    <h5 class="heading-button">
+                                        <span>HTML</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-ary-black">Copy HTML</button>
+                                    </h5>
+<span id="html-buttons-ary-black">&lt;button class="blackbtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS</span>
+                                        <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-ary-black">Copy CSS</button>
+                                    </h5>
+<span id="css-buttons-ary-black">
+.blackbtn {
+    background-color: #2f2f2f;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #f8f8f8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
+}
+.blackbtn:hover {
+    background-color: #a71e06;
+}
+</span>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
                     <a href="components-links.html" class="cta">Next component: links</a>
+                    <h3>Inspirational sources</h3>
+                    <ul>
+                        <li><a href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23">Buttons in Design Systems</a> by Nathan Curtis</li>
+                    </ul>
                 </article>
             </div>
         </main>

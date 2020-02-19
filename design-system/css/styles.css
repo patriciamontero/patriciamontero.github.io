@@ -481,7 +481,7 @@ figcaption, .note {
 
 /* Buttons ------------------------------ */
 
-button, .blackbg, .darkbg, .accentbg {
+button, .accentbtn, .whitebtn, .blackbtn {
     border: 0;
     border-radius: 0.1875rem;
     font-family: 'Raleway', sans-serif;
@@ -502,43 +502,54 @@ button:hover {
     background-color: #a71e06;
 }
 
-.blackbg {
+.accentbtn {
     background-color: #f96c53;
     color: #2f2f2f;
 }
-.blackbg:hover {
+.accentbtn:hover {
     background-color: #fba798;
 }
 
-.darkbg {
+.whitebtn {
     background-color: #f8f8f8;
     color: #2f2f2f;
 }
-.darkbg:hover {
-    background-color: #fcdad4;
+.whitebtn:hover {
+    background-color: #c9c9c9;
 }
 
-.accentbg {
+.blackbtn {
     background-color: #2f2f2f;
     color: #f8f8f8;
 }
-.accentbg:hover {
+.blackbtn:hover {
     background-color: #a71e06;
 }
 
-.secondary {
-    background-color: #f8f8f8;
-    border: 2px solid #dd2808;
+.secondary, .secaccentbtn, .secwhitebtn, .secblackbtn {
     border-radius: 0.1875rem;
-    color: #dd2808;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
+
+.secondary {
+    background-color: #f8f8f8;
+    border: 2px solid #dd2808;
+    color: #dd2808;
+}
 .secondary:hover, .secondary:focus:hover {
     background-color: #fcdad4;
-    border: 2px solid #dd2808;
+}
+
+.secaccentbtn {
+    background-color: #2f2f2f;
+    border: 2px solid #f96c53;
+    color: #f96c53;
+}
+.secaccentbtn:hover, .secaccentbtn:focus:hover {
+    background-color: #3f3f3f;
 }
 
 /* Links ------------------------------ */

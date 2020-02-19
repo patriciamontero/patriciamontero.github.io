@@ -84,9 +84,12 @@
                         <div id="buttons-primary-content" class="component-content" hidden="">
                             <p>For a safe contrast, the fittest values are dark accent (#dd2808) or black (#2f2f2f). The code for the first one is below. For the latter, it's available under the section <em>Primary button over a medium background</em>.</p>
                             <p class="code-example"><button>This is a button</button></p>
-                            <div class="code-example-photobg1">
+                            <div class="code-example-photobg6">
                                 <button>This is a button</button>
                             </div>
+                            <div class="code-example-photobg1">
+                                    <button>This is a button</button>
+                                </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
@@ -106,6 +109,7 @@ button {
     color: #f8f8f8;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
@@ -135,6 +139,9 @@ button:hover {
                             <div class="code-example-photobg2">
                                 <button class="accentbtn">This is a button</button>
                             </div>
+                            <div class="code-example-photobg5">
+                                    <button class="accentbtn">This is a button</button>
+                                </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
@@ -154,6 +161,7 @@ button:hover {
     color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
@@ -203,6 +211,7 @@ button:hover {
     color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
@@ -252,6 +261,7 @@ button:hover {
     color: #f8f8f8;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
@@ -278,6 +288,12 @@ button:hover {
                         <div id="buttons-secondary-content" class="component-content" hidden="">
                             <p>For a safe contrast, the fittest values are dark accent (#dd2808) or black (#2f2f2f). The code for the first one is below. For the latter, it's available under the section <em>Secondary button over a medium background</em>.</p>
                             <p class="code-example"><button class="secondary">This is a button</button></p>
+                            <div class="code-example-photobg6">
+                                <button class="secondary">This is a button</button>
+                            </div>
+                            <div class="code-example-photobg4">
+                                <button class="secondary">This is a button</button>
+                            </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
@@ -297,6 +313,7 @@ button:hover {
     color: #dd2808;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
@@ -326,6 +343,9 @@ button:hover {
                             <div class="code-example-photobg2">
                                 <button class="secaccentbtn">This is a button</button>
                             </div>
+                            <div class="code-example-photobg5">
+                                <button class="secaccentbtn">This is a button</button>
+                            </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
@@ -339,17 +359,18 @@ button:hover {
                                     </h5>
 <span id="css-buttons-secondary-accent">
 .secaccentbtn {
-    background-color: #f96c53;
-    border: 0;
+    background-color: #2f2f2f;
+    border: 2px solid #f96c53;
     border-radius: 0.1875rem;
-    color: #2f2f2f;
+    color: #f96c53;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
 .secaccentbtn:hover {
-    background-color: #fba798;
+    background-color: #3f3f3f;
 }
 </span>
                                 </code>
@@ -370,10 +391,10 @@ button:hover {
                         </div>
                         <div id="buttons-secondary-white-content" class="component-content" hidden="">
                             <p>For a safe contrast, the only acceptable value is white (#f8f8f8). The code goes as follows:</p>
-                            <p class="code-example-darkest"><button class="whitebtn">This is a button</button></p>
-                            <p class="code-example-black"><button class="whitebtn">This is a button</button></p>
-                            <div class="code-example-photobg3">
-                                <button class="whitebtn">This is a button</button>
+                            <p class="code-example-darkest"><button class="secwhitebtn">This is a button</button></p>
+                            <p class="code-example-black"><button class="secwhitebtn">This is a button</button></p>
+                            <div class="code-example-photobg4">
+                                <button class="secwhitebtn">This is a button</button>
                             </div>
                             <pre>
                                 <code>
@@ -381,24 +402,25 @@ button:hover {
                                         <span>HTML</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-secondary-white">Copy HTML</button>
                                     </h5>
-<span id="html-buttons-secondary-white">&lt;button class="whitebtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-buttons-secondary-white">&lt;button class="secwhitebtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-secondary-white">Copy CSS</button>
                                     </h5>
 <span id="css-buttons-secondary-white">
-.whitebtn {
-    background-color: #f8f8f8;
-    border: 0;
+.secwhitebtn {
+    background-color: #2f2f2f;
+    border: 2px solid #f8f8f8;
     border-radius: 0.1875rem;
-    color: #2f2f2f;
+    color: #f8f8f8;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
-.whitebtn:hover {
-    background-color: #fcdad4;
+.secwhitebtn:hover {
+    background-color: #3f3f3f;
 }
 </span>
                                 </code>
@@ -419,10 +441,10 @@ button:hover {
                         </div>
                         <div id="buttons-ary-black-content" class="component-content" hidden="">
                             <p>For a safe contrast, the only acceptable value is black (#2f2f2f). The code goes as follows:</p>
-                            <p class="code-example"><button class="blackbtn">This is a button</button></p>
-                            <p class="code-example-accent"><button class="blackbtn">This is a button</button></p>
-                            <div class="code-example-photobg4">
-                                <button class="blackbtn">This is a button</button>
+                            <p class="code-example"><button class="secblackbtn">This is a button</button></p>
+                            <p class="code-example-accent"><button class="secblackbtn">This is a button</button></p>
+                            <div class="code-example-photobg5">
+                                <button class="secblackbtn">This is a button</button>
                             </div>
                             <pre>
                                 <code>
@@ -430,24 +452,25 @@ button:hover {
                                         <span>HTML</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-ary-black">Copy HTML</button>
                                     </h5>
-<span id="html-buttons-ary-black">&lt;button class="blackbtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-buttons-ary-black">&lt;button class="secblackbtn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                     <h5 class="heading-button">
                                         <span>CSS</span>
                                         <button class="secondary" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-ary-black">Copy CSS</button>
                                     </h5>
 <span id="css-buttons-ary-black">
-.blackbtn {
-    background-color: #2f2f2f;
-    border: 0;
+.secblackbtn {
+    background-color: #f8f8f8;
+    border: 2px solid #2f2f2f;
     border-radius: 0.1875rem;
-    color: #f8f8f8;
+    color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
+    font-weight: 700;
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
-.blackbtn:hover {
-    background-color: #a71e06;
+.secblackbtn:hover {
+    background-color: #fcdad4;
 }
 </span>
                                 </code>
@@ -457,7 +480,10 @@ button:hover {
                     <a href="components-links.html" class="cta">Next component: links</a>
                     <h3>Inspirational sources</h3>
                     <ul>
-                        <li><a href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23">Buttons in Design Systems</a> by Nathan Curtis</li>
+                        <li><a href="https://css-tricks.com/a-complete-guide-to-links-and-buttons/">A Complete Guide to Links and Buttons</a>&mdash;CSS-Tricks</li>
+                        <li><a href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23">Buttons in Design Systems</a>&mdash;Nathan Curtis</li>
+                        <li><a href="https://www.patternfly.org/v4/design-guidelines/usage-and-behavior/buttons-and-links">Buttons</a>&mdash;Patternfly's design system</li>
+                        <li><a href="https://polaris.shopify.com/components/actions/button#navigation">Button</a>&mdash;Shopify's design system</li>
                     </ul>
                 </article>
             </div>

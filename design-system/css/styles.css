@@ -190,7 +190,7 @@ code {
 .code-example-darkest, 
 .code-example-dark, .code-example-accent {
     border-radius: 0.1875rem;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     padding: 1rem;
 }
 
@@ -234,8 +234,9 @@ code {
     color: #a71e06;
 }
 
-.code-example-photobg1, .code-example-photobg2, 
-.code-example-photobg3, .code-example-photobg4 {
+.code-example-photobg1, .code-example-photobg2,
+.code-example-photobg3, .code-example-photobg4, 
+.code-example-photobg5, .code-example-photobg6 {
     background-position: right center;
     background-repeat: no-repeat;
     border-radius: 0.1875rem;
@@ -260,6 +261,14 @@ code {
 
 .code-example-photobg4 {
     background-image: url(../images/photo-flowers.jpg);
+}
+
+.code-example-photobg5 {
+    background-image: url(../images/photo-fall.jpg);
+}
+
+.code-example-photobg6 {
+    background-image: url(../images/photo-bus.jpg);
 }
 
 
@@ -515,7 +524,7 @@ button:hover {
     color: #2f2f2f;
 }
 .whitebtn:hover {
-    background-color: #c9c9c9;
+    background-color: #fcdad4;
 }
 
 .blackbtn {
@@ -539,7 +548,7 @@ button:hover {
     border: 2px solid #dd2808;
     color: #dd2808;
 }
-.secondary:hover, .secondary:focus:hover {
+.secondary:hover {
     background-color: #fcdad4;
 }
 
@@ -548,8 +557,26 @@ button:hover {
     border: 2px solid #f96c53;
     color: #f96c53;
 }
-.secaccentbtn:hover, .secaccentbtn:focus:hover {
+.secaccentbtn:hover {
     background-color: #3f3f3f;
+}
+
+.secwhitebtn {
+    background-color: #2f2f2f;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
+}
+.secwhitebtn:hover {
+    background-color: #3f3f3f;
+}
+
+.secblackbtn {
+    background-color: #f8f8f8;
+    border: 2px solid #2f2f2f;
+    color: #2f2f2f;
+}
+.secblackbtn:hover {
+    background-color: #fcdad4;
 }
 
 /* Links ------------------------------ */

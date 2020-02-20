@@ -99,6 +99,10 @@ a:link, a:visited {
     border-radius: 0.1875rem;
     color: #2f2f2f;
     display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 1.125rem 0;
     padding: 0 0.25rem;
     transition: all 0.4s ease-in;
 }
@@ -126,8 +130,8 @@ a:hover, a:visited:hover, a:focus {
                         </div>
                         <div id="links-as-a-call-to-action-content" class="component-content" hidden="">
                             <p>These statements need an instant response from the user, and they usually appear at the end of a section. Their sentences end without a period.</p>
-                            <p class="code-example"><a class="cta" href="#0">Another link as example</a></p>
-                            <p class="code-example-black"><a class="cta" href="#0">Another link as example</a></p>
+                            <p class="code-example"><a class="cta-example" href="#0">Another link as example</a></p>
+                            <p class="code-example-black"><a class="cta-example" href="#0">Another link as example</a></p>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
@@ -141,10 +145,22 @@ a:hover, a:visited:hover, a:focus {
                                     </h5>
 <span id="css-links-as-a-call-to-action">
 .cta:link, .cta:visited {
+    background-color: #fcdad4;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 1.266rem;
+    font-weight: 700;
+    line-height: 1.2;
     margin: 2.281rem 0 1.125rem 0;
     padding: 0.5rem;
+    transition: all 0.4s ease-in;
+}
+.cta:hover, .cta:visited:hover, .cta:focus {
+    background-color: #fba798;
+    outline: 0.25rem dotted #dd2808;
+    text-decoration: none;
 }
 </span>
                                 </code>
@@ -189,24 +205,25 @@ a:hover, a:visited:hover, a:focus {
 <span id="css-links-in-the-main-menu">
 nav a:link, nav a:visited {
     background-color: transparent;
+    color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     line-height: 1.2;
+    padding: 0 0.25rem;
+    transition: all 0.4s ease-in;
 }
 nav a:hover, nav a:focus, nav a:visited:hover  {
+    outline: 0.25rem dotted #dd2808;
     text-decoration: none;
 }
-
 nav li {
     display: inline-block;
     padding: 0.5rem;
     margin: 0;
 }
-
 nav ul {
     display: inline;
 }
-
 nav a.current {
     border-bottom: 0.25rem solid #2f2f2f;
     border-radius: 0;
@@ -367,6 +384,7 @@ a.skip:focus, a.skip:active {
                     <h3>Sources of inspiration</h3>
                     <ul>
                         <li><a href="https://css-tricks.com/a-complete-guide-to-links-and-buttons/">A Complete Guide to Links and Buttons</a>&mdash;CSS-Tricks</li>
+                        <li><a href="https://www.smashingmagazine.com/printed-books/inclusive-front-end-design-patterns/">Inclusive Design Patterns</a> (book)&mdash;Heydon Pickering</li>
                         <li><a href="https://www.carbondesignsystem.com/components/link/usage/">Link</a>&mdash;Carbon Design System</li>
                         <li><a href="https://polaris.shopify.com/components/navigation/link#navigation">Link</a>&mdash;Shopify's design system</li>
                         <li><a href="https://heydonworks.com/article/reinventing-the-hyperlink/">Reinventing the Hyperlink</a>&mdash;Heydon Pickering</li>

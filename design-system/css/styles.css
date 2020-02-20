@@ -596,11 +596,14 @@ a:hover, a:visited:hover, a:focus {
     text-decoration: none;
 }
 
-.cta:link, .cta:visited {
+.cta:link, .cta:visited, .cta-example:link, .cta-example:visited {
     font-family: 'Raleway', sans-serif;
     font-size: 1.266rem;
-    margin: 2.281rem 0 1.125rem 0;
     padding: 0.5rem;
+}
+
+.cta:link, .cta:visited {
+    margin: 2.281rem 0 1.125rem 0;
 }
 
 h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {

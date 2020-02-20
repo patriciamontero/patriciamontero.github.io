@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: buttons</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-19">February 19, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-20">February 20, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -53,11 +53,11 @@
                     <h3>Guidelines</h3>
                     <ul>
                         <li>Use a <code class="code-in-text">&lt;button&gt;</code> for actions, such as <em>copy</em>, <em>expand</em>, <em>collapse</em> or <em>send</em>. If the need is a change of location, use <a href="components-links.html">a link</a> <code class="code-in-text">&lt;a&gt;</code>. The proper use of their meaning as HTML elements results in a more inclusive experience. It also eases the maintenance and scaling of this design system.</li>
-                        <li>Deliver every button with a precise text that states its purpose. In most cases, it should be a verb that incites action. It works when the user can predict the outcome before triggering the button.</li>
-                        <li>Keep the content below four words to prevent text wrapping.</li>
+                        <li>Deliver every button with a precise text that states its purpose. In most cases, it should be a verb that incites action. You'll know it works when the user can predict the outcome before triggering the button.</li>
+                        <li>Keep its content below four words to prevent text wrapping.</li>
                         <li>Use sentence case for the texts, which means that only the first word starts with a capital letter. Don't use a period at the end of the phrase.</li>
                         <li>A primary button conveys the most prominent choice that the user can take in a section. For this reason, there should be only one per page. For supporting actions, pick a secondary button instead.</li>
-                        <li>A button's colour changes depending on its background. It may be any of the four shades picked from the <a href="style.html#colour">colour palette</a>, as long as it yields an <a href="style.html#colour-combinations">accessible contrast</a>. The shades are dark, accent, white and black:</li>
+                        <li>A button's colour changes depending on its surroundings. It may be any of the four shades picked from the <a href="style.html#colour">colour palette</a>, as long as it yields an <a href="style.html#colour-combinations">accessible contrast</a>. The shades are dark, accent, white and black:</li>
                     </ul>
                     <ul>
                         <li id="dark" class="square">#dd2808</li>
@@ -82,7 +82,7 @@
                             </button>
                         </div>
                         <div id="buttons-primary-content" class="component-content" hidden="">
-                            <p>White text (#f8f8f8) over a dark background (#dd2808), this is the default style for all buttons. It can only perform over a light-coloured background or contrasting image. A few examples of proper usage:</p>
+                            <p>White text (#f8f8f8) over a dark box area (#dd2808), this is the default style for all buttons. It can only perform over a light-coloured background or contrasting image. A few examples of proper usage:</p>
                             <p class="code-example"><button>This is a button</button></p>
                             <div class="code-example-photobg6">
                                 <button>This is a button</button>
@@ -134,12 +134,12 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-accent-content" class="component-content" hidden="">
-                            <p>For a safe contrast, the fittest values are accent (#f96c53) or white (#f8f8f8). The code for the first one is below. For the latter, it's available under the section <em>Primary button over a dark background</em>.</p>
+                            <p>Black text (#2f2f2f) over an accent colored area (#f96c53), this is an alternative style. It can only appear over a very dark-coloured background or contrasting image. A few examples of proper usage:</p>
                             <p class="code-example-black"><button class="accentbtn">This is a button</button></p>
                             <div class="code-example-photobg2">
                                 <button class="accentbtn">This is a button</button>
                             </div>
-                            <div class="code-example-photobg5">
+                            <div class="code-example-photobg3">
                                     <button class="accentbtn">This is a button</button>
                                 </div>
                             <pre>
@@ -186,7 +186,7 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-white-content" class="component-content" hidden="">
-                            <p>For a safe contrast, the only acceptable value is white (#f8f8f8). The code goes as follows:</p>
+                            <p>Black text (#2f2f2f) over a white box area (#f8f8f8), this is an alternative style. It can only appear over a very dark coloured background or contrasting image. A few examples of proper usage:</p>
                             <p class="code-example-darkest"><button class="whitebtn">This is a button</button></p>
                             <p class="code-example-black"><button class="whitebtn">This is a button</button></p>
                             <div class="code-example-photobg3">
@@ -236,7 +236,7 @@ button:hover {
                             </button>
                         </div>
                         <div id="buttons-primary-black-content" class="component-content" hidden="">
-                            <p>For a safe contrast, the only acceptable value is black (#2f2f2f). The code goes as follows:</p>
+                            <p>White text (#f8f8f8) over a black box area (#2f2f2f), this is an alternative style. It can appear over a light or accent coloured background or contrasting image. A few examples of proper usage:</p>
                             <p class="code-example"><button class="blackbtn">This is a button</button></p>
                             <p class="code-example-accent"><button class="blackbtn">This is a button</button></p>
                             <div class="code-example-photobg4">
@@ -343,7 +343,7 @@ button:hover {
                             <div class="code-example-photobg2">
                                 <button class="secaccentbtn">This is a button</button>
                             </div>
-                            <div class="code-example-photobg5">
+                            <div class="code-example-photobg6">
                                 <button class="secaccentbtn">This is a button</button>
                             </div>
                             <pre>

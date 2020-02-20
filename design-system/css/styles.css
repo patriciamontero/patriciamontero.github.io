@@ -463,7 +463,7 @@ figcaption, .note {
 }
 
 .type-scale {
-    border-bottom: 2px solid #f96c53;
+    border-bottom: 2px dotted #cccccc;
     display: block;
 }
     @media (min-width: 900px) {
@@ -722,7 +722,7 @@ div[tabindex]:focus {
 }
 
 .component-container + .component-container {
-    border-top: 2px solid #f96c53;
+    border-top: 2px dotted #cccccc;
     margin-top: 1rem;
     padding-top: 1rem;
 }

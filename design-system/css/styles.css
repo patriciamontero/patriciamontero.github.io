@@ -501,6 +501,10 @@ button, .accentbtn, .whitebtn, .blackbtn {
     text-decoration: none;
 }
 
+button:hover {
+    outline: 0.25rem dotted #dd2808;
+}
+
 button ~ button {
     margin: 0.5rem;
 }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Components: links | Pati Montero's design system</title>
-        <meta name="description" content="Well, there you go, you just found the tiniest design system on the Internet. Here's how I handle links for my web things.">
+        <meta name="description" content="Well, there you go, you just found the tiniest design system on the Internet. Come and see how I handle links for my web things.">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: links</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-20">February 20, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-21">February 21, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -59,7 +59,7 @@
                         <li><a href="https://webaim.org/resources/linkcontrastchecker/">Set a contrast</a> between body text and background colour that complies with standards. Anyone should be able to read it.</li>
                         <li>Always underline active links. Reinforce them in the hover state with a cursor pointer and hiding the underlining.</li>
                         <li>Set the font size in relative units to keep it proportional to the reading device.</li>
-                        <li>The focus state must be explicit. That allows users to distinguish the content they are currently selecting.</li>
+                        <li>The focus state must be explicit, and even playful: a thick and coloured dotted line. It allows users to distinguish the content they are currently selecting.</li>
                     </ul>
                     <h3 id="components" class="heading-button" tabindex="-1">
                         <span>Code snippets</span>
@@ -79,7 +79,6 @@
                         </div>
                         <div id="links-part-content-content" class="component-content" hidden="">
                             <p>Their styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction.</p>
-                            <p>The focus state is a thick and coloured dotted line.</p>
                             <p class="code-example"><a href="#0">This link</a> is an example.</p>
                             <p class="code-example-black"><a href="#0">This link</a> is an example.</p>
                             <pre>
@@ -132,6 +131,9 @@ a:hover, a:visited:hover, a:focus {
                             <p>These statements need an instant response from the user, and they usually appear at the end of a section. Their sentences end without a period.</p>
                             <p class="code-example"><a class="cta-example" href="#0">Another link as example</a></p>
                             <p class="code-example-black"><a class="cta-example" href="#0">Another link as example</a></p>
+                            <div class="code-example-photobg4">
+                                <a class="cta-example" href="#0">Another link as example</a>
+                            </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">

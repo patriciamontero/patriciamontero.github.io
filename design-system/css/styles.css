@@ -161,6 +161,15 @@ article {
         }
     }
 
+hr {
+    background-color: #ffffff;
+    border: none;
+    color: #ffffff;
+    height: 0.1rem;
+    margin: 2rem 0 0 0;
+    width: 100%;
+}
+
 footer {
     background-image: url(../images/mom-walks.png);
     background-position: top right;
@@ -224,6 +233,23 @@ code {
 
 .code-example-dark {
     color: #f8f8f8;
+}
+
+.code-example-nav li, .code-example-navinvert li {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    margin: 0 1rem;;
+}
+
+.code-example-nav a:link, .code-example-nav a:visited,
+.code-example-nav a:hover, .code-example-nav a:hover:visited {
+    background-color: transparent;
+}
+
+.code-example-navinvert a:link, .code-example-navinvert a:visited,
+.code-example-navinvert a:hover, .code-example-navinvert a:hover:visited {
+    background-color: transparent;
+    color: #f0f0f0;
 }
 
 .code-in-text {
@@ -637,12 +663,20 @@ nav ul {
     display: inline;
 }
 
-nav a.current {
+a.current {
     border-bottom: 0.25rem solid #2f2f2f;
     border-radius: 0;
     cursor: default;
     text-decoration: none;
 }
+
+a.currentinvert {
+    border-bottom: 0.25rem solid #f0f0f0;
+    border-radius: 0;
+    cursor: default;
+    text-decoration: none;
+}
+
 
 .logo:link, .logo:visited {
     background: none;

@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: links</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-21">February 21, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-22">February 22, 2020 <br> In progress</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -189,11 +189,31 @@ a:hover, a:visited:hover, a:focus {
                         <div id="links-in-the-main-menu-content" class="component-content" hidden="">
                             <p>These links allow browsing between pages. Except for the background colour, they are like the previous ones. A thicker underline identifies the current page.</p>
                             <p>Whenever possible, keep under four the total items in the main navigation bar. It may be viable, given the simplicity of my interfaces, and it reduces the need for a <a href="https://www.nngroup.com/articles/hamburger-menu-vs-pizza/">hamburger menu</a>.</p>
-                            <p class="code-example"> <img src="images/cmpnt-lnk-navmenu1.png" alt="Close up. Links in the main navigation menu."> </p>
+                            <div class="code-example">
+                                <ul class="code-example-nav">
+                                    <li><a href="#0">Brand</a></li>
+                                    <li><a href="#0">Style</a></li>
+                                    <li><a class="current" href="#0">Components</a></li>
+                                </ul>
+                            </div>
+                            <div class="code-example-accent">
+                                <ul class="code-example-nav">
+                                    <li><a href="#0">Brand</a></li>
+                                    <li><a href="#0">Style</a></li>
+                                    <li><a class="current" href="#0">Components</a></li>
+                                </ul>
+                            </div>
+                            <div class="code-example-photobg2">
+                                <ul class="code-example-navinvert">
+                                    <li><a href="#0">Brand</a></li>
+                                    <li><a href="#0">Style</a></li>
+                                    <li><a class="currentinvert" href="#0">Components</a></li>
+                                </ul>
+                            </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
-                                        <span>HTML</span>
+                                        <span>HTML for black text</span>
                                         <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-main-menu">Copy HTML</button>
                                     </h5>
 <span id="html-links-in-the-main-menu">
@@ -201,12 +221,12 @@ a:hover, a:visited:hover, a:focus {
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="index.html" &gt;<span class="code-accent">Brand</span>&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="styles.html"&gt;<span class="code-accent">Styles</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class="current" href="patterns.html"&gt;<span class="code-accent">Patterns</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="current" href="components.html"&gt;<span class="code-accent">Components</span>&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/nav&gt;
 </span>
                                     <h5 class="heading-button">
-                                        <span>CSS</span>
+                                        <span>CSS for black text</span>
                                         <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-main-menu">Copy CSS</button>
                                     </h5>
 <span id="css-links-in-the-main-menu">
@@ -231,11 +251,58 @@ nav li {
 nav ul {
     display: inline;
 }
-nav a.current {
+a.current {
     border-bottom: 0.25rem solid #2f2f2f;
     border-radius: 0;
     cursor: default;
     text-decoration: none;
+}
+</span>
+<hr>
+<h5 class="heading-button">
+    <span>HTML for white text</span>
+    <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-main-menu-invert">Copy HTML</button>
+</h5>
+<span id="html-links-in-the-main-menu-invert">
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="index.html" &gt;<span class="code-accent">Brand</span>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="styles.html"&gt;<span class="code-accent">Styles</span>&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="currentinvert" href="components.html"&gt;<span class="code-accent">Components</span>&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS for white text</span>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-main-menu-invert">Copy CSS</button>
+                                    </h5>
+<span id="css-links-in-the-main-menu-invert">
+nav a:link, nav a:visited {
+background-color: transparent;
+color: #f0f0f0;
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+line-height: 1.2;
+padding: 0 0.25rem;
+transition: all 0.4s ease-in;
+}
+nav a:hover, nav a:focus, nav a:visited:hover  {
+outline: 0.25rem dotted #dd2808;
+text-decoration: none;
+}
+nav li {
+display: inline-block;
+padding: 0.5rem;
+margin: 0;
+}
+nav ul {
+display: inline;
+}
+a.currentinvert {
+border-bottom: 0.25rem solid #f0f0f0;
+border-radius: 0;
+cursor: default;
+text-decoration: none;
 }
 </span>
                                 </code>

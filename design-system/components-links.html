@@ -15,7 +15,7 @@
             <div class="content-wrap">
                 <h1>Components: links</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-02-23">February 23, 2020 <br> In progress</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-02-23">February 23, 2020 <br> 5 minutes to read</time></p>
             </div>
             <nav aria-label="page">
                 <h2 class="hidden-content">Main navigation</h2>
@@ -438,24 +438,159 @@ fill: #f96c53;
                         </div>
                         <div id="links-in-the-secondary-menu-content" class="component-content" hidden="">
                             <p>Like the previous ones, these links reveal vertically. They offer an idea of the current page's content.</p>
-                            <p class="code-example"> <img src="images/cmpnt-lnk-navmenu2.png" alt="Close up. Links in the secondary navigation menu."> </p>
+                            <div class="code-example">
+                                <ul class="code-example-nav">
+                                    <li><a class="current" href="#0">Mission</a></li><br><br>
+                                    <li><a href="#0">Values</a></li><br><br>
+                                    <li><a href="#0">Audience</a></li><br><br>
+                                    <li><a href="#0">Voice and tone</a></li>
+                                </ul>
+                            </div>
+                            <div class="code-example-accent">
+                                <ul class="code-example-nav">
+                                    <li><a class="current" href="#0">Mission</a></li><br><br>
+                                    <li><a href="#0">Values</a></li><br><br>
+                                    <li><a href="#0">Audience</a></li><br><br>
+                                    <li><a href="#0">Voice and tone</a></li>
+                                </ul>
+                            </div>
+                            <div class="code-example-black">
+                                <ul class="code-example-navinvert">
+                                    <li><a class="currentinvert" href="#0">Mission</a></li><br><br>
+                                    <li><a href="#0">Values</a></li><br><br>
+                                    <li><a href="#0">Audience</a></li><br><br>
+                                    <li><a href="#0">Voice and tone</a></li>
+                                </ul>
+                            </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
-                                        <span>HTML</span>
+                                        <span>HTML, black text</span>
                                         <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-secondary-menu">Copy HTML</button>
                                     </h5>
-<span id="html-links-in-the-secondary-menu">&lt;p&gt;&lt;a class="cta" href="#"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
+<span id="html-links-in-the-secondary-menu">
+&lt;nav class="secondary-nav"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a class="current" href="#main-content" &gt;<span class="code-accent">Mission</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#values"&gt;<span class="code-accent">Values</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#audience"&gt;<span class="code-accent">Audience</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#voice"&gt;<span class="code-accent">Voice and tone</span>&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</span>
                                     <h5 class="heading-button">
-                                        <span>CSS</span>
+                                        <span>CSS, black text</span>
                                         <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-secondary-menu">Copy CSS</button>
                                     </h5>
 <span id="css-links-in-the-secondary-menu">
-.cta:link, .cta:visited {
+.secondary-nav {
+    margin: 0;
+    padding: 0 0 2rem 0; 
+    position: relative;
+    text-align: left;
+    top: 2rem;
+    z-index: 0;
+}
+.secondary-nav a:link, .secondary-nav a:visited {
+    background-color: transparent;
+    color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.266rem;
-    margin: 2.281rem 0 1.125rem 0;
-    padding: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 0 0.25rem;
+    transition: all 0.4s ease-in;
+}
+.secondary-nav a:hover, .secondary-nav a:focus, .secondary-nav a:visited:hover  {
+    outline: 0.25rem dotted #dd2808;
+    text-decoration: none;
+}
+.secondary-nav li {
+    display: block;
+    padding: 0.5rem 0;
+}
+    @media (min-width: 600px) {
+        .secondary-nav li {
+            padding: 0.5rem 2rem;
+        }
+    }
+    @media (min-width: 900px) {
+        .secondary-nav li {
+            padding: 0.5rem 3rem;
+        }
+    }
+.secondary-nav ul {
+    display: inline;
+}
+a.current {
+    border-bottom: 0.25rem solid #2f2f2f;
+    border-radius: 0;
+    cursor: default;
+    text-decoration: none;
+}
+</span>
+<hr>
+<h5 class="heading-button">
+    <span>HTML, white text</span>
+    <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-secondary-menu-invert">Copy HTML</button>
+</h5>
+<span id="html-links-in-the-secondary-menu-invert">
+    &lt;nav class="secondary-navinvert"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a class="current" href="#main-content" &gt;<span class="code-accent">Mission</span>&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#values"&gt;<span class="code-accent">Values</span>&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#audience"&gt;<span class="code-accent">Audience</span>&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#voice"&gt;<span class="code-accent">Voice and tone</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+</span>
+                                    <h5 class="heading-button">
+                                        <span>CSS, white text</span>
+                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-secondary-menu-invert">Copy CSS</button>
+                                    </h5>
+<span id="css-links-in-the-secondary-menu-invert">
+.secondary-navinvert {
+    margin: 0;
+    padding: 0 0 2rem 0; 
+    position: relative;
+    text-align: left;
+    top: 2rem;
+    z-index: 0;
+}
+.secondary-navinvert a:link, .secondary-navinvert a:visited {
+    background-color: transparent;
+    color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    padding: 0 0.25rem;
+    transition: all 0.4s ease-in;
+}
+.secondary-navinvert a:hover, .secondary-navinvert a:focus, .secondary-navinvert a:visited:hover  {
+    outline: 0.25rem dotted #dd2808;
+    text-decoration: none;
+}
+.secondary-navinvert li {
+    display: block;
+    padding: 0.5rem 0;
+}
+    @media (min-width: 600px) {
+        .secondary-navinvert li {
+            padding: 0.5rem 2rem;
+        }
+    }
+    @media (min-width: 900px) {
+        .secondary-navinvert li {
+            padding: 0.5rem 3rem;
+        }
+    }
+.secondary-navinvert ul {
+    display: inline;
+}
+a.current {
+    border-bottom: 0.25rem solid #f0f0f0;
+    border-radius: 0;
+    cursor: default;
+    text-decoration: none;
 }
 </span>
                                 </code>
@@ -476,7 +611,12 @@ fill: #f96c53;
                         </div>
                         <div id="skip-to-content-link-content" class="component-content" hidden="">
                             <p>This link allows screen reader users to go straight to the main content. It's a hidden element by default, but it appears by pressing the tab key right after entering the page.</p>
-                            <p class="code-example"><img src="images/cmpnt-lnk-skip.png" alt="Skip to content button. Close up."></p>
+                            <p>Here are a few examples of proper usage:</p>
+                            <p class="code-example"><a class="code-example-skip" href="#0">Skip to content</a></p>
+                            <p class="code-example-black"><a class="code-example-skip" href="#0">Skip to content</a></p>
+                            <div class="code-example-photobg4">
+                                <a class="code-example-skip" href="#0">Skip to content</a>
+                            </div>
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
@@ -505,6 +645,7 @@ a.skip:focus, a.skip:active {
     font-weight: 700;
     left: 1rem;
     overflow: auto;
+    outline: 0.25rem dotted #dd2808;
     padding: 0.5rem;
     text-decoration: underline;
     top: 1rem;

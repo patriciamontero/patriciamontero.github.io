@@ -164,7 +164,7 @@ article {
 hr {
     background-color: #ffffff;
     border: none;
-    color: #fffffflogo;
+    color: #ffffff;
     height: 0.1rem;
     margin: 2rem 0 0 0;
     width: 100%;
@@ -297,6 +297,20 @@ code {
 
 .code-example-photobg6 {
     background-image: url(../images/photo-bus.jpg);
+}
+
+.code-example-skip:link, .code-example-skip:visited, .code-example-skip:focus {
+    background-color: #fcdad4;
+    border: 0;
+    border-radius: 0.1875rem;
+    color: #2f2f2f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    left: 1rem;
+    outline: 0.25rem dotted #dd2808;
+    padding: 0.5rem;
+    text-decoration: underline;
+    top: 1rem;
 }
 
 

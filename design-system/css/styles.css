@@ -164,7 +164,7 @@ article {
 hr {
     background-color: #ffffff;
     border: none;
-    color: #ffffff;
+    color: #fffffflogo;
     height: 0.1rem;
     margin: 2rem 0 0 0;
     width: 100%;
@@ -678,16 +678,27 @@ a.currentinvert {
 }
 
 
-.logo:link, .logo:visited {
+.logo:link, .logo:visited,
+.logoinvert:link, .logoinvert:visited {
     background: none;
     display: inline-block;
-    fill: #2f2f2f;
     margin: 0.5rem 1rem 0.5rem 0;
     vertical-align: middle;
     width: 3rem;
 }
+
+.logo:link, .logo:visited {
+    fill: #2f2f2f;
+}
 .logo:hover, .logo:focus, .logo:visited:hover {
     fill: #dd2808;
+}
+
+.logoinvert:link, .logoinvert:visited {
+    fill: #f0f0f0;
+}
+.logoinvert:hover, .logoinvert:focus, .logoinvert:visited:hover {
+    fill: #f96c53;
 }
 
 .secondary-nav li {

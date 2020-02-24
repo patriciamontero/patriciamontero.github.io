@@ -369,8 +369,8 @@ img {
     #a71e06 darkest accent
 */
 
-.square {
-    background-color: #2f2f2f;
+.blackbg, .whitebg, .lightestbg, 
+.lightbg, .accentbg, .darkbg, .darkestbg {
     border-radius: 0.1875rem;
     color: #f8f8f8;
     display: inline-block;
@@ -380,37 +380,37 @@ img {
     width: 8rem;
 }
 
-#white, #lightest, 
-#light, #accent {
+.whitebg, .lightestbg, 
+.lightbg, .accentbg {
     border: solid 1px #2f2f2f;
     color: #2f2f2f;
 }
 
-#dark, #darkest {
-    color: #f8f8f8;
+.blackbg {
+    background-color: #2f2f2f;
 }
 
-#white {
+.whitebg {
     background-color: #f8f8f8;
 }
 
-#lightest {
+.lightestbg {
     background-color: #fcdad4;
 }
 
-#light {
+.lightbg {
     background-color: #fba798;
 }
 
-#accent {
+.accentbg {
     background-color: #f96c53;
 }
 
-#dark {
+.darkbg {
     background-color: #dd2808;
 }
 
-#darkest {
+.darkestbg {
     background-color: #a71e06;
 }
 

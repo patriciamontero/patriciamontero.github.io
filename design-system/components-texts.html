@@ -28,9 +28,29 @@
                     </div>
                 </a>
                 <ul>
-                    <li><a href="index.html" >Brand</a></li>
-                    <li><a href="style.html">Style</a></li>
-                    <li><a class="current" href="components.html" aria-current="page">Components</a></li>
+                    <li>
+                        <a href="index.html" aria-haspopup="true">Brand</a>
+                        <ul aria-hidden="true" aria-expanded="false"  aria-label="brand submenu">
+                            <li><a href="index.html#main-content">Mission</a></li>
+                            <li><a href="index.html#values">Values</a></li>
+                            <li><a href="index.html#audience">Audience</a></li>
+                            <li><a href="index.html#voice">Voice and tone</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="style.html" aria-haspopup="true">Style</a>
+                        <ul aria-hidden="true" aria-expanded="false"  aria-label="style submenu">
+                            <li><a href="style.html#main-content">Logo</a></li>
+                            <li><a href="style.html#colour">Colour</a></li>
+                            <li><a href="style.html#typography">Typography</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="components.html" aria-haspopup="true">Components</a></li>
+                        <ul aria-hidden="true" aria-expanded="false"  aria-label="components submenu">
+                            <li><a href="components.html#main-content">Buttons</a></li>
+                            <li><a href="components.html#links">Links</a></li>
+                            <li><a href="components.html#texts">Texts</a></li>
+                        </ul>
                 </ul>
             </nav>
         </header>

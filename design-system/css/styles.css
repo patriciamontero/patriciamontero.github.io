@@ -32,7 +32,7 @@ body {
 }
 
 nav {
-    background-color: #ffffff;
+    background-color: #2f2f2f;
     border-bottom: 0.25rem solid #fba798;
     margin: 0 auto;
     padding: 0.25rem 0;
@@ -659,6 +659,7 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
 
 nav a:link, nav a:visited {
     background-color: transparent;
+    color: #f8f8f8;
     font-family: 'Raleway', Helvetica, sans-serif;
     font-weight: 700;
     line-height: 1.2;
@@ -678,7 +679,7 @@ nav ul {
 }
 
 a.current {
-    border-bottom: 0.25rem solid #2f2f2f;
+    border-bottom: 0.25rem solid #f8f8f8;
     border-radius: 0;
     cursor: default;
     text-decoration: none;
@@ -702,10 +703,10 @@ a.currentinvert {
 }
 
 .logo:link, .logo:visited {
-    fill: #2f2f2f;
+    fill: #f8f8f8;
 }
 .logo:hover, .logo:focus, .logo:visited:hover {
-    fill: #dd2808;
+    fill: #f96c53;
 }
 
 .logoinvert:link, .logoinvert:visited {

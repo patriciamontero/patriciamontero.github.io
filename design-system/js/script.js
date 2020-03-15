@@ -1,6 +1,5 @@
 // Accordion by https://inclusivedesignprinciples.org/
 (function() {
-
   var translations = {
     en: {
       EXPAND: "Expand all",
@@ -17,17 +16,14 @@
   };
   var pageLang = document.querySelector('html').getAttribute('lang');
   var strings = translations[pageLang] || translations['en'];
-
   function collapse(toggle, target) {
     toggle.setAttribute('aria-expanded', 'false');
     target.hidden = true;
   }
-
   function expand(toggle, target) {
     toggle.setAttribute('aria-expanded', 'true');
     target.hidden = false;
   }
-
   var toggles = document.querySelectorAll('[data-expands]');
   [].forEach.call(toggles, function(toggle) {
     toggle.hidden = false;
@@ -45,7 +41,6 @@
       });
     }
   });
-
   var expandAll = document.querySelector('[data-expandAll]');
   expandAll.hidden = false;
   expandAll.textContent = strings.EXPAND;
@@ -65,7 +60,6 @@
       this.textContent = strings.COLLAPSE;
     }
   });
-
   function openSection() {
     var hash = window.location.hash || false;
     if (hash) {
@@ -78,10 +72,8 @@
       }
     }
   }
-
   window.onload = openSection;
   window.onhashchange = openSection;
-
   var sectionHeadings = document.querySelectorAll('.component-intro h4');
 
   Array.prototype.forEach.call(sectionHeadings, function (heading) {
@@ -89,65 +81,9 @@
       this.nextElementSibling.click();
     })
   });
-
 })();
 
 // Copy to clipboard
-
 new ClipboardJS('.secondary');
 
 // Nested navigation
-
-if (!Element.prototype.closest) {
-    Element.prototype.closest = function(s) {
-        var el = this;
-        if (!document.documentElement.contains(el)) return null;
-            do {
-                if (el.matches(s)) return el;
-                el = el.parentElement || el.parentNode;
-            } while (el !== null && el.nodeType === 1);
-            return null;
-    };
-}
-
-var opened;
-
-function reset() {
-    if (opened) {
-        opened.style.display = '';
-        opened.setAttribute('aria-hidden', 'true');
-        opened.setAttribute('aria-expanded', 'false');
-    }
-}
-
-function open(el) {
-    el.style.display = 'block';
-    el.setAttribute('aria-hidden', 'false');
-    el.setAttribute('aria-expanded', 'true');
-    opened = el;
-}
-
-document.addEventListener('click', function(event) {
-    if (!event.target.closest('[aria-hidden]')) {
-        reset();
-    }
-});
-
-document.addEventListener('focusin', function(event) {
-    reset();
-
-    var target = event.target;
-    var hasPopup = target.getAttribute('aria-haspopup') === 'true';
-    if (hasPopup) {
-        open(event.target.nextElementSibling);
-        return;
-    }
-
-    var popupAnchor = target.parentNode.parentNode.previousElementSibling;
-    var isSubMenuAnchor = popupAnchor && popupAnchor.getAttribute('aria-haspopup') === 'true';
-    if (isSubMenuAnchor) {
-        open(popupAnchor.nextElementSibling);
-        return;
-    }
-})
-

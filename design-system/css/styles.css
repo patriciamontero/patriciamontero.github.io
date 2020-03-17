@@ -27,7 +27,7 @@ body {
     color: #2f2f2f;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-nav {
+/* nav {
     background-color: #ffffff;
     border-bottom: 0.25rem solid #fba798;
     margin: 0 auto;
@@ -53,7 +53,8 @@ nav {
     text-align: left;
     top: 2rem;
     z-index: 0;
-}
+} */
+
 header {
     background: #fba798 url(../images/moms-hug.png) no-repeat fixed top center;
     box-sizing: border-box;
@@ -218,7 +219,7 @@ code {
     font-family: 'Raleway', Helvetica, sans-serif;
     font-weight: 700;
     left: 1rem;
-    outline: 0.25rem dotted #dd2808;
+    outline: 2px solid #49f9e2;
     padding: 0.5rem;
     text-decoration: underline;
     top: 1rem;
@@ -269,6 +270,7 @@ img {
     #f96c53 accent
     #dd2808 dark accent
     #a71e06 darkest accent
+    #49f9e2 focus
 */
 .blackbg, .whitebg, .lightestbg, 
 .lightbg, .accentbg, .darkbg, .darkestbg {
@@ -414,7 +416,7 @@ button, .accentbtn, .whitebtn, .blackbtn {
     text-decoration: none;
 }
 button:hover {
-    outline: 0.25rem dotted #dd2808;
+    outline: 2px solid #49f9e2;
 }
 button ~ button {
     margin: 0.5rem;
@@ -498,7 +500,7 @@ a:link, a:visited {
 }
 a:hover, a:visited:hover, a:focus {
     background-color: #fba798;
-    outline: 0.25rem dotted #dd2808;
+    outline: 2px solid #49f9e2;
     text-decoration: none;
 }
 .cta:link, .cta:visited, .cta-example:link, .cta-example:visited {
@@ -514,7 +516,7 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     color: #dd2808;
     text-decoration: none;
 }
-nav a:link, nav a:visited {
+/* nav a:link, nav a:visited {
     background-color: transparent;
     color: #2f2f2f;
     font-family: 'Raleway', Helvetica, sans-serif;
@@ -531,9 +533,9 @@ nav li {
 }
 nav ul {
     display: inline;
-}
+} */
 a.current {
-    border-bottom: 0.25rem solid #f8f8f8;
+    border-bottom: 0.25rem solid #2f2f2f;
     border-radius: 0;
     cursor: default;
     text-decoration: none;
@@ -544,7 +546,7 @@ a.currentinvert {
     cursor: default;
     text-decoration: none;
 }
-.logo:link, .logo:visited,
+/* .logo:link, .logo:visited,
 .logoinvert:link, .logoinvert:visited {
     background: none;
     display: inline-block;
@@ -577,7 +579,58 @@ a.currentinvert {
         .secondary-nav li {
             padding: 0.5rem 3rem;
         }
-    }
+    } */
+
+/* Nested navigation ------------------------------ */
+.mainnav {
+    background-color: #ffffff;
+    border-bottom: 0.25rem solid #fba798;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.mainnav ul {
+    min-width: 9rem;
+    padding-top: 0.5rem;
+    position: absolute;
+}
+.mainnav li {
+    margin: 0;
+    list-style-type: none;
+}
+.mainnav ul a:hover, .mainnav ul a:visited:hover,
+.mainnav ul a:focus {
+    background-color: #fcdad4;
+    color: #2f2f2f;
+}
+.mainnav ul a:focus {
+    outline: 2px solid #49f9e2;
+}
+.mainnav button, .mainnav a:link, .mainnav a:visited {
+    background-color: #ffffff;
+    border-radius: 0;
+    color: #2f2f2f;
+    display: flex;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+}
+.mainnav button:focus, .mainnav a:focus {
+    outline: 2px solid #49f9e2;
+    position: relative;
+}
+.mainnav button:hover, .mainnav a:hover,
+.mainnav button[aria-expanded=true] {
+    background-color: #dd2808;
+    color: #f8f8f8;
+}
+.mainnav li:last-of-type {
+    padding-bottom: 2rem;
+}
 
 /* Reveal and hide styles ------------------------------ */
 .xtarget:target {
@@ -622,7 +675,7 @@ button:hover {
 }
 :focus:not([tabindex="-1"]) {
     border: 0;
-    outline: 0.25rem dotted #dd2808;
+    outline: 2px solid #49f9e2;
     outline-offset: 0.125rem;
 }
 /* fix for IE */

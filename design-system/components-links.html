@@ -15,22 +15,26 @@
             <div class="content-wrap">
                 <h1>Components: links</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle">Last updated on <time datetime="2020-03-15">Mars 15, 2020 <br> 5 minutes to read</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-03-17">Mars 17, 2020 <br> 5 minutes to read</time></p>
             </div>
-            <nav aria-label="page">
-                <h2 class="hidden-content">Main navigation</h2>
-                <a aria-label="Go back to Pati Montero's website" class="logo" href="../index.html">
-                    <div class="container">
-                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 50 50">
-                            <path d="M22.6 27.6c0 3.1 2.6 1.7 2.6 1.7V25c0-.1-2.6-.3-2.6 2.6zM11.2 20.9c-1 0-2 .6-2 .6v6.3c0 1 .7 2.8 2.3 2.8 1.5 0 2.4-2 2.4-5.4s-1.8-4.3-2.7-4.3z"/>
-                            <path d="M25 0C11.2 0 0 11.2 0 25s11.2 25 25 25 25-11.2 25-25S38.8 0 25 0zM12.1 31.6c-1.6 0-2.4-.3-2.4-.3h-.5v6h-4V21.9c0-1-.4-1.8-1-1.8l-.1-.3 5.2-1.6h-.1v2h.4s1.6-2.1 4.1-2.1 4.6 2.8 4.6 6.1c.1 3.4-1.2 7.4-6.2 7.4zm29.7-.2c-1.5 0-2.3-.7-2.8-1.8-.5.5-2.2 1.8-4.2 1.8-1.3 0-2.2-.6-2.7-1.4-.4.4-1.8 1.4-3.3 1.4-2.2 0-2.7-1.6-2.7-1.6s-1.2 1.6-3.7 1.6c-2 0-3.6-1.5-3.6-3.3 0-4.5 6.5-3.9 6.5-3.9V21c0-1.2-.3-1.8-1.4-1.8-1.1 0-1.4.8-1.4.8s.7.4.7 1.4c0 1.5-1.2 1.9-1.8 1.9-.8 0-1.9-.3-1.9-1.9 0-3.2 5-2.9 5-2.9 5.1 0 4.8 3.3 4.8 4v5.9c0 2.1 1.8 1.4 2.2 1.1-.2-.6-.2-1.2-.2-1.9V17.3h-1v-.5c1 0 3.7-3.5 3.7-4.5h1.3v4c1-.8 2.4-3.6 5-3.6 1.3 0 2.6 1.1 2.6 2.4 0 1.3-1 2.4-2.3 2.4-1.2 0-2.6-1-2.6-2.1-.8 0-1.6 1.7-2.6 2.2v10c0 2 2.2 2.3 3.1 1.5-.1-.4-.1-.9-.1-1.4V22c0-.6 0-1.5-1-1.5v-.4l4.6-1.5.4.1v8.9c0 2.1 2.3 2.4 3.1 1.5l.3.3c-.1-.1-1.7 2-4 2z"/>
-                        </svg>
-                    </div>
-                </a>
-                <ul>
-                    <li><a href="index.html" >Brand</a></li>
+            <nav aria-label="Pati Montero's design system">
+                <ul id="navcontent" class="mainnav">
+                    <li><a href="index.html">Brand</a></li>
                     <li><a href="style.html">Style</a></li>
-                    <li><a class="current" href="components.html" aria-current="page">Components</a></li>
+                    <li>
+                    <button aria-expanded="true" aria-controls="id-components-menu">Components &darr;</button>
+                    <ul id="id-components-menu">
+                        <li><a href="components-accordion.html">Accordions</a></li>
+                        <li><a href="components.html">Buttons</a></li>
+                        <li><a href="components-cards.html">Cards</a></li>
+                        <li><a href="components-forms.html">Forms</a></li>
+                        <li><a href="components-images.html">Images</a></li>
+                        <li><a href="components-links.html">Links</a></li>
+                        <li><a href="components-images.html">Navigation</a></li>
+                        <li><a href="components-texts.html">Texts</a></li>
+                        <li><a href="components-cards.html">Status</a></li>
+                    </ul>
+                    </li>
                 </ul>
             </nav>
         </header>

@@ -164,6 +164,7 @@ code {
     padding: 1rem;
     position: relative;
     text-align: left;
+    z-index: -1;
 }
 .code-example-photobg1 {
     background-image: url(../images/photo-montreal.jpg);
@@ -565,6 +566,15 @@ a.currentinvert {
 .mainnav button[aria-expanded=true] {
     text-decoration: none;
 }
+.mainnav button::after {
+    content: "";
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    height: 0.7em;
+    margin-left: 0.75em;
+    width: 0.7em;
+    transform: rotate(45deg);
+  }
 
 /* Reveal and hide styles ------------------------------ */
 .xtarget:target {

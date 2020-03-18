@@ -500,6 +500,10 @@ a.currentinvert {
     cursor: default;
     text-decoration: none;
 }
+.tagline a:link, .tagline a:visited {
+    background-color: transparent;
+    padding: 0;
+} 
 
 /* Nested navigation ------------------------------ */
 #id-components-menu {

@@ -164,7 +164,6 @@ code {
     padding: 1rem;
     position: relative;
     text-align: left;
-    z-index: -1;
 }
 .code-example-photobg1 {
     background-image: url(../images/photo-montreal.jpg);
@@ -246,7 +245,7 @@ img {
     #49f9e2 focus
 */
 .blackbg, .whitebg, .lightestbg, 
-.lightbg, .accentbg, .darkbg, .darkestbg {
+.lightbg, .accentbg, .darkbg, .darkestbg, .focusbg {
     border-radius: 0.1875rem;
     color: #f8f8f8;
     display: inline-block;
@@ -256,7 +255,7 @@ img {
     width: 8rem;
 }
 .whitebg, .lightestbg, 
-.lightbg, .accentbg {
+.lightbg, .accentbg, .focusbg {
     border: solid 1px #2f2f2f;
     color: #2f2f2f;
 }
@@ -280,6 +279,9 @@ img {
 }
 .darkestbg {
     background-color: #a71e06;
+}
+.focusbg {
+    background-color: #49f9e2;
 }
 
 /* Text styles ------------------------------ */
@@ -489,18 +491,10 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     color: #dd2808;
     text-decoration: none;
 }
-a.current {
-    border-bottom: 0.25rem solid #2f2f2f;
-    border-radius: 0;
-    cursor: default;
-    text-decoration: none;
-}
-a.currentinvert {
-    border-bottom: 0.25rem solid #f0f0f0;
-    border-radius: 0;
-    cursor: default;
-    text-decoration: none;
-}
+/* a.current::before {
+    color: #ffffff;
+    content: "+";
+} */
 .tagline a:link, .tagline a:visited {
     background-color: transparent;
     padding: 0;
@@ -520,6 +514,7 @@ a.currentinvert {
     top: 0;
     transition: all 0.4s ease-in;
     width: 100%;
+    z-index: 1;
 }
 .mainnav ul {
     background-color: #ffffff;
@@ -556,7 +551,6 @@ a.currentinvert {
     line-height: 1rem;
     margin: 0;
     padding: 1rem;
-    text-decoration: underline;
 }
 .mainnav button:focus, .mainnav a:focus {
     outline: 2px solid #49f9e2;

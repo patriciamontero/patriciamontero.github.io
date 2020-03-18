@@ -506,7 +506,7 @@ a.currentinvert {
     display: none;
 }
 .mainnav {
-    background-color: #ffffff;
+    background-color: #2f2f2f;
     border-bottom: 0.25rem solid #fba798;
     display: flex;
     justify-content: center;
@@ -517,13 +517,21 @@ a.currentinvert {
     width: 100%;
 }
 .mainnav ul {
+    background-color: #ffffff;
+    margin: 0.25rem 0 0 0;
     min-width: 9rem;
-    padding-top: 0.5rem;
+    padding: 0;
     position: absolute;
 }
 .mainnav li {
-    margin: 0;
     list-style-type: none;
+    margin: 0.5rem;
+}
+.mainnav ul a:link, .mainnav ul a:visited {
+    background-color: #ffffff;
+    border-bottom: 2px dotted #cccccc;
+    color: #2f2f2f;
+    margin: 0;
 }
 .mainnav ul a:hover, .mainnav ul a:visited:hover,
 .mainnav ul a:focus {
@@ -534,14 +542,16 @@ a.currentinvert {
     outline: 2px solid #49f9e2;
 }
 .mainnav button, .mainnav a:link, .mainnav a:visited {
-    background-color: #ffffff;
+    background-color: #2f2f2f;
     border-radius: 0;
-    color: #2f2f2f;
+    color: #ffffff;
     display: flex;
     font-family: 'Raleway', Helvetica, sans-serif;
     justify-content: center;
+    line-height: 1rem;
     margin: 0;
-    padding: 0.5rem 0.75rem;
+    padding: 1rem;
+    text-decoration: underline;
 }
 .mainnav button:focus, .mainnav a:focus {
     outline: 2px solid #49f9e2;
@@ -549,16 +559,7 @@ a.currentinvert {
 }
 .mainnav button:hover, .mainnav a:hover,
 .mainnav button[aria-expanded=true] {
-    background-color: #dd2808;
-    color: #f8f8f8;
-}
-.mainnav li:last-of-type {
-    padding-bottom: 2rem;
-}
-.disabled {
-    background-color: #f8f8f8;
-    color: #cccccc;
-    cursor: none;
+    text-decoration: none;
 }
 
 /* Reveal and hide styles ------------------------------ */

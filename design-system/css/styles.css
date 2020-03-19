@@ -491,10 +491,6 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     color: #dd2808;
     text-decoration: none;
 }
-/* a.current::before {
-    color: #ffffff;
-    content: "+";
-} */
 .tagline a:link, .tagline a:visited {
     background-color: transparent;
     padding: 0;
@@ -525,7 +521,7 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
 }
 .mainnav li {
     list-style-type: none;
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 0 0.5rem;
 }
 .mainnav ul a:link, .mainnav ul a:visited {
     background-color: #ffffff;
@@ -558,7 +554,9 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
 }
 .mainnav button:hover, .mainnav a:hover,
 .mainnav button[aria-expanded=true] {
+    color: #fba798;
     text-decoration: none;
+    transition: all 0.4s ease-in;
 }
 .mainnav button::after {
     content: "";
@@ -569,6 +567,11 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     width: 0.7em;
     transform: rotate(45deg);
   }
+a.current:link, a.current:visited,
+button.current {
+    border-bottom: 0.2rem solid #f96c53;
+    text-decoration: none;
+}
 
 /* Reveal and hide styles ------------------------------ */
 .xtarget:target {

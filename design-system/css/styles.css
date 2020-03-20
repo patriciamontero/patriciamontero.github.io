@@ -30,14 +30,14 @@ body {
 header {
     background: #fba798 url(../images/moms-hug.png) no-repeat fixed top center;
     box-sizing: border-box;
-    padding: 10rem 0 4rem 0;
+    padding: 10rem 0 4rem;
     position: relative;
     text-align: center;
 }
-#styles {
+.styles {
     background-image: url(../images/moms-profile.png);
 }
-#patterns {
+.components {
     background-image: url(../images/moms-hair.png);
 }
 main {
@@ -78,7 +78,7 @@ hr {
     border: none;
     color: #ffffff;
     height: 0.1rem;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0 0;
     width: 100%;
 }
 footer {
@@ -98,7 +98,7 @@ code {
     color: #2f2f2f;
     display: block;
     overflow: scroll;
-    padding: 0 2rem 1rem 2rem;
+    padding: 0 2rem 1rem;
 }
 .code-example, .code-example-black, 
 .code-example-darkest, 
@@ -118,12 +118,6 @@ code {
     background-color: #a71e06;
     color: #f0f0f0;
 }
-.code-example-dark {
-    background-color: #dd2808;
-}
-.code-example-accent {
-    background-color: #f96c53;
-}
 .code-example img, .code-example p {
     margin: 0;
     padding: 0;
@@ -135,7 +129,7 @@ code {
 .code-example-nav li, .code-example-navinvert li {
     display: inline-block;
     font-family: 'Raleway', Helvetica, sans-serif;
-    margin: 0 1rem;;
+    margin: 0 1rem;
 }
 .code-example-nav a:link, .code-example-nav a:visited,
 .code-example-nav a:hover, .code-example-nav a:hover:visited {
@@ -183,7 +177,8 @@ code {
 .code-example-photobg6 {
     background-image: url(../images/photo-bus.jpg);
 }
-.code-example-skip:link, .code-example-skip:visited, .code-example-skip:focus {
+.code-example-skip:link, .code-example-skip:visited, 
+.code-example-skip:focus {
     background-color: #fcdad4;
     border: 0;
     border-radius: 0.1875rem;
@@ -205,15 +200,7 @@ img {
 }
 .persona {
     display: inline;
-    margin: 0.5rem auto 1rem auto;
     max-width: 15rem;
-}
-.container {
-    display: inline-block;
-    height: 3rem;
-    padding-top: 20%;
-    position: relative;
-    width: 100%
 }
 .logo {
     padding: 1rem 0;
@@ -265,19 +252,20 @@ img {
 .whitebg {
     background-color: #f8f8f8;
 }
-.lightestbg {
+.lightestbg, .whitebtn:hover, 
+.secondary:hover, .secblackbtn:hover {
     background-color: #fcdad4;
 }
-.lightbg {
+.lightbg, .accentbtn:hover {
     background-color: #fba798;
 }
-.accentbg {
+.accentbg, .code-example-accent {
     background-color: #f96c53;
 }
-.darkbg {
+.darkbg, .code-example-dark {
     background-color: #dd2808;
 }
-.darkestbg {
+.darkestbg, button:hover, .blackbtn:hover {
     background-color: #a71e06;
 }
 .focusbg {
@@ -296,26 +284,25 @@ li {
 .last {
     margin-bottom: 2.027rem;
 }
-h1, h2, h3, h4, h5  {
-    font-family: 'Raleway', Helvetica, sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    margin: 2.281rem 0 1.125rem 0;
-}
 h1 {
-    font-size: 2.027rem;
+    font: 700 2.027rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin: 2.281rem 0 1.125rem;
 }
 h2 {
-    font-size: 1.802rem;
+    font: 700 1.802rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin: 2.281rem 0 1.125rem;
 }
 h3 {
-    font-size: 1.602rem;
+    font: 700 1.602rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin: 2.281rem 0 1.125rem;
 }
 h4, .tagline {
-    font-size: 1.266rem;
+    font: 700 1.424rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin: 2.281rem 0 1.125rem;
 }
 h5  {
-    font-size: 1rem;
+    font: 700 1.266rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin: 2.281rem 0 1.125rem;
 }
 .intro {
     font-size: 1.125rem;
@@ -337,21 +324,18 @@ figcaption, .note {
     background-color: #ffffff;
     border-radius: 0.1875rem;
     font-size: 1.125rem;
-    margin: 4rem -3rem 3rem -3rem;
+    margin: 3rem -3rem 3rem;
     padding: 2rem 3rem;
     width: fit-content;
 }
     @media (min-width: 600px) {
         .quote {
-            margin: 3.5rem 0 2.5rem 0;
+            margin: 3.5rem 0 2.5rem;
             padding: 2rem 3rem;
         }
     }
 .quote p {
     text-indent: -0.5rem;
-}
-.quote h3 {
-    margin-top: 1rem;
 }
 .table {
     margin: 3.653rem 0;
@@ -400,29 +384,17 @@ button {
     background-color: #dd2808;
     color: #f8f8f8;
 }
-button:hover {
-    background-color: #a71e06;
-}
 .accentbtn {
     background-color: #f96c53;
     color: #2f2f2f;
-}
-.accentbtn:hover {
-    background-color: #fba798;
 }
 .whitebtn {
     background-color: #f8f8f8;
     color: #2f2f2f;
 }
-.whitebtn:hover {
-    background-color: #fcdad4;
-}
 .blackbtn {
     background-color: #2f2f2f;
     color: #f8f8f8;
-}
-.blackbtn:hover {
-    background-color: #a71e06;
 }
 .secondary, .secaccentbtn, .secwhitebtn, .secblackbtn {
     border-radius: 0.1875rem;
@@ -435,9 +407,6 @@ button:hover {
     background-color: #f8f8f8;
     border: 2px solid #dd2808;
     color: #dd2808;
-}
-.secondary:hover {
-    background-color: #fcdad4;
 }
 .secaccentbtn {
     background-color: #2f2f2f;
@@ -460,9 +429,6 @@ button:hover {
     border: 2px solid #2f2f2f;
     color: #2f2f2f;
 }
-.secblackbtn:hover {
-    background-color: #fcdad4;
-}
 
 /* Links ------------------------------ */
 a:link, a:visited {
@@ -484,7 +450,7 @@ a:hover, a:visited:hover, a:focus {
     padding: 0.5rem;
 }
 .cta:link, .cta:visited {
-    margin: 2.281rem 0 1.125rem 0;
+    margin: 2.281rem 0 1.125rem;
 }
 h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     background-color: transparent;
@@ -514,14 +480,14 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
 }
 .mainnav ul {
     background-color: #ffffff;
-    margin: 0.25rem 0 0 0;
+    margin: 0.25rem 0 0;
     min-width: 9.75rem;
     padding: 0;
     position: absolute;
 }
 .mainnav li {
     list-style-type: none;
-    margin: 0.5rem 0.5rem 0 0.5rem;
+    margin: 0.5rem 0.5rem 0;
 }
 .mainnav ul a:link, .mainnav ul a:visited {
     background-color: #ffffff;

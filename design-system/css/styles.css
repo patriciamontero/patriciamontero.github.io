@@ -296,11 +296,11 @@ h3 {
     font: 700 1.602rem/1.2 'Raleway', Helvetica, sans-serif;
     margin: 2.281rem 0 1.125rem;
 }
-h4, .tagline {
+h4 {
     font: 700 1.424rem/1.2 'Raleway', Helvetica, sans-serif;
     margin: 2.281rem 0 1.125rem;
 }
-h5  {
+h5, .tagline  {
     font: 700 1.266rem/1.2 'Raleway', Helvetica, sans-serif;
     margin: 2.281rem 0 1.125rem;
 }

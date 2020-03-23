@@ -40,10 +40,13 @@
                     <p class="intro">The navigation bar&mdash;or navbar&mdash;enables shifting between the essential pages. It should be evident without taking up too much space, especially on mobile.</p>
                     <h3>Guidelines</h3>
                     <ul>
-                        <li>Given the fundamental browsing role of the main navbar, it must be available at all times. One way to achieve this is by using a sticky navigation bar that stays on top of the page.</li>
+                        <li>The navigation bar is a list that can contain <a href="components-links.html">links</a> and <a href="components.html">buttons</a>. Links appear underlined and redirect users to other pages. Buttons, instead, open another list of related links.</li>
+                        <li>Given its fundamental browsing role, the navbar must be available at all times. One way to achieve this is by using a sticky navigation bar that stays on top of the page.</li>
                         <li>Whenever possible, keep under four the total items in the navbar. That reduces the need for a <a href="https://www.nngroup.com/articles/hamburger-menu-vs-pizza/">hamburger menu</a> on mobile devices.</li>
                         <li>Identify the current page on the navbar with a thicker underline. It may allow the users to know their location on the website.</li>
-                        <li>The navigation bar is a list that can contain <a href="components-links.html">links</a> and <a href="components.html">buttons</a>. Links appear underlined and redirect users to other pages. Buttons, instead, open another list of related links.</li>
+                        <li>To label each item, use as few words as possible. It eases the creation of compact menus that are easier to read and occupy the less real state.</li>
+                        <li>To avoid confusion, set a high contrast between the navbar and the rest of the page.</li>
+                        <li>Use sentence case for the texts, which means that only the first word starts with a capital letter.</li>
                     </ul>
                     <h3 id="components" class="heading-button" tabindex="-1">
                         <span>Code snippets</span>
@@ -62,8 +65,7 @@
                             </button>
                         </div>
                         <div id="navbar-light-bg-content" class="component-content" hidden="">
-                            <p>These links allow browsing between the key pages, and so they should be available at all times. A thicker underline identifies the current page.</p>
-                            <p>Whenever possible, keep under four the total items in the main navigation bar. It may be viable, given the simplicity of my interfaces, and it reduces the need for a <a href="https://www.nngroup.com/articles/hamburger-menu-vs-pizza/">hamburger menu</a>.</p>
+                            <p>Black text (#f8f8f8) over a light coloured area. In the hover state, the main items change to the lightest accent (#fcdad4).</p>
                             <p>Here are a few examples of proper usage:</p>
                             <div class="code-example">
                                 <ul class="code-example-nav">
@@ -89,7 +91,7 @@
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
-                                        <span>HTML, black text</span>
+                                        <span>HTML</span>
                                         <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-navbar-light-bg">Copy HTML</button>
                                     </h5>
 <span id="html-navbar-light-bg">
@@ -102,7 +104,7 @@
 &lt;/nav&gt;
 </span>
                                     <h5 class="heading-button">
-                                        <span>CSS, black text</span>
+                                        <span>CSS</span>
                                         <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-navbar-light-bg">Copy CSS</button>
                                     </h5>
 <span id="css-navbar-light-bg">
@@ -151,8 +153,7 @@ a.current {
                             </button>
                         </div>
                         <div id="navbar-dark-bg-content" class="component-content" hidden="">
-                            <p>These links allow browsing between the key pages, and so they should be available at all times. A thicker underline identifies the current page.</p>
-                            <p>Whenever possible, keep under four the total items in the main navigation bar. It may be viable, given the simplicity of my interfaces, and it reduces the need for a <a href="https://www.nngroup.com/articles/hamburger-menu-vs-pizza/">hamburger menu</a>.</p>
+                            <p>White text (#f8f8f8) over a dark coloured area. In the hover state, the main items change to the dark accent (#dd2808).</p>
                             <p>Here are a few examples of proper usage:</p>
                             <div class="code-example">
                                 <ul class="code-example-nav">
@@ -178,7 +179,7 @@ a.current {
                             <pre>
                                 <code>
                                     <h5 class="heading-button">
-                                        <span>HTML, black text</span>
+                                        <span>HTML</span>
                                         <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-navbar-dark-bg">Copy HTML</button>
                                     </h5>
 <span id="html-navbar-dark-bg">
@@ -191,7 +192,7 @@ a.current {
 &lt;/nav&gt;
 </span>
                                     <h5 class="heading-button">
-                                        <span>CSS, black text</span>
+                                        <span>CSS</span>
                                         <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-navbar-dark-bg">Copy CSS</button>
                                     </h5>
 <span id="css-navbar-dark-bg">

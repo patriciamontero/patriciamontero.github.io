@@ -375,9 +375,6 @@ button, .accentbtn, .whitebtn, .blackbtn {
     padding: 0.5rem 0.75rem;
     text-decoration: none;
 }
-button:hover {
-    outline: 2px solid #49f9e2;
-}
 button ~ button {
     margin: 0.5rem;
 }
@@ -442,8 +439,10 @@ a:link, a:visited {
 }
 a:hover, a:visited:hover, a:focus {
     background-color: #fba798;
-    outline: 2px solid #49f9e2;
     text-decoration: none;
+}
+a:focus {
+    outline: 2px solid #49f9e2;
 }
 .cta:link, .cta:visited, .cta-example:link, .cta-example:visited {
     font-family: 'Raleway', Helvetica, sans-serif;

@@ -305,7 +305,7 @@ h5  {
     margin: 2.281rem 0 1.125rem;
 }
 .tagline {
-    font: italic 1.266rem/1.2 'Georgia', Helvetica, serif;
+    font: italic 1.266rem/1.6 'Georgia', Helvetica, serif;
 }
 .intro {
     font: italic 1.125rem/1.6 'Georgia', Helvetica, serif;
@@ -536,7 +536,7 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
   }
 a.current:link, a.current:visited,
 button.current {
-    border-bottom: 0.25rem solid #f96c53;
+    border-bottom: 0.5rem solid #f96c53;
     text-decoration: none;
 }
 

@@ -20,6 +20,7 @@
                 <ul id="id-components-menu">
                     <li><a href="components.html">Buttons</a></li>
                     <li><a href="components-links.html">Links</a></li>
+                    <li><a href="components-navigation.html">Navigation</a></li>
                     <li><a href="components-texts.html">Texts</a></li>
                 </ul>
                 </li>
@@ -29,7 +30,7 @@
             <div class="content-wrap">
                 <h1>Components: links</h1>
                 <p class="tagline">A wee design system's library: guidelines and code snippets</p>
-                <p class="subtle">Last updated on <time datetime="2020-03-19">Mars 19, 2020 <br> 5 minutes to read</time></p>
+                <p class="subtle">Last updated on <time datetime="2020-03-23">Mars 23, 2020 <br> 5 minutes to read</time></p>
             </div>
         </header>
         <main>
@@ -119,7 +120,7 @@ a:hover, a:visited:hover, a:focus {
                         </div>
                         <div id="links-as-a-call-to-action-content" class="component-content" hidden="">
                             <p>These statements need an instant response from the user, and they usually appear at the end of a section. Their sentences end without a period.</p>
-                            <p>Since these links are paragraph independent, they perform well over any contrasting background.</p>
+                            <p>Since these links are detached phrases, they perform well over any contrasting background.</p>
                             <p>Here are a few examples of proper usage:</p>
                             <p class="code-example"><a class="cta-example" href="#0">Another link as example</a></p>
                             <p class="code-example-black"><a class="cta-example" href="#0">Another link as example</a></p>
@@ -155,142 +156,6 @@ a:hover, a:visited:hover, a:focus {
     background-color: #fba798;
     outline: 0.25rem dotted #dd2808;
     text-decoration: none;
-}
-</span>
-                                </code>
-                            </pre>
-                        </div>
-                    </div>
-                    <div class="component-container">
-                        <div class="component-intro">
-                            <h4 id="links-in-the-main-menu">Links in the main menu</h4>
-                            <button data-expands="links-in-the-main-menu-content" aria-label="open section" aria-describedby="links-in-the-main-menu" aria-expanded="false">
-                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
-                                    <g transform="translate(0 -981.5)">
-                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
-                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
-                                    </g>
-                                </svg>
-                            </button>
-                        </div>
-                        <div id="links-in-the-main-menu-content" class="component-content" hidden="">
-                            <p>These links allow browsing between the key pages, and so they should be available at all times. A thicker underline identifies the current page.</p>
-                            <p>Whenever possible, keep under four the total items in the main navigation bar. It may be viable, given the simplicity of my interfaces, and it reduces the need for a <a href="https://www.nngroup.com/articles/hamburger-menu-vs-pizza/">hamburger menu</a>.</p>
-                            <p>Here are a few examples of proper usage:</p>
-                            <div class="code-example">
-                                <ul class="code-example-nav">
-                                    <li><a href="#0">Brand</a></li>
-                                    <li><a href="#0">Style</a></li>
-                                    <li><a class="current" href="#0">Components</a></li>
-                                </ul>
-                            </div>
-                            <div class="code-example-accent">
-                                <ul class="code-example-nav">
-                                    <li><a href="#0">Brand</a></li>
-                                    <li><a href="#0">Style</a></li>
-                                    <li><a class="current" href="#0">Components</a></li>
-                                </ul>
-                            </div>
-                            <div class="code-example-photobg2">
-                                <ul class="code-example-navinvert">
-                                    <li><a href="#0">Brand</a></li>
-                                    <li><a href="#0">Style</a></li>
-                                    <li><a class="currentinvert" href="#0">Components</a></li>
-                                </ul>
-                            </div>
-                            <pre>
-                                <code>
-                                    <h5 class="heading-button">
-                                        <span>HTML, black text</span>
-                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-main-menu">Copy HTML</button>
-                                    </h5>
-<span id="html-links-in-the-main-menu">
-&lt;nav&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="index.html" &gt;<span class="code-accent">Brand</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="styles.html"&gt;<span class="code-accent">Styles</span>&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a class="current" href="components.html"&gt;<span class="code-accent">Components</span>&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
-</span>
-                                    <h5 class="heading-button">
-                                        <span>CSS, black text</span>
-                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-main-menu">Copy CSS</button>
-                                    </h5>
-<span id="css-links-in-the-main-menu">
-nav a:link, nav a:visited {
-    background-color: transparent;
-    color: #2f2f2f;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-    padding: 0 0.25rem;
-    transition: all 0.4s ease-in;
-}
-nav a:hover, nav a:focus, nav a:visited:hover  {
-    outline: 0.25rem dotted #dd2808;
-    text-decoration: none;
-}
-nav li {
-    display: inline-block;
-    padding: 0.5rem;
-    margin: 0;
-}
-nav ul {
-    display: inline;
-}
-a.current {
-    border-bottom: 0.25rem solid #2f2f2f;
-    border-radius: 0;
-    cursor: default;
-    text-decoration: none;
-}
-</span>
-<hr>
-<h5 class="heading-button">
-    <span>HTML, white text</span>
-    <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#html-links-in-the-main-menu-invert">Copy HTML</button>
-</h5>
-<span id="html-links-in-the-main-menu-invert">
-&lt;nav&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="index.html" &gt;<span class="code-accent">Brand</span>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="styles.html"&gt;<span class="code-accent">Styles</span>&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a class="currentinvert" href="components.html"&gt;<span class="code-accent">Components</span>&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/nav&gt;
-</span>
-                                    <h5 class="heading-button">
-                                        <span>CSS, white text</span>
-                                        <button class="secondary" aria-label="copy to clipboard" data-clipboard-target="#css-links-in-the-main-menu-invert">Copy CSS</button>
-                                    </h5>
-<span id="css-links-in-the-main-menu-invert">
-nav a:link, nav a:visited {
-background-color: transparent;
-color: #f0f0f0;
-font-family: 'Raleway', sans-serif;
-font-weight: 700;
-line-height: 1.2;
-padding: 0 0.25rem;
-transition: all 0.4s ease-in;
-}
-nav a:hover, nav a:focus, nav a:visited:hover  {
-outline: 0.25rem dotted #dd2808;
-text-decoration: none;
-}
-nav li {
-display: inline-block;
-padding: 0.5rem;
-margin: 0;
-}
-nav ul {
-display: inline;
-}
-a.currentinvert {
-border-bottom: 0.25rem solid #f0f0f0;
-border-radius: 0;
-cursor: default;
-text-decoration: none;
 }
 </span>
                                 </code>
@@ -364,7 +229,7 @@ a.skip:focus, a.skip:active {
                         <li><a href="https://polaris.shopify.com/components/navigation/link#navigation">Link</a>&mdash;Shopify's design system</li>
                         <li><a href="https://heydonworks.com/article/reinventing-the-hyperlink/">Reinventing the Hyperlink</a>&mdash;Heydon Pickering</li>
                     </ul>
-                    <a href="components-texts.html" class="cta">Next component: texts</a>
+                    <a href="components-navigation.html" class="cta">Next component: navigation</a>
                 </article>
             </div>
         </main>

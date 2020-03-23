@@ -590,10 +590,10 @@ button:hover {
 div[tabindex]:focus {
     outline: none;
 }
-.component-container + .component-container {
-    border-top: 2px dotted #cccccc;
-    margin-top: 1rem;
-    padding-top: 1rem;
+.component-container {
+    border-bottom: 2px dotted #cccccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 .component-intro, .heading-button {
     align-items: center;

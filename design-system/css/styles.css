@@ -30,7 +30,7 @@ body {
 header {
     background: #fba798 url(../images/moms-hug.png) no-repeat fixed top center;
     box-sizing: border-box;
-    padding: 10rem 0 4rem;
+    padding: 8rem 0 4rem;
     position: relative;
     text-align: center;
 }
@@ -104,6 +104,8 @@ code {
 .code-example-darkest, 
 .code-example-dark, .code-example-accent {
     border-radius: 0.1875rem;
+    display: flex;
+    justify-content: center;
     margin: 1rem 0;
     padding: 1rem;
 }
@@ -140,6 +142,19 @@ code {
     background-color: transparent;
     color: #f0f0f0;
 }
+.code-example-btn {
+    background-color: transparent;
+    color: #2f2f2f;
+}
+.code-example-btn::after {
+    content: "";
+    border-bottom: 2px solid #2f2f2f;
+    border-right: 2px solid #2f2f2f;
+    height: 0.7em;
+    margin-left: 0.75em;
+    width: 0.7em;
+    transform: rotate(45deg);
+  }
 .code-in-text {
     color: #a71e06;
     display: inline;
@@ -154,6 +169,8 @@ code {
     background: no-repeat right center;
     border-radius: 0.1875rem;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
     margin: 1rem 0;
     padding: 1rem;
     position: relative;
@@ -217,6 +234,13 @@ img {
 .min-short {
     height: auto;
     max-width: 120px;
+}
+.flag {
+    fill: #3f3f3f;
+    height: 2.5rem;
+    left: -1rem;
+    position: absolute;
+    top: 6rem;
 }
 
 /* Colour ------------------------------ */

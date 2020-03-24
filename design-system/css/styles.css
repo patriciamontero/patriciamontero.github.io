@@ -30,7 +30,7 @@ body {
 header {
     background: #fba798 url(../images/moms-hug.png) no-repeat fixed top center;
     box-sizing: border-box;
-    padding: 8rem 0 4rem;
+    padding: 10rem 0 4rem;
     position: relative;
     text-align: center;
 }
@@ -234,13 +234,6 @@ img {
 .min-short {
     height: auto;
     max-width: 120px;
-}
-.flag {
-    fill: #3f3f3f;
-    height: 2.5rem;
-    left: -1rem;
-    position: absolute;
-    top: 6rem;
 }
 
 /* Colour ------------------------------ */

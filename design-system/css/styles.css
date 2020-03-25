@@ -30,7 +30,7 @@ body {
 header {
     background: #fba798 url(../images/moms-hug.png) no-repeat fixed top center;
     box-sizing: border-box;
-    padding: 9rem 0 1rem;
+    padding: 8rem 0 0;
     position: relative;
     text-align: center;
 }
@@ -483,7 +483,7 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     background-color: #f8f8f8;
     padding: 0.5rem 1rem;
     position: relative;
-    top: 2.75rem;
+    top: 0.75rem;
 }
 
 /* Nested navigation ------------------------------ */

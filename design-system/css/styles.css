@@ -30,7 +30,7 @@ body {
 header {
     background: #fba798 url(../images/moms-hug.png) no-repeat fixed top center;
     box-sizing: border-box;
-    padding: 10rem 0 2rem;
+    padding: 9rem 0 1rem;
     position: relative;
     text-align: center;
 }
@@ -478,12 +478,12 @@ h2 a:link, h3 a:link, h2 a:visited, h3 a:visited {
     background-color: transparent;
     padding: 0;
 }
-.link-bottom:link, .link-bottom:visited, 
-.link-bottom:hover, .link-bottom:hover:visited {
+.link-back:link, .link-back:visited, 
+.link-back:hover, .link-back:hover:visited {
     background-color: #f8f8f8;
     padding: 0.5rem 1rem;
     position: relative;
-    top: 3.5rem;
+    top: 2.75rem;
 }
 
 /* Nested navigation ------------------------------ */

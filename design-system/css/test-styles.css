@@ -24,13 +24,15 @@ html {
         }
     }
 
-.wrapper, .header, .footer {
+.header, .footer, .wrapper {
     padding: 1.25rem 3.052rem;
 }
 
 .header {
     background-color: #ffffff;
     display: block;
+    grid-column: 1 / -1;
+    margin: 0;
     position: sticky;
     top: 0;
 }
@@ -43,8 +45,8 @@ html {
     @media (min-width: 600px) {
         .wrapper {
             display: grid;
-            grid-gap: 1rem;
-            grid-template-columns: minmax(5rem, 10rem ) minmax(20rem, 30rem);
+            grid-gap: 0 3.052rem;
+            grid-template-columns: minmax(20rem, 30rem ) minmax(5rem, 10rem);
         }
     }
     @media (min-width: 900px) {
@@ -89,7 +91,15 @@ html {
 .nav-aside ul {
     display: block;
     list-style: none;
+    margin-top: 3rem;
+    position: unset;
 }
+    @media (min-width: 600px) {
+        .nav-aside ul {
+            position: fixed;
+            top: 12rem;
+        }
+    }
 
 .nav-aside li {
     margin: 1.2rem 0;
@@ -140,6 +150,15 @@ h5 {
 
 .subtle {
     font-style: italic;
+}
+
+.intro-hr {
+    background-color: #f96c53;
+    border: none;
+    color: #f96c53;
+    height: 5px;
+    margin: 2rem 0 0;
+    width: 6rem;
 }
 
 /* Colour styles -------------------- */

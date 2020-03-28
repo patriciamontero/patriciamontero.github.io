@@ -25,8 +25,19 @@ html {
     }
 
 .header, .footer, .wrapper {
-    padding: 1.25rem 3.052rem;
+    padding: 1.563rem;
 }
+    @media (min-width: 600px) {
+        .header, .footer, .wrapper {
+            padding: 1.25rem 3.815rem;
+        }
+    }
+    @media (min-width: 900px) {
+        .header, .footer, .wrapper {
+            padding: 1.25rem 7.451rem;
+        }
+    }
+
 
 .header {
     background-color: #ffffff;
@@ -45,13 +56,14 @@ html {
     @media (min-width: 600px) {
         .wrapper {
             display: grid;
-            grid-gap: 0 3.052rem;
+            grid-gap: 0 3.815rem;
             grid-template-columns: minmax(20rem, 30rem ) minmax(5rem, 10rem);
         }
     }
     @media (min-width: 900px) {
         .wrapper {
             background: #f8f8f8 url(../images/moms-hair-side.png) no-repeat top right;
+            grid-gap: 0 7.451rem;
         }
     }
 
@@ -97,7 +109,7 @@ html {
     @media (min-width: 600px) {
         .nav-aside ul {
             position: fixed;
-            top: 12rem;
+            top: 8rem;
         }
     }
 

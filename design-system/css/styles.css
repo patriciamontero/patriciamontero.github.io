@@ -134,19 +134,26 @@ code {
     margin: 0 1rem;
 }
 .code-example-nav a:link, .code-example-nav a:visited,
-.code-example-nav a:hover, .code-example-nav a:hover:visited {
+.code-example-nav a:hover, .code-example-nav a:hover:visited,
+.code-example-btn {
     background-color: transparent;
+    color: #f0f0f0;
+    line-height: 1rem;
+    vertical-align: top;
 }
 .code-example-navinvert a:link, .code-example-navinvert a:visited,
 .code-example-navinvert a:hover, .code-example-navinvert a:hover:visited {
     background-color: transparent;
-    color: #f0f0f0;
-}
-.code-example-btn {
-    background-color: transparent;
     color: #2f2f2f;
 }
-.code-example-btn::after {
+.code-example-menu li{
+    background-color: #ffffff;
+    color: #2f2f2f;
+    display: block;
+    margin: 0.5rem 0.5rem 0;
+    padding: 1rem;
+}
+/* .code-example-btn::after {
     content: "";
     border-bottom: 2px solid #2f2f2f;
     border-right: 2px solid #2f2f2f;
@@ -154,7 +161,7 @@ code {
     margin-left: 0.75em;
     width: 0.7em;
     transform: rotate(45deg);
-  }
+  } */
 .code-in-text {
     color: #a71e06;
     display: inline;

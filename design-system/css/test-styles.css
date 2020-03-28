@@ -1,0 +1,192 @@
+/* Global styles -------------------- */
+*, *:before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+    @media (min-width: 600px) {
+        html {
+            font-size: 105%;
+        }
+    }
+    @media (min-width: 900px) {
+        html {
+            font-size: 110%;
+        }
+    }
+    @media (min-width: 1200px) {
+        html {
+            font-size: 120%;
+        }
+    }
+
+.wrapper, .header, .footer {
+    padding: 1.25rem 3.052rem;
+}
+
+.header {
+    background-color: #ffffff;
+    display: block;
+    position: sticky;
+    top: 0;
+}
+
+.wrapper {
+    background: #f8f8f8 url(../images/moms-hair-corner.png) no-repeat top right;
+    color: #2f2f2f;
+    transition: all .4 ease-in;
+}
+    @media (min-width: 600px) {
+        .wrapper {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: minmax(5rem, 10rem ) minmax(20rem, 30rem);
+        }
+    }
+    @media (min-width: 900px) {
+        .wrapper {
+            background: #f8f8f8 url(../images/moms-hair-side.png) no-repeat top right;
+        }
+    }
+
+/* .wrapper > * {
+    background-color: yellow;
+} */
+
+/* Navigation styles -------------------- */
+
+.nav-main ul {
+    display: flex;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 15rem;
+}
+
+.nav-main li, .nav-aside li {
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+}
+
+.nav-main a:link, .nav-main a:visited,
+.nav-aside a:link, .nav-aside a:visited {
+    color: #2f2f2f;
+}
+
+.nav-main a:hover, .nav-main a:visited:hover,
+.nav-aside a:hover, .nav-aside a:visited:hover {
+    text-decoration: none;
+}
+
+.current {
+    border-bottom: 5px solid #2f2f2f;
+    text-decoration: none;
+}
+
+.nav-aside ul {
+    display: block;
+    list-style: none;
+}
+
+.nav-aside li {
+    margin: 1.2rem 0;
+}
+
+/* Texts styles -------------------- Modular scale of a 1.25 ratio */
+
+p, li {
+    font: normal 1rem/1.6 'Georgia', Times, serif;
+    margin: 1.25rem 0;
+}
+
+h1 {
+    font: 700 3.815rem/1.2 'Raleway', Helvetica, sans-serif;
+}
+
+h2 {
+    font: 700 3.052rem/1.2 'Raleway', Helvetica, sans-serif;
+}
+
+h3 {
+    font: 700 2.441rem/1.2 'Raleway', Helvetica, sans-serif;
+}
+
+h4 {
+    font: 700 1.953rem/1.2 'Raleway', Helvetica, sans-serif;
+}
+
+h5 {
+    font: 700 1.563rem/1.2 'Raleway', Helvetica, sans-serif;
+}
+
+.heading {
+    margin: 3.052rem 0 1.563rem;
+}
+
+.tagline {
+    font: italic 1.563rem/1.6 'Georgia', Times, serif;
+}
+
+.intro {
+    font: italic 1.25rem/1.6 'Georgia', Times, serif;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.subtle {
+    font-style: italic;
+}
+
+/* Colour styles -------------------- */
+
+/* Colour palette 
+    #2f2f2f black
+    #f8f8f8 white
+    #f0f0f0 light grey
+    #fcdad4 lightest accent
+    #fba798 light accent
+    #f96c53 accent
+    #dd2808 dark accent
+    #a71e06 darkest accent
+    #49f9e2 focus
+*/
+
+.bg--dark {
+    background-color: #2f2f2f;
+    color: f0f0f0;
+}
+
+.bg--darkest-accent {
+    background-color: #a71e06;
+    color: ffffff;
+}
+
+ .bg--dark-accent {
+     background-color: #dd2808;
+     color: #ffffff;
+ }
+
+.bg--accent {
+    background-color: f96c53;
+    color: 2f2f2f;
+}
+
+.bg--light-accent {
+    background-color: #fba798;
+    color: 2f2f2f;
+}
+
+.bg--lightest-accent {
+    background-color: #fcdad4;
+    color: 2f2f2f;
+}
+
+.bg--light {
+    background-color: #f8f8f8;
+    color: #2f2f2f;
+}

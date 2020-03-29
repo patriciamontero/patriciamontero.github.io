@@ -25,16 +25,16 @@ html {
     }
 
 .header, .footer, .wrapper {
-    padding: 1.563rem;
+    padding: 1.44rem;
 }
     @media (min-width: 600px) {
         .header, .footer, .wrapper {
-            padding: 1.25rem 3.815rem;
+            padding: 1.2rem 3.583rem;
         }
     }
     @media (min-width: 900px) {
         .header, .footer, .wrapper {
-            padding: 1.25rem 7.451rem;
+            padding: 1.2rem 6.192rem;
         }
     }
 
@@ -56,20 +56,20 @@ html {
     @media (min-width: 600px) {
         .wrapper {
             display: grid;
-            grid-gap: 0 3.815rem;
+            grid-gap: 0 3.583rem;
             grid-template-columns: minmax(20rem, 30rem ) minmax(5rem, 10rem);
         }
     }
     @media (min-width: 900px) {
         .wrapper {
             background: #f8f8f8 url(../images/moms-hair-side.png) no-repeat top right;
-            grid-gap: 0 7.451rem;
+            grid-gap: 0 6.192rem;
         }
     }
 
 .footer {
     background: #f8f8f8 url(../images/mom-walks.png) no-repeat top right;
-    padding-bottom: 6rem;
+    padding-bottom: 6.192rem;
 }
 
 /* .wrapper > * {
@@ -88,11 +88,13 @@ html {
 
 .nav-main li, .nav-aside li {
     font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin-right: 1.728rem;
 }
 
 .nav-main a:link, .nav-main a:visited,
 .nav-aside a:link, .nav-aside a:visited {
     color: #2f2f2f;
+    cursor: pointer;
 }
 
 .nav-main a:hover, .nav-main a:visited:hover,
@@ -122,45 +124,43 @@ html {
     margin: 1.2rem 0;
 }
 
-
-
-/* Texts styles -------------------- Modular scale of a 1.25 ratio */
+/* Texts styles -------------------- Modular scale of a 1.2 ratio */
 
 p, li {
     font: normal 1rem/1.6 'Georgia', Times, serif;
-    margin: 1.25rem 0;
+    margin: 1.2rem 0;
 }
 
 h1 {
-    font: 700 3.815rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 2.986rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 h2 {
-    font: 700 3.052rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 2.488rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 h3 {
-    font: 700 2.441rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 2.074rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 h4 {
-    font: 700 1.953rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 1.728rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 h5 {
-    font: 700 1.563rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 1.44rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 .heading {
-    margin: 3.052rem 0 1.563rem;
+    margin: 2.488rem 0 1.2rem;
 }
 
 .tagline {
-    font: italic 1.563rem/1.6 'Georgia', Times, serif;
+    font: italic 1.44rem/1.6 'Georgia', Times, serif;
 }
 
 .intro {
-    font: italic 1.25rem/1.6 'Georgia', Times, serif;
+    font: italic 1.2rem/1.6 'Georgia', Times, serif;
 }
 
 .strong {
@@ -183,7 +183,7 @@ h5 {
 figcaption, .note {
     font-size: 1rem;
     font-style: italic;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .quote {
@@ -196,11 +196,11 @@ figcaption, .note {
     @media (min-width: 600px) {
         .quote {
             margin: 2.5rem 0;
-            padding: 0.25 3rem 1rem;
+            padding: .25 3rem 1rem;
         }
     }
 .quote p {
-    text-indent: -0.5rem;
+    text-indent: -.5rem;
 }
 
 /* Link styles -------------------- */
@@ -222,8 +222,8 @@ figcaption, .note {
 
 .cta:link, .cta:visited {
     font: 700 1.25rem/1.6 'Raleway', Helvetica, sans-serif;
-    margin: 2.281rem 0 1.125rem;
-    padding: 0.5rem;
+    margin: 1.44rem 0 1.2rem;
+    padding: .5rem;
 }
 
 .heading a:link, .heading a:visited  {
@@ -254,6 +254,11 @@ a.skip:focus, a.skip:active {
 .xtarget:target {
     margin-top: -3rem;
     padding-top: 7rem;
+}
+
+.logo {
+    fill: #2f2f2f;
+    width: 3rem;
 }
 
 /* Image styles -------------------- */

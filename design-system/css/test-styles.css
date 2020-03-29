@@ -67,6 +67,11 @@ html {
         }
     }
 
+.footer {
+    background: #f8f8f8 url(../images/mom-walks.png) no-repeat top right;
+    padding-bottom: 6rem;
+}
+
 /* .wrapper > * {
     background-color: yellow;
 } */
@@ -116,6 +121,8 @@ html {
 .nav-aside li {
     margin: 1.2rem 0;
 }
+
+
 
 /* Texts styles -------------------- Modular scale of a 1.25 ratio */
 
@@ -173,33 +180,91 @@ h5 {
     width: 6rem;
 }
 
+figcaption, .note {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.quote {
+    background-color: #ffffff;
+    border-radius: 3px;
+    font-size: 1.125rem;
+    margin: 3rem -3rem 3rem;
+    padding: .5rem 3rem 1rem;
+}
+    @media (min-width: 600px) {
+        .quote {
+            margin: 2.5rem 0;
+            padding: 0.25 3rem 1rem;
+        }
+    }
+.quote p {
+    text-indent: -0.5rem;
+}
+
 /* Link styles -------------------- */
 
-.heading a:link, .heading a:visited  {
-    color: #f96c53;
+.link:link, .link:visited, .cta:link, .cta:visited {
+    background-color: #fcdad4;
+    border-radius: 3px;
+    color: #2f2f2f;
+    display: inline-block;
+    padding: 0 .25rem;
+    transition: all .4s ease-in;
+}
+
+.link:hover, .link:visited:hover, .link:focus,
+.cta:hover, .cta:visited:hover, .cta:focus {
+    background-color: #fba798;
     text-decoration: none;
+}
+
+.cta:link, .cta:visited {
+    font: 700 1.25rem/1.6 'Raleway', Helvetica, sans-serif;
+    margin: 2.281rem 0 1.125rem;
+    padding: 0.5rem;
+}
+
+.heading a:link, .heading a:visited  {
+    background-color: transparent;
+    color: #f96c53;
 }
 
 a.skip {
     left: -999px;
     overflow: hidden;
     position: absolute;
-    top: 0.5rem;
+    top: 1rem;
     z-index: -999;
 }
 a.skip:focus, a.skip:active {
-    background-color: #fcdad4;
-    border: 0;
-    border-radius: 0.1875rem;
+    background-color: #f96c53;
+    border-radius: 3px;
     color: #2f2f2f;
-    font-family: 'Raleway', Helvetica, sans-serif;
-    font-weight: 700;
-    left: 1rem;
+    display: block;
+    font: 700 .75rem/1.2 'Raleway', Helvetica, sans-serif;
+    left: 0;
     overflow: auto;
-    padding: 0.5rem;
-    text-decoration: underline;
-    top: 1rem;
+    padding: .5rem;
+    top: 0;
     z-index: 999;
+}
+
+.xtarget:target {
+    margin-top: -3rem;
+    padding-top: 7rem;
+}
+
+/* Image styles -------------------- */
+
+img {
+    border-radius: 3px;
+    max-width: 100%;
+    margin: 1rem 0;
+}
+.persona {
+    max-width: 15rem;
 }
 
 /* Colour styles -------------------- */
@@ -236,7 +301,9 @@ a.skip:focus, a.skip:active {
     color: 2f2f2f;
 }
 
-.bg--light-accent {
+.bg--light-accent, ::selection {
+    background: #fba798;
+  } {
     background-color: #fba798;
     color: 2f2f2f;
 }

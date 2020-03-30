@@ -95,10 +95,12 @@ html {
 .nav-aside a:link, .nav-aside a:visited {
     color: #2f2f2f;
     cursor: pointer;
+    fill: #2f2f2f;
 }
 
 .nav-main a:hover, .nav-main a:visited:hover,
 .nav-aside a:hover, .nav-aside a:visited:hover {
+    fill: #f96c53;
     text-decoration: none;
 }
 
@@ -231,6 +233,10 @@ figcaption, .note {
     color: #f96c53;
 }
 
+.heading a:hover, .heading a:visited:hover  {
+    text-decoration: none;
+}
+
 a.skip {
     left: -999px;
     overflow: hidden;
@@ -257,7 +263,6 @@ a.skip:focus, a.skip:active {
 }
 
 .logo {
-    fill: #2f2f2f;
     width: 3rem;
 }
 
@@ -308,7 +313,6 @@ img {
 
 .bg--light-accent, ::selection {
     background: #fba798;
-  } {
     background-color: #fba798;
     color: 2f2f2f;
 }

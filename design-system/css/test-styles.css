@@ -25,7 +25,7 @@ html {
     }
 
 .header, .footer, .wrapper {
-    padding: 1.44rem;
+    padding: 1.2rem;
 }
     @media (min-width: 600px) {
         .header, .footer, .wrapper {

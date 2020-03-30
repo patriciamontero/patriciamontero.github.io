@@ -72,10 +72,6 @@ html {
     padding-bottom: 6.192rem;
 }
 
-/* .wrapper > * {
-    background-color: yellow;
-} */
-
 /* Navigation styles -------------------- */
 
 .nav-main ul {
@@ -244,6 +240,7 @@ a.skip {
     top: 1rem;
     z-index: -999;
 }
+
 a.skip:focus, a.skip:active {
     background-color: #f96c53;
     border-radius: 3px;
@@ -273,6 +270,7 @@ img {
     max-width: 100%;
     margin: 1rem 0;
 }
+
 .persona {
     max-width: 15rem;
 }

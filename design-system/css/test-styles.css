@@ -24,16 +24,16 @@ html {
         }
     }
 
-.header, .footer, .wrapper {
+.header, .footer, .content {
     padding: 1.2rem;
 }
     @media (min-width: 600px) {
-        .header, .footer, .wrapper {
+        .header, .footer, .content {
             padding: 1.2rem 3.583rem;
         }
     }
     @media (min-width: 900px) {
-        .header, .footer, .wrapper {
+        .header, .footer, .content {
             padding: 1.2rem 6.192rem;
         }
     }
@@ -48,24 +48,39 @@ html {
     top: 0;
 }
 
-.wrapper {
+.content {
     background: #f8f8f8 url(../images/moms-hair-corner.png) no-repeat top right;
     color: #2f2f2f;
     transition: all .4 ease-in;
 }
+@supports (display: grid) {
     @media (min-width: 600px) {
-        .wrapper {
+        .content {
             display: grid;
             grid-gap: 0 3.583rem;
             grid-template-columns: minmax(20rem, 30rem ) minmax(5rem, 10rem);
         }
     }
     @media (min-width: 900px) {
-        .wrapper {
+        .content {
             background: #f8f8f8 url(../images/moms-hair-side.png) no-repeat top right;
             grid-gap: 0 6.192rem;
         }
     }
+}
+
+.content-wrapped {
+    max-width: 30rem;
+}
+
+.style {
+    background: #f8f8f8 url(../images/moms-hug-corner.png) no-repeat top right;
+}
+    @media (min-width: 900px) {
+        .style {
+            background: #f8f8f8 url(../images/moms-hug-side.png) no-repeat top right;
+        }
+    } 
 
 .footer {
     background: #f8f8f8 url(../images/mom-walks.png) no-repeat top right;
@@ -111,10 +126,12 @@ html {
     margin-top: 3rem;
     position: unset;
 }
-    @media (min-width: 600px) {
-        .nav-aside ul {
-            position: fixed;
-            top: 8rem;
+    @supports (display: grid) {
+        @media (min-width: 600px) {
+            .nav-aside ul {
+                position: fixed;
+                top: 8rem;
+            }
         }
     }
 
@@ -221,7 +238,7 @@ figcaption, .note {
 .cta:link, .cta:visited {
     font: 700 1.25rem/1.6 'Raleway', Helvetica, sans-serif;
     margin: 1.44rem 0 1.2rem;
-    padding: .5rem;
+    padding: .25rem .5rem;
 }
 
 .heading a:link, .heading a:visited  {
@@ -275,6 +292,22 @@ img {
     max-width: 15rem;
 }
 
+.min-long {
+    height: auto;
+    max-width: 180px;
+}
+
+.min-short {
+    height: auto;
+    max-width: 120px;
+}
+
+.logo-colour {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
 /* Colour styles -------------------- */
 
 /* Colour palette 
@@ -286,17 +319,34 @@ img {
     #f96c53 accent
     #dd2808 dark accent
     #a71e06 darkest accent
-    #49f9e2 focus
 */
+
+.square {
+    border: 2px solid transparent;
+    border-radius: 3px;
+    display: inline-block;
+    height: 8rem;
+    margin: .75rem 1rem .5rem 0;
+    padding: .5rem;
+    width: 8rem;
+}
+
+.border {
+    border: 1px solid #2f2f2f;
+}
+
+.border-light {
+    border: 1px solid #f0f0f0;
+}
 
 .bg--dark {
     background-color: #2f2f2f;
-    color: f0f0f0;
+    color: #f0f0f0;
 }
 
 .bg--darkest-accent {
     background-color: #a71e06;
-    color: ffffff;
+    color: #ffffff;
 }
 
  .bg--dark-accent {
@@ -305,8 +355,8 @@ img {
  }
 
 .bg--accent {
-    background-color: f96c53;
-    color: 2f2f2f;
+    background-color: #f96c53;
+    color: #2f2f2f;
 }
 
 .bg--light-accent, ::selection {

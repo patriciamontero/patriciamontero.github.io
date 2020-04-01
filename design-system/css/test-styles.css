@@ -58,19 +58,20 @@ html {
         .content {
             display: grid;
             grid-gap: 0 3.583rem;
-            grid-template-columns: minmax(20rem, 30rem ) minmax(5rem, 10rem);
+            grid-template-columns: minmax(20rem, 30rem) minmax(5rem, 10rem);
         }
     }
     @media (min-width: 900px) {
         .content {
             background: #f8f8f8 url(../images/moms-hair-side.png) no-repeat top right;
             grid-gap: 0 6.192rem;
+            grid-template-columns: minmax(30rem, 40rem) minmax(5rem, 10rem);
         }
     }
 }
 
 .content-wrapped {
-    max-width: 30rem;
+    max-width: 35rem;
 }
 
 .style {
@@ -375,3 +376,31 @@ img {
     color: #2f2f2f;
 }
 
+/* Example styles -------------------- */
+
+.table {
+    margin: 3.653rem 0;
+}
+
+.type-scale {
+    border-bottom: 2px dotted #cccccc;
+    display: block;
+}
+    @media (min-width: 1200px) {
+        .type-scale {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+.example {
+    line-height: .5em;
+    margin: 1.728rem 0;
+}
+    @media (min-width: 1200px) {
+        .example {
+            line-height: 1em;
+            margin: 2.074rem 0;
+        }
+    }

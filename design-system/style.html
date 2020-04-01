@@ -2,43 +2,50 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Styles | Pati Montero's design system </title>
+        <title>Style guide | Pati Montero's design system </title>
         <meta name="description" content="I'm Pati Montero and this is my design system. It's a work in progress. To me, it's an educational tool as well as a resource to define my brand.">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/test-styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
     </head>
     <body>
         <a href="#main-content" class="skip">Skip to content</a>
-        <nav aria-label="Pati Montero's design system">
-            <ul id="navcontent" class="mainnav">
-                <li><a href="index.html">Brand</a></li>
-                <li><a class="current" href="style.html">Style</a></li>
-                <li>
-                <button aria-expanded="true" aria-controls="id-components-menu">Components</button>
-                <ul id="id-components-menu">
-                    <li><a href="components.html">Buttons</a></li>
-                    <li><a href="components-links.html">Links</a></li>
-                    <li><a href="components-navbar.html">Navigation bar</a></li>
-                    <li><a href="components-texts.html">Texts</a></li>
+        <header class="header">
+            <nav class="nav-main">
+                <ul>
+                    <li>
+                        <a title="PatiMontero.ca" href="../index.html">
+                            <svg aria-label="Pati Montero" class="logo" width="122" hight="75" viewbox="0 0 122 75" xmlns="http://www.w3.org/2000/svg">
+                                <g><path d="M112.1 45V18.8l-.8-.3-13.2 4.4V24c2 0 2 2.5 2 4.4v16.8c0 1.4.9 2.8 1.2 4.1-2.7 2.3-8.2 1.6-8.2-4.3V15.6c1-1.5 4.6-6.4 6.8-6.4 0 3.2 3.1 6.2 6.7 6.2 3.9 0 7-3.1 7-7.1 0-3.9-3-7.1-7-7.1-7.6 0-11.5 8.2-13.5 10.6V.9h-6c0 4-9 12.5-12 12.5v1.5h5v30.2c0 2 0 3.9.6 5.5-1.2.6-6.6 3-6.6-3.3V29.9c0-2.1.5-11.8-14.5-11.8 0 0-15.1-.9-15.1 8.6 0 4.6 3.5 5.5 5.7 5.5 1.8 0 5.4-1.1 5.4-5.5 0-2.9-1.7-4.2-1.7-4.2s1.3-2.2 4.5-2.2 4.7 1.8 4.7 5.2V35s-19.7-1.6-19.7 11.4c0 5.4 4.1 9.7 9.9 9.7 7.3 0 10.8-4.6 10.8-4.6s1.7 4.6 8 4.6c4.5 0 8.5-3.1 9.8-4.2 1.5 2.5 4.1 4.2 8 4.2 5.7 0 10.6-3.8 12.2-5.2 1.2 3.1 3.7 5.2 8.1 5.2 6.9 0 11.7-6 11.7-6l-.8-1c-2.6 2.8-9 1.9-9-4.1zm-49 5.2s-7.7 4.1-7.7-4.9c0-8.5 7.7-7.8 7.7-7.8v12.7zM27.8 18.2c-7.3 0-11.9 6.8-11.9 6.8h.2v-7h-.7L.1 22.5l.6.8c1.6 0 3.4 2.2 3.4 5v46.6h12v-19s2.4.9 7.1.9c14.7 0 18.3-11.3 18.3-21.1-.1-9.7-6.3-17.5-13.7-17.5zm-5.7 36c-4.5 0-6-5.2-6-8.1V27.6s2-1.9 5.1-1.9c2.5 0 8.1 2.5 8.1 12.6s-2.7 15.9-7.2 15.9z"/></g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="index.html">Brand</a></li>
+                    <li><a class="current" href="style.html">Style</a></li>
+                    <li><a href="components.html">Components</a></li>
                 </ul>
-                </li>
-            </ul>
-        </nav>
-        <header class="styles">
-            <div class="content-wrap">
-                <h1>Style guide</h1>
-                <p class="tagline">A wee design system's brand assets: <a href="style.html#main-content">logo</a>, <a href="style.html#colour">colour palette</a> and <a href="style.html#typography">typography</a></p>
-                <p class="subtle">Last updated on <time datetime="2020-03-25">Mars 25, 2020 <br> 3 minutes to read</time></p>
-                <p><a class="link-back" href="../index.html">&larr; Pati Montero's website</a></p>
-            </div>
+            </nav>
         </header>
-        <main>
-            <div class="content-wrap">
-                <article class="content">
-                    <h2 id="main-content" class="xtarget">Logo <a href="#main-content">#</a></h2>
-                    <p class="intro">Let's talk about my name as a brand.</p>
+        <article class="content style">
+            <section class="content-wrapped">
+                <h1 class="heading">Style guide</h1>
+                <p class="tagline">A wee design system's brand assets</p>
+                <p class="subtle"><time datetime="2020-04-01">Last updated on April 1, 2020&mdash;3 min read</time></p>
+                <hr class="intro-hr">
+            </section>
+            <aside>
+                <nav class="nav-aside">
+                    <ul>
+                        <li><a href="#main-content">Logo</a></li>
+                        <li><a href="#colour">Colour palette</a></li>
+                        <li><a href="#typography">Typography</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="content-wrapped">
+                <h2 id="main-content" class="heading xtarget">Logo <a href="#main.content">#</a></h2>
+                <p class="intro">Let's talk about my name as a brand.</p>
                     <p>My name is Patricia Montero. Well, it's <em>Patricia Carolina Montero Pachano</em>. I know, it takes ages to say it out loud. So, I've shortened, for I like it when people call me <em>Pati</em>. And also, because of that gorgeous Spanish actress whose name is the same as mine ;)</p>
                     <p>I use my brand signature as a single word, in lowercase, with a non-breaking space between the name and last name.</p>
                     <img src="images/logo-patimontero-whole.svg" alt="Logo Pati Montero.">
@@ -46,116 +53,106 @@
                     <p>There is also the possibility of using only the first name alone or embedded in a circle. This version works better within small or square spaces, as in the case of avatars for social media.</p>
                     <img src="images/patimontero-logo-short.png" alt="Logo, short version.">
                     <img src="images/patimontero-logo-rounded.png" alt="Logo, rounded.">
-                    <p>Download <a href="images/patimontero-logo-png.zip">PNG</a> or <a href="images/patimontero-logo-eps.zip">EPS</a> files.</p>
+                    <p>Download <a class="link" href="images/patimontero-logo-png.zip">PNG</a> or <a class="link" href="images/patimontero-logo-eps.zip">EPS</a> files.</p>
                     <p>I took the inspiration for my logo from one of my favourite typefaces: <em>Georgia</em>. It's the very same one I use for the paragraphs on my website. Its geeky details&mdash;like teardrop terminals and ligatures&mdash;are fascinating.</p>
                     <p>As a personal choice, I removed the serifs on the baseline. That allowed me to smooth out the connection between the characters.</p>
-                    <img src="images/patimontero-logo-breakdown.png" alt="Logo breakdown.">
-                    <figure>Logo breakdown.</figure>
-                    <h3>Minimal sizes</h3>
+                    <figure>
+                        <img src="images/patimontero-logo-breakdown.png" alt="A graphic that shows the typographic parts of the logo, such as its construction lines and safe area.">
+                        <figcaption>Logo breakdown.</figcaption>
+                    </figure>
+                    <h3 class="heading">Minimal sizes</h3>
                     <p>The logo must be legible at all times. For print purposes, its characters should measure at least 0.125 inches tall. For screen, they should be at least 16 pixels tall.</p>
                     <img class="min-long" src="images/logo-minimal-size-whole.png" alt="Logo minimal size, whole.">
                     <img class="min-short" src="images/logo-minimal-size-short.png" alt="Logo minimal size, short.">
                     <img class="min-short" src="images/logo-minimal-size-round.png" alt="Logo minimal size, round.">
-                    <h2 id="colour" class="xtarget">Colour palette <a href="#colour">#</a> </h2>
-                    <p class="intro">When I chose my colour palette, I kept <a href="index.html#values">my values</a> handy, especially openness.</p>
-                    <p>I wanted the contrast to be evident but easy on the eyes. So instead of using pure black against pure white, I'm using off-black and off-white. I also added a warm pink colour in five different shades: <em>lightest</em>, <em>light</em>, <em>accent</em>, <em>dark</em> and <em>darkest</em>.</p>
-                    <p>Finally, there is an additional contrasting colour named <em>focus</em>. Its only purpose is to show a selected element.</p>
+                    <h2 id="colour" class="heading xtarget">Colour palette <a href="#colour">#</a> </h2>
+                    <p class="intro">When I chose my colour palette, I kept <a class="link" href="index.html#values">my values</a> handy, especially openness.</p>
+                    <p>I wanted the contrast to be evident but easy on the eyes. So instead of using pure black against pure white, I'm using off-black and off-white. I also added a warm pink colour in five different shades: <span class="subtle">lightest</span>, <span class="subtle">light</span>, <span class="subtle">accent</span>, <span class="subtle">dark</span> and <span class="subtle">darkest</span>.</p>
                     <ul>
-                        <li class="blackbg">#2f2f2f</li>
-                        <li class="whitebg">#f8f8f8</li>
-                        <li class="lightestbg">#fcdad4</li>
-                        <li class="lightbg">#fba798</li>
-                        <li class="accentbg">#f96c53</li>
-                        <li class="darkbg">#dd2808</li>
-                        <li class="darkestbg">#a71e06</li>
-                        <li class="focusbg">#49f9e2</li>
+                        <li class="square bg--dark">#2f2f2f</li>
+                        <li class="square bg--light border">#f8f8f8</li>
+                        <li class="square bg--lightest-accent border">#fcdad4</li>
+                        <li class="square bg--light-accent border">#fba798</li>
+                        <li class="square bg--accent border">#f96c53</li>
+                        <li class="square bg--dark-accent">#dd2808</li>
+                        <li class="square bg--darkest-accent">#a71e06</li>
                     </ul>
-                    <h3 id="colour-combinations" class="xtarget">Accessible colour combinations <a href="#colour-combinations">#</a> </h3>
-                    <p>These examples meet a colour contrast ratio of 4.5:1, so they conform with the standards of <a href="https://www.section508.gov/">Section 508</a> for body text. People should be able to read regardless of their abilities or technical situation.</p>
+                    <h3 id="colour-combinations" class="heading xtarget">Accessible colour combinations <a href="#colour-combinations">#</a> </h3>
+                    <p>These examples meet a colour contrast ratio of 4.5:1, so they conform with the standards of <a class="link" href="https://www.section508.gov/">Section 508</a> for body text. People should be able to read regardless of their abilities or technical situation.</p>
                     <ul>
-                        <li class="blackbg"><img class="logo-colour" src="images/logo-colours-white.png" alt="White logo on black background."></li>
-                        <li class="blackbg"><img class="logo-colour" src="images/logo-colours-lightest.png" alt="Lightest accent logo on black background."></li>
-                        <li class="blackbg"><img class="logo-colour" src="images/logo-colours-light.png" alt="Light accent logo on black background."></li>
-                        <li class="blackbg"><img class="logo-colour" src="images/logo-colours-accent.png" alt="Accent logo on black background."></li>
-                        <li class="whitebg"><img class="logo-colour" src="images/logo-colours-black.png" alt="Black logo on white background."></li>
-                        <li class="whitebg"><img class="logo-colour" src="images/logo-colours-dark.png" alt="Dark accent logo on white background."></li>
-                        <li class="whitebg"><img class="logo-colour" src="images/logo-colours-darkest.png" alt="Darkest accent logo on white background."></li>
-                        <li class="lightestbg"><img class="logo-colour" src="images/logo-colours-black.png" alt="Black logo on lightest accent background."></li>
-                        <li class="lightbg"><img class="logo-colour" src="images/logo-colours-black.png" alt="Black logo on light accent background."></li>
-                        <li class="accentbg"><img class="logo-colour" src="images/logo-colours-black.png" alt="Black logo on accent background."></li>
-                        <li class="darkbg"><img class="logo-colour" src="images/logo-colours-white.png" alt="White logo on dark accent background."></li>
-                        <li class="darkestbg"><img class="logo-colour" src="images/logo-colours-white.png" alt="White logo on darkest accent background."></li>
+                        <li class="square bg--dark"><img class="logo-colour" src="images/logo-colours-white.png" alt="White logo on black background."></li>
+                        <li class="square bg--dark"><img class="logo-colour" src="images/logo-colours-lightest.png" alt="Lightest accent logo on black background."></li>
+                        <li class="square bg--dark"><img class="logo-colour" src="images/logo-colours-light.png" alt="Light accent logo on black background."></li>
+                        <li class="square bg--dark"><img class="logo-colour" src="images/logo-colours-accent.png" alt="Accent logo on black background."></li>
+                        <li class="square bg--light border"><img class="logo-colour" src="images/logo-colours-black.png" alt="Black logo on white background."></li>
+                        <li class="square bg--light border"><img class="logo-colour" src="images/logo-colours-dark.png" alt="Dark accent logo on white background."></li>
+                        <li class="square bg--light border"><img class="logo-colour" src="images/logo-colours-darkest.png" alt="Darkest accent logo on white background."></li>
+                        <li class="square bg--lightest-accent border"><img class="logo-colour" src="images/logo-colours-black.png" alt="Black logo on lightest accent background."></li>
+                        <li class="square bg--light-accent border"><img class="logo-colour" src="images/logo-colours-black.png" alt="Black logo on light accent background."></li>
+                        <li class="square bg--accent border"><img class="logo-colour" src="images/logo-colours-black.png" alt="Black logo on accent background."></li>
+                        <li class="square bg--dark-accent"><img class="logo-colour" src="images/logo-colours-white.png" alt="White logo on dark accent background."></li>
+                        <li class="square bg--darkest-accent"><img class="logo-colour" src="images/logo-colours-white.png" alt="White logo on darkest accent background."></li>
                     </ul>
-                    <p>For more information, visit the <a href="https://toolness.github.io/accessible-color-matrix/?n=Black&n=White&n=Light%20Accent&n=Accent&n=Dark%20Accent&n=Darkest%20Accent&v=2F2F2F&v=F8F8F8&v=FBA798&v=F96C53&v=DD2808&v=A71E06">Accessible colour palette builder</a>.</p>
-                    <h2 id="typography" class="xtarget">Typography <a href="#typography">#</a> </h2>
-                    <p class="intro">There are two typefaces I use for my brand: <a href="https://docs.microsoft.com/en-us/typography/font-list/georgia">Georgia</a> and <a href="https://fonts.google.com/specimen/Raleway">Raleway</a>. The first one is for paragraphs and the latter, for headlines and buttons.</p>
-                    <h3 id="georgia" class="xtarget" >Georgia <a href="#georgia">#</a> </h3>
-                    <p>I chose Georgia thinking on availability, legibility and personality. It's a beautiful web-safe font that <a href="https://www.fontshop.com/designers/matthew-carter">Matthew Carter</a> created for reading on screen. I use it for reading text with the letterspacing set to 0 px, avoiding its use in all-caps or all-lowercase.</p>
+                    <p>For more information, visit the <a class="link" href="https://toolness.github.io/accessible-color-matrix/?n=Black&n=White&n=Light%20Accent&n=Accent&n=Dark%20Accent&n=Darkest%20Accent&v=2F2F2F&v=F8F8F8&v=FBA798&v=F96C53&v=DD2808&v=A71E06">Accessible colour palette builder</a>.</p>
+                    <h2 id="typography" class="heading xtarget">Typography <a href="#typography">#</a> </h2>
+                    <p class="intro">There are two typefaces I use for my brand: <a class="link" href="https://docs.microsoft.com/en-us/typography/font-list/georgia">Georgia</a> and <a class="link" href="https://fonts.google.com/specimen/Raleway">Raleway</a>. The first one is for paragraphs and the latter, for headlines and buttons.</p>
+                    <h3 id="georgia" class="heading xtarget" >Georgia <a href="#georgia">#</a> </h3>
+                    <p>I chose Georgia thinking on availability, legibility and personality. It's a beautiful web-safe font that <a class="link" href="https://www.fontshop.com/designers/matthew-carter">Matthew Carter</a> created for reading on screen. I use it for reading text with the letterspacing set to 0 px, avoiding its use in all-caps or all-lowercase.</p>
                     <img src="images/typeface-georgia.png" alt="Georgia basic letterforms.">
-                    <h3 id="raleway" class="xtarget" >Raleway <a href="#raleway">#</a> </h3>
-                    <p>Created by <a href="https://www.theleagueofmoveabletype.com/raleway">Matt McInerney</a>, this sans-serif typeface offers a nice contrast to Georgia. I use to typeset headlines and buttons. I also set the letterspacing to 0.8px in sentence case, avoiding its use in all-caps or all-lowercase.</p>
+                    <h3 id="raleway" class="heading xtarget" >Raleway <a href="#raleway">#</a> </h3>
+                    <p>Created by <a class="link" href="https://www.theleagueofmoveabletype.com/raleway">Matt McInerney</a>, this sans-serif typeface offers a nice contrast to Georgia. I use to typeset headlines and buttons. I also set the letterspacing to 0.8px in sentence case, avoiding its use in all-caps or all-lowercase.</p>
                     <img src="images/typeface-raleway.png" alt="Raleway basic letterforms.">
-                    <h3 id="type-scale" class="xtarget">Type scale<a href="#type-scale">#</a></h3>
-                    <p>I use a  <a href="https://www.modularscale.com/?1&em&1.125">Major Second type scale</a>. It starts with a base font size of 16 px (1rem) for a narrow viewport and increases by a ratio of 1.125. Headings have a line-height of 1.2, while paragraphs, 1.6.</p>
+                    <h3 id="type-scale" class="heading xtarget">Type scale <a href="#type-scale">#</a></h3>
+                    <p>I use a  <a class="link" href="https://www.modularscale.com/?1&em&1.125">Major Second type scale</a>. It starts with a base font size of 16 px (1rem) for a narrow viewport and increases by a ratio of 1.2. Headings have a line-height of 1.2, while paragraphs, 1.6.</p>
                     <div class="table">
                         <div class="type-scale">
-                            <h1>Heading one</h1>
-                            <p>Raleway 700 &ndash; 2.027 rem</p>
+                            <h1 class="heading example">Heading one</h1>
+                            <p>Raleway 700 &ndash; 2.986 rem</p>
                         </div>
                         <div class="type-scale">
-                            <h2>Heading two</h2>
-                            <p>Raleway 700 &ndash; 1.802 rem</p>
+                            <h2 class="heading example">Heading two</h2>
+                            <p>Raleway 700 &ndash; 2.488 rem</p>
                         </div>
                         <div class="type-scale">
-                            <h3>Heading three</h3>
-                            <p>Raleway 700 &ndash; 1.602 rem</p>
+                            <h3 class="heading example">Heading three</h3>
+                            <p>Raleway 700 &ndash; 2.074 rem</p>
                         </div>
                         <div class="type-scale">
-                            <h4>Heading four</h4>
-                            <p>Raleway 700 &ndash; 1.424 rem</p>
+                            <h4 class="heading example">Heading four</h4>
+                            <p>Raleway 700 &ndash; 1.728 rem</p>
                         </div>
                         <div class="type-scale">
-                            <h4>Heading five</h4>
-                            <p>Raleway 700 &ndash; 1.266 rem</p>
+                            <h5  class="heading example">Heading five</h5>
+                            <p>Raleway 700 &ndash; 1.44 rem</p>
                         </div>
                         <div class="type-scale">
-                            <p class="tagline">Paragraph tagline</p>
-                            <p>Georgia &ndash; 1.266 rem</p>
+                            <p class="tagline example">Paragraph tagline</p>
+                            <p>Georgia &ndash; 1.44 rem</p>
                         </div>
                         <div class="type-scale">
-                            <p class="intro">Paragraph intro</p>
-                            <p>Georgia &ndash; 1.125 rem</p>
+                            <p class="intro example">Paragraph intro</p>
+                            <p>Georgia &ndash; 1.2 rem</p>
                         </div>
                         <div class="type-scale">
-                            <p>Paragraph body</p>
+                            <p class="example">Paragraph body</p>
                             <p>Georgia &ndash; 1 rem</p>
                         </div>
                     </div>
-                    <h3 id="responsiveness" class="xtarget">Responsiveness<a href="#responsiveness">#</a></h3>
-                    <p>As Matej Latin advises for <a href="https://betterwebtype.com/articles/2019/06/16/5-keys-to-accessible-web-typography/">accessible web typography</a>, I set the font size in relative units. For small devices, the base font size is 100%, which in most browsers defaults to 16px. For bigger devices, it grows according to a minimum width of:</p>
+                    <h3 id="responsiveness" class="heading xtarget">Responsiveness <a href="#responsiveness">#</a></h3>
+                    <p>As Matej Latin advises for <a class="link" href="https://betterwebtype.com/articles/2019/06/16/5-keys-to-accessible-web-typography/">accessible web typography</a>, I set the font size in relative units. For small devices, the base font size is 100%, which in most browsers defaults to 16px. For bigger devices, it grows according to a minimum width of:</p>
                     <ul>
                         <li>600 px &ndash; 105%</li>
                         <li>900 px &ndash; 110%</li>
                         <li>1200 px &ndash; 120%</li>
                     </ul>
-                    <p>For easy reading, the paragraph's line length also changes accordingly. I strive to keep it close to the optimal range from 45 to 75 characters per line. Thus the maximal width is relative to the screen size:</p>
-                    <ul>
-                        <li> Less than 600 px &ndash; 25 rem</li>
-                        <li>600 px or more &ndash; 30 rem</li>
-                        <li>900 px or more &ndash; 32 rem</li>
-                        <li>1200 px or more &ndash; 34 rem</li>
-                    </ul>
+                    <p>For easy reading, the paragraph's line length also changes accordingly. I strive to keep it close to the optimal range from 45 to 75 characters per line.</p>
                     <p>These are the main things to consider for this first version of the style guide. Now, for those components and code snippets!</p>
                     <a href="components.html" class="cta">Next: Components</a>
-                </article>
-            </div>
-        </main>
-        <footer>
-            <div class="content-wrap" role="contentinfo">
-                <p>&copy; 2019-2020 <a href="../index.html">Pati Montero</a> &nbsp; &#10087; &nbsp; <a href="privacy.html">Privacy policy</a></p>
-                <p class="note"><a href="https://github.com/">Github</a> and <a href="https://www.netlify.com/">Netlify</a> host this website ♥</p>
-            </div>
+            </section>
+        </article>
+        <footer class="footer">
+            <p>&copy; 2019-2020 <a class="link" href="../index.html">Pati Montero</a> &nbsp; &#10087; &nbsp; <a class="link" href="privacy.html">Privacy policy</a></p>
+            <p class="note"><a class="link" href="https://github.com/">Github</a> and <a class="link" href="https://www.netlify.com/">Netlify</a> host this website ♥</p>
         </footer>
-        <script src="js/script.js"></script>
     </body>
 </html>

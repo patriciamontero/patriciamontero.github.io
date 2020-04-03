@@ -1,4 +1,4 @@
-/* Global styles -------------------- */
+/* Global -------------------- */
 *, *:before, *::after {
     margin: 0;
     padding: 0;
@@ -88,7 +88,7 @@ html {
     padding-bottom: 6.192rem;
 }
 
-/* Navigation styles -------------------- */
+/* Navigation -------------------- */
 
 .nav-main ul {
     display: flex;
@@ -140,7 +140,15 @@ html {
     margin: 1.2rem 0;
 }
 
-/* Texts styles -------------------- Modular scale of a 1.2 ratio */
+.upcoming {
+    font: italic 1rem/1.6 'Georgia', Helvetica, sans-serif;
+}
+
+.disabled {
+    color: #4f4f4f;
+}
+
+/* Texts -------------------- Modular scale of a 1.2 ratio */
 
 p, li {
     font: normal 1rem/1.6 'Georgia', Times, serif;
@@ -219,7 +227,7 @@ figcaption, .note {
     text-indent: -.5rem;
 }
 
-/* Link styles -------------------- */
+/* Links -------------------- */
 
 .link:link, .link:visited, .cta:link, .cta:visited {
     background-color: #fcdad4;
@@ -281,7 +289,37 @@ a.skip:focus, a.skip:active {
     width: 3rem;
 }
 
-/* Image styles -------------------- */
+/* Buttons -------------------- */
+
+.btn, .btn-sec {
+    border-radius: 3px;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #dd2808;
+    border: 2px solid transparent;
+    color: #f0f0f0;
+}
+
+.btn:hover {
+    background-color: #a71e06;
+}
+
+.btn-sec {
+    background-color: #f0f0f0;
+    border: 2px solid #dd2808;
+    color: #dd2808;
+}
+
+.btn-sec:hover {
+    background-color: #ffffff;
+}
+
+/* Images -------------------- */
 
 img {
     border-radius: 3px;
@@ -309,7 +347,7 @@ img {
     width: 100%;
 }
 
-/* Colour styles -------------------- */
+/* Colour -------------------- */
 
 /* Colour palette 
     #2f2f2f black
@@ -376,7 +414,7 @@ img {
     color: #2f2f2f;
 }
 
-/* Example styles -------------------- */
+/* Examples -------------------- */
 
 .table {
     margin: 3.653rem 0;
@@ -404,3 +442,119 @@ img {
             margin: 2.074rem 0;
         }
     }
+
+    code {
+        background-color: #f0f0f0;
+        border-radius: 0.1875rem;
+        color: #2f2f2f;
+        display: block;
+        overflow: scroll;
+        padding: 0 2rem 1rem;
+    }
+
+    .code-in-text {
+        color: #a71e06;
+        display: inline;
+        padding: .25rem;
+    }
+
+    .code-accent {
+        color: #a71e06;
+    }
+
+/* Accordion -------------------- */
+
+[hidden] {
+    display: none;
+    margin-top: 0;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+/* fix for IE */
+div[tabindex]:focus {
+    outline: none;
+}
+
+.container, .component {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.component {
+    border-bottom: 2px dotted #cccccc;
+    /* display: flex;
+    justify-content: space-between;
+    line-height: 1; */
+}
+
+.component button {
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid #f8f8f8;
+    color: #dd2808;
+    margin: 0;
+}
+
+.code-example {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.bg--photobg1 {
+    background: url(../images/photo-montreal.jpg) no-repeat center right;
+}
+
+.bg--photobg2 {
+    background: url(../images/photo-train.jpg) no-repeat center right;
+}
+
+.bg--photobg3 {
+    background: url(../images/photo-bridge.jpg) no-repeat center right;
+}
+
+.bg--photobg4 {
+    background: url(../images/photo-flowers.jpg) no-repeat center right;
+}
+
+.bg--photobg5 {
+    background: url(../images/photo-bus.jpg) no-repeat center right;
+}
+
+.component h4 {
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.component ~ .component {
+    border-top: 1px dashed;
+    padding-top: 1rem;
+}
+button i::before {
+    color: #dd2808;
+}
+[data-expands] svg {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+[data-expands][aria-expanded="true"] .up-strut {
+    display: none;
+}
+[data-expands]:hover svg g {
+    color: #dd2808;
+}
+@media print {
+    [hidden] {
+        display: block !important;
+    }
+    [data-expandall], [data-expands], .examples + p {
+        display: none !important;
+    }
+}

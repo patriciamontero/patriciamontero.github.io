@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Components: buttons | Pati Montero's design system </title>
+        <meta name="description" content="A button is a distinct visual element where users can click or tap to trigger an action.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/test-styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <a href="#main-content" class="skip">Skip to content</a>
+        <header class="header">
+            <nav class="nav-main">
+                <ul>
+                    <li>
+                        <a title="PatiMontero.ca" href="../index.html">
+                            <svg aria-label="Pati Montero" class="logo" width="122" hight="75" viewbox="0 0 122 75" xmlns="http://www.w3.org/2000/svg">
+                                <g><path d="M112.1 45V18.8l-.8-.3-13.2 4.4V24c2 0 2 2.5 2 4.4v16.8c0 1.4.9 2.8 1.2 4.1-2.7 2.3-8.2 1.6-8.2-4.3V15.6c1-1.5 4.6-6.4 6.8-6.4 0 3.2 3.1 6.2 6.7 6.2 3.9 0 7-3.1 7-7.1 0-3.9-3-7.1-7-7.1-7.6 0-11.5 8.2-13.5 10.6V.9h-6c0 4-9 12.5-12 12.5v1.5h5v30.2c0 2 0 3.9.6 5.5-1.2.6-6.6 3-6.6-3.3V29.9c0-2.1.5-11.8-14.5-11.8 0 0-15.1-.9-15.1 8.6 0 4.6 3.5 5.5 5.7 5.5 1.8 0 5.4-1.1 5.4-5.5 0-2.9-1.7-4.2-1.7-4.2s1.3-2.2 4.5-2.2 4.7 1.8 4.7 5.2V35s-19.7-1.6-19.7 11.4c0 5.4 4.1 9.7 9.9 9.7 7.3 0 10.8-4.6 10.8-4.6s1.7 4.6 8 4.6c4.5 0 8.5-3.1 9.8-4.2 1.5 2.5 4.1 4.2 8 4.2 5.7 0 10.6-3.8 12.2-5.2 1.2 3.1 3.7 5.2 8.1 5.2 6.9 0 11.7-6 11.7-6l-.8-1c-2.6 2.8-9 1.9-9-4.1zm-49 5.2s-7.7 4.1-7.7-4.9c0-8.5 7.7-7.8 7.7-7.8v12.7zM27.8 18.2c-7.3 0-11.9 6.8-11.9 6.8h.2v-7h-.7L.1 22.5l.6.8c1.6 0 3.4 2.2 3.4 5v46.6h12v-19s2.4.9 7.1.9c14.7 0 18.3-11.3 18.3-21.1-.1-9.7-6.3-17.5-13.7-17.5zm-5.7 36c-4.5 0-6-5.2-6-8.1V27.6s2-1.9 5.1-1.9c2.5 0 8.1 2.5 8.1 12.6s-2.7 15.9-7.2 15.9z"/></g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="index.html">Brand</a></li>
+                    <li><a href="style.html">Style</a></li>
+                    <li><a class="current" href="components.html">Components</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article class="content style">
+            <section class="content-wrapped">
+                <h1 class="heading">Components: buttons</h1>
+                <p class="tagline">A wee design system's library</p>
+                <p class="subtle"><time datetime="2020-04-03">Last updated on April 3, 2020&mdash;4 min read</time></p>
+                <hr class="intro-hr">
+            </section>
+            <aside>
+                <nav class="nav-aside">
+                    <ul>
+                        <li class="disabled">Accordion<span class="upcoming">&mdash;Upcoming</span> </li>
+                        <li><a href="components.html">Buttons</a></li>
+                        <li class="disabled">Cards<span class="upcoming">&mdash;Upcoming</span> </li>
+                        <li><a href="components-forms.html">Forms</a></li>
+                        <li class="disabled">Grids<span class="upcoming">&mdash;Upcoming</span> </li>
+                        <li class="disabled">Images<span class="upcoming">&mdash;Upcoming</span> </li>
+                        <li><a href="components-links.html">Links</a></li>
+                        <li class="disabled">Status<span class="upcoming">&mdash;Upcoming</span> </li>
+                        <li><a href="components-texts.html">Texts</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="content-wrapped">
+                <h2 id="main-content" class="heading xtarget">Buttons <a href="#main.content">#</a></h2>
+                <p class="intro">A button is a distinct visual element where users can click or tap to trigger an action.</p>
+                <h3 class="heading">Guidelines</h3>
+                <ul>
+                    <li>Use a <code class="code-in-text">&lt;button&gt;</code> for actions, such as <span class="subtle">copy</span>, <span class="subtle">expand</span>, <span class="subtle">collapse</span> or <span class="subtle">send</span>. If the need is a change of location, use <a class="link" href="components-links.html">a link</a> <code class="code-in-text">&lt;a&gt;</code>. The proper use of their meaning as HTML elements results in a more inclusive experience. It also eases the maintenance and scaling of this design system.</li>
+                    <li>Deliver every button with a precise text that states its purpose. In most cases, it should be a verb that incites action. You'll know it works when the user can predict the outcome before triggering the button.</li>
+                    <li>Keep its content below four words to prevent text wrapping.</li>
+                    <li>Use sentence case for the texts, which means that only the first word starts with a capital letter. Don't use a period in the end.</li>
+                    <li>A primary button conveys the most prominent choice that the user can take in a section. For this reason, there should be only one per page. For supporting actions, pick a secondary button instead.</li>
+                    <li>A button's colour changes depending on its surroundings. It may be any of the four shades picked from the <a class="link" href="style.html#colour">colour palette</a>, as long as it yields an <a class="link" href="style.html#colour-combinations">accessible contrast</a>. The shades are <span class="subtle">dark</span>, <span class="subtle">accent</span>, <span class="subtle">white</span> and <span class="subtle">black</span>:</li>
+                </ul>
+                <ul>
+                    <li class="square bg--dark-accent">#dd2808</li>
+                    <li class="square bg--accent border">#f96c53</li>
+                    <li class="square bg-light border">#f8f8f8</li>
+                    <li class="square bg--dark">#2f2f2f</li>
+                </ul>
+                <h3 class="heading container" tabindex="-1">
+                    <span>Code snippets</span>
+                    <button class="btn" data-expandall="">Expand all</button>
+                </h3>
+                <div class="component-container">
+                    <div class="component">
+                        <h4 id="buttons-primary">Primary dark button</h4>
+                        <button data-expands="buttons-primary-content" aria-label="open section" aria-describedby="buttons-primary" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="buttons-primary-content" class="component-content" hidden="">
+                        <p>White text (#f8f8f8) over a dark box area (#dd2808), this is the default style for all buttons. It can only perform over a light-coloured background or contrasting image.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example"><button class="btn">This is a button</button></p>
+                        <div class="code-example bg--photobg5">
+                            <button class="btn">This is a button</button>
+                        </div>
+                        <div class="code-example bg--photobg1">
+                            <button class="btn">This is a button</button>
+                        </div>
+                        <pre>
+                            <code>
+                                <h5 class="heading container">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary">Copy HTML</button>
+                                </h5>
+<span id="html-buttons-primary">&lt;button&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading container">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary">Copy CSS</button>
+                                </h5>
+<span id="css-buttons-primary">
+button {
+background-color: #dd2808;
+border: 0;
+border-radius: 0.1875rem;
+color: #f8f8f8;
+font-family: 'Raleway', Helvetica, sans-serif;
+font-size: 1rem;
+font-weight: 700;
+padding: 0.5rem 0.75rem;
+text-decoration: none;
+}
+button:hover {
+background-color: #a71e06;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer class="footer">
+            <p>&copy; 2019-2020 <a class="link" href="../index.html">Pati Montero</a> &nbsp; &#10087; &nbsp; <a class="link" href="privacy.html">Privacy policy</a></p>
+            <p class="note"><a class="link" href="https://github.com/">Github</a> and <a class="link" href="https://www.netlify.com/">Netlify</a> host this website ♥</p>
+        </footer>
+        <script src="js/clipboard.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

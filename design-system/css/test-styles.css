@@ -412,6 +412,7 @@ img {
         border-radius: 0.1875rem;
         color: #2f2f2f;
         display: block;
+        margin: -1rem 0;
         overflow: scroll;
         padding: 0 2rem 1rem;
     }

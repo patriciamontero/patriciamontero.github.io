@@ -31,7 +31,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: buttons</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-04-03">Last updated on April 3, 2020&mdash;4 min read</time></p>
+                <p class="subtle"><time datetime="2020-04-04">Last updated on April 4, 2020&mdash;4 min read</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -67,14 +67,15 @@
                     <li class="square bg-light border">#f8f8f8</li>
                     <li class="square bg--dark">#2f2f2f</li>
                 </ul>
-                <h3 class="heading container" tabindex="-1">
+                <h3 class="heading heading-button" tabindex="-1">
                     <span>Code snippets</span>
                     <button class="btn" data-expandall="">Expand all</button>
                 </h3>
+
                 <div class="component-container">
-                    <div class="component">
-                        <h4 id="buttons-primary">Primary dark button</h4>
-                        <button data-expands="buttons-primary-content" aria-label="open section" aria-describedby="buttons-primary" aria-expanded="false">
+                    <div class="component-intro">
+                        <h4 id="btn-primary">Primary button</h4>
+                        <button data-expands="btn-primary-content" aria-label="open section" aria-describedby="btn-primary" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -83,7 +84,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div id="buttons-primary-content" class="component-content" hidden="">
+                    <div id="btn-primary-content" class="component-content" hidden="">
                         <p>White text (#f8f8f8) over a dark box area (#dd2808), this is the default style for all buttons. It can only perform over a light-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><button class="btn">This is a button</button></p>
@@ -95,35 +96,207 @@
                         </div>
                         <pre>
                             <code>
-                                <h5 class="heading container">
+                                <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-buttons-primary">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary">Copy HTML</button>
                                 </h5>
-<span id="html-buttons-primary">&lt;button&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
-                                <h5 class="heading container">
+<span id="html-btn-primary">&lt;button class="btn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-buttons-primary">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary">Copy CSS</button>
                                 </h5>
-<span id="css-buttons-primary">
-button {
-background-color: #dd2808;
-border: 0;
-border-radius: 0.1875rem;
-color: #f8f8f8;
-font-family: 'Raleway', Helvetica, sans-serif;
-font-size: 1rem;
-font-weight: 700;
-padding: 0.5rem 0.75rem;
-text-decoration: none;
+<span id="css-btn-primary">
+.btn {
+    background-color: #dd2808;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    color: #f0f0f0;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
 }
-button:hover {
-background-color: #a71e06;
+
+.btn:hover {
+    background-color: #a71e06;
 }
 </span>
                             </code>
                         </pre>
                     </div>
                 </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="btn-primary-accent">Primary accent button</h4>
+                        <button data-expands="btn-primary-accent-content" aria-label="open section" aria-describedby="btn-primary-accent" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="btn-primary-accent-content" class="component-content" hidden="">
+                        <p>Black text (#2f2f2f) over an accent colored box (#f96c53), this is an alternative style. It can only appear over a very dark-coloured background or contrasting image.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example bg--dark"><button class="btn bg--accent">This is a button</button></p>
+                        <div class="code-example bg--photobg2">
+                            <button class="btn bg--accent">This is a button</button>
+                        </div>
+                        <div class="code-example bg--photobg3">
+                            <button class="btn bg--accent">This is a button</button>
+                        </div>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary-accent">Copy HTML</button>
+                                </h5>
+<span id="html-btn-primary-accent">&lt;button class="btn bg--accent"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary-accent">Copy CSS</button>
+                                </h5>
+<span id="css-btn-primary-accent">
+.btn {
+    background-color: #dd2808;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    color: #f0f0f0;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a71e06;
+}
+
+.bg--accent {
+    background-color: #f96c53;
+    color: #2f2f2f;
+}
+
+button.bg--accent:hover {
+    background-color: #fba798;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="btn-primary-dark">Primary dark button</h4>
+                        <button data-expands="btn-primary-dark-content" aria-label="open section" aria-describedby="btn-primary-dark" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="btn-primary-dark-content" class="component-content" hidden="">
+                        <p>White text (#f8f8f8) over a dark box area (#dd2808), this is the default style for all buttons. It can only perform over a light-coloured background or contrasting image.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example"><button class="btn">This is a button</button></p>
+                        <div class="code-example bg--photobg5">
+                            <button class="btn">This is a button</button>
+                        </div>
+                        <div class="code-example bg--photobg1">
+                            <button class="btn">This is a button</button>
+                        </div>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary-dark">Copy HTML</button>
+                                </h5>
+<span id="html-btn-primary-dark">&lt;button class="btn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary-dark">Copy CSS</button>
+                                </h5>
+<span id="css-btn-primary-dark">
+.btn {
+    background-color: #dd2808;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    color: #f0f0f0;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a71e06;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="btn-primary-light">Primary light button</h4>
+                        <button data-expands="btn-primary-light-content" aria-label="open section" aria-describedby="btn-primary-light" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="btn-primary-light-content" class="component-content" hidden="">
+                        <p>White text (#f8f8f8) over a dark box area (#dd2808), this is the default style for all buttons. It can only perform over a light-coloured background or contrasting image.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example"><button class="btn">This is a button</button></p>
+                        <div class="code-example bg--photobg5">
+                            <button class="btn">This is a button</button>
+                        </div>
+                        <div class="code-example bg--photobg1">
+                            <button class="btn">This is a button</button>
+                        </div>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary-light">Copy HTML</button>
+                                </h5>
+<span id="html-btn-primary-light">&lt;button class="btn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary-light">Copy CSS</button>
+                                </h5>
+<span id="css-btn-primary-light">
+.btn {
+    background-color: #dd2808;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    color: #f0f0f0;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a71e06;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
             </section>
         </article>
         <footer class="footer">

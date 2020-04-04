@@ -378,42 +378,6 @@ img {
     border: 1px solid #f0f0f0;
 }
 
-.bg--dark {
-    background-color: #2f2f2f;
-    color: #f0f0f0;
-}
-
-.bg--darkest-accent {
-    background-color: #a71e06;
-    color: #ffffff;
-}
-
- .bg--dark-accent {
-     background-color: #dd2808;
-     color: #ffffff;
- }
-
-.bg--accent {
-    background-color: #f96c53;
-    color: #2f2f2f;
-}
-
-.bg--light-accent, ::selection {
-    background: #fba798;
-    background-color: #fba798;
-    color: 2f2f2f;
-}
-
-.bg--lightest-accent {
-    background-color: #fcdad4;
-    color: 2f2f2f;
-}
-
-.bg--light {
-    background-color: #f8f8f8;
-    color: #2f2f2f;
-}
-
 /* Examples -------------------- */
 
 .table {
@@ -469,30 +433,29 @@ img {
     margin-top: 0;
 }
 
-button::-moz-focus-inner {
+/* button::-moz-focus-inner {
     border: 0;
-}
+} */
 
 /* fix for IE */
 div[tabindex]:focus {
     outline: none;
 }
 
-.container, .component {
+.component-container {
+    border-bottom: 2px dotted #cccccc;
+    margin-bottom: 1rem;
+    padding: 1rem 0 2rem;
+}
+
+.component-intro, .heading-button {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    line-height: 1;
 }
 
-.component {
-    border-bottom: 2px dotted #cccccc;
-    /* display: flex;
-    justify-content: space-between;
-    line-height: 1; */
-}
-
-.component button {
+.component-intro button {
     background: 0;
     border: 0;
     border-bottom: 2px solid #f8f8f8;
@@ -507,6 +470,84 @@ div[tabindex]:focus {
     justify-content: center;
     margin: 1rem 0;
     padding: 1rem;
+}
+
+.component h4 {
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.component-intro ~ .component-intro {
+    border-top: 1px dashed;
+    padding-top: 1rem;
+}
+
+button i::before {
+    color: #dd2808;
+}
+
+[data-expands] svg {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+[data-expands][aria-expanded="true"] .up-strut {
+    display: none;
+}
+
+[data-expands]:hover svg g {
+    color: #dd2808;
+}
+
+@media print {
+    [hidden] {
+        display: block !important;
+    }
+    [data-expandall], [data-expands], .examples + p {
+        display: none !important;
+    }
+}
+
+/* Modifiers -------------------- */
+
+.bg--dark {
+    background-color: #2f2f2f;
+    color: #f0f0f0;
+}
+
+.bg--darkest-accent {
+    background-color: #a71e06;
+    color: #ffffff;
+}
+
+ .bg--dark-accent {
+     background-color: #dd2808;
+     color: #ffffff;
+ }
+
+.bg--accent {
+    background-color: #f96c53;
+    color: #2f2f2f;
+}
+
+button.bg--accent:hover {
+    background-color: #fba798;
+}
+
+.bg--light-accent, ::selection {
+    background: #fba798;
+    background-color: #fba798;
+    color: 2f2f2f;
+}
+
+.bg--lightest-accent {
+    background-color: #fcdad4;
+    color: 2f2f2f;
+}
+
+.bg--light {
+    background-color: #f8f8f8;
+    color: #2f2f2f;
 }
 
 .bg--photobg1 {
@@ -527,34 +568,4 @@ div[tabindex]:focus {
 
 .bg--photobg5 {
     background: url(../images/photo-bus.jpg) no-repeat center right;
-}
-
-.component h4 {
-    cursor: pointer;
-    margin: 1rem 0;
-}
-.component ~ .component {
-    border-top: 1px dashed;
-    padding-top: 1rem;
-}
-button i::before {
-    color: #dd2808;
-}
-[data-expands] svg {
-    height: 1.25rem;
-    width: 1.25rem;
-}
-[data-expands][aria-expanded="true"] .up-strut {
-    display: none;
-}
-[data-expands]:hover svg g {
-    color: #dd2808;
-}
-@media print {
-    [hidden] {
-        display: block !important;
-    }
-    [data-expandall], [data-expands], .examples + p {
-        display: none !important;
-    }
 }

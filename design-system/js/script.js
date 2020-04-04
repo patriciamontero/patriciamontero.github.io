@@ -246,8 +246,8 @@ window.addEventListener('load', function (event) {
 
 // Copy to clipboard
 (function(){
-  if(!document.querySelector('.secondary')){
+  if(!document.querySelector('.btn-sec')){
     return;
   }
-  new ClipboardJS('.secondary');
+  new ClipboardJS('.btn-sec');
 }());

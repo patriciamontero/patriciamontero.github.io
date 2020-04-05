@@ -85,7 +85,7 @@
                         </button>
                     </div>
                     <div id="btn-primary-content" class="component-content" hidden="">
-                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark-accent</span> box area (#dd2808), this is the default style for all buttons. It can only perform accessibly over a light-coloured background or contrasting image.</p>
+                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark-accent-coloured</span> box area (#dd2808), this is the default style for all buttons. It can only perform accessibly over a light-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><button class="btn">This is a button</button></p>
                         <div class="code-example bg--photobg5">
@@ -140,7 +140,7 @@
                         </button>
                     </div>
                     <div id="btn-primary-accent-content" class="component-content" hidden="">
-                        <p><span class="subtle">Dark</span> text (#2f2f2f) over an <span class="subtle">accent-colored</span> box (#f96c53), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
+                        <p><span class="subtle">Dark</span> text (#2f2f2f) over an <span class="subtle">accent-coloured</span> box (#f96c53), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example bg--dark"><button class="btn bg--accent">This is a button</button></p>
                         <div class="code-example bg--photobg2">
@@ -204,7 +204,7 @@ button.bg--accent:hover {
                         </button>
                     </div>
                     <div id="btn-primary-dark-content" class="component-content" hidden="">
-                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
+                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark-coloured</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><button class="btn bg--dark">This is a button</button></p>
                         <p class="code-example bg--accent"><button class="btn bg--dark">This is a button</button></p>
@@ -262,13 +262,14 @@ button.bg--accent:hover {
                         </button>
                     </div>
                     <div id="btn-primary-light-content" class="component-content" hidden="">
-                        <p><span class="subtle">Dark</span> text (#2f2f2f) over a <span class="subtle">light</span> box area (#f8f8f8), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
+                        <p><span class="subtle">Dark</span> text (#2f2f2f) over a <span class="subtle">light-coloured</span> box area (#f8f8f8), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example bg--dark-accent"><button class="btn bg--light">This is a button</button></p>
                         <p class="code-example bg--dark"><button class="btn bg--light">This is a button</button></p>
                         <div class="code-example bg--photobg3">
                             <button class="btn bg--light">This is a button</button>
                         </div>
+                        <p>These are its code snippets:</p>
                         <pre>
                             <code>
                                 <h5 class="heading heading-button">
@@ -304,6 +305,247 @@ button.bg--accent:hover {
 button.bg--light:hover {
     background-color: #fcdad4;
 }    
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="btn-secondary">Secondary button</h4>
+                        <button data-expands="btn-secondary-content" aria-label="open section" aria-describedby="btn-secondary" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="btn-secondary-content" class="component-content" hidden="">
+                        <p>A <span class="subtle">light</span> box area (#f8f8f8) with <span class="subtle">dark-accent-coloured</span> border and text (#dd2808), this is the main style for secondary buttons. It works better over a light-coloured background or contrasting image.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example"><button class="btn-sec">This is a button</button></p>
+                        <div class="code-example bg--photobg5">
+                            <button class="btn-sec">This is a button</button>
+                        </div>
+                        <div class="code-example bg--photobg4">
+                            <button class="btn-sec">This is a button</button>
+                        </div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-secondary">Copy HTML</button>
+                                </h5>
+<span id="html-btn-secondary">&lt;button class="btn-sec"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-secondary">Copy CSS</button>
+                                </h5>
+<span id="css-btn-secondary">
+.btn-sec {
+    background-color: #f8f8f8;
+    border: 2px solid #dd2808;
+    border-radius: 3px;
+    color: #dd2808;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn-sec:hover {
+    background-color: #ffffff;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="btn-secondary-accent">Secondary accent button</h4>
+                        <button data-expands="btn-secondary-accent-content" aria-label="open section" aria-describedby="btn-secondary-accent" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="btn-secondary-accent-content" class="component-content" hidden="">
+                        <p>A <span class="subtle">dark</span> box area (#2f2f2f) with <span class="subtle">accent-coloured</span> border and text (#f96c53), this is an alternative style. It can work over a dark or light coloured background.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example bg--dark"><button class="btn-sec bd--accent">This is a button</button></p>
+                        <div class="code-example bg--photobg2">
+                            <button class="btn-sec bd--accent">This is a button</button>
+                        </div>
+                        <div class="code-example bg--photobg5">
+                            <button class="btn-sec bd--accent">This is a button</button>
+                        </div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-secondary-accent">Copy HTML</button>
+                                </h5>
+<span id="html-btn-secondary-accent">&lt;button class="btn-sec"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-secondary-accent">Copy CSS</button>
+                                </h5>
+<span id="css-btn-secondary-accent">
+.btn-sec {
+    background-color: #f8f8f8;
+    border: 2px solid #dd2808;
+    border-radius: 3px;
+    color: #dd2808;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn-sec:hover {
+    background-color: #ffffff;
+}
+
+.bd--accent {
+    background-color: #2f2f2f;
+    border: 2px solid #f96c53;
+    color: #f96c53;
+}
+
+button.bd--accent:hover {
+    background-color: #1f1f1f;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="btn-secondary-dark">Secondary dark button</h4>
+                        <button data-expands="btn-secondary-dark-content" aria-label="open section" aria-describedby="btn-secondary-dark" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="btn-secondary-dark-content" class="component-content" hidden="">
+                        <p>A <span class="subtle">light</span> box area (#f8f8f8) with <span class="subtle">dark-coloured</span> border and text (#2f2f2f), this is an alternative style. It can work over a dark or light background or contrasting image.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example"><button class="btn-sec bd--dark">This is a button</button></p>
+                        <p class="code-example bg--accent"><button class="btn-sec bd--dark">This is a button</button></p>
+                        <div class="code-example bg--photobg4">
+                            <button class="btn-sec bd--dark">This is a button</button>
+                        </div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-secondary-dark">Copy HTML</button>
+                                </h5>
+<span id="html-btn-secondary-dark">&lt;button class="btn-sec bd--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-secondary-dark">Copy CSS</button>
+                                </h5>
+<span id="css-btn-secondary-dark">
+.btn-sec {
+    background-color: #f0f0f0;
+    border: 2px solid #dd2808;
+    border-radius: 3px;
+    color: #dd2808;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn-sec:hover {
+    background-color: #ffffff;
+}
+
+.bd--dark {
+    border: 2px solid #2f2f2f;
+    color: #2f2f2f;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="btn-secondary-light">Secondary light button</h4>
+                        <button data-expands="btn-secondary-light-content" aria-label="open section" aria-describedby="btn-secondary-light" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="btn-secondary-light-content" class="component-content" hidden="">
+                        <p>A <span class="subtle">dark</span> box area (#2f2f2f) with <span class="subtle">light-coloured</span> border and text (#f8f8f8), this is an alternative style. It can work over a dark background or contrasting image.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example bg--darkest-accent"><button class="btn-sec bd--light">This is a button</button></p>
+                        <p class="code-example bg--dark"><button class="btn-sec bd--light">This is a button</button></p>
+                        <div class="code-example bg--photobg4">
+                            <button class="btn-sec bd--light">This is a button</button>
+                        </div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-secondary-light">Copy HTML</button>
+                                </h5>
+<span id="html-btn-secondary-light">&lt;button class="btn-sec bd--light"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-secondary-light">Copy CSS</button>
+                                </h5>
+<span id="css-btn-secondary-light">
+.btn-sec {
+    background-color: #f8f8f8;
+    border: 2px solid #dd2808;
+    border-radius: 3px;
+    color: #dd2808;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn-sec:hover {
+    background-color: #ffffff;
+}
+
+.bd--light {
+    background-color: #2f2f2f;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
+}
+
+button.bd--light:hover {
+    background-color: #1f1f1f;
+}
 </span>
                             </code>
                         </pre>

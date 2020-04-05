@@ -302,21 +302,29 @@ a.skip:focus, a.skip:active {
 .btn {
     background-color: #dd2808;
     border: 2px solid transparent;
-    color: #f0f0f0;
+    color: #f8f8f8;
 }
 
 .btn:hover {
     background-color: #a71e06;
 }
 
+button.bg--light:hover, button.bg--accent:hover {
+    background-color: #fcdad4;
+}   
+
 .btn-sec {
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
     border: 2px solid #dd2808;
     color: #dd2808;
 }
 
 .btn-sec:hover {
     background-color: #ffffff;
+}
+
+button.bd--accent:hover, button.bd--light:hover {
+    background-color: #1f1f1f;
 }
 
 /* Images -------------------- */
@@ -513,7 +521,7 @@ button i::before {
 
 .bg--dark {
     background-color: #2f2f2f;
-    color: #f0f0f0;
+    color: #f8f8f8;
 }
 
 .bg--darkest-accent {
@@ -531,10 +539,6 @@ button i::before {
     color: #2f2f2f;
 }
 
-button.bg--accent:hover {
-    background-color: #fba798;
-}
-
 .bg--light-accent, ::selection {
     background: #fba798;
     background-color: #fba798;
@@ -549,6 +553,23 @@ button.bg--accent:hover {
 .bg--light {
     background-color: #f8f8f8;
     color: #2f2f2f;
+}
+
+.bd--dark {
+    border: 2px solid #2f2f2f;
+    color: #2f2f2f;
+}
+
+.bd--accent {
+    background-color: #2f2f2f;
+    border: 2px solid #f96c53;
+    color: #f96c53;
+}
+
+.bd--light {
+    background-color: #2f2f2f;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
 }
 
 .bg--photobg1 {

@@ -31,7 +31,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: buttons</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-04-04">Last updated on April 4, 2020&mdash;4 min read</time></p>
+                <p class="subtle"><time datetime="2020-04-05">Last updated on April 5, 2020&mdash;4 min read</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -111,7 +111,7 @@
     background-color: #dd2808;
     border: 2px solid transparent;
     border-radius: 3px;
-    color: #f0f0f0;
+    color: #f8f8f8;
     cursor: pointer;
     font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
     padding: .5rem .75rem;
@@ -140,7 +140,7 @@
                         </button>
                     </div>
                     <div id="btn-primary-accent-content" class="component-content" hidden="">
-                        <p><span class="subtle">Dark</span> text (#2f2f2f) over an <span class="subtle">accent-colored</span> box (#f96c53), this is an alternative style. It can only appear over a dark-coloured background or contrasting image.</p>
+                        <p><span class="subtle">Dark</span> text (#2f2f2f) over an <span class="subtle">accent-colored</span> box (#f96c53), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example bg--dark"><button class="btn bg--accent">This is a button</button></p>
                         <div class="code-example bg--photobg2">
@@ -166,7 +166,7 @@
     background-color: #dd2808;
     border: 2px solid transparent;
     border-radius: 3px;
-    color: #f0f0f0;
+    color: #f8f8f8;
     cursor: pointer;
     font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
     padding: .5rem .75rem;
@@ -204,22 +204,21 @@ button.bg--accent:hover {
                         </button>
                     </div>
                     <div id="btn-primary-dark-content" class="component-content" hidden="">
-                        <p>White text (#f8f8f8) over a dark box area (#2f2f2f), this is an alternative style. It can appear over a light or accent coloured background or contrasting image.</p>
+                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><button class="btn bg--dark">This is a button</button></p>
-                        <div class="code-example bg--photobg5">
+                        <p class="code-example bg--accent"><button class="btn bg--dark">This is a button</button></p>
+                        <div class="code-example bg--photobg4">
                             <button class="btn bg--dark">This is a button</button>
                         </div>
-                        <div class="code-example bg--photobg1">
-                            <button class="btn bg--dark">This is a button</button>
-                        </div>
+                        <p>These are its code snippets:</p>
                         <pre>
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary-dark">Copy HTML</button>
                                 </h5>
-<span id="html-btn-primary-dark">&lt;button class="btn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-btn-primary-dark">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary-dark">Copy CSS</button>
@@ -229,7 +228,7 @@ button.bg--accent:hover {
     background-color: #dd2808;
     border: 2px solid transparent;
     border-radius: 3px;
-    color: #f0f0f0;
+    color: #f8f8f8;
     cursor: pointer;
     font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
     padding: .5rem .75rem;
@@ -238,6 +237,11 @@ button.bg--accent:hover {
 
 .btn:hover {
     background-color: #a71e06;
+}
+
+.bg--dark {
+    background-color: #2f2f2f;
+    color: #f8f8f8;
 }
 </span>
                             </code>
@@ -258,14 +262,12 @@ button.bg--accent:hover {
                         </button>
                     </div>
                     <div id="btn-primary-light-content" class="component-content" hidden="">
-                        <p>White text (#f8f8f8) over a dark box area (#dd2808), this is the default style for all buttons. It can only perform over a light-coloured background or contrasting image.</p>
+                        <p><span class="subtle">Dark</span> text (#2f2f2f) over a <span class="subtle">light</span> box area (#f8f8f8), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example"><button class="btn">This is a button</button></p>
-                        <div class="code-example bg--photobg5">
-                            <button class="btn">This is a button</button>
-                        </div>
-                        <div class="code-example bg--photobg1">
-                            <button class="btn">This is a button</button>
+                        <p class="code-example bg--dark-accent"><button class="btn bg--light">This is a button</button></p>
+                        <p class="code-example bg--dark"><button class="btn bg--light">This is a button</button></p>
+                        <div class="code-example bg--photobg3">
+                            <button class="btn bg--light">This is a button</button>
                         </div>
                         <pre>
                             <code>
@@ -273,7 +275,7 @@ button.bg--accent:hover {
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary-light">Copy HTML</button>
                                 </h5>
-<span id="html-btn-primary-light">&lt;button class="btn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-btn-primary-light">&lt;button class="btn bg--light"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary-light">Copy CSS</button>
@@ -283,7 +285,7 @@ button.bg--accent:hover {
     background-color: #dd2808;
     border: 2px solid transparent;
     border-radius: 3px;
-    color: #f0f0f0;
+    color: #f8f8f8;
     cursor: pointer;
     font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
     padding: .5rem .75rem;
@@ -293,6 +295,15 @@ button.bg--accent:hover {
 .btn:hover {
     background-color: #a71e06;
 }
+
+.bg--light {
+    background-color: #f8f8f8;
+    color: #2f2f2f;
+}
+
+button.bg--light:hover {
+    background-color: #fcdad4;
+}    
 </span>
                             </code>
                         </pre>

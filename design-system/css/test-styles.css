@@ -81,6 +81,15 @@ html {
         .style {
             background: #f8f8f8 url(../images/moms-hug-side.png) no-repeat top right;
         }
+    }
+
+.components {
+    background: #f8f8f8 url(../images/moms-profile-corner.png) no-repeat top right;
+}
+    @media (min-width: 900px) {
+        .components {
+            background: #f8f8f8 url(../images/moms-profile-side.png) no-repeat top right;
+        }
     } 
 
 .footer {

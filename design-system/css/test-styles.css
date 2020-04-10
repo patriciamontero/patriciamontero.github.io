@@ -29,12 +29,12 @@ html {
 }
     @media (min-width: 600px) {
         .header, .footer, .content {
-            padding: .493rem 3.583rem 0;
+            padding: .493rem 3.653rem 0;
         }
     }
     @media (min-width: 900px) {
         .header, .footer, .content {
-            padding: .493rem 6.192rem 0;
+            padding: .493rem 6.583rem 0;
         }
     }
 
@@ -58,14 +58,14 @@ html {
         .content {
             background: #f8f8f8 url(../images/bg-image-brand-m.png) no-repeat top right;
             display: grid;
-            grid-gap: 0 3.583rem;
+            grid-gap: 0 3.653rem;
             grid-template-columns: minmax(20rem, 30rem) minmax(5rem, 10rem);
         }
     }
     @media (min-width: 900px) {
         .content {
             background: #f8f8f8 url(../images/bg-image-brand-l.png) no-repeat top right;
-            grid-gap: 0 6.192rem;
+            grid-gap: 0 5.202rem;
             grid-template-columns: minmax(30rem, 40rem) minmax(5rem, 10rem);
         }
     }
@@ -105,7 +105,7 @@ html {
 
 .footer {
     background: #f8f8f8 url(../images/mom-walks.png) no-repeat top right;
-    padding-bottom: 6.192rem;
+    padding-bottom: 5.852rem;
 }
 
 /* Navigation -------------------- */
@@ -120,7 +120,7 @@ html {
 
 .nav-main li, .nav-aside li {
     font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-    margin-right: 1.728rem;
+    margin-right: 1.602rem;
 }
 
 .nav-main a:link, .nav-main a:visited,
@@ -160,7 +160,7 @@ a.current:link {
     }
 
 .nav-aside li {
-    margin: 1.2rem 0;
+    margin: 1.125rem 0;
 }
 
 .upcoming {
@@ -171,43 +171,43 @@ a.current:link {
     color: #4f4f4f;
 }
 
-/* Texts -------------------- Modular scale of a 1.2 ratio */
+/* Texts -------------------- Modular scale of a 1.125 ratio */
 
 p, li {
     font: normal 1rem/1.6 'Georgia', Times, serif;
-    margin: 1.2rem 0;
+    margin: 1.125rem 0;
 }
 
 h1 {
-    font: 700 2.986rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 2.281rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 h2 {
-    font: 700 2.488rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 1.602rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 h3 {
-    font: 700 2.074rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 1.424rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 h4 {
-    font: 700 1.728rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 1.266rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 h5 {
-    font: 700 1.44rem/1.2 'Raleway', Helvetica, sans-serif;
+    font: 700 1.125rem/1.2 'Raleway', Helvetica, sans-serif;
 }
 
 .heading {
-    margin: 2.488rem 0 1.2rem;
+    margin: 2.281rem 0 1.125rem;
 }
 
 .tagline {
-    font: italic 1.44rem/1.6 'Georgia', Times, serif;
+    font: italic 1.266rem/1.6 'Georgia', Times, serif;
 }
 
 .intro {
-    font: italic 1.2rem/1.6 'Georgia', Times, serif;
+    font: italic 1.125rem/1.6 'Georgia', Times, serif;
 }
 
 .strong {
@@ -230,20 +230,19 @@ h5 {
 figcaption, .note {
     font-size: 1rem;
     font-style: italic;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.125rem;
 }
 
 .quote {
     background-color: #ffffff;
     border-radius: 3px;
     font-size: 1.125rem;
-    margin: 3rem -3rem 3rem;
-    padding: .5rem 3rem 1rem;
+    margin: 0 -3rem;
+    padding: .25rem 3rem 1rem;
 }
     @media (min-width: 600px) {
         .quote {
-            margin: 2.5rem 0;
-            padding: .25 3rem 1rem;
+            margin: 1.266rem 0;
         }
     }
 
@@ -430,18 +429,18 @@ img {
 
 .example {
     line-height: .5em;
-    margin: 1.728rem 0;
+    margin: 1.602rem 0;
 }
     @media (min-width: 1200px) {
         .example {
             line-height: 1em;
-            margin: 2.074rem 0;
+            margin: 2.027rem 0;
         }
     }
 
     code {
         background-color: #f0f0f0;
-        border-radius: 0.1875rem;
+        border-radius: 3px;
         color: #2f2f2f;
         display: block;
         margin: -1rem 0;
@@ -478,7 +477,7 @@ div[tabindex]:focus {
 .component-container {
     border-bottom: 2px dotted #cccccc;
     margin-bottom: 1rem;
-    padding: 1rem 0 2rem;
+    padding: .125rem 0 1rem;
 }
 
 .component-intro, .heading-button {

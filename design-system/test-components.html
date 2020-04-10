@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Components: links | Pati Montero's design system </title>
-        <meta name="description" content="A button is a distinct visual element where users can click or tap to trigger an action.">
+        <meta name="description" content="A link is a navigational element. It should be brief and descriptive of the intended destination.">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="css/test-styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
                     </li>
                     <li><a href="index.html">Brand</a></li>
                     <li><a href="style.html">Style</a></li>
-                    <li><a class="current" href="components.html">Components</a></li>
+                    <li><a class="current" href="components-buttons.html">Components</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,34 +38,30 @@
                 <nav class="nav-aside">
                     <ul>
                         <li class="disabled">Accordion<span class="upcoming">&mdash;Upcoming</span> </li>
-                        <li><a href="components.html">Buttons</a></li>
+                        <li><a href="components-buttons.html">Buttons</a></li>
                         <li class="disabled">Cards<span class="upcoming">&mdash;Upcoming</span> </li>
                         <li><a href="components-forms.html">Forms</a></li>
                         <li class="disabled">Grids<span class="upcoming">&mdash;Upcoming</span> </li>
                         <li class="disabled">Images<span class="upcoming">&mdash;Upcoming</span> </li>
-                        <li><a href="components-links.html">Links</a></li>
+                        <li><a class="current" href="components-links.html">Links</a></li>
                         <li class="disabled">Status<span class="upcoming">&mdash;Upcoming</span> </li>
                         <li><a href="components-texts.html">Texts</a></li>
                     </ul>
                 </nav>
             </aside>
             <section class="content-wrapped">
-                <h2 id="main-content" class="heading xtarget">Buttons <a href="#main.content">#</a></h2>
-                <p class="intro">A button is a distinct visual element where users can click or tap to trigger an action.</p>
+                <h2 id="main-content" class="heading xtarget">Links <a href="#main.content">#</a></h2>
+                <p class="intro">A link is a navigational element. It should be brief and descriptive of the intended destination.</p>
                 <h3 class="heading">Guidelines</h3>
                 <ul>
-                    <li>Use a <code class="code-in-text">&lt;button&gt;</code> for actions, such as <span class="subtle">copy</span>, <span class="subtle">expand</span>, <span class="subtle">collapse</span> or <span class="subtle">send</span>. If the need is a change of location, use <a class="link" href="components-links.html">a link</a> <code class="code-in-text">&lt;a&gt;</code>. The proper use of their meaning as HTML elements results in a more inclusive experience. It also eases the maintenance and scaling of this design system.</li>
-                    <li>Deliver every button with a precise text that states its purpose. In most cases, it should be a verb that incites action. You'll know it works when the user can predict the outcome before triggering the button.</li>
-                    <li>Keep its content below four words to prevent text wrapping.</li>
-                    <li>Use sentence case for the texts, which means that only the first word starts with a capital letter. Don't use a period in the end.</li>
-                    <li>A primary button conveys the most prominent choice that the user can take in a section. For this reason, there should be only one per page. For supporting actions, pick a secondary button instead.</li>
-                    <li>A button's colour changes depending on its surroundings. It may be any of the four shades picked from the <a class="link" href="style.html#colour">colour palette</a>, as long as it yields an <a class="link" href="style.html#colour-combinations">accessible contrast</a>. The shades are <span class="subtle">dark-accent</span>, <span class="subtle">accent</span>, <span class="subtle">light</span> and <span class="subtle">dark</span>:</li>
-                </ul>
-                <ul>
-                    <li class="square bg--dark-accent">#dd2808</li>
-                    <li class="square bg--accent border">#f96c53</li>
-                    <li class="square bg-light border">#f8f8f8</li>
-                    <li class="square bg--dark">#2f2f2f</li>
+                    <li>Use text links in favour of <a class="link" href="components-buttons.html">buttons</a> for navigation purposes. If it takes you to a new page or section of a page, it should be an anchor element <code class="code-in-text">&lt;a&gt;</code>.</li>
+                    <li>Provide text rather than images, so the content reminds readable. The only exception is the use of logos, as in the case of social media.</li>
+                    <li>Keep the content below four words to prevent text wrapping.</li>
+                    <li>Use meaningful text that gives users an idea of where it's taking them. Avoid the use of vague sentences like <em>Click here</em>.</li>
+                    <li><a class="link" href="https://webaim.org/resources/linkcontrastchecker/">Set a contrast</a> between body text and background colour that complies with standards. Anyone should be able to read it.</li>
+                    <li>Always underline active links. Reinforce them in the hover state with a cursor pointer and hiding the underlining.</li>
+                    <li>Set the font size in relative units to keep it proportional to the reading device.</li>
+                    <li>The focus state must be explicit: a solid contrasting line (#49f9e2). It allows users to distinguish the content they are currently selecting.</li>
                 </ul>
                 <h3 class="heading heading-button" tabindex="-1">
                     <span>Code snippets</span>
@@ -311,246 +307,11 @@ button.bg--light:hover {
                     </div>
                 </div>
 
-                <div class="component-container">
-                    <div class="component-intro">
-                        <h4 id="btn-secondary">Secondary button</h4>
-                        <button data-expands="btn-secondary-content" aria-label="open section" aria-describedby="btn-secondary" aria-expanded="false">
-                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
-                                <g transform="translate(0 -981.5)">
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="btn-secondary-content" class="component-content" hidden="">
-                        <p>A <span class="subtle">light</span> box area (#f8f8f8) with <span class="subtle">dark-accent</span> border and text (#dd2808), this is the main style for secondary buttons. It works better over a light-coloured background or contrasting image.</p>
-                        <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example"><button class="btn-sec">This is a button</button></p>
-                        <div class="code-example bg--photobg5">
-                            <button class="btn-sec">This is a button</button>
-                        </div>
-                        <div class="code-example bg--photobg4">
-                            <button class="btn-sec">This is a button</button>
-                        </div>
-                        <p>These are its code snippets:</p>
-                        <pre>
-                            <code>
-                                <h5 class="heading heading-button">
-                                    <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-secondary">Copy HTML</button>
-                                </h5>
-<span id="html-btn-secondary">&lt;button class="btn-sec"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
-                                <h5 class="heading heading-button">
-                                    <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-secondary">Copy CSS</button>
-                                </h5>
-<span id="css-btn-secondary">
-.btn-sec {
-    background-color: #f8f8f8;
-    border: 2px solid #dd2808;
-    border-radius: 3px;
-    color: #dd2808;
-    cursor: pointer;
-    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-    padding: .5rem .75rem;
-    text-decoration: none;
-}
 
-.btn-sec:hover {
-    background-color: #ffffff;
-}
-</span>
-                            </code>
-                        </pre>
-                    </div>
-                </div>
 
-                <div class="component-container">
-                    <div class="component-intro">
-                        <h4 id="btn-secondary-accent">Secondary accent button</h4>
-                        <button data-expands="btn-secondary-accent-content" aria-label="open section" aria-describedby="btn-secondary-accent" aria-expanded="false">
-                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
-                                <g transform="translate(0 -981.5)">
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="btn-secondary-accent-content" class="component-content" hidden="">
-                        <p>A <span class="subtle">dark</span> box area (#2f2f2f) with <span class="subtle">accent</span> border and text (#f96c53), this is an alternative style. It can work over a dark or light coloured background.</p>
-                        <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example bg--dark"><button class="btn-sec bd--accent">This is a button</button></p>
-                        <div class="code-example bg--photobg2">
-                            <button class="btn-sec bd--accent">This is a button</button>
-                        </div>
-                        <div class="code-example bg--photobg5">
-                            <button class="btn-sec bd--accent">This is a button</button>
-                        </div>
-                        <p>These are its code snippets:</p>
-                        <pre>
-                            <code>
-                                <h5 class="heading heading-button">
-                                    <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-secondary-accent">Copy HTML</button>
-                                </h5>
-<span id="html-btn-secondary-accent">&lt;button class="btn-sec bd--accent"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
-                                <h5 class="heading heading-button">
-                                    <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-secondary-accent">Copy CSS</button>
-                                </h5>
-<span id="css-btn-secondary-accent">
-.btn-sec {
-    background-color: #f8f8f8;
-    border: 2px solid #dd2808;
-    border-radius: 3px;
-    color: #dd2808;
-    cursor: pointer;
-    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-    padding: .5rem .75rem;
-    text-decoration: none;
-}
 
-.btn-sec:hover {
-    background-color: #ffffff;
-}
 
-.bd--accent {
-    background-color: #2f2f2f;
-    border: 2px solid #f96c53;
-    color: #f96c53;
-}
 
-button.bd--accent:hover {
-    background-color: #1f1f1f;
-}
-</span>
-                            </code>
-                        </pre>
-                    </div>
-                </div>
-
-                <div class="component-container">
-                    <div class="component-intro">
-                        <h4 id="btn-secondary-dark">Secondary dark button</h4>
-                        <button data-expands="btn-secondary-dark-content" aria-label="open section" aria-describedby="btn-secondary-dark" aria-expanded="false">
-                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
-                                <g transform="translate(0 -981.5)">
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="btn-secondary-dark-content" class="component-content" hidden="">
-                        <p>A <span class="subtle">light</span> box area (#f8f8f8) with <span class="subtle">dark</span> border and text (#2f2f2f), this is an alternative style. It can work over a dark or light background or contrasting image.</p>
-                        <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example"><button class="btn-sec bd--dark">This is a button</button></p>
-                        <p class="code-example bg--accent"><button class="btn-sec bd--dark">This is a button</button></p>
-                        <div class="code-example bg--photobg4">
-                            <button class="btn-sec bd--dark">This is a button</button>
-                        </div>
-                        <p>These are its code snippets:</p>
-                        <pre>
-                            <code>
-                                <h5 class="heading heading-button">
-                                    <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-secondary-dark">Copy HTML</button>
-                                </h5>
-<span id="html-btn-secondary-dark">&lt;button class="btn-sec bd--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
-                                <h5 class="heading heading-button">
-                                    <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-secondary-dark">Copy CSS</button>
-                                </h5>
-<span id="css-btn-secondary-dark">
-.btn-sec {
-    background-color: #f0f0f0;
-    border: 2px solid #dd2808;
-    border-radius: 3px;
-    color: #dd2808;
-    cursor: pointer;
-    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-    padding: .5rem .75rem;
-    text-decoration: none;
-}
-
-.btn-sec:hover {
-    background-color: #ffffff;
-}
-
-.bd--dark {
-    border: 2px solid #2f2f2f;
-    color: #2f2f2f;
-}
-</span>
-                            </code>
-                        </pre>
-                    </div>
-                </div>
-
-                <div class="component-container">
-                    <div class="component-intro">
-                        <h4 id="btn-secondary-light">Secondary light button</h4>
-                        <button data-expands="btn-secondary-light-content" aria-label="open section" aria-describedby="btn-secondary-light" aria-expanded="false">
-                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
-                                <g transform="translate(0 -981.5)">
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="btn-secondary-light-content" class="component-content" hidden="">
-                        <p>A <span class="subtle">dark</span> box area (#2f2f2f) with <span class="subtle">light</span> border and text (#f8f8f8), this is an alternative style. It can work over a dark background or contrasting image.</p>
-                        <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example bg--darkest-accent"><button class="btn-sec bd--light">This is a button</button></p>
-                        <p class="code-example bg--dark"><button class="btn-sec bd--light">This is a button</button></p>
-                        <div class="code-example bg--photobg4">
-                            <button class="btn-sec bd--light">This is a button</button>
-                        </div>
-                        <p>These are its code snippets:</p>
-                        <pre>
-                            <code>
-                                <h5 class="heading heading-button">
-                                    <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-secondary-light">Copy HTML</button>
-                                </h5>
-<span id="html-btn-secondary-light">&lt;button class="btn-sec bd--light"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
-                                <h5 class="heading heading-button">
-                                    <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-secondary-light">Copy CSS</button>
-                                </h5>
-<span id="css-btn-secondary-light">
-.btn-sec {
-    background-color: #f8f8f8;
-    border: 2px solid #dd2808;
-    border-radius: 3px;
-    color: #dd2808;
-    cursor: pointer;
-    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-    padding: .5rem .75rem;
-    text-decoration: none;
-}
-
-.btn-sec:hover {
-    background-color: #ffffff;
-}
-
-.bd--light {
-    background-color: #2f2f2f;
-    border: 2px solid #f8f8f8;
-    color: #f8f8f8;
-}
-
-button.bd--light:hover {
-    background-color: #1f1f1f;
-}
-</span>
-                            </code>
-                        </pre>
-                    </div>
-                </div>
 
                 <a class="cta" href="components-links.html">Next component: links</a>
             </section>

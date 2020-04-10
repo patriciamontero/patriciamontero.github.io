@@ -82,7 +82,7 @@
                     </div>
                     <div id="lnk-paragraph-content" class="component-content" hidden="">
                         <p>Their styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction.</p>
-                        <p>As these links are part of a paragraph, they should only appear over a plain background to remain legible.</p>
+                        <p>Since these links are part of a paragraph, they should only appear over a plain background to remain legible.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><a href="#0">This link</a>&nbsp; is an example.</p>
                         <p class="code-example bg--dark"><a href="#0">This link</a>&nbsp; is an example.</p>
@@ -94,22 +94,23 @@
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-paragraph">Copy HTML</button>
                                 </h5>
-<span id="html-lnk-paragraph">&lt;p&gt;&lt;a class=“link” href="#0"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
+<span id="html-lnk-paragraph">&lt;p&gt;&lt;a href="#0"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-paragraph">Copy CSS</button>
                                 </h5>
 <span id="css-lnk-paragraph">
-.link:link, .link:visited {
+a:link, a:visited {
     background-color: #fcdad4;
     border-radius: 3px;
     color: #2f2f2f;
     display: inline-block;
+    font: normal 1rem/1.6 'Georgia', Times, serif;
     padding: 0 .25rem;
     transition: all .4s ease-in;
 }
 
-.link:hover, .link:visited:hover, .link:focus {
+a:hover, a:visited:hover, a:focus {
     background-color: #fba798;
     text-decoration: none;
 }
@@ -132,14 +133,13 @@
                         </button>
                     </div>
                     <div id="lnk-cta-content" class="component-content" hidden="">
-                        <p><span class="subtle">Dark</span> text (#2f2f2f) over an <span class="subtle">accent</span> box (#f96c53), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
+                        <p>These statements need an instant response from the user, and they usually appear at the end of a section. Their sentences end without a period.</p>
+                        <p>Since these links are detached phrases, they perform well over any contrasting background.</p>
                         <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example bg--dark"><button class="btn bg--accent">This is a button</button></p>
-                        <div class="code-example bg--photobg2">
-                            <button class="btn bg--accent">This is a button</button>
-                        </div>
+                        <p class="code-example"><a class="cta" href="#0">Another link as example</a></p>
+                        <p class="code-example bg--dark"><a class="cta" href="#0">Another link as example</a></p>
                         <div class="code-example bg--photobg3">
-                            <button class="btn bg--accent">This is a button</button>
+                            <a class="cta" href="#0">Another link as example</a>
                         </div>
                         <p>These are its code snippets:</p>
                         <pre>
@@ -148,34 +148,26 @@
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-cta">Copy HTML</button>
                                 </h5>
-<span id="html-lnk-cta">&lt;button class="btn bg--accent"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-lnk-cta">&lt;p&gt;&lt;a class="cta" href="#0"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-cta">Copy CSS</button>
                                 </h5>
 <span id="css-lnk-cta">
-.btn {
-    background-color: #dd2808;
-    border: 2px solid transparent;
+a:link, a:visited {
+    background-color: #fcdad4;
     border-radius: 3px;
-    color: #f8f8f8;
-    cursor: pointer;
-    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-    padding: .5rem .75rem;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #a71e06;
-}
-
-.bg--accent {
-    background-color: #f96c53;
     color: #2f2f2f;
+    display: inline-block;
+    font: 700 1.25rem/1.6 'Raleway', Helvetica, sans-serif;
+    margin: 1.44rem 0 1.2rem;
+    padding: .25rem .5rem;
+    transition: all .4s ease-in;
 }
 
-button.bg--accent:hover {
+a:hover, a:visited:hover, a:focus {
     background-color: #fba798;
+    text-decoration: none;
 }
 </span>
                             </code>

@@ -25,16 +25,16 @@ html {
     }
 
 .header, .footer, .content {
-    padding: 1.2rem;
+    padding: .493rem;
 }
     @media (min-width: 600px) {
         .header, .footer, .content {
-            padding: 1.2rem 3.583rem;
+            padding: .493rem 3.583rem 0;
         }
     }
     @media (min-width: 900px) {
         .header, .footer, .content {
-            padding: 1.2rem 6.192rem;
+            padding: .493rem 6.192rem 0;
         }
     }
 
@@ -125,6 +125,7 @@ html {
 
 .nav-main a:link, .nav-main a:visited,
 .nav-aside a:link, .nav-aside a:visited {
+    background-color: transparent;
     color: #2f2f2f;
     cursor: pointer;
     fill: #2f2f2f;
@@ -136,8 +137,10 @@ html {
     text-decoration: none;
 }
 
-.current {
-    border-bottom: 5px solid #2f2f2f;
+a.current:link {
+    border-bottom: 3px solid #2f2f2f;
+    border-radius: 0;
+    padding: 0;
     text-decoration: none;
 }
 
@@ -219,9 +222,9 @@ h5 {
     background-color: #f96c53;
     border: none;
     color: #f96c53;
-    height: 5px;
+    height: 1rem;
     margin: 2rem 0 0;
-    width: 6rem;
+    width: 6.583rem;
 }
 
 figcaption, .note {
@@ -249,7 +252,7 @@ figcaption, .note {
 
 /* Links -------------------- */
 
-.link:link, .link:visited, .cta:link, .cta:visited {
+a:link, a:visited, .cta:link, .cta:visited {
     background-color: #fcdad4;
     border-radius: 3px;
     color: #2f2f2f;
@@ -258,7 +261,7 @@ figcaption, .note {
     transition: all .4s ease-in;
 }
 
-.link:hover, .link:visited:hover, .link:focus,
+a:hover, a:visited:hover, a:focus,
 .cta:hover, .cta:visited:hover, .cta:focus {
     background-color: #fba798;
     text-decoration: none;

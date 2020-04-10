@@ -37,14 +37,14 @@
             <aside>
                 <nav class="nav-aside">
                     <ul>
-                        <li class="disabled">Accordion<span class="upcoming">&mdash;Upcoming</span> </li>
+                        <li class="disabled">Accordion<span class="upcoming">&mdash;Upcoming</span></li>
                         <li><a href="components-buttons.html">Buttons</a></li>
-                        <li class="disabled">Cards<span class="upcoming">&mdash;Upcoming</span> </li>
-                        <li><a href="components-forms.html">Forms</a></li>
-                        <li class="disabled">Grids<span class="upcoming">&mdash;Upcoming</span> </li>
-                        <li class="disabled">Images<span class="upcoming">&mdash;Upcoming</span> </li>
+                        <li class="disabled">Cards<span class="upcoming">&mdash;Upcoming</span></li>
+                        <li class="dissable">Forms<span class="upcoming">&mdash;Upcoming</span></li>
+                        <li class="disabled">Grids<span class="upcoming">&mdash;Upcoming</span></li>
+                        <li class="disabled">Images<span class="upcoming">&mdash;Upcoming</span></li>
                         <li><a class="current" href="components-links.html">Links</a></li>
-                        <li class="disabled">Status<span class="upcoming">&mdash;Upcoming</span> </li>
+                        <li class="disabled">Status<span class="upcoming">&mdash;Upcoming</span></li>
                         <li><a href="components-texts.html">Texts</a></li>
                     </ul>
                 </nav>
@@ -81,15 +81,12 @@
                         </button>
                     </div>
                     <div id="lnk-paragraph-content" class="component-content" hidden="">
-                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark-accent</span> box area (#dd2808), this is the default style for all buttons. It can only perform accessibly over a light-coloured background or contrasting image.</p>
+                        <p>Their styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction.</p>
+                        <p>As these links are part of a paragraph, they should only appear over a plain background to remain legible.</p>
                         <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example"><button class="btn">This is a button</button></p>
-                        <div class="code-example bg--photobg5">
-                            <button class="btn">This is a button</button>
-                        </div>
-                        <div class="code-example bg--photobg1">
-                            <button class="btn">This is a button</button>
-                        </div>
+                        <p class="code-example"><a class="link" href="#0">This link</a>&nbsp; is an example.</p>
+                        <p class="code-example bg--dark"><a class="link" href="#0">This link</a>&nbsp; is an example.</p>
+                        <p class="code-example bg--dark-accent"><a class="link" href="#0">This link</a>&nbsp; is an example.</p>
                         <p>These are its code snippets:</p>
                         <pre>
                             <code>
@@ -97,25 +94,24 @@
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-paragraph">Copy HTML</button>
                                 </h5>
-<span id="html-lnk-paragraph">&lt;button class="btn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-lnk-paragraph">&lt;p&gt;&lt;a class=“link” href="#0"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-paragraph">Copy CSS</button>
                                 </h5>
 <span id="css-lnk-paragraph">
-.btn {
-    background-color: #dd2808;
-    border: 2px solid transparent;
+.link:link, .link:visited {
+    background-color: #fcdad4;
     border-radius: 3px;
-    color: #f8f8f8;
-    cursor: pointer;
-    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-    padding: .5rem .75rem;
-    text-decoration: none;
+    color: #2f2f2f;
+    display: inline-block;
+    padding: 0 .25rem;
+    transition: all .4s ease-in;
 }
 
-.btn:hover {
-    background-color: #a71e06;
+.link:hover, .link:visited:hover, .link:focus {
+    background-color: #fba798;
+    text-decoration: none;
 }
 </span>
                             </code>
@@ -365,13 +361,15 @@ button.bg--light:hover {
                     </div>
                 </div>
 
-
-
-
-
-
-
-                <a class="cta" href="components-links.html">Next component: links</a>
+                <h3 class="heading">Sources of inspiration</h3>
+                    <ul>
+                        <li><a class="link" href="https://css-tricks.com/a-complete-guide-to-links-and-buttons/">A Complete Guide to Links and Buttons</a>&mdash;CSS-Tricks</li>
+                        <li><a class="link" href="https://www.smashingmagazine.com/printed-books/inclusive-front-end-design-patterns/">Inclusive Design Patterns</a> (book)&mdash;Heydon Pickering</li>
+                        <li><a class="link" href="https://www.carbondesignsystem.com/components/link/usage/">Link</a>&mdash;Carbon Design System</li>
+                        <li><a class="link" href="https://polaris.shopify.com/components/navigation/link#navigation">Link</a>&mdash;Shopify's design system</li>
+                        <li><a class="link" href="https://heydonworks.com/article/reinventing-the-hyperlink/">Reinventing the Hyperlink</a>&mdash;Heydon Pickering</li>
+                    </ul>
+                <a class="cta" href="components-texts.html">Anything to say about texts?</a>
             </section>
         </article>
         <footer class="footer">

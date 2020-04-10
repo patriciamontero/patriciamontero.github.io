@@ -49,13 +49,14 @@ html {
 }
 
 .content {
-    background: #f8f8f8 url(../images/moms-hair-corner.png) no-repeat top right;
+    background: #f8f8f8 url(../images/bg-image-brand-s.png) no-repeat top right;
     color: #2f2f2f;
     transition: all .4 ease-in;
 }
 @supports (display: grid) {
     @media (min-width: 600px) {
         .content {
+            background: #f8f8f8 url(../images/bg-image-brand-m.png) no-repeat top right;
             display: grid;
             grid-gap: 0 3.583rem;
             grid-template-columns: minmax(20rem, 30rem) minmax(5rem, 10rem);
@@ -63,7 +64,7 @@ html {
     }
     @media (min-width: 900px) {
         .content {
-            background: #f8f8f8 url(../images/moms-hair-side.png) no-repeat top right;
+            background: #f8f8f8 url(../images/bg-image-brand-l.png) no-repeat top right;
             grid-gap: 0 6.192rem;
             grid-template-columns: minmax(30rem, 40rem) minmax(5rem, 10rem);
         }
@@ -75,20 +76,30 @@ html {
 }
 
 .style {
-    background: #f8f8f8 url(../images/moms-hug-corner.png) no-repeat top right;
+    background: #f8f8f8 url(../images/bg-image-style-s.png) no-repeat top right;
 }
+    @media (min-width: 600px) {
+        .style {
+            background: #f8f8f8 url(../images/bg-image-style-m.png) no-repeat top right;
+        }
+    }
     @media (min-width: 900px) {
         .style {
-            background: #f8f8f8 url(../images/moms-hug-side.png) no-repeat top right;
+            background: #f8f8f8 url(../images/bg-image-style-l.png) no-repeat top right;
         }
     }
 
 .components {
-    background: #f8f8f8 url(../images/moms-profile-corner.png) no-repeat top right;
+    background: #f8f8f8 url(../images/bg-image-components-s.png) no-repeat top right;
 }
+    @media (min-width: 600px) {
+        .components {
+            background: #f8f8f8 url(../images/bg-image-components-m.png) no-repeat top right;
+        }
+    } 
     @media (min-width: 900px) {
         .components {
-            background: #f8f8f8 url(../images/moms-profile-side.png) no-repeat top right;
+            background: #f8f8f8 url(../images/bg-image-components-l.png) no-repeat top right;
         }
     } 
 

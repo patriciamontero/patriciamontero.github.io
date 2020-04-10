@@ -56,7 +56,7 @@
                 <ul>
                     <li>Use text links in favour of <a class="link" href="components-buttons.html">buttons</a> for navigation purposes. If it takes you to a new page or section of a page, it should be an anchor element <code class="code-in-text">&lt;a&gt;</code>.</li>
                     <li>Provide text rather than images, so the content reminds readable. The only exception is the use of logos, as in the case of social media.</li>
-                    <li>Keep the content below four words to prevent text wrapping.</li>
+                    <li>Keep the content below five words to prevent text wrapping.</li>
                     <li>Use meaningful text that gives users an idea of where it's taking them. Avoid the use of vague sentences like <em>Click here</em>.</li>
                     <li><a class="link" href="https://webaim.org/resources/linkcontrastchecker/">Set a contrast</a> between body text and background colour that complies with standards. Anyone should be able to read it.</li>
                     <li>Always underline active links. Reinforce them in the hover state with a cursor pointer and hiding the underlining.</li>
@@ -70,8 +70,8 @@
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="btn-primary">Primary button</h4>
-                        <button data-expands="btn-primary-content" aria-label="open section" aria-describedby="btn-primary" aria-expanded="false">
+                        <h4 id="lnk-paragraph">Links within a paragraph</h4>
+                        <button data-expands="lnk-paragraph-content" aria-label="open section" aria-describedby="lnk-paragraph" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -80,7 +80,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div id="btn-primary-content" class="component-content" hidden="">
+                    <div id="lnk-paragraph-content" class="component-content" hidden="">
                         <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark-accent</span> box area (#dd2808), this is the default style for all buttons. It can only perform accessibly over a light-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><button class="btn">This is a button</button></p>
@@ -95,14 +95,14 @@
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-paragraph">Copy HTML</button>
                                 </h5>
-<span id="html-btn-primary">&lt;button class="btn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-lnk-paragraph">&lt;button class="btn"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-paragraph">Copy CSS</button>
                                 </h5>
-<span id="css-btn-primary">
+<span id="css-lnk-paragraph">
 .btn {
     background-color: #dd2808;
     border: 2px solid transparent;
@@ -125,8 +125,8 @@
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="btn-primary-accent">Primary accent button</h4>
-                        <button data-expands="btn-primary-accent-content" aria-label="open section" aria-describedby="btn-primary-accent" aria-expanded="false">
+                        <h4 id="lnk-cta">Links as a call-to-action</h4>
+                        <button data-expands="lnk-cta-content" aria-label="open section" aria-describedby="lnk-cta" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -135,7 +135,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div id="btn-primary-accent-content" class="component-content" hidden="">
+                    <div id="lnk-cta-content" class="component-content" hidden="">
                         <p><span class="subtle">Dark</span> text (#2f2f2f) over an <span class="subtle">accent</span> box (#f96c53), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example bg--dark"><button class="btn bg--accent">This is a button</button></p>
@@ -150,14 +150,14 @@
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary-accent">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-cta">Copy HTML</button>
                                 </h5>
-<span id="html-btn-primary-accent">&lt;button class="btn bg--accent"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-lnk-cta">&lt;button class="btn bg--accent"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary-accent">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-cta">Copy CSS</button>
                                 </h5>
-<span id="css-btn-primary-accent">
+<span id="css-lnk-cta">
 .btn {
     background-color: #dd2808;
     border: 2px solid transparent;
@@ -189,8 +189,8 @@ button.bg--accent:hover {
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="btn-primary-dark">Primary dark button</h4>
-                        <button data-expands="btn-primary-dark-content" aria-label="open section" aria-describedby="btn-primary-dark" aria-expanded="false">
+                        <h4 id="lnk-nabar">Links in the navigation bar</h4>
+                        <button data-expands="lnk-nabar-content" aria-label="open section" aria-describedby="lnk-nabar" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -199,7 +199,7 @@ button.bg--accent:hover {
                             </svg>
                         </button>
                     </div>
-                    <div id="btn-primary-dark-content" class="component-content" hidden="">
+                    <div id="lnk-nabar-content" class="component-content" hidden="">
                         <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><button class="btn bg--dark">This is a button</button></p>
@@ -212,14 +212,14 @@ button.bg--accent:hover {
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary-dark">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-nabar">Copy HTML</button>
                                 </h5>
-<span id="html-btn-primary-dark">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-lnk-nabar">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary-dark">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-nabar">Copy CSS</button>
                                 </h5>
-<span id="css-btn-primary-dark">
+<span id="css-lnk-nabar">
 .btn {
     background-color: #dd2808;
     border: 2px solid transparent;
@@ -247,8 +247,8 @@ button.bg--accent:hover {
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="btn-primary-light">Primary light button</h4>
-                        <button data-expands="btn-primary-light-content" aria-label="open section" aria-describedby="btn-primary-light" aria-expanded="false">
+                        <h4 id="lnk-aside">Links in the aside</h4>
+                        <button data-expands="lnk-aside-content" aria-label="open section" aria-describedby="lnk-aside" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -257,7 +257,65 @@ button.bg--accent:hover {
                             </svg>
                         </button>
                     </div>
-                    <div id="btn-primary-light-content" class="component-content" hidden="">
+                    <div id="lnk-aside-content" class="component-content" hidden="">
+                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example"><button class="btn bg--dark">This is a button</button></p>
+                        <p class="code-example bg--accent"><button class="btn bg--dark">This is a button</button></p>
+                        <div class="code-example bg--photobg4">
+                            <button class="btn bg--dark">This is a button</button>
+                        </div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-aside">Copy HTML</button>
+                                </h5>
+<span id="html-lnk-aside">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-aside">Copy CSS</button>
+                                </h5>
+<span id="css-lnk-aside">
+.btn {
+    background-color: #dd2808;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    color: #f8f8f8;
+    cursor: pointer;
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem .75rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #a71e06;
+}
+
+.bg--dark {
+    background-color: #2f2f2f;
+    color: #f8f8f8;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="lnk-skip">Skip to content link</h4>
+                        <button data-expands="lnk-skip-content" aria-label="open section" aria-describedby="lnk-skip" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="lnk-skip-content" class="component-content" hidden="">
                         <p><span class="subtle">Dark</span> text (#2f2f2f) over a <span class="subtle">light</span> box area (#f8f8f8), this is an alternative style. It should only appear over a dark-coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example bg--dark-accent"><button class="btn bg--light">This is a button</button></p>
@@ -270,14 +328,14 @@ button.bg--accent:hover {
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-btn-primary-light">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-skip">Copy HTML</button>
                                 </h5>
-<span id="html-btn-primary-light">&lt;button class="btn bg--light"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-lnk-skip">&lt;button class="btn bg--light"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-btn-primary-light">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-skip">Copy CSS</button>
                                 </h5>
-<span id="css-btn-primary-light">
+<span id="css-lnk-skip">
 .btn {
     background-color: #dd2808;
     border: 2px solid transparent;

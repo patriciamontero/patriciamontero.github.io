@@ -46,6 +46,7 @@ html {
     margin: 0;
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 .content {
@@ -614,4 +615,17 @@ button i::before {
 
 .bg--photobg5 {
     background: url(../images/photo-bus.jpg) no-repeat center right;
+}
+
+.nmgn:link {
+    margin: 0;
+}
+
+.nhdn:link /* skip link example */ {
+    background-color: #f96c53;
+    font: 700 .75rem/1.2 'Raleway', Helvetica, sans-serif;
+    padding: .5rem;
+    position: unset;
+    text-decoration: none;
+    z-index: 1;
 }

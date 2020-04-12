@@ -139,9 +139,10 @@ html {
     text-decoration: none;
 }
 
-a.current:link {
-    border-bottom: 3px solid #2f2f2f;
+a.current:link, a.current:visited {
+    border-bottom: 3px solid #f96c53;
     border-radius: 0;
+    cursor: unset;
     padding: 0;
     text-decoration: none;
 }
@@ -201,7 +202,7 @@ h5 {
 }
 
 .heading {
-    margin: 2.281rem 0 1.125rem;
+    margin: 2.566rem 0 1.125rem;
 }
 
 .tagline {

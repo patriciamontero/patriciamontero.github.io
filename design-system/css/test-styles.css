@@ -618,6 +618,10 @@ button i::before {
     background: url(../images/photo-bus.jpg) no-repeat center right;
 }
 
+.invert {
+    background: #2f2f2f url(../images/photo-illu.png) no-repeat center center;
+}
+
 .nmgn:link {
     margin: 0;
 }
@@ -629,4 +633,12 @@ button i::before {
     position: unset;
     text-decoration: none;
     z-index: 1;
+}
+
+a.brdbtm--light:link, a.brdbtm--light:visited /* current's light border */ {
+    border-bottom: 3px solid #ffffff;
+}
+
+a.clr--light:link, a.clr--light:visited /* light colour links */ {
+    color: #f8f8f8;
 }

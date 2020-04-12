@@ -51,7 +51,7 @@
                 </nav>
             </aside>
             <section class="content-wrapped">
-                <h2 id="main-content" class="heading xtarget">Links <a href="#main.content">#</a></h2>
+                <h2 id="main-content" class="heading xtarget">Navigation <a href="#main.content">#</a></h2>
                 <p class="intro">The navigation bar enables shifting between the essential pages. It should be evident without taking up too much space, especially on mobile.</p>
                 <h3>Guidelines</h3>
                 <ul>
@@ -68,8 +68,8 @@
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="lnk-nabar">Links in the navigation bar</h4>
-                        <button data-expands="lnk-nabar-content" aria-label="open section" aria-describedby="lnk-nabar" aria-expanded="false">
+                        <h4 id="nvbr-main-lght">Light main navigation</h4>
+                        <button data-expands="nvbr-main-lght-content" aria-label="open section" aria-describedby="nvbr-main-lght" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -78,7 +78,205 @@
                             </svg>
                         </button>
                     </div>
-                    <div id="lnk-nabar-content" class="component-content" hidden="">
+                    <div id="nvbr-main-lght-content" class="component-content" hidden="">
+                        <p><span class="subtle">Dark</span> text (#f8f8f8) over a light-coloured area. A thicker <span class="subtle">accent</span> underline identifies the current page. If contrast is inadequate, use an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <div class="code-example bg--accent">
+                            <nav class="nav-main">
+                                <ul>
+                                    <li><a href="#0">Item 1</a></li>
+                                    <li><a href="#0">Item 2</a></li>
+                                    <li><a class="current brdbtm--light" href="#0">Item 3</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="code-example bg--lightest-accent">
+                            <nav class="nav-main">
+                                <ul>
+                                    <li><a href="#0">Item 1</a></li>
+                                    <li><a href="#0">Item 2</a></li>
+                                    <li><a class="current" href="#0">Item 3</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="code-example style">
+                            <nav class="nav-main">
+                                <ul>
+                                    <li><a href="#0">Item 1</a></li>
+                                    <li><a href="#0">Item 2</a></li>
+                                    <li><a class="current" href="#0">Item 3</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-nvbr-main-lght">Copy HTML</button>
+                                </h5>
+<span id="html-nvbr-main-lght">
+&lt;nav class="nav-main"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#0"&gt;<span class="code-accent">Item 1</span>&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#0"&gt;<span class="code-accent">Item 2</span>&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="current" href="#0"&gt;<span class="code-accent">Item 3</span>&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-nvbr-main-lght">Copy CSS</button>
+                                </h5>
+                <span id="css-nvbr-main-lght">
+.nav-main ul {
+    display: flex;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 15rem;
+}
+
+.nav-main li {
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin-right: 1.602rem;
+}
+
+.nav-main a:link, .nav-main a:visited {
+    background-color: transparent;
+    color: #2f2f2f;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.nav-main a:hover, .nav-main a:visited:hover {
+    text-decoration: none;
+}
+
+a.current:link, a.current:visited {
+    border-bottom: 3px solid #f96c53;
+    border-radius: 0;
+    cursor: unset;
+    padding: 0;
+    text-decoration: none;
+}
+                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="nvbr-main-drk">Dark main navigation</h4>
+                        <button data-expands="nvbr-main-drk-content" aria-label="open section" aria-describedby="nvbr-main-drk" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="nvbr-main-drk-content" class="component-content" hidden="">
+                        <p><span class="subtle">Light</span> text (#2f2f2f) over a dark-coloured area. A thicker <span class="subtle">accent</span> underline identifies the current page. If contrast is inadequate, use an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <div class="code-example bg--dark">
+                            <nav class="nav-main">
+                                <ul>
+                                    <li><a class="clr--light" href="#0">Item 1</a></li>
+                                    <li><a class="clr--light" href="#0">Item 2</a></li>
+                                    <li><a class="current clr--light" href="#0">Item 3</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="code-example bg--dark invert">
+                            <nav class="nav-main">
+                                <ul>
+                                    <li><a class="clr--light" href="#0">Item 1</a></li>
+                                    <li><a class="clr--light" href="#0">Item 2</a></li>
+                                    <li><a class="current clr--light" href="#0">Item 3</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="code-example bg--darkest-accent">
+                            <nav class="nav-main">
+                                <ul>
+                                    <li><a class="clr--light" href="#0">Item 1</a></li>
+                                    <li><a class="clr--light" href="#0">Item 2</a></li>
+                                    <li><a class="current brdbtm--light clr--light" href="#0">Item 3</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-nvbr-main-drk">Copy HTML</button>
+                                </h5>
+<span id="html-nvbr-main-drk">
+&lt;nav class="nav-main"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#0"&gt;<span class="code-accent">Item 1</span>&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#0"&gt;<span class="code-accent">Item 2</span>&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class="current" href="#0"&gt;<span class="code-accent">Item 3</span>&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-nvbr-main-drk">Copy CSS</button>
+                                </h5>
+                <span id="css-nvbr-main-drk">
+.nav-main ul {
+    display: flex;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 15rem;
+}
+
+.nav-main li {
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin-right: 1.602rem;
+}
+
+.nav-main a:link, .nav-main a:visited {
+    background-color: transparent;
+    color: #f8f8f8;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+.nav-main a:hover, .nav-main a:visited:hover {
+    text-decoration: none;
+}
+
+a.current:link, a.current:visited {
+    border-bottom: 3px solid #f96c53;
+    border-radius: 0;
+    cursor: unset;
+    padding: 0;
+    text-decoration: none;
+}
+                </span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="nvbr-aside-lght">Light aside navigation</h4>
+                        <button data-expands="nvbr-aside-lght-content" aria-label="open section" aria-describedby="nvbr-aside-lght" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="nvbr-aside-lght-content" class="component-content" hidden="">
                         <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><button class="btn bg--dark">This is a button</button></p>
@@ -91,14 +289,14 @@
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-nabar">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-nvbr-aside-lght">Copy HTML</button>
                                 </h5>
-<span id="html-lnk-nabar">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-nvbr-aside-lght">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-nabar">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-nvbr-aside-lght">Copy CSS</button>
                                 </h5>
-                <span id="css-lnk-nabar">
+                <span id="css-nvbr-aside-lght">
 .btn {
 background-color: #dd2808;
 border: 2px solid transparent;
@@ -123,11 +321,11 @@ color: #f8f8f8;
                         </pre>
                     </div>
                 </div>
-                
+
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="lnk-aside">Links in the aside</h4>
-                        <button data-expands="lnk-aside-content" aria-label="open section" aria-describedby="lnk-aside" aria-expanded="false">
+                        <h4 id="nvbr-aside-drk">Dark aside navigation</h4>
+                        <button data-expands="nvbr-aside-drk-content" aria-label="open section" aria-describedby="nvbr-aside-drk" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -136,7 +334,7 @@ color: #f8f8f8;
                             </svg>
                         </button>
                     </div>
-                    <div id="lnk-aside-content" class="component-content" hidden="">
+                    <div id="nvbr-aside-drk-content" class="component-content" hidden="">
                         <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><button class="btn bg--dark">This is a button</button></p>
@@ -149,14 +347,14 @@ color: #f8f8f8;
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-aside">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-nvbr-aside-drk">Copy HTML</button>
                                 </h5>
-<span id="html-lnk-aside">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-nvbr-aside-drk">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-aside">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-nvbr-aside-drk">Copy CSS</button>
                                 </h5>
-                <span id="css-lnk-aside">
+                <span id="css-nvbr-aside-drk">
 .btn {
 background-color: #dd2808;
 border: 2px solid transparent;
@@ -188,7 +386,7 @@ color: #f8f8f8;
                     <li><a href="https://polaris.shopify.com/components/navigation/navigation#navigation">Navigation</a>&mdash;Shopify's design system</li>
                     <li><a href="https://material.io/components/navigation-drawer/">Navigation drawer</a>&mdash;Material Design </li>
                 </ul>
-                <a class="cta" href="components-texts.html">And what about texts?</a>
+                <a class="cta" href="components-texts.html">And how about texts?</a>
             </section>
         </article>
         <footer class="footer">

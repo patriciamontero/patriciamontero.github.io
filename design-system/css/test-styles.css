@@ -156,7 +156,7 @@ a.current:link, a.current:visited {
     @supports (display: grid) {
         @media (min-width: 600px) {
             .nav-aside ul {
-                position: fixed;
+                position: absolute;
                 top: 8rem;
             }
         }
@@ -179,6 +179,10 @@ a.current:link, a.current:visited {
 p, li {
     font: normal 1rem/1.6 'Georgia', Times, serif;
     margin: 1.125rem 0;
+}
+
+ul {
+    list-style-type: square;
 }
 
 h1 {

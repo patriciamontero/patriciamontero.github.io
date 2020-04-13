@@ -651,6 +651,16 @@ a.brdbtm--light:link, a.brdbtm--light:visited /* current's light border */ {
     border-bottom: 3px solid #ffffff;
 }
 
-a.clr--light:link, a.clr--light:visited /* light colour links */ {
+a.clr--light:link, a.clr--light:visited,
+.clr--light /* light colour links */ {
     color: #f8f8f8;
+}
+
+.clr--dark-ish {
+    color: #9f9f9f;
+}
+
+.xmp ul {
+    margin: 0;
+    position: initial;
 }

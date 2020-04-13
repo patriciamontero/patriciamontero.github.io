@@ -31,7 +31,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: navigation</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-04-12">Last updated on April 12, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-04-13">Last updated on April 13, 2020&mdash;3 min read</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -55,8 +55,9 @@
                 <p class="intro">The navigation bar enables shifting between the essential pages. It should be evident without taking up too much space, especially on mobile.</p>
                 <h3>Guidelines</h3>
                 <ul>
-                    <li>The navigation bar or <span class="subtle">navbar</span> is a list of <a href="components-links.html">links</a> that redirect users to other pages. Given its fundamental browsing role, it must be available at all times. One way to achieve this is by using a sticky navigation bar that stays on top of the page.</li>
+                    <li>The navigation bar&mdash;or <span class="subtle">navbar</span>&mdash;is a list of <a href="components-links.html">links</a> that redirect users to other pages. Given its fundamental browsing role, it must be available at all times. One way to achieve this is by using a <span class="subtle">sticky</span> navigation bar that stays on top of the page.</li>
                     <li>Whenever possible, keep under four the total items in the navbar. That reduces the need for a <a href="https://www.nngroup.com/articles/hamburger-menu-vs-pizza/">hamburger menu</a> on mobile devices.</li>
+                    <li>However, the secondary navigation menu&mdash;or <span class="subtle">aside</span>&mdash;can have up to ten elements.</li>
                     <li>Identify the current page on the navbar with a thicker underline. It may allow the users to know their location on the website.</li>
                     <li>To label each item, use as few words as possible. It eases the creation of compact menus that are easier to read and occupy the less real state.</li>
                     <li>Use sentence case for the texts, which means that only the first word starts with a capital letter.</li>
@@ -80,6 +81,7 @@
                     </div>
                     <div id="nvbr-main-lght-content" class="component-content" hidden="">
                         <p><span class="subtle">Dark</span> text (#f8f8f8) over a light-coloured area. A thicker <span class="subtle">accent</span> underline identifies the current page. If contrast is inadequate, use an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
+                        <p>This navigation bar is <span class="subtle">sticky</span>, which means that it stays invariably on top of the page.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <div class="code-example bg--accent">
                             <nav class="nav-main">
@@ -179,6 +181,7 @@ a.current:link, a.current:visited {
                     </div>
                     <div id="nvbr-main-drk-content" class="component-content" hidden="">
                         <p><span class="subtle">Light</span> text (#2f2f2f) over a dark-coloured area. A thicker <span class="subtle">accent</span> underline identifies the current page. If contrast is inadequate, use an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
+                        <p>This navigation bar is <span class="subtle">sticky</span>, which means that it stays invariably on top of the page.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <div class="code-example bg--dark">
                             <nav class="nav-main">
@@ -277,12 +280,35 @@ a.current:link, a.current:visited {
                         </button>
                     </div>
                     <div id="nvbr-aside-lght-content" class="component-content" hidden="">
-                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
+                        <p><span class="subtle">Dark</span> text (#f8f8f8) over a light-coloured area. A thicker <span class="subtle">accent</span> underline identifies the current page. If contrast is inadequate, use an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
+                        <p>Unlike the sticky main navbar, this navigation menu goes along with the flow of the page. Most of their items are active links, but some of them may be temporarily disabled.</p>
                         <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example"><button class="btn bg--dark">This is a button</button></p>
-                        <p class="code-example bg--accent"><button class="btn bg--dark">This is a button</button></p>
-                        <div class="code-example bg--photobg4">
-                            <button class="btn bg--dark">This is a button</button>
+                        <div class="code-example bg--accent">
+                            <nav class="nav-aside xmp">
+                                <ul>
+                                    <li><a href="#0">Item 1</a></li>
+                                    <li><a class="current brdbtm--light" href="#0">Item 2</a></li>
+                                    <li class="disabled">Item 3<span class="upcoming">&mdash;Upcoming</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="code-example bg--lightest-accent">
+                            <nav class="nav-aside xmp">
+                                <ul>
+                                    <li><a href="#0">Item 1</a></li>
+                                    <li><a class="current" href="#0">Item 2</a></li>
+                                    <li class="disabled">Item 3<span class="upcoming">&mdash;Upcoming</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="code-example style">
+                            <nav class="nav-aside xmp">
+                                <ul>
+                                    <li><a href="#0">Item 1</a></li>
+                                    <li><a class="current" href="#0">Item 2</a></li>
+                                    <li class="disabled">Item 3<span class="upcoming">&mdash;Upcoming</span></li>
+                                </ul>
+                            </nav>
                         </div>
                         <p>These are its code snippets:</p>
                         <pre>
@@ -291,30 +317,70 @@ a.current:link, a.current:visited {
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-nvbr-aside-lght">Copy HTML</button>
                                 </h5>
-<span id="html-nvbr-aside-lght">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-nvbr-aside-lght">
+&lt;nav class="nav-aside"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#0"&gt;<span class="code-accent">Item 1</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="current" href="#0"&gt;<span class="code-accent">Item 2</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="disabled"&gt;<span class="code-accent">Item 3</span>&lt;span class="upcoming"&gt;<span class="code-accent">&mdash;Upcoming</span>&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-nvbr-aside-lght">Copy CSS</button>
                                 </h5>
                 <span id="css-nvbr-aside-lght">
-.btn {
-background-color: #dd2808;
-border: 2px solid transparent;
-border-radius: 3px;
-color: #f8f8f8;
-cursor: pointer;
-font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-padding: .5rem .75rem;
-text-decoration: none;
+.nav-aside li {
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin-right: 1.602rem;
 }
 
-.btn:hover {
-background-color: #a71e06;
+.nav-aside a:link, .nav-aside a:visited {
+    background-color: transparent;
+    color: #2f2f2f;
+    cursor: pointer;
+    fill: #2f2f2f;
+    padding-left: 0;
 }
 
-.bg--dark {
-background-color: #2f2f2f;
-color: #f8f8f8;
+.nav-aside a:hover, .nav-aside a:visited:hover {
+    text-decoration: none;
+}
+
+a.current:link, a.current:visited {
+    border-bottom: 3px solid #f96c53;
+    border-radius: 0;
+    cursor: unset;
+    padding: 0;
+    text-decoration: none;
+}
+
+.nav-aside ul {
+    display: block;
+    list-style: none;
+    margin-top: 3rem;
+    position: unset;
+}
+    @supports (display: grid) {
+        @media (min-width: 600px) {
+            .nav-aside ul {
+                position: absolute;
+                top: 8rem;
+            }
+        }
+    }
+
+.nav-aside li {
+    margin: 1.125rem 0;
+}
+
+.upcoming {
+    font: italic 1rem/1.6 'Georgia', Helvetica, sans-serif;
+}
+
+.disabled {
+    color: #4f4f4f;
 }
                 </span>
                             </code>
@@ -335,12 +401,35 @@ color: #f8f8f8;
                         </button>
                     </div>
                     <div id="nvbr-aside-drk-content" class="component-content" hidden="">
-                        <p><span class="subtle">Light</span> text (#f8f8f8) over a <span class="subtle">dark</span> box area (#2f2f2f), this is an alternative style. It should appear over a light or accent coloured background or contrasting image.</p>
+                        <p><span class="subtle">Light</span> text (#2f2f2f) over a light-coloured area. A thicker <span class="subtle">accent</span> underline identifies the current page. If contrast is inadequate, use an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
+                        <p>Unlike the sticky main navbar, this navigation menu goes along with the flow of the page. Most of their items are active links, but some of them may be temporarily disabled.</p>
                         <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example"><button class="btn bg--dark">This is a button</button></p>
-                        <p class="code-example bg--accent"><button class="btn bg--dark">This is a button</button></p>
-                        <div class="code-example bg--photobg4">
-                            <button class="btn bg--dark">This is a button</button>
+                        <div class="code-example bg--dark">
+                            <nav class="nav-aside xmp">
+                                <ul>
+                                    <li><a class="clr--light" href="#0">Item 1</a></li>
+                                    <li><a class="current clr--light" href="#0">Item 2</a></li>
+                                    <li class="disabled clr--dark-ish">Item 3<span class="upcoming">&mdash;Upcoming</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="code-example bg--dark invert">
+                            <nav class="nav-aside xmp">
+                                <ul>
+                                    <li><a class="clr--light" href="#0">Item 1</a></li>
+                                    <li><a class="current clr--light" href="#0">Item 2</a></li>
+                                    <li class="disabled clr--dark-ish">Item 3<span class="upcoming">&mdash;Upcoming</span></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="code-example bg--darkest-accent">
+                            <nav class="nav-aside xmp">
+                                <ul>
+                                    <li><a class="clr--light" href="#0">Item 1</a></li>
+                                    <li><a class="current clr--light brdbtm--light" href="#0">Item 2</a></li>
+                                    <li class="disabled clr--dark-ish">Item 3<span class="upcoming">&mdash;Upcoming</span></li>
+                                </ul>
+                            </nav>
                         </div>
                         <p>These are its code snippets:</p>
                         <pre>
@@ -349,30 +438,69 @@ color: #f8f8f8;
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-nvbr-aside-drk">Copy HTML</button>
                                 </h5>
-<span id="html-nvbr-aside-drk">&lt;button class="btn bg--dark"&gt;<span class="code-accent">This is a button</span>&lt;/button&gt;</span>
+<span id="html-nvbr-aside-drk">
+&lt;nav class="nav-aside"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#0"&gt;<span class="code-accent">Item 1</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="current" href="#0"&gt;<span class="code-accent">Item 2</span>&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="disabled"&gt;<span class="code-accent">Item 3</span>&lt;span class="upcoming"&gt;<span class="code-accent">&mdash;Upcoming</span>&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-nvbr-aside-drk">Copy CSS</button>
                                 </h5>
                 <span id="css-nvbr-aside-drk">
-.btn {
-background-color: #dd2808;
-border: 2px solid transparent;
-border-radius: 3px;
-color: #f8f8f8;
-cursor: pointer;
-font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
-padding: .5rem .75rem;
-text-decoration: none;
+.nav-aside li {
+    font: 700 1rem/1.2 'Raleway', Helvetica, sans-serif;
+    margin-right: 1.602rem;
 }
 
-.btn:hover {
-background-color: #a71e06;
+.nav-aside a:link, .nav-aside a:visited {
+    background-color: transparent;
+    color: #f8f8f8;
+    cursor: pointer;
+    padding-left: 0;
 }
 
-.bg--dark {
-background-color: #2f2f2f;
-color: #f8f8f8;
+.nav-aside a:hover, .nav-aside a:visited:hover {
+    text-decoration: none;
+}
+
+a.current:link, a.current:visited {
+    border-bottom: 3px solid #f96c53;
+    border-radius: 0;
+    cursor: unset;
+    padding: 0;
+    text-decoration: none;
+}
+
+.nav-aside ul {
+    display: block;
+    list-style: none;
+    margin-top: 3rem;
+    position: unset;
+}
+    @supports (display: grid) {
+        @media (min-width: 600px) {
+            .nav-aside ul {
+                position: absolute;
+                top: 8rem;
+            }
+        }
+    }
+
+.nav-aside li {
+    margin: 1.125rem 0;
+}
+
+.upcoming {
+    font: italic 1rem/1.6 'Georgia', Helvetica, sans-serif;
+}
+
+.disabled {
+    color: #8f8f8f;
 }
                 </span>
                             </code>
@@ -386,7 +514,7 @@ color: #f8f8f8;
                     <li><a href="https://polaris.shopify.com/components/navigation/navigation#navigation">Navigation</a>&mdash;Shopify's design system</li>
                     <li><a href="https://material.io/components/navigation-drawer/">Navigation drawer</a>&mdash;Material Design </li>
                 </ul>
-                <a class="cta" href="components-texts.html">And how about texts?</a>
+                <a class="cta" href="components-texts.html">How about texts?</a>
             </section>
         </article>
         <footer class="footer">

@@ -104,6 +104,10 @@ html {
         }
     } 
 
+.nopic {
+    background: #f8f8f8;
+}
+
 .footer {
     background: #f8f8f8 url(../images/mom-walks.png) no-repeat top right;
     padding-bottom: 5.852rem;

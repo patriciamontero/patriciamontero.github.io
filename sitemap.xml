@@ -7,19 +7,12 @@
       xsi:schemaLocation="
             http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with PRO Sitemap Service https://pro-sitemaps.com -->
 
   <url>
        <loc>https://www.patimontero.ca/</loc>
        <lastmod>2020-04-13T21:12:50+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>1.0000</priority>
-  </url>
-  <url>
-       <loc>https://www.patimontero.ca/index.html</loc>
-       <lastmod>2020-04-13T21:12:50+00:00</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.8000</priority>
   </url>
   <url>
        <loc>https://www.patimontero.ca/about.html</loc>
@@ -158,5 +151,35 @@
        <lastmod>2020-04-13T21:12:50+00:00</lastmod>
        <changefreq>daily</changefreq>
        <priority>0.5120</priority>
+  </url>
+  <url>
+       <loc>https://www.patimontero.ca/design-system/index.html</loc>
+       <lastmod>2020-04-13T21:12:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.7</priority>
+  </url>
+  <url>
+       <loc>https://www.patimontero.ca/design-system/style.html</loc>
+       <lastmod>2020-04-13T21:12:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.7</priority>
+  </url>
+  <url>
+       <loc>https://www.patimontero.ca/design-system/components-buttons.html</loc>
+       <lastmod>2020-04-13T21:12:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.7</priority>
+  </url>
+  <url>
+       <loc>https://www.patimontero.ca/design-system/components-links.html</loc>
+       <lastmod>2020-04-13T21:12:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.7</priority>
+  </url>
+  <url>
+       <loc>https://www.patimontero.ca/design-system/components-navigation.html</loc>
+       <lastmod>2020-04-13T21:12:50+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.7</priority>
   </url>
 </urlset>

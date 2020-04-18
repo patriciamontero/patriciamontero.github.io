@@ -44,22 +44,22 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: Texts</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-04-13">Last updated on April 13, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-04-18">Last updated on April 18, 2020&mdash;In progress</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
                 <nav class="nav-aside">
                     <ul>
-                        <li class="disabled">Accordion<span class="upcoming">&mdash;Upcoming</span></li>
+                        <!-- <li class="disabled">Accordion<span class="upcoming">&mdash;Upcoming</span></li> -->
                         <li><a href="components-buttons.html">Buttons</a></li>
-                        <li class="disabled">Cards<span class="upcoming">&mdash;Upcoming</span></li>
+                        <!-- <li class="disabled">Cards<span class="upcoming">&mdash;Upcoming</span></li>
                         <li class="dissable">Forms<span class="upcoming">&mdash;Upcoming</span></li>
                         <li class="disabled">Grids<span class="upcoming">&mdash;Upcoming</span></li>
-                        <li class="disabled">Images<span class="upcoming">&mdash;Upcoming</span></li>
+                        <li class="disabled">Images<span class="upcoming">&mdash;Upcoming</span></li> -->
                         <li><a href="components-links.html">Links</a></li>
                         <li><a href="components-navigation.html">Navigation</a></li>
-                        <li class="disabled">Status<span class="upcoming">&mdash;Upcoming</span></li>
-                        <li><a class="current" href="components-texts.html">Texts</a></li>
+                        <!-- <li class="disabled">Status<span class="upcoming">&mdash;Upcoming</span></li> -->
+                        <li><a class="current" href="components-texts.html">Texts</a><span class="upcoming">&mdash;In progress</span></li>
                     </ul>
                 </nav>
             </aside>
@@ -68,7 +68,10 @@
                 <p class="intro">Along with illustration and design pieces, this is the core of everything I publish on the Web. It must be clear and readable at all times.</p>
                 <h3 class="heading">Guidelines</h3>
                 <ul>
-                    <li>Only apply two typefaces in one weight each: Raleway (bold) and Georgia (regular). The details about their use are available in the style guide, under <a href="style.html#typography">Typography</a>.</li>
+                    <li>Only apply two typefaces in one weight each: Raleway (bold) and Georgia (regular). The details about their use are available in the style guide, under <a href="style.html#typography">typography</a>.</li>
+                    <li>Use <a href="https://www.theleagueofmoveabletype.com/raleway">Raleway</a> for headings, but set <code class="code-in-text">Helvetica</code> and <code class="code-in-text">sans-serif</code> as a fallback. Raleway is a Google font that you can <a href="https://fonts.google.com/specimen/Raleway">download here</a>.</li>
+                    <li>Use <a href="https://www.fontshop.com/families/georgia">Georgia</a> for body text, but set <code class="code-in-text">Times</code> and <code class="code-in-text">serif</code> as a fallback. Georgia is a web-safe font, which means that it's available in most computers.</li>
+                    <li>For code snippets, use the browser's default typeface.</li>
                 </ul>
                 <h3 class="heading heading-button" tabindex="-1">
                     <span>Code snippets</span>
@@ -77,8 +80,8 @@
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="lnk-paragraph">Headings</h4>
-                        <button data-expands="lnk-paragraph-content" aria-label="open section" aria-describedby="lnk-paragraph" aria-expanded="false">
+                        <h4 id="txt-heading">Headings</h4>
+                        <button data-expands="txt-heading-content" aria-label="open section" aria-describedby="txt-heading" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -87,7 +90,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div id="lnk-paragraph-content" class="component-content" hidden="">
+                    <div id="txt-heading-content" class="component-content" hidden="">
                         <p>Their styling is simple, underlined by default. Plus, a slight background colour change enforces the interaction.</p>
                         <p>Since these links are part of a paragraph, they should only appear over a plain background to remain legible.</p>
                         <p>Here are a few examples of proper usage:</p>
@@ -99,14 +102,14 @@
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-paragraph">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-heading">Copy HTML</button>
                                 </h5>
-<span id="html-lnk-paragraph">&lt;p&gt;&lt;a href="#0"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
+<span id="html-txt-heading">&lt;p&gt;&lt;a href="#0"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-paragraph">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-heading">Copy CSS</button>
                                 </h5>
-<span id="css-lnk-paragraph">
+<span id="css-txt-heading">
 a:link, a:visited {
     background-color: #fcdad4;
     border-radius: 3px;
@@ -129,8 +132,8 @@ a:hover, a:visited:hover, a:focus {
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="lnk-cta">Body text</h4>
-                        <button data-expands="lnk-cta-content" aria-label="open section" aria-describedby="lnk-cta" aria-expanded="false">
+                        <h4 id="txt-body">Body text</h4>
+                        <button data-expands="txt-body-content" aria-label="open section" aria-describedby="txt-body" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -139,7 +142,7 @@ a:hover, a:visited:hover, a:focus {
                             </svg>
                         </button>
                     </div>
-                    <div id="lnk-cta-content" class="component-content" hidden="">
+                    <div id="txt-body-content" class="component-content" hidden="">
                         <p>These statements need an instant response from the user, and they usually appear at the end of a section. Their sentences end without a period.</p>
                         <p>Since these links are detached phrases, they perform well over any contrasting background.</p>
                         <p>Here are a few examples of proper usage:</p>
@@ -153,14 +156,14 @@ a:hover, a:visited:hover, a:focus {
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-cta">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-body">Copy HTML</button>
                                 </h5>
-<span id="html-lnk-cta">&lt;p&gt;&lt;a class="cta" href="#0"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
+<span id="html-txt-body">&lt;p&gt;&lt;a class="cta" href="#0"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-cta">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-body">Copy CSS</button>
                                 </h5>
-<span id="css-lnk-cta">
+<span id="css-txt-body">
 a:link, a:visited {
     background-color: #fcdad4;
     border-radius: 3px;
@@ -184,8 +187,8 @@ a:hover, a:visited:hover, a:focus {
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="lnk-skip">Quotes</h4>
-                        <button data-expands="lnk-skip-content" aria-label="open section" aria-describedby="lnk-skip" aria-expanded="false">
+                        <h4 id="txt-lists">Lists</h4>
+                        <button data-expands="txt-lists-content" aria-label="open section" aria-describedby="txt-lists" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -194,7 +197,7 @@ a:hover, a:visited:hover, a:focus {
                             </svg>
                         </button>
                     </div>
-                    <div id="lnk-skip-content" class="component-content" hidden="">
+                    <div id="txt-lists-content" class="component-content" hidden="">
                         <p>This link allows screen reader users to go straight to the main content. It's a hidden element by default, but it appears by pressing the tab key right after entering the page.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <p class="code-example"><a class="skip nhdn" href="#0">Skip to content</a></p>
@@ -207,14 +210,73 @@ a:hover, a:visited:hover, a:focus {
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-lnk-skip">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-lists">Copy HTML</button>
                                 </h5>
-<span id="html-lnk-skip">&lt;a href="#main-content" class="skip"&gt;<span class="code-accent">Skip to content</span>&lt;/a&gt;</span>
+<span id="html-txt-lists">&lt;a href="#main-content" class="skip"&gt;<span class="code-accent">Skip to content</span>&lt;/a&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-lnk-skip">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-lists">Copy CSS</button>
                                 </h5>
-<span id="css-lnk-skip">
+<span id="css-txt-lists">
+a.skip {
+    left: -999px;
+    overflow: hidden;
+    position: absolute;
+    top: 1rem;
+    z-index: -999;
+}
+
+a.skip:focus, a.skip:active {
+    background-color: #f96c53;
+    border-radius: 3px;
+    color: #2f2f2f;
+    display: block;
+    font: 700 .75rem/1.2 'Raleway', Helvetica, sans-serif;
+    left: 0;
+    overflow: auto;
+    padding: .5rem;
+    top: 0;
+    z-index: 999;
+}   
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="txt-quotes">Quotes</h4>
+                        <button data-expands="txt-quotes-content" aria-label="open section" aria-describedby="txt-quotes" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="txt-quotes-content" class="component-content" hidden="">
+                        <p>This link allows screen reader users to go straight to the main content. It's a hidden element by default, but it appears by pressing the tab key right after entering the page.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <p class="code-example"><a class="skip nhdn" href="#0">Skip to content</a></p>
+                        <p class="code-example bg--dark"><a class="skip nhdn" href="#0">Skip to content</a></p>
+                        <div class="code-example bg--photobg3">
+                            <a class="skip nhdn" href="#0">Skip to content</a>
+                        </div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-quotes">Copy HTML</button>
+                                </h5>
+<span id="html-txt-quotes">&lt;a href="#main-content" class="skip"&gt;<span class="code-accent">Skip to content</span>&lt;/a&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-quotes">Copy CSS</button>
+                                </h5>
+<span id="css-txt-quotes">
 a.skip {
     left: -999px;
     overflow: hidden;
@@ -243,9 +305,12 @@ a.skip:focus, a.skip:active {
 
                 <h3 class="heading">Sources of inspiration</h3>
                 <ul>
+                    <li><a href="https://material.io/components/lists#">Lists</a>&mdash;Material Design</li>
+                    <li><a href="https://chrisburnell.com/styleguide">Style Guide</a>&mdash;Chris Burnell</li>
+                    <li><a href="https://polaris.shopify.com/components/titles-and-text/caption#navigation">Titles and text</a>&mdash;Shopify's design system</li>
+                    <li><a href="https://biings.design/#/typo">Typography</a>&mdash;Biings Design System</li>
                     <li><a href="https://comet.discoveryeducation.com/visual-language/typography.html">Typography</a>&mdash;Comet Design System</li>
                     <li><a href="https://designsystem.morningstar.com/visual-language/typography.html">Typography</a>&mdash;Morningstar Design System</li>
-                    <li><a href="https://polaris.shopify.com/components/titles-and-text/caption#navigation">Titles and text</a>&mdash;Shopify's design system</li>
                     <li><a href="https://medium.com/eightshapes-llc/typography-in-design-systems-6ed771432f1e">Typography in Design Systems</a>&mdash;Nathan Curtis</li>
                 </ul>
                 <a class="cta" href="components-buttons.html">Let's talk about buttons</a>

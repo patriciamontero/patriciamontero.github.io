@@ -95,11 +95,11 @@
                         <p>There are five levels of headlines: <code class="code-in-text">h1</code>, <code class="code-in-text">h2</code>, <code class="code-in-text">h3</code>, <code class="code-in-text">h4</code> and <code class="code-in-text">h5</code>. To create a balanced hierarchy among them, I'm using a proportion of 8:9, which is a <a href="https://www.modularscale.com/?1&em&1.125">major second modular scale</a>. It means that from <code class="code-in-text">h5</code> to <code class="code-in-text">h2</code>, the font size increases by 1.125.</p>
                         <p>There is an exception, though. Each <code class="code-in-text">h1</code> is bigger by five steps to enhance its visual interest on the page. For this reason&mdash;and especially for semantic purposes&mdash;there should only be a single <code class="code-in-text">h1</code> per page.</p>
                         <p>Also, the headlines hierarchy should always be logical and sequential.</p>
-                        <p>Here is an example of proper usage:</p>
-                        <div class="code-example"><h1>Heading one</h1></div>
-                        <div class="code-example"><h2>Heading two</h1></div>
-                        <div class="code-example"><h3>Heading three</h1></div>
-                        <div class="code-example"><h4>Heading four</h1></div>
+                        <p>Here are a few examples of proper usage:</p>
+                        <div class="code-example bg--photobg5"><h1>Heading one</h1></div>
+                        <div class="code-example bg--accent"><h2>Heading two</h1></div>
+                        <div class="code-example bg--light-accent"><h3>Heading three</h1></div>
+                        <div class="code-example bg--lightest-accent"><h4>Heading four</h1></div>
                         <div class="code-example"><h5>Heading five</h1></div>
                         <p>These are its code snippets:</p>
                         <pre>
@@ -114,6 +114,61 @@
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-heading">Copy CSS</button>
                                 </h5>
 <span id="css-txt-heading">
+a:link, a:visited {
+    background-color: #fcdad4;
+    border-radius: 3px;
+    color: #2f2f2f;
+    display: inline-block;
+    font: normal 1rem/1.6 'Georgia', Times, serif;
+    padding: 0 .25rem;
+    transition: all .4s ease-in;
+}
+
+a:hover, a:visited:hover, a:focus {
+    background-color: #fba798;
+    text-decoration: none;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="txt-heading-drk">Dark headings</h4>
+                        <button data-expands="txt-heading-drk-content" aria-label="open section" aria-describedby="txt-heading-drk" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="txt-heading-drk-content" class="component-content" hidden="">
+                        <p>There are five levels of headlines: <code class="code-in-text">h1</code>, <code class="code-in-text">h2</code>, <code class="code-in-text">h3</code>, <code class="code-in-text">h4</code> and <code class="code-in-text">h5</code>. To create a balanced hierarchy among them, I'm using a proportion of 8:9, which is a <a href="https://www.modularscale.com/?1&em&1.125">major second modular scale</a>. It means that from <code class="code-in-text">h5</code> to <code class="code-in-text">h2</code>, the font size increases by 1.125.</p>
+                        <p>There is an exception, though. Each <code class="code-in-text">h1</code> is bigger by five steps to enhance its visual interest on the page. For this reason&mdash;and especially for semantic purposes&mdash;there should only be a single <code class="code-in-text">h1</code> per page.</p>
+                        <p>Also, the headlines hierarchy should always be logical and sequential.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <div class="code-example bg--dark bg--photobg3"><h1>Heading one</h1></div>
+                        <div class="code-example bg--dark invert"><h2>Heading two</h1></div>
+                        <div class="code-example bg--dark"><h3>Heading three</h1></div>
+                        <div class="code-example bg--darkest-accent"><h4>Heading four</h1></div>
+                        <div class="code-example bg--dark-accent"><h5>Heading five</h1></div>
+                        <p>These are its code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-heading-drk">Copy HTML</button>
+                                </h5>
+<span id="html-txt-heading-drk">&lt;p&gt;&lt;a href="#0"&gt;<span class="code-accent">This link</span>&lt;/a&gt; <span class="code-accent">is an example.</span>&lt;/p&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-heading-drk">Copy CSS</button>
+                                </h5>
+<span id="css-txt-heading-drk">
 a:link, a:visited {
     background-color: #fcdad4;
     border-radius: 3px;

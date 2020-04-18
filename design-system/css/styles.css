@@ -664,3 +664,9 @@ a.clr--light:link, a.clr--light:visited,
     margin: 0;
     position: initial;
 }
+
+.block {
+    display: block;
+    grid-column: 1 / -1;
+    border: 1px solid green;
+}

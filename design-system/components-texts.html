@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Components: Texts | Pati Montero's design system </title>
-        <meta name="description" content="Along with illustration and design pieces, this is the core of everything I publish on the Web. It must be clear and readable at all times.">
+        <meta name="description" content="Along with illustration and design pieces, texts are the core of the Web. They must be clear and readable at all times.">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: Texts</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-04-18">Last updated on April 18, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-04-19">Last updated on April 19, 2020&mdash;In progress</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -65,7 +65,7 @@
             </aside>
             <section class="content-wrapped">
                 <h2 id="main-content" class="heading xtarget">Texts <a href="#main.content">#</a></h2>
-                <p class="intro">Along with illustration and design pieces, this is the core of everything I publish on the Web. It must be clear and readable at all times.</p>
+                <p class="intro">Along with illustration and design pieces, texts are the core of the Web. They must be clear and readable at all times.</p>
                 <h3 class="heading">Guidelines</h3>
                 <ul>
                     <li>To reduce loading times, use only two typefaces in one weight each: Raleway 700 and Georgia. Technical details about their use are available in the style guide, under <a href="style.html#typography">typography</a>.</li>
@@ -73,6 +73,12 @@
                     <li>Put in place <a href="https://www.fontshop.com/families/georgia">Georgia</a> for body text, but set <code class="code-in-text">Times</code> and <code class="code-in-text">serif</code> as a fallback. Georgia is a web-safe font, which means that it's available in most computers.</li>
                     <li>For code snippets, use the browser's default typeface.</li>
                     <li>To ensure legibility, the minimal size for texts must be 16px or similar in relative units. Yet, allow users to display content according to their choice by setting the default font size as 100%.</li>
+                </ul>
+                <h4 class="heading">Guidelines for headings</h4>
+                <ul>
+                    <li>There are five levels of headlines: <code class="code-in-text">h1</code>, <code class="code-in-text">h2</code>, <code class="code-in-text">h3</code>, <code class="code-in-text">h4</code> and <code class="code-in-text">h5</code>. To create a balanced hierarchy among them, I'm using a proportion of 8:9, which is a <a href="https://www.modularscale.com/?1&em&1.125">major second modular scale</a>. It means that from <code class="code-in-text">h5</code> to <code class="code-in-text">h2</code>, the font size increases by 1.125.</li>
+                    <li>There is an exception, though. Each <code class="code-in-text">h1</code> is bigger by five steps to enhance its visual interest on the page. For this reason&mdash;and especially for semantic purposes&mdash;there should only be a single <code class="code-in-text">h1</code> per page.</li>
+                    <li>Also, the headlines hierarchy should always be logical and sequential. For instance, an <code class="code-in-text">h3</code> can only appear after an <code class="code-in-text">h2</code>.</li>
                 </ul>
                 <h3 class="heading heading-button" tabindex="-1">
                     <span>Code snippets</span>
@@ -92,11 +98,9 @@
                         </button>
                     </div>
                     <div id="txt-heading-content" class="component-content" hidden="">
-                        <p>There are five levels of headlines: <code class="code-in-text">h1</code>, <code class="code-in-text">h2</code>, <code class="code-in-text">h3</code>, <code class="code-in-text">h4</code> and <code class="code-in-text">h5</code>. To create a balanced hierarchy among them, I'm using a proportion of 8:9, which is a <a href="https://www.modularscale.com/?1&em&1.125">major second modular scale</a>. It means that from <code class="code-in-text">h5</code> to <code class="code-in-text">h2</code>, the font size increases by 1.125.</p>
-                        <p>There is an exception, though. Each <code class="code-in-text">h1</code> is bigger by five steps to enhance its visual interest on the page. For this reason&mdash;and especially for semantic purposes&mdash;there should only be a single <code class="code-in-text">h1</code> per page.</p>
-                        <p>Also, the headlines hierarchy should always be logical and sequential.</p>
+                        <p><span class="subtle">Dark</span> text (#f8f8f8) over a light-coloured area  or contrasting image. Always providing an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
                         <p>Here are a few examples of proper usage:</p>
-                        <div class="code-example bg--photobg5"><h1>Heading one</h1></div>
+                        <div class="code-example style"><h1>Heading one</h1></div>
                         <div class="code-example bg--accent"><h2>Heading two</h1></div>
                         <div class="code-example bg--light-accent"><h3>Heading three</h1></div>
                         <div class="code-example bg--lightest-accent"><h4>Heading four</h1></div>
@@ -147,11 +151,9 @@ a:hover, a:visited:hover, a:focus {
                         </button>
                     </div>
                     <div id="txt-heading-drk-content" class="component-content" hidden="">
-                        <p>There are five levels of headlines: <code class="code-in-text">h1</code>, <code class="code-in-text">h2</code>, <code class="code-in-text">h3</code>, <code class="code-in-text">h4</code> and <code class="code-in-text">h5</code>. To create a balanced hierarchy among them, I'm using a proportion of 8:9, which is a <a href="https://www.modularscale.com/?1&em&1.125">major second modular scale</a>. It means that from <code class="code-in-text">h5</code> to <code class="code-in-text">h2</code>, the font size increases by 1.125.</p>
-                        <p>There is an exception, though. Each <code class="code-in-text">h1</code> is bigger by five steps to enhance its visual interest on the page. For this reason&mdash;and especially for semantic purposes&mdash;there should only be a single <code class="code-in-text">h1</code> per page.</p>
-                        <p>Also, the headlines hierarchy should always be logical and sequential.</p>
+                        <p>Light-coloured text over a dark-coloured area or contrasting image. Always providing an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
                         <p>Here are a few examples of proper usage:</p>
-                        <div class="code-example bg--dark bg--photobg3"><h1>Heading one</h1></div>
+                        <div class="code-example bg--dark clr--accent"><h1>Heading one</h1></div>
                         <div class="code-example bg--dark invert"><h2>Heading two</h1></div>
                         <div class="code-example bg--dark"><h3>Heading three</h1></div>
                         <div class="code-example bg--darkest-accent"><h4>Heading four</h1></div>

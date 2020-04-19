@@ -660,6 +660,10 @@ a.clr--light:link, a.clr--light:visited,
     color: #9f9f9f;
 }
 
+.clr--accent {
+    color: #f96c53;
+}
+
 .xmp ul {
     margin: 0;
     position: initial;

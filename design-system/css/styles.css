@@ -513,7 +513,6 @@ div[tabindex]:focus {
 .code-example {
     background-color: #f0f0f0;
     border-radius: 3px;
-    display: flex;
     justify-content: left;
     margin: 1rem 0;
     padding: 1rem;

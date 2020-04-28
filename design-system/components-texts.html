@@ -44,7 +44,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: Texts</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-04-27">Last updated on April 27, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-04-28">Last updated on April 28, 2020&mdash;In progress</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -65,7 +65,7 @@
             </aside>
             <section class="content-wrapped">
                 <h2 id="main-content" class="heading xtarget">Texts <a href="#main.content">#</a></h2>
-                <p class="intro">Along with illustration and design pieces, texts are the core of the Web. They must be clear and readable at all times.</p>
+                <p class="intro">Text is the core of the Web, and so, it must be <a href="https://creativepro.com/legibility-and-readability-whats-the-difference/">legible and readable</a> at all times.</p>
                 <h3 class="heading">Guidelines</h3>
                 <ul>
                     <li>To reduce loading times, use only two typefaces in one weight each: Raleway 700 and Georgia. Technical details about their use are available in the style guide, under <a href="style.html#typography">typography</a>.</li>
@@ -260,33 +260,51 @@ h5 {
                             <p>Taglines are phrases that summarize the content of the page. They come after a heading one and don't end with a period. Intros are short paragraphs that give an idea of the following section.</p>
                             <p>Finally, paragraphs develop the content one idea at a time. They shouldn't contain more than five sentences. That allows the reader to browse through them with ease.</p>
                         </div>
-                        <p>These are its code snippets:</p>
+                        <p>These are their code snippets:</p>
                         <pre>
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-body">Copy HTML</button>
                                 </h5>
-<span id="html-txt-body">&lt;p&gt;&lt;a class="cta" href="#0"&gt;<span class="code-accent">Another link as example</span>&lt;/a&gt;&lt;/p&gt;</span>
+<span id="html-txt-body">&lt;p class="tagline"&gt;<span class="code-accent">This sentence is a tagline</span>&lt;/p&gt;
+&lt;p class="intro"&gt;<span class="code-accent">This short paragraph is an intro. It gives an idea of the following content.</span>&lt;/p&gt;
+&lt;p&gt;<span class="code-accent">Here is a paragraph. This example shows the way taglines and intros follow headings.</span>&lt;/p&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-body">Copy CSS</button>
                                 </h5>
 <span id="css-txt-body">
-a:link, a:visited {
-    background-color: #fcdad4;
-    border-radius: 3px;
-    color: #2f2f2f;
-    display: inline-block;
-    font: 700 1.25rem/1.6 'Raleway', Helvetica, sans-serif;
-    margin: 1.44rem 0 1.2rem;
-    padding: .25rem .5rem;
-    transition: all .4s ease-in;
+html {
+    font-size: 100%;
+}
+    @media (min-width: 600px) {
+        html {
+            font-size: 105%;
+        }
+    }
+    @media (min-width: 900px) {
+        html {
+            font-size: 110%;
+        }
+    }
+    @media (min-width: 1200px) {
+        html {
+            font-size: 120%;
+        }
+    }
+
+p {
+    font: normal 1rem/1.6 'Georgia', Times, serif;
+    margin: 1.125rem 0;
 }
 
-a:hover, a:visited:hover, a:focus {
-    background-color: #fba798;
-    text-decoration: none;
+.tagline {
+    font: italic 1.266rem/1.6 'Georgia', Times, serif;
+}
+
+.intro {
+    font: italic 1.125rem/1.6 'Georgia', Times, serif;
 }
 </span>
                             </code>
@@ -414,6 +432,7 @@ a.skip:focus, a.skip:active {
 
                 <h3 class="heading">Sources of inspiration</h3>
                 <ul>
+                    <li><a href="https://betterwebtype.com/articles/2019/06/16/5-keys-to-accessible-web-typography/">5 Keys to Accessible Web Typography</a>&mdash;Matej Latin</li>
                     <li><a href="https://material.io/components/lists#">Lists</a>&mdash;Material Design</li>
                     <li><a href="https://chrisburnell.com/styleguide">Style Guide</a>&mdash;Chris Burnell</li>
                     <li><a href="https://polaris.shopify.com/components/titles-and-text/caption#navigation">Titles and text</a>&mdash;Shopify's design system</li>

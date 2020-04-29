@@ -44,7 +44,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: Texts</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-04-28">Last updated on April 28, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-04-29">Last updated on April 29, 2020&mdash;In progress</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -77,7 +77,6 @@
                 <h4 class="heading">Guidelines for headings</h4>
                 <ul>
                     <li>Headings &mdash;or headlines&mdash;are visually enhanced phrases that identify a section. Write them in sentence case, avoiding the use of punctuation.</li>
-                    
                     <li>There are five levels of headlines: <code class="code-in-text">h1</code>, <code class="code-in-text">h2</code>, <code class="code-in-text">h3</code>, <code class="code-in-text">h4</code> and <code class="code-in-text">h5</code>. To create a balanced hierarchy among them, apply a proportion of 8:9, which is a <a href="https://www.modularscale.com/?1&em&1.125">major second modular scale</a>. It means that from <code class="code-in-text">h5</code> to <code class="code-in-text">h2</code>, the font size increases by 1.125.</li>
                     <li>There is an exception, though. Each <code class="code-in-text">h1</code> is bigger by five steps to enhance its visual interest on the page. For this reason&mdash;and especially for semantic purposes&mdash;there should only be a single <code class="code-in-text">h1</code> per page.</li>
                     <li>Also, the headlines hierarchy should always be logical and sequential. For instance, an <code class="code-in-text">h3</code> can only appear after an <code class="code-in-text">h2</code>.</li>
@@ -86,6 +85,11 @@
                 <ul>
                     <li>A paragraph <code class="code-in-text">p</code> is the minimal expression of body text. To ease reading online, each one should contain a single idea.</li>
                     <li>Keep texts scannable. Emphasize the first piece of content after a headline that gives a sense of the upcoming section. There are two styles for this: <span class="subtle">tagline</span> (a sentence) and <span class="subtle">intro</span> (a paragraph). The first one follows an <code class="code-in-text">h1</code>, the latter, an <code class="code-in-text">h2</code>.</li>
+                </ul>
+                <h4 class="heading">Guidelines for lists</h4>
+                <ul>
+                    <li>Lists divide related content in small chunks that are easier to consume by the user. For this reason, they are a useful tool for scanning.</li>
+                    <li>Lists should be left-aligned with hanging bullets, so they don't interrupt the flow of the text. To achieve this, set list-style-position to <span class="subtle">outside</span>.</li>
                 </ul>
                 <h3 class="heading heading-button" tabindex="-1">
                     <span>Code snippets</span>
@@ -305,6 +309,87 @@ p {
 
 .intro {
     font: italic 1.125rem/1.6 'Georgia', Times, serif;
+}
+</span>
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="component-container">
+                    <div class="component-intro">
+                        <h4 id="txt-body-drk">Dark body text</h4>
+                        <button data-expands="txt-body-drk-content" aria-label="open section" aria-describedby="txt-body-drk" aria-expanded="false">
+                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                <g transform="translate(0 -981.5)">
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="txt-body-drk-content" class="component-content" hidden="">
+                        <p>Use light-coloured text over a dark-coloured area. Avoid the use of images as a background to ensure legibility.</p>
+                        <p>Here are a few examples of proper usage:</p>
+                        <div class="code-example bg--dark">
+                            <h1>Headline one</h1>
+                            <p class="tagline">This sentence is a tagline</p>
+                            <h2>Headline two</h2>
+                            <p class="intro">This short paragraph is an intro. It gives an idea of the following content.</p>
+                            <p>Here is a paragraph. This example shows the way taglines and intros follow headings.</p>
+                            <p>Taglines are phrases that summarize the content of the page. They come after a heading one and don't end with a period. Intros are short paragraphs that give an idea of the following section.</p>
+                            <p>Finally, paragraphs develop the content one idea at a time. They shouldn't contain more than five sentences. That allows the reader to browse through them with ease.</p>
+                        </div>
+                        <p>These are their code snippets:</p>
+                        <pre>
+                            <code>
+                                <h5 class="heading heading-button">
+                                    <span>HTML</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-body-drk">Copy HTML</button>
+                                </h5>
+<span id="html-txt-body-drk">&lt;p class="tagline bg--dark"&gt;<span class="code-accent">This sentence is a tagline</span>&lt;/p&gt;
+&lt;p class="intro bg--dark"&gt;<span class="code-accent">This short paragraph is an intro. It gives an idea of the following content.</span>&lt;/p&gt;
+&lt;p class="bg--dark"&gt;<span class="code-accent">Here is a paragraph. This example shows the way taglines and intros follow headings.</span>&lt;/p&gt;</span>
+                                <h5 class="heading heading-button">
+                                    <span>CSS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-body-drk">Copy CSS</button>
+                                </h5>
+<span id="css-txt-body-drk">
+html {
+    font-size: 100%;
+}
+    @media (min-width: 600px) {
+        html {
+            font-size: 105%;
+        }
+    }
+    @media (min-width: 900px) {
+        html {
+            font-size: 110%;
+        }
+    }
+    @media (min-width: 1200px) {
+        html {
+            font-size: 120%;
+        }
+    }
+
+p {
+    font: normal 1rem/1.6 'Georgia', Times, serif;
+    margin: 1.125rem 0;
+}
+
+.tagline {
+    font: italic 1.266rem/1.6 'Georgia', Times, serif;
+}
+
+.intro {
+    font: italic 1.125rem/1.6 'Georgia', Times, serif;
+}
+
+.bg--dark {
+    background-color: #2f2f2f;
+    color: #f8f8f8;
 }
 </span>
                             </code>

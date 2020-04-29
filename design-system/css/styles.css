@@ -191,6 +191,8 @@ p, li {
 
 ul {
     list-style-type: square;
+    padding-left: 0;
+    list-style-position: outside;
 }
 
 h1 {

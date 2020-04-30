@@ -665,13 +665,17 @@ a.clr--light:link, a.clr--light:visited,
     color: #f96c53;
 }
 
+.xmp-pdg {
+    padding-left: 2rem;
+}
+
 .xmp ul {
     margin: 0;
     position: initial;
 }
 
-.block {
+/* .block {
     display: block;
     grid-column: 1 / -1;
     border: 1px solid green;
-}
+} */

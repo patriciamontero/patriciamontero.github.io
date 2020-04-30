@@ -44,7 +44,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: Texts</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-04-29">Last updated on April 29, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-04-30">Last updated on April 30, 2020&mdash;In progress</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -88,7 +88,7 @@
                 </ul>
                 <h4 class="heading">Guidelines for lists</h4>
                 <ul>
-                    <li>Lists divide related content in small chunks that are easier to consume by the user. For this reason, they are a useful tool for scanning.</li>
+                    <li>Lists divide related content in small chunks that are easier to consume by the user. For this reason, they are a useful tool for scanning. Write them in sentence case, ending with a period when they contain a whole sentence. If they contain only fragments, there's no need for punctuation.</li>
                     <li>Lists should be left-aligned with hanging bullets, so they don't interrupt the flow of the text. To achieve this, set list-style-position to <span class="subtle">outside</span>.</li>
                 </ul>
                 <h3 class="heading heading-button" tabindex="-1">
@@ -116,7 +116,7 @@
                         <div class="code-example bg--light-accent"><h3>Heading three</h1></div>
                         <div class="code-example bg--lightest-accent"><h4>Heading four</h1></div>
                         <div class="code-example"><h5>Heading five</h1></div>
-                        <p>These are its code snippets:</p>
+                        <p>These are their code snippets:</p>
                         <pre>
                             <code>
                                 <h5 class="heading heading-button">
@@ -184,7 +184,7 @@ h5 {
                         <div class="code-example bg--dark"><h3>Heading three</h1></div>
                         <div class="code-example bg--darkest-accent"><h4>Heading four</h1></div>
                         <div class="code-example bg--dark-accent"><h5>Heading five</h1></div>
-                        <p>These are its code snippets:</p>
+                        <p>These are their code snippets:</p>
                         <pre>
                             <code>
                                 <h5 class="heading heading-button">
@@ -254,7 +254,7 @@ h5 {
                     </div>
                     <div id="txt-body-content" class="component-content" hidden="">
                         <p>Use <span class="subtle">dark</span> text (#f8f8f8) over a light-coloured area. Avoid the use of images as a background to ensure legibility.</p>
-                        <p>Here are a few examples of proper usage:</p>
+                        <p>Here is an example of proper usage:</p>
                         <div class="code-example">
                             <h1>Headline one</h1>
                             <p class="tagline">This sentence is a tagline</p>
@@ -410,46 +410,80 @@ p {
                         </button>
                     </div>
                     <div id="txt-lists-content" class="component-content" hidden="">
-                        <p>This link allows screen reader users to go straight to the main content. It's a hidden element by default, but it appears by pressing the tab key right after entering the page.</p>
-                        <p>Here are a few examples of proper usage:</p>
-                        <p class="code-example"><a class="skip nhdn" href="#0">Skip to content</a></p>
-                        <p class="code-example bg--dark"><a class="skip nhdn" href="#0">Skip to content</a></p>
-                        <div class="code-example bg--photobg3">
-                            <a class="skip nhdn" href="#0">Skip to content</a>
+                        <p>Use <span class="subtle">dark</span> text (#f8f8f8) over a light-coloured area. Avoid the use of images as a background to ensure legibility.</p>
+                        <p>Here is an example of proper usage:</p>
+                        <div class="code-example xmp-pdg">
+                            <p>There are three kinds of paragraph in this design system:</p>
+                            <ul>
+                                <li>A regular paragraph</li>
+                                <li>An intro</i>
+                                <li>A tagline</li>
+                            </ul>
+                            <p>Here is their logical order:</p>
+                            <ol>
+                                <li>A tagline follows a heading 1.</li>
+                                <li>An intro follows a heading 2.</i>
+                                <li>Paragraphs follow an intro.</li>
+                            </ol>
                         </div>
-                        <p>These are its code snippets:</p>
+                        <p>These are their code snippets:</p>
                         <pre>
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-lists">Copy HTML</button>
                                 </h5>
-<span id="html-txt-lists">&lt;a href="#main-content" class="skip"&gt;<span class="code-accent">Skip to content</span>&lt;/a&gt;</span>
+<span id="html-txt-lists">&lt;p&gt;<span class="code-accent">There are three kinds of paragraph in this design system:</span>&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;<span class="code-accent">A regular paragraph</span>&lt;/li&gt;
+    &lt;li&gt;<span class="code-accent">An intro</span>&lt;/i&gt;
+    &lt;li&gt;<span class="code-accent">A tagline</span>&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;<span class="code-accent">Here is their logical order:</span>&lt;/p&gt;
+&lt;ol&gt;
+    &lt;li&gt;<span class="code-accent">A tagline follows a heading 1.</span>&lt;/li&gt;
+    &lt;li&gt;<span class="code-accent">An intro follows a heading 2.</span>&lt;/i&gt;
+    &lt;li&gt;<span class="code-accent">Paragraphs follow an intro.</span>&lt;/li&gt;
+&lt;/ol&gt;</span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-lists">Copy CSS</button>
                                 </h5>
 <span id="css-txt-lists">
-a.skip {
-    left: -999px;
-    overflow: hidden;
-    position: absolute;
-    top: 1rem;
-    z-index: -999;
+html {
+    font-size: 100%;
+}
+    @media (min-width: 600px) {
+        html {
+            font-size: 105%;
+        }
+    }
+    @media (min-width: 900px) {
+        html {
+            font-size: 110%;
+        }
+    }
+    @media (min-width: 1200px) {
+        html {
+            font-size: 120%;
+        }
+    }
+
+p, li {
+    font: normal 1rem/1.6 'Georgia', Times, serif;
+    margin: 1.125rem;
 }
 
-a.skip:focus, a.skip:active {
-    background-color: #f96c53;
-    border-radius: 3px;
-    color: #2f2f2f;
-    display: block;
-    font: 700 .75rem/1.2 'Raleway', Helvetica, sans-serif;
-    left: 0;
-    overflow: auto;
-    padding: .5rem;
-    top: 0;
-    z-index: 999;
-}   
+ul {
+    list-style-type: square;
+    padding-left: 0;
+    list-style-position: outside;
+}
+
+ol {
+    padding-left: 0;
+    list-style-position: outside;
+}
 </span>
                             </code>
                         </pre>
@@ -476,7 +510,7 @@ a.skip:focus, a.skip:active {
                         <div class="code-example bg--photobg3">
                             <a class="skip nhdn" href="#0">Skip to content</a>
                         </div>
-                        <p>These are its code snippets:</p>
+                        <p>These are their code snippets:</p>
                         <pre>
                             <code>
                                 <h5 class="heading heading-button">

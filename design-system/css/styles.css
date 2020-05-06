@@ -635,7 +635,11 @@ button i::before {
     background: url(../images/photo-bus.jpg) no-repeat center right;
 }
 
-.invert {
+.bg--regular {
+    background: #f0f0f0 url(../images/photo-illu-light.png) no-repeat center center;
+}
+
+.bg--invert {
     background: #2f2f2f url(../images/photo-illu.png) no-repeat center center;
 }
 

@@ -44,7 +44,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: Accordions</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-05-11">Last updated on May 11, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-05-12">Last updated on May 12, 2020&mdash;In progress</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -60,11 +60,12 @@
             </aside>
             <section class="content-wrapped">
                 <h2 id="main-content" class="heading xtarget">Accordions <a href="#main.content">#</a></h2>
-                <p class="intro">Accordions are collapsible components. They allow a selective display of content while reducing irrelevant scrolling down.</p>
+                <p class="intro">Accordions are collapsible components. They allow a progressive display of content while reducing irrelevant scrolling down.</p>
                 <h3 class="heading">Guidelines</h3>
                 <ul>
                     <li>Accordions showcase headlines as a reference for their hidden content. They must be short enough to prevent text wrapping.</li>
-                    <li>Accordions must be inclusive. Any user must be able to expand and collapse their content with the keyboard.</li>
+                    <li>Accordions must be inclusive. Users should be able to expand and collapse them with a keyboard or assistive technology.</li>
+                    <li>Use sentence case for the texts, which means that only the first word starts with a capital letter. Don't use a period in the end.</li>
                 </ul>
                 <h3 class="heading heading-button" tabindex="-1">
                     <span>Code snippets</span>
@@ -73,8 +74,8 @@
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="txt-heading">Accordions</h4>
-                        <button data-expands="txt-heading-content" aria-label="open section" aria-describedby="txt-heading" aria-expanded="false">
+                        <h4 id="accordion">Accordions</h4>
+                        <button data-expands="accordion-content" aria-label="open section" aria-describedby="accordion" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -83,7 +84,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div id="txt-heading-content" class="component-content" hidden="">
+                    <div id="accordion-content" class="component-content" hidden="">
                         <p>Use <span class="subtle">dark</span> text (#f8f8f8) over a light-coloured area  or contrasting image. Make sure that you always provide an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <div class="code-example bg--regular"><h1>Heading one</h1></div>
@@ -96,44 +97,211 @@
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-heading">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-accordion">Copy HTML</button>
                                 </h5>
-<span id="html-txt-heading">
-&lt;h1 class="heading"&gt;<span class="code-accent">Heading one</span>&lt;/h1&gt;
-&lt;h2 class="heading"&gt;<span class="code-accent">Heading two</span>&lt;/h2&gt;
-&lt;h3 class="heading"&gt;<span class="code-accent">Heading three</span>&lt;/h3&gt;
-&lt;h4 class="heading"&gt;<span class="code-accent">Heading four</span>&lt;/h4&gt;
-&lt;h5 class="heading"&gt;<span class="code-accent">Heading five</span>&lt;/h5&gt;
+<span id="html-accordion">
+&lt;div class="component-container"&gt;
+&lt;div class="component-intro"&gt;
+    &lt;h4 id="btn-primary"&gt;This is the headline&lt;/h4&gt;
+    &lt;button data-expands="btn-primary-content" aria-label="open section" aria-describedby="btn-primary" aria-expanded="false"&gt;
+    &lt;svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70"&gt;
+        &lt;g transform="translate(0 -981.5)"&gt;
+        &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"&gt;&lt;/rect&gt;
+        &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"&gt;&lt;/rect&gt;
+    &lt;/g&gt;
+    &lt;/svg&gt;
+    &lt;/button&gt;
+&lt;/div&gt;
+&lt;div id="btn-primary-content" class="component-content" hidden=""&gt;
+    &lt;p&gt;This is the content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-heading">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-accordion">Copy CSS</button>
                                 </h5>
-<span id="css-txt-heading">
-h1 {
-    font: 700 3.247rem/1.2 'Raleway', Helvetica, sans-serif;
+<span id="css-accordion">
+[hidden] {
+    display: none;
+    margin-top: 0;
 }
 
-h2 {
-    font: 700 1.602rem/1.2 'Raleway', Helvetica, sans-serif;
+/* button::-moz-focus-inner {
+    border: 0;
+} */
+
+/* fix for IE */
+div[tabindex]:focus {
+    outline: none;
 }
 
-h3 {
-    font: 700 1.424rem/1.2 'Raleway', Helvetica, sans-serif;
+.component-container {
+    border-bottom: 2px dotted #cccccc;
+    margin-bottom: 1rem;
+    padding: .125rem 0 1rem;
+}
+
+.component-intro, .heading-button {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+}
+
+.component-intro button {
+    background: 0;
+    border: 0;
+    border-bottom: 2px solid #f8f8f8;
+    color: #dd2808;
+    margin: 0;
+}
+
+.code-example {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    justify-content: left;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.component h4 {
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+.component-intro ~ .component-intro {
+    border-top: 1px dashed;
+    padding-top: 1rem;
+}
+
+button i::before {
+    color: #dd2808;
+}
+
+[data-expands] svg {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+[data-expands][aria-expanded="true"] .up-strut {
+    display: none;
+}
+
+[data-expands]:hover svg g {
+    color: #dd2808;
+}
+
+@media print {
+    [hidden] {
+        display: block !important;
+    }
+    [data-expandall], [data-expands], .examples + p {
+        display: none !important;
+    }
+}
+
+p {
+    font: normal 1rem/1.6 'Georgia', Times, serif;
+    margin: 1.125rem 0;
 }
 
 h4 {
     font: 700 1.266rem/1.2 'Raleway', Helvetica, sans-serif;
 }
-
-h5 {
-    font: 700 1.125rem/1.2 'Raleway', Helvetica, sans-serif;
-}
-
-.heading {
-    margin: 2.566rem 0 1.125rem;
-}
 </span>
+                                <h5 class="heading heading-button">
+                                    <span>JS</span>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#js-accordion">Copy JS</button>
+                                </h5>
+                                <span id="js-accordion">
+(function() {
+    var translations = {
+        en: {
+        EXPAND: "Expand all",
+        COLLAPSE: "Collapse all"
+        },
+        es: {
+        EXPAND: "muestra todo",
+        COLLAPSE: "esconde todos"
+        },
+        fr: {
+        EXPAND: "ouvrir tout",
+        COLLAPSE: "fermer tout"
+        },
+    };
+    var pageLang = document.querySelector('html').getAttribute('lang');
+    var strings = translations[pageLang] || translations['en'];
+    function collapse(toggle, target) {
+        toggle.setAttribute('aria-expanded', 'false');
+        target.hidden = true;
+    }
+    function expand(toggle, target) {
+        toggle.setAttribute('aria-expanded', 'true');
+        target.hidden = false;
+    }
+    var toggles = document.querySelectorAll('[data-expands]');
+    [].forEach.call(toggles, function(toggle) {
+        toggle.hidden = false;
+        toggle.setAttribute('aria-expanded', 'false');
+        var target = document.getElementById(toggle.getAttribute('data-expands'));
+        if (target) {
+        target.hidden = true;
+        toggle.addEventListener('click', function() {
+            var expanded = (this.getAttribute('aria-expanded') === 'true');
+            if (expanded) {
+            collapse(this, target);
+            } else {
+            expand(this, target);
+            }
+        });
+        }
+    });
+    if(!document.querySelector('[data-expandAll]')){
+        return;
+    }
+    var expandAll = document.querySelector('[data-expandAll]');
+    expandAll.hidden = false;
+    expandAll.textContent = strings.EXPAND;
+    expandAll.addEventListener('click', function() {
+        var expanded = this.textContent === strings.EXPAND ? false : true;
+        if (expanded) {
+        [].forEach.call(toggles, function(toggle) {
+            var target = document.getElementById(toggle.getAttribute('data-expands'));
+            collapse(toggle, target);
+        });
+        this.textContent = strings.EXPAND;
+        } else {
+        [].forEach.call(toggles, function(toggle) {
+            var target = document.getElementById(toggle.getAttribute('data-expands'));
+            expand(toggle, target);
+        });
+        this.textContent = strings.COLLAPSE;
+        }
+    });
+    function openSection() {
+        var hash = window.location.hash || false;
+        if (hash) {
+        var id = hash.substring(1);
+        var sectionToggle = document.querySelector('[data-expands='+id+'-content]') || false;
+        if (sectionToggle) {
+            if (sectionToggle.getAttribute('aria-expanded') === 'false') {
+            sectionToggle.click();
+            }
+        }
+        }
+    }
+    window.onload = openSection;
+    window.onhashchange = openSection;
+    var sectionHeadings = document.querySelectorAll('.component-intro h4');
+    
+    Array.prototype.forEach.call(sectionHeadings, function (heading) {
+        heading.addEventListener('click', function () {
+        this.nextElementSibling.click();
+        })
+    });
+    })();
+                                </span>
                             </code>
                         </pre>
                     </div>
@@ -141,8 +309,8 @@ h5 {
 
                 <div class="component-container">
                     <div class="component-intro">
-                        <h4 id="txt-heading-drk">Dark accordions</h4>
-                        <button data-expands="txt-heading-drk-content" aria-label="open section" aria-describedby="txt-heading-drk" aria-expanded="false">
+                        <h4 id="accordion-drk">Dark accordions</h4>
+                        <button data-expands="accordion-drk-content" aria-label="open section" aria-describedby="accordion-drk" aria-expanded="false">
                             <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
                                 <g transform="translate(0 -981.5)">
                                     <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
@@ -151,7 +319,7 @@ h5 {
                             </svg>
                         </button>
                     </div>
-                    <div id="txt-heading-drk-content" class="component-content" hidden="">
+                    <div id="accordion-drk-content" class="component-content" hidden="">
                         <p>Use light-coloured text over a dark-coloured area or contrasting image. Make sure that you always provide an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
                         <p>Here are a few examples of proper usage:</p>
                         <div class="code-example bg--dark clr--accent"><h1>Heading one</h1></div>
@@ -164,9 +332,9 @@ h5 {
                             <code>
                                 <h5 class="heading heading-button">
                                     <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-txt-heading-drk">Copy HTML</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-accordion-drk">Copy HTML</button>
                                 </h5>
-<span id="html-txt-heading-drk">
+<span id="html-accordion-drk">
 &lt;h1 class="heading clr--accent"&gt;<span class="code-accent">Heading one</span>&lt;/h1&gt;
 &lt;h2 class="heading clr--light"&gt;<span class="code-accent">Heading two</span>&lt;/h2&gt;
 &lt;h3 class="heading clr--light"&gt;<span class="code-accent">Heading three</span>&lt;/h3&gt;
@@ -175,9 +343,9 @@ h5 {
 </span>
                                 <h5 class="heading heading-button">
                                     <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-txt-heading-drk">Copy CSS</button>
+                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-accordion-drk">Copy CSS</button>
                                 </h5>
-<span id="css-txt-heading-drk">
+<span id="css-accordion-drk">
 h1 {
     font: 700 3.247rem/1.2 'Raleway', Helvetica, sans-serif;
 }
@@ -217,7 +385,10 @@ h5 {
 
                 <h3 class="heading">Sources of inspiration</h3>
                 <ul>
+                    <li><a href="https://www.carbondesignsystem.com/components/accordion/usage/">Accordion</a>&mdash;Carbon Design System</li>
+                    <li><a href="https://www.lightningdesignsystem.com/components/accordion/">Accordion</a>&mdash;Lightning Design System</li>
                     <li><a href="https://designsystem.morningstar.com/components/accordions.html">Accordions</a>&mdash;Morningstar Design System</li>
+                    <li><a href="https://designsystem.quickbooks.com/component/accordion/">Accordions</a>&mdash;QuickBooks Design System</li>
                     <li><a href="https://inclusive-components.design/collapsible-sections/">Collapsible sections</a>&mdash;Heydon Pickering</li>
                     <li><a href="https://www.smashingmagazine.com/printed-books/inclusive-front-end-design-patterns/">Inclusive Design Patterns</a> (book)&mdash;Heydon Pickering</li>
                     <li><a href="https://inclusivedesignprinciples.org/">Inclusive Design Principles</a>&mdash;Heydon Pickering</li>

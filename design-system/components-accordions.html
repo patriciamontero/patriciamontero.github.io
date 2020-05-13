@@ -44,14 +44,15 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: Accordions</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-05-13">Last updated on May 13, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-05-13">Last updated on May 13, 2020&mdash;3 min read</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
                 <nav class="nav-aside">
                     <ul>
-                        <li><a class="current" href="components-accordion.html">Accordions</a><span class="upcoming">&mdash;In progress</span></li>
+                        <li><a class="current" href="components-accordions.html">Accordions</a></li>
                         <li><a href="components-buttons.html">Buttons</a></li>
+                        <li><a href="components-cards.html">Cards</a><span class="upcoming">&mdash;In progress</span></li>
                         <li><a href="components-links.html">Links</a></li>
                         <li><a href="components-navigation.html">Navigation</a></li>
                         <li><a href="components-texts.html">Texts</a></li>
@@ -67,32 +68,49 @@
                     <li>Accordions must be inclusive. Users should be able to expand and collapse them with a keyboard or assistive technology.</li>
                     <li>Use sentence case for the headlines, which means that only the first word starts with a capital letter. Don't use a period in the end.</li>
                 </ul>
-                <h3 class="heading heading-button" tabindex="-1">
-                    <span>Code snippets</span>
-                    <button class="btn" data-expandall="">Expand all</button>
-                </h3>
-
-                <div class="component-container">
-                    <div class="component-intro">
-                        <h4 id="accordion">Accordions</h4>
-                        <button data-expands="accordion-content" aria-label="open section" aria-describedby="accordion" aria-expanded="false">
-                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
-                                <g transform="translate(0 -981.5)">
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
-                                </g>
-                            </svg>
-                        </button>
+                <h3 class="heading">Code snippets</h3>
+                <p>The original code for this accordion belongs to <a href="https://inclusivedesignprinciples.org/">Inclusive Design Principles</a>.</p>
+                <p>Use <span class="subtle">dark</span> text (#f8f8f8) over a light-coloured area  or contrasting image. Make sure that you always provide an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
+                <p>Here is an example of proper usage:</p>
+                <div class="code-example">  
+                    <h3 class="heading heading-button" tabindex="-1">
+                        <span>Accordion heading</span>
+                        <button class="btn" data-expandall="">Expand all</button>
+                    </h3>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="accdn-xmpl1">Content heading 1</h4>
+                            <button data-expands="accdn-xmpl1-content" aria-label="open section" aria-describedby="accdn-xmpl1" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="accdn-xmpl1-content" class="component-content" hidden="">
+                            <p>This is the content 1.</p>
+                        </div>
                     </div>
-                    <div id="accordion-content" class="component-content" hidden="">
-                        <p>Use <span class="subtle">dark</span> text (#f8f8f8) over a light-coloured area  or contrasting image. Make sure that you always provide an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
-                        <p>Here are a few examples of proper usage:</p>
-                        <div class="code-example bg--regular"><h1>Heading one</h1></div>
-                        <div class="code-example bg--accent"><h2>Heading two</h1></div>
-                        <div class="code-example bg--light-accent"><h3>Heading three</h1></div>
-                        <div class="code-example bg--lightest-accent"><h4>Heading four</h1></div>
-                        <div class="code-example"><h5>Heading five</h1></div>
-                        <p>These are their code snippets:</p>
+                    <div class="component-container">
+                        <div class="component-intro">
+                            <h4 id="accdn-xmpl2">Content heading 2</h4>
+                            <button data-expands="accdn-xmpl2-content" aria-label="open section" aria-describedby="accdn-xmpl2" aria-expanded="false">
+                                <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
+                                    <g transform="translate(0 -981.5)">
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
+                                        <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="accdn-xmpl2-content" class="component-content" hidden="">
+                            <p>This is the content 2.</p>
+                        </div>
+                    </div>
+                </div>
+                        <p>These are its code snippets:</p>
                         <pre>
                             <code>
                                 <h5 class="heading heading-button">
@@ -106,8 +124,8 @@
 &lt;/h3&gt;
 &lt;div class="component-container"&gt;
     &lt;div class="component-intro"&gt;
-        &lt;h4 id="accdn-xmpl"&gt;<span class="code-accent">Content heading</span>&lt;/h4&gt;
-        &lt;button data-expands="accdn-xmpl-content" aria-label="open section" aria-describedby="accdn-xmpl" aria-expanded="false"&gt;
+        &lt;h4 id="accdn-xmpl1"&gt;<span class="code-accent">Content heading 1</span>&lt;/h4&gt;
+        &lt;button data-expands="accdn-xmpl1-content" aria-label="open section" aria-describedby="accdn-xmpl1" aria-expanded="false"&gt;
             &lt;svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70"&gt;
                 &lt;g transform="translate(0 -981.5)"&gt;
                     &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"&gt;&lt;/rect&gt;
@@ -116,8 +134,24 @@
             &lt;/svg&gt;
         &lt;/button&gt;
     &lt;/div&gt;
-    &lt;div id="accdn-xmpl-content" class="component-content" hidden=""&gt;
-        &lt;p&gt;<span class="code-accent">This is the content.</span>&lt;/p&gt;
+    &lt;div id="accdn-xmpl1-content" class="component-content" hidden=""&gt;
+        &lt;p&gt;<span class="code-accent">This is the content 1.</span>&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="component-container"&gt;
+    &lt;div class="component-intro"&gt;
+        &lt;h4 id="accdn-xmpl2"&gt;<span class="code-accent">Content heading 2</span>&lt;/h4&gt;
+        &lt;button data-expands="accdn-xmpl2-content" aria-label="open section" aria-describedby="accdn-xmpl2" aria-expanded="false"&gt;
+            &lt;svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70"&gt;
+                &lt;g transform="translate(0 -981.5)"&gt;
+                    &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"&gt;&lt;/rect&gt;
+                    &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"&gt;&lt;/rect&gt;
+                &lt;/g&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div id="accdn-xmpl2-content" class="component-content" hidden=""&gt;
+        &lt;p&gt;<span class="code-accent">This is the content 2.</span>&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 </span>
@@ -311,82 +345,6 @@ h4 {
                     </div>
                 </div>
 
-                <div class="component-container">
-                    <div class="component-intro">
-                        <h4 id="accordion-drk">Dark accordions</h4>
-                        <button data-expands="accordion-drk-content" aria-label="open section" aria-describedby="accordion-drk" aria-expanded="false">
-                            <svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70">
-                                <g transform="translate(0 -981.5)">
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"></rect>
-                                    <rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"></rect>
-                                </g>
-                            </svg>
-                        </button>
-                    </div>
-                    <div id="accordion-drk-content" class="component-content" hidden="">
-                        <p>Use light-coloured text over a dark-coloured area or contrasting image. Make sure that you always provide an <a href="style.html#colour-combinations">accessible colour combination</a>.</p>
-                        <p>Here are a few examples of proper usage:</p>
-                        <div class="code-example bg--dark clr--accent"><h1>Heading one</h1></div>
-                        <div class="code-example bg--dark bg--invert"><h2>Heading two</h1></div>
-                        <div class="code-example bg--dark"><h3>Heading three</h1></div>
-                        <div class="code-example bg--darkest-accent"><h4>Heading four</h1></div>
-                        <div class="code-example bg--dark-accent"><h5>Heading five</h1></div>
-                        <p>These are their code snippets:</p>
-                        <pre>
-                            <code>
-                                <h5 class="heading heading-button">
-                                    <span>HTML</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-accordion-drk">Copy HTML</button>
-                                </h5>
-<span id="html-accordion-drk">
-&lt;h1 class="heading clr--accent"&gt;<span class="code-accent">Heading one</span>&lt;/h1&gt;
-&lt;h2 class="heading clr--light"&gt;<span class="code-accent">Heading two</span>&lt;/h2&gt;
-&lt;h3 class="heading clr--light"&gt;<span class="code-accent">Heading three</span>&lt;/h3&gt;
-&lt;h4 class="heading clr--light"&gt;<span class="code-accent">Heading four</span>&lt;/h4&gt;
-&lt;h5 class="heading clr--light"&gt;<span class="code-accent">Heading five</span>&lt;/h5&gt;
-</span>
-                                <h5 class="heading heading-button">
-                                    <span>CSS</span>
-                                    <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#css-accordion-drk">Copy CSS</button>
-                                </h5>
-<span id="css-accordion-drk">
-h1 {
-    font: 700 3.247rem/1.2 'Raleway', Helvetica, sans-serif;
-}
-
-h2 {
-    font: 700 1.602rem/1.2 'Raleway', Helvetica, sans-serif;
-}
-
-h3 {
-    font: 700 1.424rem/1.2 'Raleway', Helvetica, sans-serif;
-}
-
-h4 {
-    font: 700 1.266rem/1.2 'Raleway', Helvetica, sans-serif;
-}
-
-h5 {
-    font: 700 1.125rem/1.2 'Raleway', Helvetica, sans-serif;
-}
-
-.heading {
-    margin: 2.566rem 0 1.125rem;
-}
-
-.clr--light {
-    color: #f8f8f8;
-}
-
-.clr--accent {
-    color: #f96c53;
-}
-</span>
-                            </code>
-                        </pre>
-                    </div>
-                </div>
-
                 <h3 class="heading">Sources of inspiration</h3>
                 <ul>
                     <li><a href="https://www.carbondesignsystem.com/components/accordion/usage/">Accordion</a>&mdash;Carbon Design System</li>
@@ -397,7 +355,7 @@ h5 {
                     <li><a href="https://www.smashingmagazine.com/printed-books/inclusive-front-end-design-patterns/">Inclusive Design Patterns</a> (book)&mdash;Heydon Pickering</li>
                     <li><a href="https://inclusivedesignprinciples.org/">Inclusive Design Principles</a>&mdash;Heydon Pickering</li>
                 </ul>
-                <a class="cta" href="components-buttons.html">Let's talk about buttons</a>
+                <a class="cta" href="components-buttons.html">It all began with buttons</a>
             </section>
         </article>
         <footer class="footer">

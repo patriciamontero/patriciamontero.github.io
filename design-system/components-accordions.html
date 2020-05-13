@@ -44,7 +44,7 @@
             <section class="content-wrapped">
                 <h1 class="heading">Components: Accordions</h1>
                 <p class="tagline">A wee design system's library</p>
-                <p class="subtle"><time datetime="2020-05-12">Last updated on May 12, 2020&mdash;In progress</time></p>
+                <p class="subtle"><time datetime="2020-05-13">Last updated on May 13, 2020&mdash;In progress</time></p>
                 <hr class="intro-hr">
             </section>
             <aside>
@@ -65,7 +65,7 @@
                 <ul>
                     <li>Accordions showcase headlines as a reference for their hidden content. They must be short enough to prevent text wrapping.</li>
                     <li>Accordions must be inclusive. Users should be able to expand and collapse them with a keyboard or assistive technology.</li>
-                    <li>Use sentence case for the texts, which means that only the first word starts with a capital letter. Don't use a period in the end.</li>
+                    <li>Use sentence case for the headlines, which means that only the first word starts with a capital letter. Don't use a period in the end.</li>
                 </ul>
                 <h3 class="heading heading-button" tabindex="-1">
                     <span>Code snippets</span>
@@ -100,21 +100,25 @@
                                     <button class="btn-sec" aria-label="copy to clipboard"  data-clipboard-target="#html-accordion">Copy HTML</button>
                                 </h5>
 <span id="html-accordion">
+&lt;h3 class="heading heading-button" tabindex="-1"&gt;
+    &lt;span&gt;<span class="code-accent">Accordion heading</span>&lt;/span&gt;
+    &lt;button class="btn" data-expandall=""&gt;<span class="code-accent">Expand all</span>&lt;/button&gt;
+&lt;/h3&gt;
 &lt;div class="component-container"&gt;
-&lt;div class="component-intro"&gt;
-    &lt;h4 id="btn-primary"&gt;This is the headline&lt;/h4&gt;
-    &lt;button data-expands="btn-primary-content" aria-label="open section" aria-describedby="btn-primary" aria-expanded="false"&gt;
-    &lt;svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70"&gt;
-        &lt;g transform="translate(0 -981.5)"&gt;
-        &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"&gt;&lt;/rect&gt;
-        &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"&gt;&lt;/rect&gt;
-    &lt;/g&gt;
-    &lt;/svg&gt;
-    &lt;/button&gt;
-&lt;/div&gt;
-&lt;div id="btn-primary-content" class="component-content" hidden=""&gt;
-    &lt;p&gt;This is the content.&lt;/p&gt;
-&lt;/div&gt;
+    &lt;div class="component-intro"&gt;
+        &lt;h4 id="btn-primary"&gt;<span class="code-accent">Content heading</span>&lt;/h4&gt;
+        &lt;button data-expands="btn-primary-content" aria-label="open section" aria-describedby="btn-primary" aria-expanded="false"&gt;
+            &lt;svg focusable="false" height="20mm" width="20mm" viewBox="0 0 70 70"&gt;
+                &lt;g transform="translate(0 -981.5)"&gt;
+                    &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="60" width="9.8985" y="987.36" x="30.051" class="up-strut"&gt;&lt;/rect&gt;
+                    &lt;rect style="stroke-width:0;fill:#2f2f2f" ry="4" height="10" width="60" y="1012.4" x="5"&gt;&lt;/rect&gt;
+                &lt;/g&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div id="btn-primary-content" class="component-content" hidden=""&gt;
+        &lt;p&gt;<span class="code-accent">This is the content.</span>&lt;/p&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </span>
                                 <h5 class="heading heading-button">

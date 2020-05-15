@@ -253,13 +253,14 @@ figcaption, .note {
 .quote {
     background-color: #fdfdfd;
     border-radius: 3px;
+    box-shadow: 0 .25rem 2rem #dddddd;
     font-size: 1.125rem;
-    margin: 0 -3rem;
+    margin: 2.566rem -3rem;
     padding: 1rem 3rem;
 }
     @media (min-width: 600px) {
         .quote {
-            margin: 1.266rem 0;
+            margin: 2.566rem 0;
         }
     }
 

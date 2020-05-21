@@ -674,6 +674,10 @@ a.clr--light:link, a.clr--light:visited,
     color: #f96c53;
 }
 
+.clr--dark-accent {
+    color: #dd2808;
+}
+
 .xmp-pdg {
     padding-left: 3rem;
 }

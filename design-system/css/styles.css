@@ -440,6 +440,7 @@ img {
   
 .card-img {
     height: auto;
+    margin: 0;
     max-width: 100%;
     vertical-align: middle;
 }
@@ -454,32 +455,25 @@ img {
 
 .card-item {
     display: flex;
-    padding: 1rem;
+    padding: 0 1rem;
 }
-
-@media (min-width: 40rem) {
-    .card-item {
-        width: 50%;
-}
-}
-
-@media (min-width: 56rem) {
-    .card-item {
-        width: 33.3333%;
-}
-}
+    @media (min-width: 900px) {
+        .card-item {
+            width: 50%;
+        }
+    }
 
 .card {
     background-color: white;
     border-radius: 3px;
-    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 .25rem 2rem #dddddd;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
 .card-content {
-    padding: 1rem;
+    padding: 1rem 2rem;
     background: #ffffff;
 }
 
